@@ -5,14 +5,10 @@ core: 8.x
 version: VERSION
 engine: twig
 type: theme
-base theme: radix
+base theme: classy
 
 
 regions:
-  navbar_branding: 'Navbar branding'
-  navbar_left:  'Navbar left'
-  navbar_right: 'Navbar right'
-
   sliding_header_one: 'Sliding Header Left'
   sliding_header_two: 'Sliding Header Right'
   header: 'Header'

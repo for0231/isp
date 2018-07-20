@@ -4,7 +4,7 @@ base:
     theme:
       assets/css/coloradmin.style.css: {}
   js:
-    bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js: {}
+    assets/plugins/bootstrap/3.3.7/js/bootstrap.js: {}
     assets/js/coloradmin.script.js: {}
   dependencies:
     - core/jquery
