@@ -14,7 +14,7 @@
 
 // Global partials.
 // -----------------------------------------------------------------------------
-@import "radix/radix/mixins";
+//@import "radix/radix/mixins";
 @import "base/mixins";
 @import "base/helpers";
 
@@ -23,6 +23,8 @@
 // FontAwesome 5.0
 // -----------------------------------------------------------------------------
 @import "../plugins/font-awesome/5.0/scss/fontawesome";
+// FontAwesome 4.0
+@import "../plugins/font-awesome/4.0/scss/font-awesome";
 
 // Bootswatch
 // -----------------------------------------------------------------------------
@@ -30,7 +32,7 @@
 
 // Radix styles overrides and fixes.
 // -----------------------------------------------------------------------------
-@import "radix/radix";
+//@import "radix/radix";
 
 // Partials.
 // --------------------------------------------------

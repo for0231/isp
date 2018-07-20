@@ -5,7 +5,7 @@ screenshot: screenshot.png
 # version: VERSION
 engine: twig
 type: theme
-base theme: classy
+base theme: false
 
 
 regions:
