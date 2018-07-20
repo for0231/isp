@@ -2,11 +2,23 @@ base:
   version: VERSION
   css:
     theme:
+      http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700: { type: external }
       assets/css/colorparallex.style.css: {}
   js:
-    bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js: {}
+    assets/plugins/bootstrap/3.3.7/js/bootstrap.js: {}
     assets/js/colorparallex.script.js: {}
   dependencies:
     - core/jquery
     - core/jquery.once
+    - core/html5shiv
     - core/drupal
+default:
+  version: VERSION
+  css:
+    theme:
+      assets/plugins/animate/animate.css: {}
+      assets/css/default/style.css: {}
+      assets/css/default/style-responsive.css: {}
+      assets/css/default/theme/default.css: {}
+  js:
+    assets/plugins/pace/pace.min.js: {}
