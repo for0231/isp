@@ -7,7 +7,6 @@ engine: twig
 type: theme
 base theme: classy
 
-
 regions:
   sliding_header_one: 'Sliding Header Left'
   sliding_header_two: 'Sliding Header Right'
@@ -40,7 +39,3 @@ regions:
 
 libraries:
   - coloradmin/base
-
-libraries-override:
-  radix/bootstrap: false
-  radix/style: false

@@ -40,7 +40,3 @@ regions:
 
 libraries:
   - color/base
-
-libraries-override:
-  radix/bootstrap: false
-  radix/style: false
