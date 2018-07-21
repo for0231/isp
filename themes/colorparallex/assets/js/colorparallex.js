@@ -73,6 +73,12 @@
 
       // 07. Handle Header Scroll to Action
 
+      // 08. Handle Tooltip Activation. // In theme settings.
+      if ($('[data-toggle=tooltip]').length !== 0) {
+        $('[data-toggle=tooltip]').tooltip();
+      }
+
+
     }
   }
 
