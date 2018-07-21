@@ -23,4 +23,4 @@ default:
       assets/css/default/theme/default.css: {}
   js:
     assets/plugins/pace/pace.min.js: {}
-    assets/js/colorpara.js: {}
+    assets/js/colorparallex.js: {}

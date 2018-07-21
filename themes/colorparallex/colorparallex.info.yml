@@ -40,6 +40,7 @@ regions:
 
 libraries:
   - colorparallex/base
+  - colorparallex/default
 
 # Information added by Drupal.org packaging script on 2018-02-26
 version: '8.x-3.2'
