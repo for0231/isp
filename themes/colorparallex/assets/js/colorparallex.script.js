@@ -4,10 +4,16 @@
  */
 (function ($) {
 
-  // Hello World.
-  Drupal.behaviors.helloWorld = {
+  Drupal.behaviors.colorParallex = {
     attach: function (context) {
-      console.log('Hello World');
+      // 01. Handle Home Content Height
+      $('#home').height($(window).height());
+
+      $(window).on('resize', function () {
+        $('#home').height($(window).height());
+      });
+
+      Drupal.attachBehaviors(context);
     }
   }
 

@@ -6,6 +6,8 @@ base:
       assets/css/colorparallex.style.css: {}
   js:
     assets/plugins/bootstrap/3.3.7/js/bootstrap.js: {}
+    assets/plugins/js-cookie/js.cookie.js: {}
+    assets/plugins/scrollMonitor/scrollMonitor.js: {}
     assets/js/colorparallex.script.js: {}
   dependencies:
     - core/jquery
