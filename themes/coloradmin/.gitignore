@@ -4,3 +4,4 @@
 *.codekit
 .idea
 node_modules
+config.codekit3
