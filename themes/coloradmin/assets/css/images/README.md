@@ -1,1 +1,0 @@
-for coloradmin base theme scss.
