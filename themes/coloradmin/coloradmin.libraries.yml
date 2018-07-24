@@ -2,11 +2,21 @@ base:
   version: VERSION
   css:
     theme:
+      http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700: { type: external }
+#      assets/plugins/jquery-ui/jquery-ui.min.css: {}
+      assets/plugins/bootstrap/4.1.0/css/bootstrap.css: {}
+      assets/plugins/font-awesome/5.0/css/fontawesome-all.css: {}
+      assets/plugins/animate/animate.css: {}
       assets/css/coloradmin.style.css: {}
   js:
-    bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js: {}
-    assets/js/coloradmin.script.js: {}
+    assets/plugins/pace/pace.js: { header: true }
+    assets/plugins/bootstrap/4.1.0/js/bootstrap.bundle.js: {}
+    assets/plugins/slimscroll/jquery.slimscroll.js: {}
+    assets/plugins/js-cookie/js.cookie.js: {}
+    assets/js/coloradmin.script.js: { attributes: { id: theme} }
   dependencies:
     - core/jquery
     - core/jquery.once
+    - core/jquery.ui
+    - core/jquery.ui.sortable
     - core/drupal
