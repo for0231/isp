@@ -1,24 +1,6 @@
-default.xs:
-  label: XS
-  mediaQuery: '(max-width: 767px)'
-  weight: 0
+coloradmin.narrow:
+  label: narrow
+  mediaQuery: 'all and (min-width: 560px) and (max-width: 850px)'
+  weight: '1'
   multipliers:
-    - 1x
-default.sm:
-  label: SM
-  mediaQuery: '(min-width: 768px) and (max-width: 991px)'
-  weight: 1
-  multipliers:
-    - 1x
-default.md:
-  label: MD
-  mediaQuery: '(min-width: 992px) and (max-width: 1199px)'
-  weight: 1
-  multipliers:
-    - 1x
-default.lg:
-  label: LG
-  mediaQuery: '(min-width: 1200px)'
-  weight: 1
-  multipliers:
-    - 1x
+    - '1x'

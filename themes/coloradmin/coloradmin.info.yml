@@ -1,29 +1,12 @@
 name: Color Admin
-description: A theme based on Radix.
-screenshot: screenshot.png
-# core: 8.x
-# version: VERSION
-engine: twig
 type: theme
-base theme: false
-
-
-regions:
-  navbar_branding: 'Navbar branding'
-  navbar_left:  'Navbar left'
-  navbar_right: 'Navbar right'
-  content: Content
-  footer: Footer
-
+description: 'The color admin of theme.'
+package: ISP
+core: 8.x
 libraries:
   - coloradmin/base
+ 
+base theme: false
 
-libraries-override:
-  radix/bootstrap: false
-  radix/style: false
-
-# Information added by Drupal.org packaging script on 2018-02-26
-version: '8.x-3.2'
-core: '8.x'
-project: 'radix'
-datestamp: 1519625901
+regions:
+  content: Content
