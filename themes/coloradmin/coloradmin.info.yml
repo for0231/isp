@@ -6,7 +6,14 @@ core: 8.x
 libraries:
   - coloradmin/base
  
-base theme: false
+base theme: seven
 
+libraries-override:
+  system/admin: false
 regions:
+  header: Header
+  breadcrumb: Breadcrumbs
+  page_header: 'Page header'
+  sidebar_first: 'Left Sidebar'
   content: Content
+  footer: Footer

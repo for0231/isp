@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - eabax_core
+id: role-menu-authenticated
+label: 'Authenticated role menu'
+description: 'Menu for authenticated role.'
+locked: true

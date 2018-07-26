@@ -1,0 +1,21 @@
+base:
+  version: VERSION
+  css:
+    theme:
+      http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700: { type: external }
+      assets/plugins/bootstrap/4.1.0/css/bootstrap.css: {}
+      assets/plugins/font-awesome/5.0/css/fontawesome-all.css: {}
+      assets/plugins/animate/animate.css: {}
+      assets/css/coloradmin.style.css: {}
+  js:
+    assets/plugins/pace/pace.js: {}
+    assets/plugins/bootstrap/4.1.0/js/bootstrap.bundle.js: {}
+    assets/plugins/slimscroll/jquery.slimscroll.js: {}
+    assets/plugins/js-cookie/js.cookie.js: {}
+    assets/js/coloradmin.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/jquery.ui.sortable
+    - core/html5shiv
+    - core/drupal

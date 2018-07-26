@@ -1,0 +1,4 @@
+services:
+  isp_core.manager:
+    class: Drupal\isp_core\IspCoreManager
+    arguments: ['@menu.active_trail', '@menu.link_tree']

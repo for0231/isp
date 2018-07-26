@@ -1,0 +1,5 @@
+name: 'UserPlus'
+type: module
+description: 'The user of extension.'
+core: 8.x
+package: 'isp'

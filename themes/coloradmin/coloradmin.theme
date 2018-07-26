@@ -5,6 +5,11 @@
  * Functions to support theming in the coloradmin theme.
  */
 
+// Include all files from the includes directory.
+$includes_path = dirname(__FILE__) . '/includes/*.inc';
+foreach (glob($includes_path) as $filename) {
+  require_once dirname(__FILE__) . '/includes/' . basename($filename);
+}
 /**
  * Implements hook_preprocess_HOOK() for html.html.twig.
  */
@@ -143,3 +148,4 @@ function coloradmin_theme_suggestions_details_alter(array &$suggestions, array $
 function coloradmin_preprocess_menu_local_task(array &$variables) {
   //$variables['element']['#link']['url']->setOption('attributes', ['class'=>'rounded']);
 }
+

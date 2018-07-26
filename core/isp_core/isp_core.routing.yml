@@ -1,0 +1,8 @@
+isp_core.data_modeling:
+  path: '/data_modeling'
+  defaults:
+    _controller: '\Drupal\isp_core\Controller\IspCoreController::menuBlockPage'
+    _title: 'Implementation'
+    menu_id: role-menu-implementor
+  requirements:
+    _role: 'implementor'
