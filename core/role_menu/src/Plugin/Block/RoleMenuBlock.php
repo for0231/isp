@@ -73,7 +73,8 @@ class RoleMenuBlock extends BlockBase implements ContainerFactoryPluginInterface
       $menu_id = $entity->getThirdPartySetting('role_menu', 'menu', '');
       if (!empty($menu_id)) {
         $build[$menu_id][] = [
-          '#markup' => '<ul class="sidebar-menu tree"><li class="header">' . $this->t('@role navigation', ['@role' => $entity->label()]) . '</li></ul>',
+//          '#markup' => '<ul class="sidebar-menu tree"><li class="header">' . $this->t('@role navigation', ['@role' => $entity->label()]) . '</li></ul>',
+          '#markup' => '<li class="nav-header">' . $this->t('@role navigation', ['@role' => $entity->label()]) . '</li>'
         ];
         $build[$menu_id][] = $this->buildMenu($menu_id);
       }

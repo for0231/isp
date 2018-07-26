@@ -144,6 +144,9 @@
       <ul class="nav">
         {% if page.sidebar_first %}
           {{ page.sidebar_first }}
+          <!-- begin sidebar minify button -->
+          <li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+          <!-- end sidebar minify button -->
         {% else %}
           <li class="nav-header">Navigation</li>
           <li class="has-sub">
@@ -234,9 +237,7 @@
             </ul>
           </li>
         {% endif %}
-        <!-- begin sidebar minify button -->
-        <li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
-        <!-- end sidebar minify button -->
+
       </ul>
       <!-- end sidebar nav -->
     </div>

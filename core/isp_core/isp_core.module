@@ -35,10 +35,12 @@ function isp_core_page_attachments_alter(array &$attachments) {
  */
 function isp_core_preprocess_menu__role_menu(&$variables) {
   $icons = [
-//    'eabax_core.implementor.implementation' => 'fa fa-compass',
+    'demo_data.price_manager.quote_qu' => 'fa fa-cogs',
+    'entity.demo_data.collect' => 'fa fa-foursquare',
   ];
   _isp_core_set_menu_items_icon($variables['items'], $icons);
 }
+
 function _isp_core_set_menu_items_icon(&$items, $icons) {
   foreach ($items as $key => $item) {
     if (isset($icons[$key])) {
