@@ -26,36 +26,29 @@
 
 {% macro menu_links(items, attributes, menu_level) %}
   {% import _self as menus %}
-    {% for k,item in items %}
+    {% for item in items %}
       {%
         set item_classes = [
         item.below ? 'has-sub',
         item.in_active_trail ? 'active',
       ]
       %}
-      {% if item.below %}
-        <li{{ item.attributes.addClass(item_classes) }}>
-          <a href="javascript:;" title="{{ item.title }}"><b class="caret"></b><i class="{{ item.icon }}"></i><span>{{ item.title }}</span></a>
-          <ul{{ item.attributes.removeClass('has-sub').addClass('sub-menu') }}>
-            {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
-          </ul>
-        </li>
-      {% else %}
-        <li{{ item.attributes.addClass(item_classes) }}>
-          <a href="{{ item.url }}" title="{{ item.title }}"><i class="{{ item.icon }}"></i><span>{{ item.title }}</span></a>
-        </li>
-      {% endif %}  {# end if item.below #}
-
-      {#<li{{ item.attributes.addClass(item_classes) }}>#}
-      {#<a href="javascript:;" title="{{ item.title }}"><b class="caret"></b><i class="{{ item.icon }}"></i><span>{{ item.title }}</span></a>#}
-
-      {#{% if item.below %}#}
-      {#<ul{{ item.attributes.removeClass('has-sub').addClass('sub-menu') }}>#}
-      {#{{ menus.menu_links(item.below, attributes, menu_level + 1) }}#}
-      {#</ul>#}
-      {#{% endif %}#}
-      {#</li>#}
-
+      <li{{ item.attributes.addClass(item_classes) }}>
+        <a href="{{ item.url }}" title="{{ item.title }}">
+          {% if item.below %}
+            <b class="caret"></b>
+          {% endif %}
+          {% if item.icon %}
+          <i class="{{ item.icon }}"></i>
+          {% endif %}
+          <span>{{ item.title }}</span>
+        </a>
+        {% if item.below %}
+        <ul{{ item.attributes.removeClass('has-sub').addClass('sub-menu') }}>
+          {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
+        </ul>
+        {% endif %}
+      </li>
     {% endfor %} {# end for items #}
 {% endmacro %}
 
