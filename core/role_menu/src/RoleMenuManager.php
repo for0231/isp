@@ -1,12 +1,12 @@
 <?php
 
-namespace Drupal\isp_core;
+namespace Drupal\role_menu;
 
 use Drupal\Core\Menu\MenuActiveTrailInterface;
 use Drupal\Core\Menu\MenuLinkTreeInterface;
 use Drupal\Core\Menu\MenuTreeParameters;
 
-class IspCoreManager implements IspCoreManagerInterface {
+class RoleMenuManager implements RoleMenuManagerInterface {
 
   /**
    * The active menu trail service.
@@ -21,13 +21,6 @@ class IspCoreManager implements IspCoreManagerInterface {
    * @var \Drupal\Core\Menu\MenuLinkTreeInterface
    */
   protected $menuLinkTree;
-
-  protected $colorPalette = [
-    '#00c0ef',
-    '#dd4b39',
-    '#00a65a',
-    '#f39c12',
-  ];
 
   public function __construct(MenuActiveTrailInterface $menu_active_trail, MenuLinkTreeInterface $menu_link_tree) {
     $this->menuActiveTrail = $menu_active_trail;
@@ -96,10 +89,5 @@ class IspCoreManager implements IspCoreManagerInterface {
 
     return $content;
   }
-  /**
-   * @return []
-   */
-  public function getColorPalette() {
-    return $this->colorPalette;
-  }
+
 }

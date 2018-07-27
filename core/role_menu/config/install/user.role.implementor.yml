@@ -3,7 +3,7 @@ status: true
 dependencies:
   enforced:
     module:
-      - isp_core
+      - role_menu
   module:
     - role_menu
 id: implementor

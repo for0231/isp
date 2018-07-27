@@ -1,4 +1,4 @@
 services:
-  isp_core.manager:
-    class: Drupal\isp_core\IspCoreManager
+  role_menu.manager:
+    class: Drupal\role_menu\RoleMenuManager
     arguments: ['@menu.active_trail', '@menu.link_tree']
