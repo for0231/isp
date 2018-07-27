@@ -68,8 +68,7 @@ function role_menu_entity_operation(EntityInterface $entity) {
  */
 function role_menu_preprocess_menu__role_menu(&$variables) {
   $icons = [
-    'demo_data.price_manager.quote_qu' => 'fa fa-cogs',
-    'entity.demo_data.collect' => 'fa fa-foursquare',
+    'system.admin' => 'fa fa-cogs',
   ];
   _role_menu_set_menu_items_icon($variables['items'], $icons);
 }
