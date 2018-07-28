@@ -71,6 +71,11 @@ class RoleMenuBlock extends BlockBase implements ContainerFactoryPluginInterface
       /** @var \Drupal\user\RoleInterface $entity */
       $entity = $role_storage->load($role);
       $menu_id = $entity->getThirdPartySetting('role_menu', 'menu', '');
+      switch ($role) {
+        case 'administrator':
+          $menu_id = 'admin';
+          break;
+      }
       if (!empty($menu_id)) {
         $build[$menu_id][] = [
           '#markup' => '<ul class="nav"><li class="nav-header">' . $this->t('@role navigation', ['@role' => $entity->label()]) . '</li></ul>',
