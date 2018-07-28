@@ -1,0 +1,10 @@
+name: Coloradmin
+type: profile
+description: 'Coloradmin Profile'
+core: 8.x
+
+distribution:
+  name: 'Coloradmin'
+
+dependencies:
+  - 'user_plus'
