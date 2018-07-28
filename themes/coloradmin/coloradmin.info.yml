@@ -15,5 +15,6 @@ regions:
   breadcrumb: Breadcrumbs
   page_header: 'Page header'
   sidebar_first: 'Left Sidebar'
+  pre_content: Precontent
   content: Content
   footer: Footer

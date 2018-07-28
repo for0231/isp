@@ -12,8 +12,11 @@
  *   displayed after the main title tag that appears in the template.
  */
 #}
-{{ title_prefix }}
-{% if title %}
-  <span {{ title_attributes.addClass('page-title') }}>{{ title }}</span>  <small>header small text goes here...</small>
-{% endif %}
-{{ title_suffix }}
+{#{{ title_prefix }}#}
+{#{% if title %}#}
+  {#<span {{ title_attributes.addClass('page-title') }}>{{ title }}</span>#}
+{#{% endif %}#}
+{#{{ title_suffix }}#}
+
+<h4{{ title_attributes.addClass('page-title').addClass('panel-header') }}>{{ title }}</h4>
+

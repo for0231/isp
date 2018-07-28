@@ -144,6 +144,9 @@
       {% if page.sidebar_first %}
         {{ page.sidebar_first }}
       {% endif %}
+      <!-- begin sidebar minify button -->
+      <li><a href="javascript:;" class="sidebar-minify-btn" data-click="sidebar-minify"><i class="fa fa-angle-double-left"></i></a></li>
+      <!-- end sidebar minify button -->
       <!-- end sidebar nav -->
     </div>
     <!-- end sidebar scrollbar -->
@@ -172,7 +175,9 @@
           <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-warning" data-click="panel-collapse"><i class="fa fa-minus"></i></a>
           <a href="javascript:;" class="btn btn-xs btn-icon btn-circle btn-danger" data-click="panel-remove"><i class="fa fa-times"></i></a>
         </div>
-        <h4 class="panel-title">Panel Title here</h4>
+        {% if page.pre_content %}
+          {{ page.pre_content }}
+        {% endif %}
       </div>
       <div class="panel-body">
         {{ page.content }}
