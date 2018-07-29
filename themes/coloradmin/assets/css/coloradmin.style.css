@@ -15585,4 +15585,21 @@ img {
 .panel {
   padding: 0px; }
 
+.admin-list li a .label {
+  color: #348ee3; }
+
+.views-displays .label {
+  color: #707478;
+  font-size: 100%; }
+
+.views-displays span {
+  margin-left: -5px; }
+
+.views-ui-display-tab-bucket.footer {
+  margin-left: 0px; }
+
+.views-ui-dialog {
+  z-index: 9999;
+  top: 60px; }
+
 /*# sourceMappingURL=coloradmin.style.css.map */
