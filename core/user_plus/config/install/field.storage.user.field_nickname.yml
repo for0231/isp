@@ -1,10 +1,13 @@
 langcode: en
 status: true
 dependencies:
+  enforced:
+    module:
+      - user_plus
   module:
     - user
-id: user.field_nick
-field_name: field_nick
+id: user.field_nickname
+field_name: field_nickname
 entity_type: user
 type: string
 settings:
