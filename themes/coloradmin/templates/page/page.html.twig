@@ -95,16 +95,21 @@
         </ul>
       </li>
       <li class="dropdown navbar-user">
-        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
-          <img src="{{ base_path }}{{ directory }}/assets/img/user/user-13.jpg" alt="" />
-          <span class="d-none d-md-inline">{{ userinfo.name }}</span> <b class="caret"></b>
-        </a>
-        <div class="dropdown-menu dropdown-menu-right">
-          <a href="{{ path('entity.user.admin_form') }}" class="dropdown-item">{% trans %}Setting {% endtrans %}</a>
-          <a href="{{ path('help.main') }}" class="dropdown-item"> Helps</a>
-          <div class="dropdown-divider"></div>
-          <a href="{{ path('user.logout.http') }}" class="dropdown-item">{% trans %}Log Out{% endtrans %}</a>
-        </div>
+        {% if not logged_in %}
+          <a href="{{ path('user.login') }}" class="dropdown-item">{% trans %}Log in{% endtrans %}</a>
+        {% else %}
+          <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+            <img src="{{ base_path }}{{ directory }}/assets/img/user/user-13.jpg" alt="" />
+            <span class="d-none d-md-inline">{{ userinfo.name }}</span> <b class="caret"></b>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right">
+            <a href="{{ path('entity.user.admin_form') }}" class="dropdown-item">{% trans %}Setting {% endtrans %}</a>
+            <a href="{{ path('help.main') }}" class="dropdown-item"> Helps</a>
+            <div class="dropdown-divider"></div>
+            <a href="{{ path('user.logout.http') }}" class="dropdown-item">{% trans %}Log Out{% endtrans %}</a>
+          </div>
+        {% endif %}
+
       </li>
     </ul>
     <!-- end header navigation right -->
@@ -116,19 +121,22 @@
     <!-- begin sidebar scrollbar -->
     <div data-scrollbar="true" data-height="100%">
       <!-- begin sidebar user -->
+    {% if logged_in %}
       <ul class="nav">
         <li class="nav-profile">
-          <a href="javascript:;" data-toggle="nav-profile">
-            <div class="cover with-shadow"></div>
-            <div class="image">
-              <img src="{{ base_path }}{{ directory }}/assets/img/user/user-13.jpg" alt="" />
-            </div>
-            <div class="info">
-              <b class="caret pull-right"></b>
-              {{ userinfo.name }}
-              <small>{% trans %}Last login: {{ userinfo.changed }} {% endtrans %}</small>
-            </div>
-          </a>
+          {#<a href="{{ path('user.login') }}" data-toggle="nav-profile">#}
+          {#</a>#}
+            <a href="javascript:;" data-toggle="nav-profile">
+              <div class="cover with-shadow"></div>
+              <div class="image">
+                <img src="{{ base_path }}{{ directory }}/assets/img/user/user-13.jpg" alt="" />
+              </div>
+              <div class="info">
+                <b class="caret pull-right"></b>
+                {{ userinfo.name }}
+                <small>{% trans %}Last login: {{ userinfo.changed }} {% endtrans %}</small>
+              </div>
+            </a>
         </li>
         <li>
           <ul class="nav nav-profile">
@@ -137,6 +145,7 @@
           </ul>
         </li>
       </ul>
+    {% endif %}
       <!-- end sidebar user -->
       <!-- begin sidebar nav -->
       {% if page.sidebar_first %}
