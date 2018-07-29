@@ -97,15 +97,13 @@
       <li class="dropdown navbar-user">
         <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
           <img src="{{ base_path }}{{ directory }}/assets/img/user/user-13.jpg" alt="" />
-          <span class="d-none d-md-inline">Adam Schwartz</span> <b class="caret"></b>
+          <span class="d-none d-md-inline">{{ userinfo.name }}</span> <b class="caret"></b>
         </a>
         <div class="dropdown-menu dropdown-menu-right">
-          <a href="javascript:;" class="dropdown-item">Edit Profile</a>
-          <a href="javascript:;" class="dropdown-item"><span class="badge badge-danger pull-right">2</span> Inbox</a>
-          <a href="javascript:;" class="dropdown-item">Calendar</a>
-          <a href="javascript:;" class="dropdown-item">Setting</a>
+          <a href="{{ path('entity.user.admin_form') }}" class="dropdown-item">{% trans %}Setting {% endtrans %}</a>
+          <a href="{{ path('help.main') }}" class="dropdown-item"> Helps</a>
           <div class="dropdown-divider"></div>
-          <a href="javascript:;" class="dropdown-item">Log Out</a>
+          <a href="{{ path('user.logout.http') }}" class="dropdown-item">{% trans %}Log Out{% endtrans %}</a>
         </div>
       </li>
     </ul>
@@ -127,8 +125,8 @@
             </div>
             <div class="info">
               <b class="caret pull-right"></b>
-              Sean Ngu
-              <small>Front end developer</small>
+              {{ userinfo.name }}
+              <small>{% trans %}Last login: {{ userinfo.changed }} {% endtrans %}</small>
             </div>
           </a>
         </li>
