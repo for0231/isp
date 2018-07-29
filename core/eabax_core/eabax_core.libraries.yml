@@ -1,6 +1,0 @@
-color_square:
-  css:
-    theme:
-      css/color_square.css: {}
-  js:
-    js/color_square.js: {}
