@@ -15602,4 +15602,8 @@ img {
   z-index: 9999;
   top: 60px; }
 
+.js-form-type-select label {
+  display: inherit;
+  line-height: 25px; }
+
 /*# sourceMappingURL=coloradmin.style.css.map */
