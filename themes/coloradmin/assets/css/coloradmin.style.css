@@ -15606,4 +15606,7 @@ img {
   display: inherit;
   line-height: 25px; }
 
+details .details-wrapper {
+  padding-left: 30px; }
+
 /*# sourceMappingURL=coloradmin.style.css.map */

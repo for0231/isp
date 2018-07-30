@@ -10,12 +10,6 @@
     }
   }
 
-  /*
-  Template Name: Color Admin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3 & 4
-  Version: 4.1.0
-  Author: Sean Ngu
-  Website: http://www.seantheme.com/color-admin-v4.1/admin/
-  */
 
   var FONT_COLOR			= '#2d353c';
   var FONT_FAMILY			= 'Open Sans, Helvetica Neue,Helvetica,Arial,sans-serif';
@@ -163,60 +157,6 @@
   var COLOR_WHITE_TRANSPARENT_8   = 'rgba(255, 255, 255, 0.8)';
   var COLOR_WHITE_TRANSPARENT_9   = 'rgba(255, 255, 255, 0.9)';
 
-
-  /*
-  Template Name: Color Admin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3 & 4
-  Version: 4.1.0
-  Author: Sean Ngu
-  Website: http://www.seantheme.com/color-admin-v4.1/admin/
-      ----------------------------
-          APPS CONTENT TABLE
-      ----------------------------
-
-      <!-- ======== GLOBAL SCRIPT SETTING ======== -->
-      01. Handle Scrollbar
-    02. Handle Sidebar - Menu
-    03. Handle Sidebar - Mobile View Toggle
-    04. Handle Sidebar - Minify / Expand
-    05. Handle Page Load - Fade in
-    06. Handle Panel - Remove / Reload / Collapse / Expand
-    07. Handle Panel - Draggable
-    08. Handle Tooltip & Popover Activation
-    09. Handle Scroll to Top Button Activation
-
-      <!-- ======== Added in V1.2 ======== -->
-      10. Handle Theme & Page Structure Configuration - added in V1.2
-    11. Handle Theme Panel Expand - added in V1.2
-    12. Handle After Page Load Add Class Function - added in V1.2
-
-      <!-- ======== Added in V1.5 ======== -->
-      13. Handle Save Panel Position Function - added in V1.5
-    14. Handle Draggable Panel Local Storage Function - added in V1.5
-    15. Handle Reset Local Storage - added in V1.5
-
-      <!-- ======== Added in V1.6 ======== -->
-      16. Handle IE Full Height Page Compatibility - added in V1.6
-    17. Handle Unlimited Nav Tabs - added in V1.6
-
-      <!-- ======== Added in V1.9 ======== -->
-      18. Handle Top Menu - Unlimited Top Menu Render - added in V1.9
-    19. Handle Top Menu - Sub Menu Toggle - added in V1.9
-    20. Handle Top Menu - Mobile Sub Menu Toggle - added in V1.9
-    21. Handle Top Menu - Mobile Top Menu Toggle - added in V1.9
-    22. Handle Clear Sidebar Selection & Hide Mobile Menu - added in V1.9
-
-      <!-- ======== Added in V4.0 ======== -->
-      23. Handle Check Bootstrap Version - added in V4.0
-    24. Handle Page Scroll Class - added in V4.0
-    25. Handle Toggle Navbar Profile - added in V4.0
-    26. Handle Sidebar Scroll Memory - added in V4.0
-    27. Handle Sidebar Minify Sub Menu - added in V4.0
-    28. Handle Ajax Mode - added in V4.0
-    29. Handle Float Navbar Search - added in V4.0
-
-      <!-- ======== APPLICATION SETTING ======== -->
-      Application Controller
-  */
 
 
 

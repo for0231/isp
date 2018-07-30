@@ -34,7 +34,8 @@
       ]
       %}
       <li{{ item.attributes.addClass(item_classes) }}>
-        <a href="{{ item.url }}" title="{{ item.title }}">
+        {% if item.below %} <a href="javascript:;" title="{{ item.title }}"> {% else %}
+        <a href="{{ item.url }}" title="{{ item.title }}"> {% endif %}
           {% if item.below %}
             <b class="caret"></b>
           {% endif %}
