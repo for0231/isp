@@ -147,4 +147,7 @@ class RoleMenuBlock extends BlockBase implements ContainerFactoryPluginInterface
     return Cache::mergeContexts(parent::getCacheContexts(), $contexts);
   }
 
+  public function getCacheMaxAge() {
+    return 0;
+  }
 }

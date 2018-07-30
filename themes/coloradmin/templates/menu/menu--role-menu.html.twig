@@ -45,7 +45,7 @@
           <span>{{ item.title }}</span>
         </a>
         {% if item.below %}
-        <ul{{ item.attributes.addClass(item_classes).removeClass('has-sub').addClass('sub-menu') }}>
+        <ul{{ item.attributes.removeClass('has-sub').addClass('sub-menu') }}>
           {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
         </ul>
         {% endif %}
