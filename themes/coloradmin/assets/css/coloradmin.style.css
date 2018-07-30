@@ -15588,6 +15588,9 @@ img {
 .admin-list li a .label {
   color: #348ee3; }
 
+.admin-list span.label {
+  padding: 0; }
+
 .views-displays .label {
   color: #707478;
   font-size: 100%; }
@@ -15608,5 +15611,15 @@ img {
 
 details .details-wrapper {
   padding-left: 30px; }
+
+table.responsive-enabled td {
+  padding: 0px 2px; }
+
+.system-modules tr.even, .system-modules tr.odd, .locale-translation-status-form tr.even, .locale-translation-status-form tr.odd {
+  border-bottom: 3px solid #fff; }
+
+.system-modules tr td.module {
+  padding-left: 5px;
+  padding-top: 5px; }
 
 /*# sourceMappingURL=coloradmin.style.css.map */
