@@ -1271,7 +1271,7 @@
   var handleToggleNavProfile = function() {
     var expandTime = ($('.sidebar').attr('data-disable-slide-animation')) ? 0 : 250;
 
-    $('[data-toggle="nav-profile"]').click(function(e) {
+    $('[data-toggle="nav-profile"]').once().click(function(e) {
       e.preventDefault();
 
       var targetLi = $(this).closest('li');
