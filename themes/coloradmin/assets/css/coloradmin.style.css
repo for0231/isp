@@ -15582,6 +15582,23 @@ img {
 .panel-body {
   padding-top: 0px; }
 
+.page-sidebar-minified .sidebar .nav-profile {
+  display: block; }
+  .page-sidebar-minified .sidebar .nav-profile > .info {
+    display: none; }
+
+.page-sidebar-minified .sidebar {
+  display: block; }
+  .page-sidebar-minified .sidebar .info {
+    display: none; }
+  .page-sidebar-minified .sidebar .cover {
+    display: none; }
+  .page-sidebar-minified .sidebar .nav ul li:not(first) {
+    top: -5px;
+    display: none; }
+    .page-sidebar-minified .sidebar .nav ul li:not(first) ul li {
+      display: none; }
+
 .panel {
   padding: 0px; }
 
