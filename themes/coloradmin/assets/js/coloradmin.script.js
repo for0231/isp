@@ -1443,10 +1443,15 @@
       }
     }, function() {
       if ($('#page-container').hasClass('page-sidebar-minified')) {
-        floatSubMenuTimeout = setTimeout(function() {
-          $('#float-sub-menu').remove();
-          targetFloatMenu = '';
-        }, 250);
+        $('#float-sub-menu').hover(function () {
+
+        }, function () {
+          floatSubMenuTimeout = setTimeout(function() {
+            $('#float-sub-menu').remove();
+            targetFloatMenu = '';
+          }, 500);
+        });
+
       }
     });
   };
