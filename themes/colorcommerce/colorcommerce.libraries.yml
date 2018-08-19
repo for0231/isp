@@ -1,0 +1,12 @@
+base:
+  version: VERSION
+  css:
+    theme:
+      assets/css/colorcommerce.style.css: {}
+  js:
+    bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js: {}
+    assets/js/colorcommerce.script.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal
