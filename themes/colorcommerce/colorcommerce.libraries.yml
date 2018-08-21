@@ -2,11 +2,21 @@ base:
   version: VERSION
   css:
     theme:
-      assets/css/colorcommerce.style.css: {}
+      http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700: { type: external }
+      assets/plugins/bootstrap3/css/bootstrap.css: {}
+      assets/css/font-awesome.css: {}
+      assets/plugins/animate/animate.css: {}
+      assets/css/style.css: {}
   js:
-    bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js: {}
+    assets/plugins/pace/pace.js: {}
+    assets/plugins/bootstrap3/js/bootstrap.js: {}
+    assets/js/excanvas.min.js: {}
+    assets/js/respond.min.js: {}
+    assets/plugins/js-cookie/js.cookie.js: {}
     assets/js/colorcommerce.script.js: {}
   dependencies:
-    - core/jquery
-    - core/jquery.once
-    - core/drupal
+  - core/jquery
+  - core/jquery.once
+  - core/jquery.ui.sortable
+  - core/html5shiv
+  - core/drupal

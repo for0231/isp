@@ -3,12 +3,11 @@ description: A theme based on Radix.
 screenshot: screenshot.png
 engine: twig
 type: theme
-base theme: radix
+base theme: false
 
 regions:
-  navbar_branding: 'Navbar branding'
-  navbar_left:  'Navbar left'
-  navbar_right: 'Navbar right'
+  top_nav: 'Top nav'
+  header: Header
   content: Content
   footer: Footer
 
