@@ -2,9 +2,10 @@ base:
   version: VERSION
   css:
     theme:
+      assets/plugins/bootstrap/4.1.3/css/bootstrap.css: {}
       assets/css/colors.style.css: {}
   js:
-    bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js: {}
+    assets/plugins/bootstrap/4.1.3/js/bootstrap.js: {}
     assets/js/colors.script.js: {}
   dependencies:
     - core/jquery
