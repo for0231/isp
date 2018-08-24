@@ -7,6 +7,9 @@ use Drupal\Core\Block\BlockPluginInterface;
  * Theme and preprocess functions for blocks.
  */
 
+/**
+ * TODO To be polished.
+ */
 function colors_preprocess_links__language_block(&$variables) {
   $languageManager = \Drupal::service('language_manager');
   $class = '';
