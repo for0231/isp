@@ -85,6 +85,6 @@
 // Partials.
 // --------------------------------------------------
 @import "base/typography";
-//@import "layout/**/*";
+@import "layout/_page.scss";
 //@import "components/**/*";
 @import "components/user_login";
