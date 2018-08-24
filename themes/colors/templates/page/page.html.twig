@@ -1,404 +1,68 @@
-<div id="header" class="">
-  <div class="header-top header-wrapper-bg" meta-data-adjust-app="hide">
+{#
+/**
+ * @file
+ * Default theme implementation to display a single page.
+ *
+ * The doctype, html, head and body tags are not in this template. Instead they
+ * can be found in the html.html.twig template in this directory.
+ *
+ * Available variables:
+ *
+ * General utility variables:
+ * - base_path: The base URL path of the Drupal installation. Will usually be
+ *   "/" unless you have installed Drupal in a sub-directory.
+ * - is_front: A flag indicating if the current page is the front page.
+ * - logged_in: A flag indicating if the user is registered and signed in.
+ * - is_admin: A flag indicating if the user has permission to access
+ *   administration pages.
+ *
+ * Site identity:
+ * - front_page: The URL of the front page. Use this instead of base_path when
+ *   linking to the front page. This includes the language domain or prefix.
+ *
+ * Page content (in order of occurrence in the default page.html.twig):
+ * - messages: Status and error messages. Should be displayed prominently.
+ * - node: Fully loaded node, if there is an automatically-loaded node
+ *   associated with the page and the node ID is the second argument in the
+ *   page's path (e.g. node/12345 and node/12345/revisions, but not
+ *   comment/reply/12345).
+ *
+ * Regions:
+ * - page.header: Items for the header region.
+ *
+ * @see template_preprocess_page()
+ * @see html.html.twig
+ *
+ * @ingroup themeable
+ */
+#}
 
-    <div class="header-main" style="min-height:30px;">
-      <div class="header-menu">
-        <i class="header-icon header-icon-menu"></i>
-      </div>
-      <div class="header-menu-mb">
-        <i class="header-icon header-icon-menu"></i>
-      </div>
-      <a class="header-logo" mate_data_ts="www_v3_top_navigation.click.logo_20170820" href="//www.huaweicloud.com"></a>
-      <div class="header-nav" style="z-index: 999 !important;">
-        <ul class="header-nav-list">
-
-          <li data-key="activity" class="header-nav-hot">
-            <a mate_data_ts="www_v3_top_navigation.click.activity_20170820" href="https://activity.huaweicloud.com/promotion/" target="_blank">最新活动</a>
-          </li>
-
-          <li data-key="product" class="">
-            <a mate_data_ts="www_v3_top_navigation.click.product_20170820" href="https://www.huaweicloud.com/product/" target="_blank">产品</a>
-          </li>
-
-          <li data-key="solution" class="">
-            <a mate_data_ts="www_v3_top_navigation.click.solution_20170821" href="https://www.huaweicloud.com/solution/" target="_blank">解决方案</a>
-          </li>
-
-          <li data-key="price" class="header-nav-hot">
-            <a mate_data_ts="www_v3_top_navigation.click.price_20170820" href="https://www.huaweicloud.com/product/price.html" target="_blank">定价</a>
-          </li>
-
-          <li data-key="ei" class="header-nav-hot">
-            <a mate_data_ts="www_v3_top_navigation.click.ei_20170820" href="https://www.huaweicloud.com/ei/" target="_blank">EI 企业智能</a>
-          </li>
-
-          <li data-key="market" class="header-nav-hot">
-            <a mate_data_ts="www_v3_top_navigation.click.app_20170820" href="https://app.huaweicloud.com/?locale=zh-cn" target="_blank">云市场</a>
-          </li>
-
-          <li data-key="community" class="">
-            <a mate_data_ts="www_v3_top_navigation.click.community_20170820" href="https://bbs.huaweicloud.com/" target="_blank">云社区</a>
-          </li>
-
-          <li data-key="ecology" class="active">
-            <a mate_data_ts="www_v3_top_navigation.click.partners_20170820" href="https://www.huaweicloud.com/partners/" target="_blank">合作伙伴</a>
-          </li>
-
-          <li data-key="support" class="header-nav-hot">
-            <a mate_data_ts="www_v3_top_viceNavigation.click.support_20170820" href="https://support.huaweicloud.com/" target="_blank">支持与服务</a>
-          </li>
-
-
-
-
-
-
-          <li class="header-nav-item-more header-nav-item-hide" data-key="more">
-            <a href="javascript:">更多</a>
-          </li>
-        </ul>
-        <div class="header-nav-hover-line" style="width: 0px; left: 626.90625px;"></div>
-      </div>
-
-      <div class="header-tools" pep-nocheck-matedata="">
-        <ul class="header-tools-list">
-          <li class="header-search-switch"><i class="header-icon header-icon-search"></i></li>
-          <li class="header-lang">
-            <div class="header-lang-current"><i class="header-icon header-icon-lang-zh"></i><span class="header-lang-label">中国站</span></div>
-            <ul class="header-lang-list">
-              <li class="header-lang-item active"><a>中国站 - 简体中文</a></li>
-              <li class="header-lang-item"><a href="javascript:changeLang('en-us');" mate_data_ts="www_v3_top_navigation.click.English_20170820">中国站 - English</a></li>
-              <li class="header-lang-item"><a href="//intl.huaweicloud.com/zh-cn/?locale=zh-cn" mate_data_ts="www_v3_top_navigation.click.intl_Chinese_20170820">International - 简体中文</a></li>
-              <li class="header-lang-item"><a href="//intl.huaweicloud.com/?locale=en-us" mate_data_ts="www_v3_top_navigation.click.intl_English_20170820">International - English</a></li>
-            </ul>
-          </li>
-          <li><a mate_data_ts="www_v3_top_navigation.click.console_20170820" href="//console.huaweicloud.com?locale=zh-cn">控制台</a></li>
-          <li><a mate_data_ts="www_v3_top_navigation.click.beian_20170820" href="//support.huaweicloud.com/beian_index.html">备案</a></li>
-          <li class="header-login-mobile">
-            <a data-login-href="//auth.huaweicloud.com/authui/login?locale=zh-cn&amp;service=" href="//auth.huaweicloud.com/authui/login?locale=zh-cn&amp;service=https%3A%2F%2Fwww.huaweicloud.com%2F" mate_data_ts="www_v2_top_navigation.click.login">
-              <span class="header-icon header-icon-user js-login"></span>
-            </a>
-          </li>
-          <li class="header-login"><a data-login-href="//auth.huaweicloud.com/authui/login?locale=zh-cn&amp;service=" href="//auth.huaweicloud.com/authui/login?locale=zh-cn&amp;service=https%3A%2F%2Fwww.huaweicloud.com%2F" mate_data_ts="www_v2_top_navigation.click.login" class="btn js-login">登录</a></li>
-          <li class="header-register"><a href="//reg.huaweicloud.com/registerui/public/custom/register.html?locale=zh-cn#/register" mate_data_ts="www_v2_top_navigation.click.register" class="btn js-register">注册</a></li>
-          <li class="header-user user-info msg">
-            <div class="header-user-avator">
-              <img class="header-tool-user-avator-img account-pic" src="http://static.huaweicloud.com/static/v2_resources/images/global/headPic.png?sttl=20180413&amp;sttl=20185176">
-            </div>
-            <div class="header-user-name"><span class="my-acct"> </span><i class="header-icon-corner-down"></i></div>
-            <div class="header-user-info user-info-layer">
-              <ul class="header-user-info-list account-nav">
-                <li class="header-user-info-item-account account-item">
-                  <a href="//account.huaweicloud.com/usercenter/#/userindex/accountInfo" mate_data_ts="www_v2_top_navigation.click.账号中心">账号中心</a>
-                  <a class="account-verification header-verification active" href="//account.huaweicloud.com/usercenter/#/userindex/realNameAuth">
-                    <i class="header-icon header-icon-verification"></i>
-                    <p class="state-unactive">未实名认证</p>
-                    <p class="state-active">已实名认证</p>
-                  </a>
-                </li>
-                <li><a href="//account.huaweicloud.com/usercenter/?locale=zh-cn#/userindex/allview" mate_data_ts="www_v2_top_navigation.click.费用中心">费用中心</a></li>
-                <li><a href="//console.huaweicloud.com/ticket/?locale=zh-cn#/ticketindex/serviceTickets" mate_data_ts="www_v2_top_navigation.click.工单管理">工单管理</a></li>
-                <li class="message"><a href="//console.huaweicloud.com/mc/" mate_data_ts="www_v2_top_navigation.click.未读消息">未读消息<span>0</span></a></li>
-                <li class="header-user-info-split"></li>
-                <li class="isVendor" style="display:none;"><a href="//account.huaweicloud.com/obmgr/#/obmgr/index" mate_data_ts="www_v2_top_navigation.click.账号中伙伴中心心">伙伴中心</a></li>
-                <li class="isIsv" style="display:none;"><a href="//console.huaweicloud.com/marketplace/isv/#/console/business" mate_data_ts="www_v2_top_navigation.click.卖家中心">卖家中心</a></li>
-                <li class="header-user-info-split isVendor isIsv" style="display:none;"></li>
-                <li class="logout"><a mate_data_ts="www_v2_top_navigation.click.logout" href="//portal.huaweicloud.com/index/logout">退出</a></li>
-              </ul>
-            </div>
-          </li>
-        </ul>
-      </div>
+<div id="header">
+  <div class="header-top" meta-data-adjust-app="show">
+    <div class="header-main">
+      {{ page.header }}
+      {% if page.header_right %}
+        {{ page.header_right }}
+      {% endif %}
     </div>
-
   </div>
-
-  <!-- search block content start-->
-  <div>
-    <!-- 搜索 -->
-    <div class="header-search header-search-pc" meta-data-adjust-app="hide">
-      <div class="search-mask"></div>
-      <div class="search-content">
-        <div class="head-search-panel">
-          <div class="search-bar">
-            <a class="search-btn" target="_blank" data-href="//www.huaweicloud.com/s/" href="//www.huaweicloud.com/s/" mate_data_ts="www_v3_top_navigation.click.search_20170820">搜索</a>
-            <div class="search-input-box">
-              <input type="text" class="search-input" maxlength="80">
-              <div class="search-clear-btn"></div>
-            </div>
-            <ul class="search-suggestion">
-            </ul>
-          </div>
-          <div class="search-recommend">
-            <a target="_blank" mate_data_ts="www_v3_top_navigation.click.search_弹性云服务器_20171201" href="https://www.huaweicloud.com/s/JeW8ueaAp-S6keacjeWKoeWZqCU">弹性云服务器</a>
-            <a target="_blank" mate_data_ts="www_v3_top_navigation.click.search_对象存储服务_20171201" href="https://www.huaweicloud.com/s/JeWvueixoeWCqOWtmOacjeWKoeWZqCU/t_">对象存储服务</a>
-            <a target="_blank" mate_data_ts="www_v3_top_navigation.click.search_云硬盘_20171201" href="https://www.huaweicloud.com/s/JeS6keehrOebmCU">云硬盘</a>
-            <a target="_blank" mate_data_ts="www_v3_top_navigation.click.search_云桌面_20171201" href="https://www.huaweicloud.com/s/JeS6keahjOmdoiU/t_">云桌面</a>
-            <a target="_blank" mate_data_ts="www_v3_top_navigation.click.search_VPN_20171201" href="https://www.huaweicloud.com/s/JVZQTiU">VPN</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-  <!-- search block content end-->
 </div>
 
 <div id="content">
-  <div class="wrapper">
-    {{ page.content }}
-  </div>
+{{ page.content }}
 </div>
 
-
-<div class="footer-service" meta-data-adjust-app="hide">
-  <div class="footer-wrapper footer-service-wrapper">
-    <ul>
-      <li>
-        <a href="https://www.huaweicloud.com/about/protection.html#service-support-01" mate_data_ts="www_v3_cn_service.click.7*24_20170820" target="_blank">
-          <i class="footer-icon-support"></i>
-          <h2>7*24</h2>
-          <p>多渠道服务支持</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.huaweicloud.com/about/protection.html#service-support-02" mate_data_ts="www_v3_cn_service.click.5day_20170820" target="_blank">
-          <i class="footer-icon-unsub"></i>
-          <h2>5天</h2>
-          <p>内无理由退订</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.huaweicloud.com/about/protection.html#service-support-03" mate_data_ts="www_v3_cn_service.click.record_20170820" target="_blank">
-          <i class="footer-icon-record"></i>
-          <h2>0元</h2>
-          <p>免费备案</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.huaweicloud.com/about/protection.html#service-support-04" mate_data_ts="www_v3_cn_service.click.peichang_20170820" target="_blank">
-          <i class="footer-icon-pay"></i>
-          <h2>赔偿</h2>
-          <p>100倍故障赔偿</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.huaweicloud.com/about/protection.html#service-support-05" mate_data_ts="www_v3_cn_service.click.feedBack_20170820" target="_blank">
-          <i class="footer-icon-feedback"></i>
-          <h2>意见</h2>
-          <p>反馈与投诉建议</p>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.huaweicloud.com/about/protection.html#service-support-06" mate_data_ts="www_v3_cn_service.click.vip_20170820" target="_blank">
-          <i class="footer-icon-vip"></i>
-          <h2>VIP</h2>
-          <p>专享服务</p>
-        </a>
-      </li>
-    </ul>
-  </div>
-</div>
-
-
+{% if page.prefooter %}
+  {{ page.prefooter }}
+{% endif %}
 
 <div id="footercontainer">
-
-  <div class="float-sidebar last show-totop">
-
-
-
-    <div class="span shown-btn">
-      <span class="dot"></span>
-    </div>
-    <ul class="float-bar-nav">
-      <li class="item tel"><span class="icons-float-bar f1"></span>
-        <p>
-          咨询<br> 反馈
-        </p>
-        <div class="sub-nav-layer">
-          <div class="sub-nav-main">
-            <div class="sub-inner inner">
-              <a> <span class="icons-float-bar f3"></span>
-                <p class="title">售前咨询</p>
-              </a> <a class="info" href="tel:4000-955-988">4000-955-988 转 1</a>
-            </div>
-            <div class="sub-inner">
-              <a mate_data_ts="#domain_pre#_v2_right_float_panel.click.minions" class="smartQA" href="https://portal.huaweicloud.com/minions" target="_blank"> <span class="icons-float-bar f2"></span>
-                <p class="title">智能客服</p>
-              </a>
-            </div>
-            <div class="sub-inner">
-              <a mate_data_ts="_v2_right_float_panel.click.customer_service" href="https://tb.53kf.com/code/client/9007862/2" target="_blank">
-                <span class="icons-float-bar f4"></span>
-                <p class="title">人工客服</p>
-              </a>
-            </div>
-            <div class="sub-inner">
-              <a mate_data_ts="www_v2_right_float_panel.click.feedback" href="https://portal.huaweicloud.com/feedback" target="_blank">
-                <span class="icons-float-bar f5"></span>
-                <p class="title">意见反馈</p>
-              </a>
-            </div>
-          </div>
-        </div></li>
-      <li class="item to-top-btn"><a href="#toTop"><span class="icons-float-bar to-top"></span></a></li>
-    </ul>
-  </div>
-
-  <!-- 复用activity-float组件的继承特性 -->
-
-
+  {% if page.footersidebar %}
+    {{ page.footersidebar }}
+  {% endif %}
+  {% if page.footer %}
   <div id="footer">
-    <div class="footer-nav" meta-data-adjust-app="hide">
-      <div class="footer-wrapper">
-        <div class="footer-nav-menus">
-          <dl>
-            <dt>产品与支持</dt>
-            <dd><a class="footer-link" href="//www.huaweicloud.com/product/" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.产品_20180807">产品</a></dd>
-            <dd><a class="footer-link" href="//www.huaweicloud.com/solution/" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.解决方案_20180807">解决方案</a></dd>
-            <dd><a class="footer-link" href="//app.huaweicloud.com" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.云市场_20180807">云市场</a></dd>
-            <dd><a class="footer-link" href="//developer.huaweicloud.com" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.开发者中心_20180807">开发者中心</a></dd>
-            <dd><a class="footer-link" href="//portal.huaweicloud.com/consultation" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.服务咨询_20180807">服务咨询</a></dd>
-            <dd><a class="footer-link" href="//support.huaweicloud.com" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.帮助中心_20180807">帮助中心</a></dd>
-            <dd><a class="footer-link" href="//portal.huaweicloud.com/feedback" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.意见反馈_20180807">意见反馈</a></dd>
-            <dd><a class="footer-link" href="//www.huaweicloud.com/about/contact.html" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.联系我们_20180807">联系我们</a></dd>
-            <dd><a class="footer-link" href="//www.huaweicloud.com/about/VIP_client.html" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.支持与服务计划_20180807">支持与服务计划</a></dd>
-          </dl>
-          <dl>
-            <dt>账号与支付</dt>
-            <dd><a class="footer-link" href="//account.huaweicloud.com/usercenter/#/userindex/balanceRecharge" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.充值/付款_20180807">充值/付款</a></dd>
-            <dd><a class="footer-link" href="//account.huaweicloud.com/usercenter/?locale=zh-cn&amp;agencyId=1ed3f1041585452bb4770842b2d1dbb8&amp;region=cn-north-1#/userindex/contractApply" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.合同申请_20180807">合同申请</a></dd>
-            <dd><a class="footer-link" href="//account.huaweicloud.com/usercenter/#/userindex/balanceRecharge" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.线下汇款/电汇_20180807">线下汇款/电汇</a></dd>
-            <dd><a class="footer-link" href="//account.huaweicloud.com/usercenter/#/userindex/invoiceCenter" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.索取发票_20180807">索取发票</a></dd>
-          </dl>
-          <dl>
-            <dt>快速链接</dt>
-            <dd><a class="footer-link" href="//portal.huaweicloud.com/pricing" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.价格计算器_20180807">价格计算器</a></dd>
-            <dd><a class="footer-link" href="https://console.huaweicloud.com/console/?region=cn-east-2&amp;locale=zh-cn#/home" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.管理控制台_20180807">管理控制台</a></dd>
-            <dd><a class="footer-link" href="//support.huaweicloud.com/beian_index.html" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.备案中心_20180807">备案中心</a></dd>
-            <dd><a class="footer-link" href="//account.huaweicloud.com/usercenter/?locale=zh-cn#/userindex/allview" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.费用中心_20180807">费用中心</a></dd>
-            <dd><a class="footer-link" href="//account.huaweicloud.com/usercenter/?agencyId=ef87414dfee34e5e84679275504170a9&amp;region=cn-east-2&amp;locale=zh-cn#/accountindex/accountInfo" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.用户中心_20180807">用户中心</a></dd>
-            <dd><a class="footer-link" href="//developer.huaweicloud.com/dsource/" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.华为云图标库_20180807">华为云图标库</a></dd>
-            <dd><a class="footer-link" href="//developer.huaweicloud.com/axurelib/" target="_blank" mate_data_ts="www_v3_bottom_footer.click.华为云Axure组件库" mate_ts_data="www_china_zh-cn_v5_footer.click.华为云Axure组件库_20180807">华为云Axure组件库</a></dd>
-          </dl>
-          <dl>
-            <dt>关于华为云</dt>
-            <dd><a class="footer-link" href="//www.huaweicloud.com/about/index.html" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.了解华为云_20180807">了解华为云</a></dd>
-            <dd><a class="footer-link" href="//www.huaweicloud.com/about/about_us.html" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.华为云简介_20180807">华为云简介</a></dd>
-            <dd><a class="footer-link" href="//www.huaweicloud.com/cases/cases_1.html" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.客户案例_20180807">客户案例</a></dd>
-            <dd class="split-line"></dd>
-            <dt>信任中心</dt>
-            <dd><a class="footer-link" href="//www.huaweicloud.com/securecenter/overallsafety.html" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.华为云安全_20180807">华为云安全</a></dd>
-            <dd><a class="footer-link" href="//www.huaweicloud.com/securecenter/safetycompliance.html" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.安全合规_20180807">安全合规</a></dd>
-          </dl>
-
-          <div class="footer-nav-other-link">
-            <span>其他链接</span>
-            <a class="footer-link" href="//www.huawei.com/cn/?ic_medium=direct&amp;ic_source=surlent" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.华为官网_20180807">华为官网</a>
-            <a class="footer-link" href="//developer.huawei.com/ict/cn" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.华为开发者中心_20180807">华为开发者中心</a>
-            <a class="footer-link" href="//developer.huawei.com/cn/consumer" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.华为开发者联盟_20180807">华为开发者联盟</a>
-            <a class="footer-link" href="//e.huawei.com/cn/" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.华为企业业务_20180807">华为企业业务</a>
-            <a class="footer-link" href="//www.vmall.com/#cid=92120" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.华为商城_20180807">华为商城</a>
-            <a class="footer-link" href="//career.huawei.com/reccampportal/#campus4/content.html" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.华为招聘_20180807">华为招聘</a>
-          </div>
-        </div>
-        <div class="footer-nav-submenus">
-          <div class="footer-nav-submenus-inner">
-            <div class="footer-nav-contact">
-              <div class="footer-nav-contact-phone">
-                <h1>上云服务热线</h1>
-                <p>4000 955 988</p>
-                <ul>
-                  <li><a href="mailto:huaweicloud.ss@huawei.com" mate_ts_data="www_china_zh-cn_v5_footer.click.售前咨询1_20180807">售前咨询</a>
-                    <div class="foot-email">
-                      <p>
-                        <a href="mailto:huaweicloud.ss@huawei.com" mate_ts_data="www_china_zh-cn_v5_footer.click.售前咨询2_20180807">huaweicloud.ss@huawei.com</a>
-                      </p>
-                    </div>
-                  </li>
-                  <li>
-                    <a href="mailto:huaweicloud.ba@huawei.com" mate_ts_data="www_china_zh-cn_v5_footer.click.备案服务1_20180807">备案服务</a>
-                    <div class="foot-email foot-email-right">
-                      <p>
-                        <a href="mailto:huaweicloud.ba@huawei.com" mate_ts_data="www_china_zh-cn_v5_footer.click.备案服务2_20180807">huaweicloud.ba@huawei.com</a>
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-                <ul>
-                  <li>
-                    <a href="mailto:huaweicloud.mp@huawei.com" mate_ts_data="www_china_zh-cn_v5_footer.click.云市场咨询1_20180807">云市场咨询</a>
-                    <div class="foot-email">
-                      <p>
-                        <a href="mailto:huaweicloud.mp@huawei.com" mate_ts_data="www_china_zh-cn_v5_footer.click.云市场咨询1_20180807">huaweicloud.mp@huawei.com</a>
-                      </p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <dl class="footer-nav-about">
-              <dt>关注华为云</dt>
-              <dd class="show">
-                <i class="footer-icon-wechat"></i>
-                <a class="footer-nav-submenus-link weixin-sh">华为云微信</a>
-                <a class="footer-nav-submenus-qr qr-wechat"></a>
-              </dd>
-              <dd class="footer-nav-about-dd-mb">
-                <i class="footer-icon-phone"></i>
-                <a class="footer-nav-submenus-link footer-nav-submenus-link-phone" href="tel:4000955988" mate_ts_data="www_china_zh-cn_v5_footer.click.4000 955 988_20180807">4000 955 988</a>
-              </dd>
-              <dd>
-                <i class="footer-icon-weibo"></i>
-                <a class="footer-nav-submenus-link" href="//weibo.com/p/1006061930559805" mate_ts_data="www_china_zh-cn_v5_footer.click.华为云微博_20180807">华为云微博</a>
-                <a class="footer-nav-submenus-qr qr-weibo" href="//weibo.com/p/1006061930559805" mate_ts_data="www_china_zh-cn_v5_footer.click._20180807"></a>
-              </dd>
-              <dd class="show">
-                <i class="footer-icon-zhihu"></i>
-                <a class="footer-nav-submenus-link" href="//www.zhihu.com/org/hua-wei-yun-ji-zhu-zhai-ji-di/activities" mate_ts_data="www_china_zh-cn_v5_footer.click.知乎社区号_20180807">知乎社区号</a>
-                <a class="footer-nav-submenus-qr qr-zhihu" href="//www.zhihu.com/org/hua-wei-yun-ji-zhu-zhai-ji-di/activities" mate_ts_data="www_china_zh-cn_v5_footer.click._20180807"></a>
-              </dd>
-            </dl>
-            <ul class="footer-law-mb">
-              <li><a href="//www.huawei.com/cn/" target="_blank" mate_ts_data="www_china_zh-cn_v5_footer.click.华为官网_mb_20180807">华为官网</a></li>
-              <li><a href="//m.vmall.com/app/download" target="_blank" mate_ts_data="www_china_zh-cn_v5_footer.click.华为商城_mb_20180807">华为商城</a></li>
-              <li><a href="//www.huaweicloud.com/declaration/statement.html" target="_blank" mate_ts_data="www_china_zh-cn_v5_footer.click.法律声明_mb_20180807">法律声明</a></li>
-              <li><a href="//www.huaweicloud.com/declaration/sa_prp.html" target="_blank" mate_ts_data="www_china_zh-cn_v5_footer.click.隐私政策_mb_20180807">隐私政策</a></li>
-            </ul>
-            <div class="wx-pop-wrapper">
-              <div class="wx-pop">
-                <img class="dbl-lazy loaded" src="//static.huaweicloud.com/static/v2_resources/images/global/footer/weixin-mobile.png">
-                <p class="wx-info">长按/截图保存，微信识别二维码<br>或者关注公众号“华为云”</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="footer-copyright-container" meta-data-adjust-app="hide">
-      <div class="footer-wrapper footer-copyright-wrapper">
-        <ul class="footer-law">
-          <li><a class="footer-link" href="//www.huaweicloud.com/declaration/statement.html" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.法律声明_20180807">法律声明</a></li>
-          <li><a class="footer-link" href="//www.huaweicloud.com/declaration/sa_prp.html" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.隐私政策声明_20180807">隐私政策声明</a></li>
-          <li><a class="footer-link" href="//www.huaweicloud.com/declaration/sa_nisr.html" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.可接受的使用政策_20180807">可接受的使用政策</a></li>
-          <li><a class="footer-link" href="//www.huaweicloud.com/declaration/sa_cua.html" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.华为云用户协议_20180807">华为云用户协议</a></li>
-          <li><a class="footer-link" href="//portal.huaweicloud.com/feedback?type=jubao" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.举报不良信息_20180807">举报不良信息</a></li>
-        </ul>
-        <div class="footer-copyright">
-          <span>版权所有 © 华为软件技术有限公司 2018</span>
-          <span>保留一切权利</span>
-          <a class="footer-link" href="//www.miitbeian.gov.cn" target="_blank" rel="nofollow" mate_ts_data="www_china_zh-cn_v5_footer.click.苏ICP备17040376号-5_20180807">苏ICP备17040376号-5</a>
-          <span>苏B2-20130048号</span>
-        </div>
-        <div class="footer-record">
-          <i class="footer-icon-record1"></i>
-          <i class="footer-icon-record2"><a href="//www.beian.gov.cn/portal/registerSystemInfo?recordcode=32011402010008" target="_blank" mate_ts_data="www_china_zh-cn_v5_footer.click.网站备案_20180807"></a></i>
-          <span>苏公网安备 32011402010008号</span>
-        </div>
-      </div>
-    </div>
+    {{ page.footer }}
   </div>
-
-
+  {% endif %}
 </div>

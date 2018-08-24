@@ -1,0 +1,85 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a set of links.
+ *
+ * Available variables:
+ * - attributes: Attributes for the UL containing the list of links.
+ * - links: Links to be output.
+ *   Each link will have the following elements:
+ *   - title: The link text.
+ *   - url: The link URL. If omitted, the 'title' is shown as a plain text
+ *     item in the links list. If 'url' is supplied, the entire link is passed
+ *     to l() as its $options parameter.
+ *   - attributes: (optional) HTML attributes for the anchor, or for the <span>
+ *     tag if no 'url' is supplied.
+ * - heading: (optional) A heading to precede the links.
+ *   - text: The heading text.
+ *   - level: The heading level (e.g. 'h2', 'h3').
+ *   - attributes: (optional) A keyed list of attributes for the heading.
+ *   If the heading is a string, it will be used as the text of the heading and
+ *   the level will default to 'h2'.
+ *
+ *   Headings should be used on navigation menus and any list of links that
+ *   consistently appears on multiple pages. To make the heading invisible use
+ *   the 'visually-hidden' CSS class. Do not use 'display:none', which
+ *   removes it from screen readers and assistive technology. Headings allow
+ *   screen reader and keyboard only users to navigate to or skip the links.
+ *   See http://juicystudio.com/article/screen-readers-display-none.php and
+ *   http://www.w3.org/TR/WCAG-TECHS/H42.html for more information.
+ *
+ * @see template_preprocess_links()
+ *
+ * @ingroup themeable
+ */
+#}
+{#{% if links -%}#}
+  {#{%- if heading -%}#}
+    {#{%- if heading.level -%}#}
+      {#<{{ heading.level }}{{ heading.attributes }}>{{ heading.text }}</{{ heading.level }}>#}
+    {#{%- else -%}#}
+      {#<h2{{ heading.attributes }}>{{ heading.text }}</h2>#}
+    {#{%- endif -%}#}
+  {#{%- endif -%}#}
+  {#<ul{{ attributes }}>#}
+    {#{%- for item in links -%}#}
+      {#<li{{ item.attributes }}>#}
+        {#{%- if item.link -%}#}
+          {#{{ item.link }}#}
+        {#{%- elseif item.text_attributes -%}#}
+          {#<span{{ item.text_attributes }}>{{ item.text }}</span>#}
+        {#{%- else -%}#}
+          {#{{ item.text }}#}
+        {#{%- endif -%}#}
+      {#</li>#}
+    {#{%- endfor -%}#}
+  {#</ul>#}
+{#{%- endif %}#}
+<li class="header-lang">
+  <div class="header-lang-current"><i class="header-icon {{ current_language.class }}"></i><span class="header-lang-label">{{ current_language.name }}</span></div>
+  {#<ul class="header-lang-list">#}
+    {#<li class="header-lang-item active"><a>中国站 - 简体中文</a></li>#}
+    {#<li class="header-lang-item"><a href="javascript:changeLang('en-us');" mate_data_ts="www_v3_top_navigation.click.English_20170820">中国站 - English</a></li>#}
+    {#<li class="header-lang-item"><a href="//intl.huaweicloud.com/zh-cn/?locale=zh-cn" mate_data_ts="www_v3_top_navigation.click.intl_Chinese_20170820">International - 简体中文</a></li>#}
+    {#<li class="header-lang-item"><a href="//intl.huaweicloud.com/?locale=en-us" mate_data_ts="www_v3_top_navigation.click.intl_English_20170820">International - English</a></li>#}
+  {#</ul>#}
+  <ul {{ attributes.addClass("header-lang-list") }}>
+    {% for item in links %}
+      <li {{ item.attributes.addClass("header-lang-item") }}>
+        {{ item.link }}
+      </li>
+    {% endfor %}
+  </ul>
+</li>
+{% if logged_in != true %}
+  <li class="header-login">
+    <a data-login-href="{{ path("user.login") }}" href="{{ path("user.login") }}"  class="btn js-login">
+      {% trans %}LOGIN{% endtrans %}
+    </a>
+  </li>
+  <li class="header-register">
+    <a href="{{ path("user.register") }}" class="btn js-register">
+      {% trans %}REGISTER{% endtrans %}
+    </a>
+  </li>
+{% endif %}

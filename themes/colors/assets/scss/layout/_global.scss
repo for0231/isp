@@ -974,7 +974,7 @@ a.link.more:hover:after {
 #header .logo {
     float: left;
     height: 46px;
-    background: url(../images/global/logo.png) no-repeat center;
+    //background: url(../images/global/logo.png) no-repeat center;
     width: 93px;
 }
 #header .head-tools {
@@ -6018,7 +6018,7 @@ padding-left:0px;
   float: left;
   width: 104px;
   height: 100%;
-  background: url(../images/global/header/logo.png) no-repeat center;
+  //background: url(../images/global/header/logo.png) no-repeat center;
   background-size: 100% auto;
 }
 
@@ -6038,7 +6038,7 @@ padding-left:0px;
   }
 
   .header-logo {
-    background-image: url(../images/global/header/logo-mb.png?sttl=0817008);
+    //background-image: url(../images/global/header/logo-mb.png?sttl=0817008);
   }
 }
 /* endregion header 菜单按钮及logo */
@@ -8078,4 +8078,12 @@ a.header-nav-product > .header-icon-arrow-right{
     right: 0;
     top: 50%;
     margin-top: -4px;
+}
+
+.header-main {
+  min-height: 30px;
+}
+.header-logo img {
+  margin-top: 20px;
+  padding-left: 5px;
 }

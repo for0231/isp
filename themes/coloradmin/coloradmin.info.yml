@@ -5,6 +5,8 @@ package: ISP
 core: 8.x
 libraries:
   - coloradmin/base
+dependencies:
+  - superfish
  
 base theme: seven
 
