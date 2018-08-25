@@ -24,7 +24,7 @@
   </div>
   <div class="header-logo" >
     {% if site_logo %}
-      <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
+      <a href="{{ path('<front>') }}" title="{{ site_name }}" rel="{{ site_name }}">
         <img src="{{ site_logo }}" alt="
       {{ site_name }}
       {% if site_slogan %}
