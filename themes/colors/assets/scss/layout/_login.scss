@@ -33,7 +33,7 @@
 
 #loginAdv {
   float: left;
-  max-width: 800px;
+  max-width: 780px;
   max-height: 515px;
   margin-top: 70px
 }
@@ -42,7 +42,7 @@
   width: 380px;
   display: inline-block;
   float: right;
-  margin-top: 100px;
+  margin-top: 50px;
   background-color: #fff;
   color: #C1C1C1;
   font-size: 14px;
@@ -880,3 +880,69 @@ input[type=password] {
     display: none
   }
 }
+
+.inputFieldBorder {
+  width: 320px;
+  height: 48px;
+}
+
+.loginBtn.loginBtnBg {
+  line-height: 40px;
+}
+
+.loginPageBg {
+  background-image: url(https://auth.huaweicloud.com/authui/public/custom/images/fc12b6a.loginbackground_hc.jpg); background-size: cover;
+}
+
+
+// for register form page.
+#codeSelectId.ti-combobox-container{
+  height:48px !important;
+  width: 133px !important;
+  line-height: 48px;
+}
+.phoneInput #phoneId{
+  margin-left: 2px;
+  width: 243px !important;
+}
+.input-area{
+  width:380px;
+  height: 48px !important;
+}
+.phone-area{
+  width: 274px;
+  height: 48px !important;
+}
+.ti-combobox-text{
+  padding: 0 0 0 5px;
+  vertical-align: top;
+}
+.msgcode-area{
+  width:204px;
+  height: 48px !important;
+}
+.ti-msg-icon{
+  color: #ff4c4c;
+}
+
+.messageClass{
+  width: 500px;
+  margin-top: 200px;
+}
+.ti-msg-content-wrapper{
+  height: 80px;
+  width: 330px;
+}
+.ti-modal-body{
+  margin-left: 76px;
+}
+.ti-icon{
+  margin-left: 2px;
+}
+.ti-combobox-dropdown-btn:before{
+  height:0;
+}
+.ti-checkbox{
+  margin-top: -3px;
+}
+/////// ============ End register form style.

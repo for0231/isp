@@ -1,5 +1,38 @@
 <?php
+
+use Drupal\Core\Form\FormStateInterface;
+
 /**
  * @file
  * Theme and preprocess functions for forms
  */
+
+/**
+ * Implements hook_form_FORM_ID_alter() for \Drupal\user\UserLoginForm.
+ */
+function colors_form_user_login_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['#theme'] = 'color_user_login_form';
+  $form['name']['#attributes'] = [
+    'class' => ['inputFieldBorder', 'tiny-input-text'],
+    'placeholder' => t('Account/Email'),
+  ];
+  $form['pass']['#attributes'] = [
+    'class' => ['inputFieldBorder', 'tiny-input-text'],
+    'placeholder' => t('Password'),
+  ];
+  $form['actions']['submit']['#attributes'] = [
+    'class' => ['loginBtn', 'loginBtnBg'],
+  ];
+  unset($form['name']['#title']);
+  unset($form['name']['#description']);
+  unset($form['pass']['#title']);
+  unset($form['pass']['#description']);
+
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter() for \Drupal\user\RegisterForm.
+ */
+function colors_form_user_register_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['#theme'] = 'color_user_register_form';
+}
