@@ -11237,6 +11237,15 @@ input[type=password] {
 .ti-checkbox {
   margin-top: -3px; }
 
+.loginBtn {
+  background-color: #F66F6A;
+  border: 1px solid #F66F6A;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px !important;
+  cursor: default;
+  width: 100%; }
+
 .carousel-item {
   height: 100vh;
   min-height: 350px;
@@ -25899,7 +25908,11 @@ input[type=password] {
   .user-register-form .content {
     width: 400px; }
   .user-register-form #container {
-    height: 400px; }
+    height: 500px; }
+  .user-register-form .form-item-pass-pass1 > label {
+    display: none; }
+  .user-register-form .form-item-pass-pass2 > label {
+    display: none; }
 
 .user-register-form .next-btn-primary.active, .user-register-form .next-btn-primary.hover, .user-register-form .next-btn-primary:active, .user-register-form .next-btn-primary:focus, .user-register-form .next-btn-primary:hover {
   color: #fff;
@@ -25911,3 +25924,6 @@ input[type=password] {
   border-style: solid;
   background-color: #F91F6A;
   border-color: transparent; }
+
+.user-register-form .head {
+  margin-bottom: 40px; }

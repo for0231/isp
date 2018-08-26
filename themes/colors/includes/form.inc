@@ -27,6 +27,10 @@ function colors_form_user_login_form_alter(&$form, FormStateInterface $form_stat
   unset($form['name']['#description']);
   unset($form['pass']['#title']);
   unset($form['pass']['#description']);
+  unset($form['actions']['submit']['#attributes']['class']);
+  $form['actions']['submit']['#attributes'] = [
+    'class' => ['next-btn', 'next-btn-primary', 'next-btn-large'],
+  ];
 
 }
 
@@ -35,4 +39,14 @@ function colors_form_user_login_form_alter(&$form, FormStateInterface $form_stat
  */
 function colors_form_user_register_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $form['#theme'] = 'color_user_register_form';
+  unset($form['account']['mail']['#title']);
+  unset($form['account']['mail']['#description']);
+  $form['account']['mail']['#placeholder'] = t('Email -- Used to receive web mail.');
+
+  unset($form['account']['name']['#title']);
+  unset($form['account']['name']['#description']);
+  $form['account']['name']['#placeholder'] = t('Account -- Used to login.');
+
+//  unset($form['account']['pass']['pass1']['#title']);
+//  unset($form['account']['pass']['pass2']['#title']);
 }

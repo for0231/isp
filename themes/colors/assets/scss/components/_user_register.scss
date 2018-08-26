@@ -30,7 +30,13 @@
     width: 400px;
   }
   #container {
-    height: 400px;
+    height: 500px;
+  }
+  .form-item-pass-pass1 > label {
+    display: none;
+  }
+  .form-item-pass-pass2 > label {
+    display: none;
   }
 
 }
@@ -44,4 +50,7 @@
   border-style: solid;
   background-color: #F91F6A;
   border-color: transparent;
+}
+.user-register-form .head {
+  margin-bottom: 40px;
 }
