@@ -1,0 +1,5 @@
+name: 'User Console'
+type: module
+description: 'The page of user console.'
+core: 8.x
+package: 'isp'
