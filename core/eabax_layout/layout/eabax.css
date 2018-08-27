@@ -1,0 +1,43 @@
+.layout--eabax {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layout--eabax > .layout__region {
+  flex: 0 1 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .layout--eabax > .layout__region--r50x50c1,
+  .layout--eabax > .layout__region--r50x50c2 {
+    flex: 0 1 50%;
+  }
+  .layout--eabax > .layout__region--r50x50c1 > .inner {
+    padding-right: .5em;
+  }
+  .layout--eabax > .layout__region--r50x50c2 > .inner {
+    padding-left: .5em;
+  }
+
+  .layout--eabax > .layout__region--r75x25c1 {
+    flex: 0 1 67%;
+  }
+  .layout--eabax > .layout__region--r75x25c2 {
+    flex: 0 1 33%;
+  }
+  .layout--eabax > .layout__region--r75x25c1 > .inner {
+    padding-right: .5em;
+  }
+  .layout--eabax > .layout__region--r75x25c2 > .inner {
+    padding-left: .5em;
+  }
+}
+
+@media screen and (min-width: 60em) {
+  .layout--eabax > .layout__region--r75x25c1 {
+    flex: 0 1 75%;
+  }
+  .layout--eabax > .layout__region--r75x25c2 {
+    flex: 0 1 25%;
+  }
+}

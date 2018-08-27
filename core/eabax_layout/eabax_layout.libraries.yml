@@ -1,0 +1,9 @@
+eabax:
+  css:
+    theme:
+      layout/eabax.css: {}
+
+twocol_25_75:
+  css:
+    theme:
+      layouts/twocol_25_75/twocol_25_75.css: {}

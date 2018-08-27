@@ -1,0 +1,17 @@
+.layout--twocol-25-75 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.layout--twocol-25-75 > .layout__region {
+  flex: 0 1 100%;
+}
+
+@media screen and (min-width: 40em) {
+  .layout--twocol-25-75 > .layout__region--left {
+    flex: 0 1 25%;
+  }
+  .layout--twocol-25-75 > .layout__region--content {
+    flex: 0 1 75%;
+  }
+}

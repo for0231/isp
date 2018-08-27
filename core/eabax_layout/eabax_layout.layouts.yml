@@ -1,0 +1,33 @@
+eabax:
+  label: 'Flex column'
+  path: layout
+  template: layout--eabax
+  library: eabax_layout/eabax
+  category: 'Flex'
+  default_region: r50x50c1
+  regions:
+    r100:
+      label: r100
+    r50x50c1:
+      label: r50x50c1
+    r50x50c2:
+      label: r50x50c2
+    r75x25c1:
+      label: r75x25c1
+    r75x25c2:
+      label: r75x25c2
+
+eabax_25x75:
+  label: 'Two column: 25/75'
+  path: layouts/twocol_25_75
+  template: layout--twocol-25-75
+  library: eabax_layout/twocol_25_75
+  category: 'Columns: 2'
+  default_region: content
+  icon_map:
+    - [left, content]
+  regions:
+    left:
+      label: left
+    content:
+      label: content

@@ -1,0 +1,4 @@
+name: layout
+type: module
+core: 8.x
+package: isp

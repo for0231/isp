@@ -1,0 +1,21 @@
+{%
+set classes = [
+'layout',
+'layout--twocol-25-75',
+]
+%}
+{% if content %}
+  <div{{ attributes.addClass(classes) }}>
+    {% if content.left %}
+      <div {{ region_attributes.left.addClass('layout__region', 'layout__region--left') }}>
+        {{ content.left }}
+      </div>
+    {% endif %}
+
+    {% if content.content %}
+      <div {{ region_attributes.content.addClass('layout__region', 'layout__region--content') }}>
+        {{ content.content }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}
