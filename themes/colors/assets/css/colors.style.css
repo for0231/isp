@@ -36152,3 +36152,7 @@ input[ti-number] {
   position: relative;
   padding-left: 8px;
   padding-right: 20px; }
+
+.side-advertising-container {
+  font-size: 14px;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.2); }

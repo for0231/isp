@@ -1,78 +1,78 @@
 
 
-      <div class="home-user-info common-home-top-area home-user-info-black-bg" style="">
-        <div class="home-responsive-screen home-head-info home-head-info-black-bg common-content-screen" id="s">
-          <div class="float-left">
-            <a target="_self" style="display:inline-block" href="#">
-              <div class="float-left">
-                <img class="home-user-head" src="//console-static.huaweicloud.com/static/home/theme/default/images/home/user-head.png?ttl=2012655072" />
-              </div>
-              <div class="float-left user-welcome common-color-content user-welcome-black-bg">
-                <p class="common-font-size-big1 common-font-size-big1-black-bg ng-binding">你好</p>
-                <p class="common-font-size-big5 user-welcome-username common-font-size-big5-black-bg ng-binding" title="for023">for023</p>
-              </div></a>
-          </div>
-          <div class="float-left user-info-spe-line"></div>
-          <div class="float-left user-balance-info user-balance-info-black-bg">
-            <div class="user-info-balance-label common-color-content">
-              <!-- ngIf: accountBalanceSum.length > 1 -->
-              <!-- ngIf: accountBalanceSum.length <= 1 || !accountBalanceSum -->
-              <div ng-if="accountBalanceSum.length &lt;= 1 || !accountBalanceSum" class="common-font-size-big1 common-user-balance-account ng-scope" style="">
-                <span ng-bind="i18n.conhome_term_accountBalance_label" class="ng-binding">账户余额</span>
-              </div>
-              <!-- end ngIf: accountBalanceSum.length <= 1 || !accountBalanceSum -->
-            </div>
-            <a class="float-left home-user-info-account-balance home-user-info-account-balance-black-bg" target="_blank"><span class="user-info-balance-value common-money-amount-special float-left user-info-balance-value-black-bg ng-binding">&yen;0.00</span></a>
-            <!-- ngIf: !localizationConfig.hecHomeNewFunctionSwitch -->
-          </div>
-          <!-- ngIf: localizationConfig.hecHomeNewFunctionSwitch -->
-          <div class="float-left user-balance-info-block home-user-info-action ng-scope" style="">
-            <button class="ti-btn-danger recharge-show-little-padding ng-binding" ti-button="">充值</button>
-            <button ti-button="" class="tiny-btn-without-icon common-font-size-big1 consump-details-button ng-binding">消费明细</button>
-            <!-- ngIf: bannerImg && bannerImg.url -->
-          </div>
-          <!-- end ngIf: localizationConfig.hecHomeNewFunctionSwitch -->
-          <div class="float-right user-info-business-status-out common-color-content common-link-inherit-color-with-hover user-info-business-status-out-black-bg">
-            <!-- ngIf: links.renewal_userCenter&&localizationConfig.hecHomeNewFunctionSwitch -->
-            <a class="float-left user-info-business-status-black-bg user-info-business-status user-info-business-status-left ng-scope" target="_blank" style="">
-              <div class="content-value common-font-size-big5 content-value-black-bg ng-binding" ng-bind="userRenewalNum">
-                0
-              </div>
-              <div class="action-content action-content-black-bg">
-                <div class="content-label content-label-black-bg ng-binding" title="待续费" ng-bind="i18n.conhome_term_user_userRenewalNum_label">
-                  待续费
-                </div>
-              </div></a>
-            <!-- end ngIf: links.renewal_userCenter&&localizationConfig.hecHomeNewFunctionSwitch -->
-            <div class="float-left user-info-business-status-line"></div>
-            <!-- ngIf: links.user_application_marketplace&&(!localizationConfig.hecHomeNewFunctionSwitch) -->
-            <div class="float-left user-info-business-status-line"></div>
-            <!-- ngIf: links.unpay_order_userCenter -->
-            <a hws-href="" class="float-left user-info-business-status user-info-business-status-black-bg user-info-business-status-center user-application-common-no-outline ng-scope" target="_blank" style="">
-              <div class="content-value common-font-size-big5 content-value-black-bg ng-binding">
-                1
-              </div>
-              <div class="action-content action-content-black-bg">
-                <div class="content-label content-label-black-bg ng-binding" title="未付订单">
-                  未付订单
-                </div>
-              </div></a>
-            <!-- end ngIf: links.unpay_order_userCenter -->
-            <div class="float-left user-info-business-status-line"></div>
-            <!-- ngIf: links.workOrder_userCenter -->
-            <a class="float-left user-info-business-status user-info-business-status-black-bg user-info-business-status-right user-application-common-no-outline ng-scope" target="_blank">
-              <div class="content-value common-font-size-big5 content-value-black-bg ng-binding" ng-bind="workOrderCount || 0">
-                0
-              </div>
-              <div class="action-content action-content-black-bg">
-                <div class="content-label content-label-black-bg ng-binding" title="工单消息">
-                  工单消息
-                </div>
-              </div></a>
-            <!-- end ngIf: links.workOrder_userCenter -->
-          </div>
+<div class="home-user-info common-home-top-area home-user-info-black-bg" style="">
+  <div class="home-responsive-screen home-head-info home-head-info-black-bg common-content-screen" id="s">
+    <div class="float-left">
+      <a target="_self" style="display:inline-block" href="#">
+        <div class="float-left">
+          <img class="home-user-head" src="//console-static.huaweicloud.com/static/home/theme/default/images/home/user-head.png?ttl=2012655072" />
         </div>
+        <div class="float-left user-welcome common-color-content user-welcome-black-bg">
+          <p class="common-font-size-big1 common-font-size-big1-black-bg ng-binding">你好</p>
+          <p class="common-font-size-big5 user-welcome-username common-font-size-big5-black-bg ng-binding" title="for023">for023</p>
+        </div></a>
+    </div>
+    <div class="float-left user-info-spe-line"></div>
+    <div class="float-left user-balance-info user-balance-info-black-bg">
+      <div class="user-info-balance-label common-color-content">
+        <!-- ngIf: accountBalanceSum.length > 1 -->
+        <!-- ngIf: accountBalanceSum.length <= 1 || !accountBalanceSum -->
+        <div ng-if="accountBalanceSum.length &lt;= 1 || !accountBalanceSum" class="common-font-size-big1 common-user-balance-account ng-scope" style="">
+          <span ng-bind="i18n.conhome_term_accountBalance_label" class="ng-binding">账户余额</span>
+        </div>
+        <!-- end ngIf: accountBalanceSum.length <= 1 || !accountBalanceSum -->
       </div>
+      <a class="float-left home-user-info-account-balance home-user-info-account-balance-black-bg" target="_blank"><span class="user-info-balance-value common-money-amount-special float-left user-info-balance-value-black-bg ng-binding">&yen;0.00</span></a>
+      <!-- ngIf: !localizationConfig.hecHomeNewFunctionSwitch -->
+    </div>
+    <!-- ngIf: localizationConfig.hecHomeNewFunctionSwitch -->
+    <div class="float-left user-balance-info-block home-user-info-action ng-scope" style="">
+      <button class="ti-btn-danger recharge-show-little-padding ng-binding" ti-button="">充值</button>
+      <button ti-button="" class="tiny-btn-without-icon common-font-size-big1 consump-details-button ng-binding">消费明细</button>
+      <!-- ngIf: bannerImg && bannerImg.url -->
+    </div>
+    <!-- end ngIf: localizationConfig.hecHomeNewFunctionSwitch -->
+    <div class="float-right user-info-business-status-out common-color-content common-link-inherit-color-with-hover user-info-business-status-out-black-bg">
+      <!-- ngIf: links.renewal_userCenter&&localizationConfig.hecHomeNewFunctionSwitch -->
+      <a class="float-left user-info-business-status-black-bg user-info-business-status user-info-business-status-left ng-scope" target="_blank" style="">
+        <div class="content-value common-font-size-big5 content-value-black-bg ng-binding" ng-bind="userRenewalNum">
+          0
+        </div>
+        <div class="action-content action-content-black-bg">
+          <div class="content-label content-label-black-bg ng-binding" title="待续费" ng-bind="i18n.conhome_term_user_userRenewalNum_label">
+            待续费
+          </div>
+        </div></a>
+      <!-- end ngIf: links.renewal_userCenter&&localizationConfig.hecHomeNewFunctionSwitch -->
+      <div class="float-left user-info-business-status-line"></div>
+      <!-- ngIf: links.user_application_marketplace&&(!localizationConfig.hecHomeNewFunctionSwitch) -->
+      <div class="float-left user-info-business-status-line"></div>
+      <!-- ngIf: links.unpay_order_userCenter -->
+      <a hws-href="" class="float-left user-info-business-status user-info-business-status-black-bg user-info-business-status-center user-application-common-no-outline ng-scope" target="_blank" style="">
+        <div class="content-value common-font-size-big5 content-value-black-bg ng-binding">
+          1
+        </div>
+        <div class="action-content action-content-black-bg">
+          <div class="content-label content-label-black-bg ng-binding" title="未付订单">
+            未付订单
+          </div>
+        </div></a>
+      <!-- end ngIf: links.unpay_order_userCenter -->
+      <div class="float-left user-info-business-status-line"></div>
+      <!-- ngIf: links.workOrder_userCenter -->
+      <a class="float-left user-info-business-status user-info-business-status-black-bg user-info-business-status-right user-application-common-no-outline ng-scope" target="_blank">
+        <div class="content-value common-font-size-big5 content-value-black-bg ng-binding" ng-bind="workOrderCount || 0">
+          0
+        </div>
+        <div class="action-content action-content-black-bg">
+          <div class="content-label content-label-black-bg ng-binding" title="工单消息">
+            工单消息
+          </div>
+        </div></a>
+      <!-- end ngIf: links.workOrder_userCenter -->
+    </div>
+  </div>
+</div>
 
 
 

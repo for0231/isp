@@ -26,3 +26,4 @@ function colors_preprocess_links__language_block(&$variables) {
   ];
   $variables['current_language'] = $current_language;
 }
+
