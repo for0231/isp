@@ -3,4 +3,51 @@
 .common-home-top-area {
   background-color: #3e4254;
   margin-top: -46px;
+  height: 120px;
+  padding-left: 42px;
+  padding-right: 42px;
+}
+//.home-responsive-screen {
+//  line-height: normal;
+//  background: #f5f6f6;
+//  padding-top: 20px;
+//}
+.home-user-info-black-bg {
+  background-color: #2b2b2b;
+  .user-balance-info-black-bg {
+    margin-left: 60px;
+  }
+}
+.home-head-info {
+  padding: 42px 0;
+  background: 0 0;
+}
+.home-user-info-black-bg>.home-head-info-black-bg {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: initial;
+}
+.user-info-balance-label {
+  color: #d2d5e6;
+}
+.common-font-size-big1 {
+  font-size: 14px;
+}
+.common-money-amount-special {
+  color: #e41e2b;
+  font-size: 36px;
+}
+.user-balance-info .common-user-balance-account {
+  display: inline-flex;
+  font-family: icomoon,'微软雅黑 Regular','微软雅黑','宋体';
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  cursor: pointer;
+  position: relative;
+  padding-left: 8px;
+  padding-right: 20px;
 }
