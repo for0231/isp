@@ -1,0 +1,5 @@
+twocol:
+  version: VERSION
+  css:
+    theme:
+      layouts/twocol/twocol.css: {}

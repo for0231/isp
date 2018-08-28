@@ -3,11 +3,10 @@ type: theme
 description: 'The color admin of theme.'
 package: ISP
 core: 8.x
+version: VERSION
 libraries:
   - coloradmin/base
-dependencies:
-  - superfish
- 
+
 base theme: seven
 
 libraries-override:

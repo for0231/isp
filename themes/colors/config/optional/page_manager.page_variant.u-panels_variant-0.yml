@@ -1,0 +1,65 @@
+langcode: en
+status: true
+dependencies:
+  config:
+  - page_manager.page.u
+  module:
+  - panels
+  - user_console_plus
+  - user_resource_plus
+id: u-panels_variant-0
+label: Panels
+variant: panels_variant
+variant_settings:
+  blocks:
+    945dbbd4-5a64-4bb0-a53c-eea695e33a0f:
+      id: user_resource_console_block
+      label: 'User resource console block'
+      provider: user_resource_plus
+      label_display: '0'
+      region: first
+      weight: 0
+      uuid: 945dbbd4-5a64-4bb0-a53c-eea695e33a0f
+      context_mapping: {  }
+    1a075fcd-c8a3-4d18-a824-530ee383a05f:
+      id: user_console_advertising_block
+      label: 'User console advertising block'
+      provider: user_console_plus
+      label_display: '0'
+      region: second
+      weight: 0
+      uuid: 1a075fcd-c8a3-4d18-a824-530ee383a05f
+      context_mapping: {  }
+    df1785a2-7e07-4755-882c-537a06e244e6:
+      id: user_console_recommend_block
+      label: 'User console recommend block'
+      provider: user_console_plus
+      label_display: '0'
+      region: second
+      weight: 0
+      uuid: df1785a2-7e07-4755-882c-537a06e244e6
+      context_mapping: {  }
+    e7efd8a6-53e4-4ce6-8d80-59f44f1dd09a:
+      id: user_console_integer_block
+      label: 'User console integer block'
+      provider: user_console_plus
+      label_display: '0'
+      region: top
+      weight: 0
+      uuid: e7efd8a6-53e4-4ce6-8d80-59f44f1dd09a
+      context_mapping: {  }
+  id: panels_variant
+  uuid: 9cbb0d3d-b888-4128-9e78-1b32d880307b
+  label: null
+  weight: 0
+  layout: layout_twocol_72x25
+  layout_settings: {  }
+  page_title: ''
+  storage_type: page_manager
+  storage_id: u-panels_variant-0
+  builder: standard
+page: u
+weight: 0
+selection_criteria: {  }
+selection_logic: and
+static_context: {  }

@@ -1,0 +1,20 @@
+layout_twocol_72x25:
+  label: 'Two column 75x25'
+  path: layouts/twocol
+  template: layout--twocol
+  library: isp_layout/twocol
+  category: 'Columns: 2'
+  default_region: first
+  icon_map:
+  - [top]
+  - [first, second]
+  - [bottom]
+  regions:
+    top:
+      label: Top
+    first:
+      label: First75
+    second:
+      label: Second25
+    bottom:
+      label: Bottom
