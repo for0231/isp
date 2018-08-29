@@ -36,7 +36,6 @@
  * @ingroup themeable
  */
 #}
-
 <div id="header">
   <div class="header-top" meta-data-adjust-app="show">
     <div class="header-main">
@@ -48,7 +47,7 @@
   </div>
 </div>
 
-<div id="content">
+<div id="content" style="margin-top: 10px;">
   <!-- start id content -->
   <div class="service-content-view">
     <div class="common-content-screen console-content-padding frame-padding-left-0 general ng-scope">
@@ -107,25 +106,7 @@
             </div>
 
             <div id="betaAppliedId" class="tabbody pubBody">
-              <div style="clearfix: both;">
-
-
-                <div class="containerStyle ti-table" displayed-data="displayed" src-data="betaAppliedTable" columns="betaAppliedColumns" table-state-update="tableStateUpdate" cols-resizable="">
-
-                  <div class="ti-resize-wrapper ti-table-container ng-scope">
-
-                  </div>
-
-                  <div class="clearfix ti-page-container ng-isolate-scope ng-hide" >
-
-                  </div>
-
-                </div>
-
-
-
-
-              </div>
+              {{ content }}
             </div>
           </div>
 

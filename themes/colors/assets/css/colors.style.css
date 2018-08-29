@@ -36117,7 +36117,7 @@ input[ti-number] {
   bottom: 34px;
   background: #fff;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-  z-index: 1001; }
+  z-index: auto; }
 
 .general:before {
   position: absolute;
@@ -36127,7 +36127,7 @@ input[ti-number] {
   top: 0;
   bottom: 0;
   background-color: #f2f4fa !important;
-  background-image: url("../images/global/head-bg-r.jpg?ttl=1813668415");
+  background-image: url("../images/global/head-bg-r.jpg");
   background-repeat: no-repeat;
   background-position: 250px 50px;
   background-size: 100% 160px; }
@@ -36178,7 +36178,8 @@ input[ti-number] {
 .ti-leftmenu-container {
   top: 50px;
   bottom: 34px;
-  width: 240px; }
+  width: 240px;
+  z-index: 0; }
 
 .general .ti-leftmenu-container {
   position: relative;
@@ -36194,7 +36195,8 @@ input[ti-number] {
   z-index: 1002; }
 
 .general .ti-leftmenu-panel, .general .ti-leftmenu-panel-container {
-  position: static; }
+  position: static;
+  margin-top: -10px; }
 
 .general .ti-leftmenu-level1, .general .ti-leftmenu-panel {
   background: 0 0; }
@@ -36257,14 +36259,15 @@ input[ti-number] {
   height: 20px;
   top: 11px;
   left: 28px;
-  background: url("../images/global/ucIco_menu_new.png?ttl=1813668415") no-repeat; }
+  background: url("../images/global/ucIco_menu_new.png") no-repeat; }
 
 .ti-leftmenu-panel .ti-leftmenu-level1-active-item .ti-leftmenu-level1-label:before,
 .ti-leftmenu-panel .ti-leftmenu-level1-item:hover .ti-leftmenu-level1-label:before {
   background-position: -20px -360px; }
 
 .leader-title {
-  font-size: 24px; }
+  font-size: 24px;
+  font-weight: bold; }
 
 .common-home-top-area {
   background-color: #3e4254;
