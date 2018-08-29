@@ -29,7 +29,7 @@ function colors_form_user_login_form_alter(&$form, FormStateInterface $form_stat
   unset($form['pass']['#description']);
   unset($form['actions']['submit']['#attributes']['class']);
   $form['actions']['submit']['#attributes'] = [
-    'class' => ['next-btn', 'next-btn-primary', 'next-btn-large'],
+    'class' => ['next-btn', 'next-btn-primary', 'next-btn-large','loginBtn'],
   ];
 
 }
