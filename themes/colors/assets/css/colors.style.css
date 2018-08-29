@@ -37069,6 +37069,19 @@ input[ti-number] {
   font-size: 24px;
   font-weight: bold; }
 
+.submitBtn {
+  background-color: #e41f2b;
+  border: 1px solid #e41f2b;
+  border-radius: 3px 3px 3px 3px;
+  color: white;
+  cursor: default;
+  width: 403px;
+  height: 50px; }
+
+.next-form-item-control > input {
+  color: white;
+  font-weight: bold; }
+
 .common-home-top-area {
   background-color: #3e4254;
   margin-top: -46px;

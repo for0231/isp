@@ -49,4 +49,7 @@ function colors_form_user_register_form_alter(&$form, FormStateInterface $form_s
 
 //  unset($form['account']['pass']['pass1']['#title']);
 //  unset($form['account']['pass']['pass2']['#title']);
+  $form['actions']['submit']['#attributes'] = [
+    'class' => ['submitBtn', 'submitBtnWidth'],
+  ];
 }
