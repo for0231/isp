@@ -93,3 +93,17 @@
   color: #666;
   vertical-align: middle;
 }
+.icon-cloud-service-IAM:before {
+  content: '\e92d';
+}
+.cti-leftmenu .cti-leftmenu-title,
+.cti-leftmenu .cti-leftmenu-title-long {
+  line-height: 1;
+  margin: 10px 40px 0;
+  color: #666;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+.cti-leftmenu .cti-leftmenu-title {
+  font-size: 20px;
+}

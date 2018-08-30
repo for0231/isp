@@ -58,11 +58,61 @@
             <ul class="ti-leftmenu-panel">
               <li class="ti-leftmenu-head">
                 <div class="cti-leftmenu-logo ng-scope">
-                  <span class="cti-leftmenu-logo-ficon iconMoon-csc">
+                  <span class="cti-leftmenu-logo-ficon icoMoon-csc">
 
                   </span>
                 </div>
+                <h2 class="ng-binding ng-scope cti-leftmenu-title">云服务器控制台</h2>
               </li>
+              <!-- end leftmenu head -->
+
+              <!-- start leftmenu -->
+              <li class="ti-leftmenu-level1 ng-isolate-scope">
+                <div class="ti-leftmenu-level1-item " id="ecs_manager_dashboard">
+                  <div class="ti-leftmenu-level1-label">
+                    <span>总览</span>
+                  </div>
+                </div>
+                <!-- 显示子项 -->
+                <ul class="ng-hide"></ul>
+              </li>
+
+              <li class="ti-leftmenu-level1">
+                <div class="ti-leftmenu-level1-item  ti-leftmenu-level1-active-item">
+                  <div class="ti-leftmenu-level1-label">
+                    <span>弹性云服务器</span>
+                  </div>
+                </div>
+                <ul class="ng-hide"><!-- 含ng-hide收折 --></ul>
+              </li>
+
+              <li class="ti-leftmenu-level1">
+                <div class="ti-leftmenu-level1-item">
+                  <span class="ti-leftmenu-level1-state-icon ti-icon ti-icon-accordion-unfold"></span>
+
+                  <div class="ti-leftmenu-level1-label">
+                    <span>弹性伸缩</span>
+                  </div>
+                </div>
+                <ul class="ng-hide">
+                  <li class="ti-leftmenu-level2">
+                    <span>伸缩实例</span>
+                  </li>
+                  <li class="ti-leftmenu-level2">
+                    <span>伸缩带宽</span>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="ti-leftmenu-level1">
+                <div class="ti-leftmenu-level1-item">
+                  <div class="ti-leftmenu-level1-label">
+                    <span>专属服务器</span>
+                  </div>
+                </div>
+                <ul class="ng-hide"><!-- 含ng-hide收折 --></ul>
+              </li>
+              <!-- end leftmenu -->
             </ul>
           </div>
         </div>
