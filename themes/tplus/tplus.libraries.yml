@@ -1,11 +1,13 @@
 global-styling:
   version: VERSION
   js: 
-    js/popper.min.js: {}
+#    js/popper.min.js: {}
+    https://unpkg.com/popper.js@1.14.4/dist/umd/popper.js: { type: external }
     js/bootstrap.bundle.js: {}
     js/global.js: {}
   css:
     component:
+      https://use.fontawesome.com/releases/v5.3.1/css/all.css: { type: external }
       css/style.css: {}
   dependencies:
     - core/jquery
