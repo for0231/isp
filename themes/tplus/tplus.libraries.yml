@@ -9,7 +9,7 @@ global-styling:
     component:
       https://use.fontawesome.com/releases/v5.3.1/css/all.css: { type: external }
       css/style.css: {}
-      css/theme/head.theme.css: {}
+      css/theme/std_head.theme.css: {}
   dependencies:
     - core/jquery
     - core/drupal
