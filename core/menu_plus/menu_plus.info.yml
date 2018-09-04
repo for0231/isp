@@ -1,0 +1,5 @@
+name: 'Menu Plus'
+type: module
+description: 'The extra menu plus.'
+core: 8.x
+package: 'isp'

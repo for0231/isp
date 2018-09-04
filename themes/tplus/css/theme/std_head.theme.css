@@ -5996,7 +5996,6 @@ a.link.more:hover:after {
   float: left;
   width: 104px;
   height: 100%;
-  background: url(../../images/global/header/logo.png) no-repeat center;
   background-size: 100% auto; }
 
 @media (max-width: 767px) {
@@ -7668,5 +7667,13 @@ a.header-nav-product > .header-icon-arrow-right {
 .header-logo img {
   margin-top: 20px;
   padding-left: 5px; }
+
+/** Override base theme for tplus. **/
+.site-footer {
+  background: #fff !important;
+  padding: 0 !important; }
+
+footer {
+  color: rgba(255, 255, 255, 0.7) !important; }
 
 /*# sourceMappingURL=std_head.theme.css.map */

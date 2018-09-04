@@ -1,0 +1,52 @@
+<?php
+
+/**
+ * @file
+ * Contains menu_plus.module.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function menu_plus_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the menu_plus module.
+    case 'help.page.menu_plus':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The extra menu plus.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_entity_base_field_info() for menu plus.
+ */
+function menu_plus_entity_base_field_info(EntityTypeInterface $entity_type) {
+  if ($entity_type->id() == 'menu_link_content') {
+    $fields = [];
+    $fields['classes'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Classes'))
+      ->setDescription(t('It used to be extra classes.'))
+      ->setSetting('max_length', 64)
+      ->setDisplayOptions('view', [
+        'type' => 'text_default',
+        'weight' => 0,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'text_textfield',
+        'weight' => 0,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
+    return $fields;
+  }
+}
+

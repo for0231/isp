@@ -6020,7 +6020,7 @@ padding-left:0px;
   float: left;
   width: 104px;
   height: 100%;
-  background: url(../../images/global/header/logo.png) no-repeat center;
+  //background: url(../../images/global/header/logo.png) no-repeat center;
   background-size: 100% auto;
 }
 
@@ -8089,3 +8089,5 @@ a.header-nav-product > .header-icon-arrow-right{
   margin-top: 20px;
   padding-left: 5px;
 }
+
+@import "cus.theme";
