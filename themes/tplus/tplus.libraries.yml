@@ -19,3 +19,9 @@ layout:
   css:
     theme:
       css/theme/head.theme.css: {}
+
+login_page:
+  version: VERSION
+  css:
+    theme:
+      css/theme/login.css: {}

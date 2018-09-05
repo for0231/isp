@@ -1,9 +1,10 @@
 {{ form.form_build_id }}
 {{ form.form_id }}
 {{ form.form_token }}
+{{ attach_library('tplus/login_page') }}
 <div class="widthLimit" ui-view="content">
   <div id="loginAdv" class="ng-scope">
-    <a href="{{ path('<front>') }}" target="_blank">
+    <a href="#" target="_blank">
       <img src="https://res-img2.huaweicloud.com/content/dam/cloudbu-site/archive/china/zh-cn/banner/53kf/SA.png" alt="">
     </a>
   </div>
