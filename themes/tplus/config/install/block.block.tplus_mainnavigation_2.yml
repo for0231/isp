@@ -6,11 +6,11 @@ dependencies:
   module:
   - superfish
   theme:
-  - colors
-id: mainnavigation_3
-theme: colors
+  - tplus
+id: tplus_mainnavigation_2
+theme: tplus
 region: header
-weight: 0
+weight: 1
 provider: null
 plugin: 'superfish:main'
 settings:

@@ -1,65 +1,65 @@
-{{ form.form_build_id }}
-{{ form.form_id }}
-{{ form.form_token }}
+{#{{ form.form_build_id }}#}
+{#{{ form.form_id }}#}
+{#{{ form.form_token }}#}
 {{ attach_library('tplus/login_page') }}
 <div id="container" data-spm-anchor-id="0.7477816.0.i1.24b717eb4LHwlI">
   <div data-reactroot="" class="content">
     <div class="head">
       {% trans %} WELCOME TO YOU {% endtrans %}
     </div>
-
-    <form class="next-form next-form-left ver next-form-large aliyun-reg-form">
-      <div class="next-form-item next-row" required="">
-        <div class=" next-form-item-control">
-          <span class="next-input next-input-single next-input-large">
+    {{ form }}
+    {#<form class="next-form next-form-left ver next-form-large aliyun-reg-form">#}
+      {#<div class="next-form-item next-row" required="">#}
+        {#<div class=" next-form-item-control">#}
+          {#<span class="next-input next-input-single next-input-large">#}
             {#<input type="text" data-meta="Field" id="nick" autocomplete="off" placeholder="设置会员名" value="" height="100%" />#}
-            {{ form.account.mail }}
-          </span>
-          <div class=""></div>
-        </div>
-      </div>
-      <div class="next-form-item next-row" required="">
-        <div class=" next-form-item-control">
-          <span class="next-input next-input-single next-input-large">
-            {{ form.account.name }}
-          </span>
-          <div class=""></div>
-        </div>
-      </div>
-      <div class="next-form-item next-row has-success" required="">
-        <div class=" next-form-item-control">
-          <span class="next-input next-input-single next-input-large">
+            {#{{ form.account.mail }}#}
+          {#</span>#}
+          {#<div class=""></div>#}
+        {#</div>#}
+      {#</div>#}
+      {#<div class="next-form-item next-row" required="">#}
+        {#<div class=" next-form-item-control">#}
+          {#<span class="next-input next-input-single next-input-large">#}
+            {#{{ form.account.name }}#}
+          {#</span>#}
+          {#<div class=""></div>#}
+        {#</div>#}
+      {#</div>#}
+      {#<div class="next-form-item next-row has-success" required="">#}
+        {#<div class=" next-form-item-control">#}
+          {#<span class="next-input next-input-single next-input-large">#}
             {#<input type="password" data-meta="Field" id="password" autocomplete="off" placeholder="设置你的登录密码" value="" height="100%" data-spm-anchor-id="0.7477816.0.i0.24b717eb4LHwlI" />#}
-            {{ form.account.pass.pass1 }}
-          </span>
-          <div class=""></div>
-        </div>
-      </div>
-      <div class="next-form-item next-row" label="" required="">
-        <div class=" next-form-item-control">
-          <span class="next-input next-input-single next-input-large">
+            {#{{ form.account.pass.pass1 }}#}
+          {#</span>#}
+          {#<div class=""></div>#}
+        {#</div>#}
+      {#</div>#}
+      {#<div class="next-form-item next-row" label="" required="">#}
+        {#<div class=" next-form-item-control">#}
+          {#<span class="next-input next-input-single next-input-large">#}
             {#<input type="password" data-meta="Field" id="rePassword" autocomplete="off" placeholder="请再次输入你的密码" value="" height="100%" />#}
-            {{ form.account.pass.pass2 }}
-          </span>
-          <div class=""></div>
-        </div>
-      </div>
-      <div class="next-form-item next-row">
-        <div class=" next-form-item-control">
-          {{ form.actions.submit }}
+            {#{{ form.account.pass.pass2 }}#}
+          {#</span>#}
+          {#<div class=""></div>#}
+        {#</div>#}
+      {#</div>#}
+      {#<div class="next-form-item next-row">#}
+        {#<div class=" next-form-item-control">#}
+          {#{{ form.actions.submit }}#}
           {#<button type="button" class="next-btn next-btn-primary next-btn-large">#}
             {#同意条款并注册#}
           {#</button>#}
-          <div class=""></div>
-        </div>
-      </div>
-      <div class="next-form-item next-row check-agreement">
-        <div class=" next-form-item-control">
-          <label class="next-checkbox "><span class="next-checkbox-inner"><i class="next-icon next-icon-select next-icon-xs"></i></span><input type="checkbox" data-meta="Field" id="checkbox" aria-checked="false" value="on" /></label>
-          <span class="next-form-text-align agreement"><span><a href="#" target="_blank">《网站服务条款》</a><span class="f-line">|</span><a href="#" target="_blank" data-spm-anchor-id="0.7477816.0.0">《法律声明和隐私权政策》</a></span></span>
-          <div class=""></div>
-        </div>
-      </div>
-    </form>
+          {#<div class=""></div>#}
+        {#</div>#}
+      {#</div>#}
+      {#<div class="next-form-item next-row check-agreement">#}
+        {#<div class=" next-form-item-control">#}
+          {#<label class="next-checkbox "><span class="next-checkbox-inner"><i class="next-icon next-icon-select next-icon-xs"></i></span><input type="checkbox" data-meta="Field" id="checkbox" aria-checked="false" value="on" /></label>#}
+          {#<span class="next-form-text-align agreement"><span><a href="#" target="_blank">《网站服务条款》</a><span class="f-line">|</span><a href="#" target="_blank" data-spm-anchor-id="0.7477816.0.0">《法律声明和隐私权政策》</a></span></span>#}
+          {#<div class=""></div>#}
+        {#</div>#}
+      {#</div>#}
+    {#</form>#}
   </div>
 </div>
