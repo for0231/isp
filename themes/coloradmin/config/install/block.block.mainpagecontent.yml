@@ -5,10 +5,10 @@ dependencies:
     - system
   theme:
     - coloradmin
-id: coloradmin_content
+id: mainpagecontent
 theme: coloradmin
 region: content
-weight: -2
+weight: 0
 provider: null
 plugin: system_main_block
 settings:

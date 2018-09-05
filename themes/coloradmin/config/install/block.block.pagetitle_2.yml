@@ -1,19 +1,17 @@
 langcode: en
 status: true
 dependencies:
-  module:
-    - help
   theme:
     - coloradmin
-id: coloradmin_help
+id: pagetitle_2
 theme: coloradmin
-region: content
-weight: -4
+region: page_header
+weight: 0
 provider: null
-plugin: help_block
+plugin: page_title_block
 settings:
-  id: help_block
-  label: Help
-  provider: help
+  id: page_title_block
+  label: 'Page title'
+  provider: core
   label_display: '0'
 visibility: {  }

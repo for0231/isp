@@ -2,18 +2,18 @@ langcode: en
 status: true
 dependencies:
   module:
-    - system
+    - role_menu
   theme:
     - coloradmin
-id: coloradmin_breadcrumbs
+id: rolemenublock
 theme: coloradmin
-region: breadcrumb
+region: sidebar_first
 weight: 0
 provider: null
-plugin: system_breadcrumb_block
+plugin: role_menu_block
 settings:
-  id: system_breadcrumb_block
-  label: Breadcrumbs
-  provider: system
+  id: role_menu_block
+  label: 'Role menu block'
+  provider: role_menu
   label_display: '0'
 visibility: {  }
