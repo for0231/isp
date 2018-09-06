@@ -1,5 +1,0 @@
-name: 'Isp layout'
-type: module
-description: 'Isp layout page'
-core: 8.x
-package: 'isp'
