@@ -8014,7 +8014,10 @@ a.tabledrag-handle .handle {
   height: 24px;
   width: 24px; }
 
-nav.tabs {
-  margin-bottom: -20px; }
+ul.nav li.nav-item a {
+  color: black; }
+
+ul.nav li.nav-item.active a {
+  color: #0a6aa1; }
 
 /*# sourceMappingURL=style.css.map */

@@ -6,7 +6,7 @@
 #composer require drupal/migrate_tools
 vendor/bin/drush si -y --account-pass=admin --db-url=mysql://root:root@localhost/isp
 vendor/bin/drush en -y role_menu commerce_cart commerce_checkout commerce_payment_example commerce_recurring drush_language superfish
-vendor/bin/drush en -y config_update_ui migrate_source_csv block_class
+vendor/bin/drush en -y config_update_ui migrate_source_csv block_class locale config_translation potx
 vendor/bin/drupal thi coloradmin -y
 vendor/bin/drupal thi barrio -y
 vendor/bin/drush cset -y system.theme default barrio

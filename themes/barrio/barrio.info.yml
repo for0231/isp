@@ -8,11 +8,11 @@ base theme: bootstrap_barrio
 libraries:
   - barrio/global-styling
 libraries-override:
-  bootstrap_barrio/global-styling:
-    css:
-      component:
-        css/tabs.css: false
-#  bootstrap_barrio/global-styling: false
+#  bootstrap_barrio/global-styling:
+#    css:
+#      component:
+#        css/tabs.css: false
+  bootstrap_barrio/global-styling: false
 #  bootstrap_barrio/tabs.css: false
 #  bootstrap_barrio/file: false
 regions:
