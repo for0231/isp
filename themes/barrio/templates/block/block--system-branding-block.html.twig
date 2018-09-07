@@ -1,7 +1,8 @@
+{% extends "block.html.twig" %}
 {#
 /**
  * @file
- * Bootstrap Barrio's theme implementation for a branding block.
+ * Default theme implementation for a branding block.
  *
  * Each branding element variable (logo, name, slogan) is only available if
  * enabled in the block configuration.
@@ -10,19 +11,18 @@
  * - site_logo: Logo for site as defined in Appearance or theme settings.
  * - site_name: Name for site as defined in Site information settings.
  * - site_slogan: Slogan for site as defined in Site information settings.
+ *
+ * @ingroup themeable
  */
 #}
-{% set attributes = attributes.addClass('site-branding') %}
-  {% if site_logo or site_name %}
-    <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home" class="navbar-brand">
-      {% if site_logo %}
-        <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" class="img-fluid d-inline-block align-top" />
-      {% endif %}
-      {{ site_name }}
+{% block content %}
+  {% if site_logo %}
+    <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">
+      <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
     </a>
   {% endif %}
-  {% if site_slogan %}
-    <div class="d-inline-block align-top site-name-slogan">
-      {{ site_slogan }}
-    </div>
+  {% if site_name %}
+    <a href="{{ path('<front>') }}" title="{{ 'Home'|t }}" rel="home">{{ site_name }}</a>
   {% endif %}
+  {{ site_slogan }}
+{% endblock %}
