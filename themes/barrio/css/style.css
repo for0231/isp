@@ -8020,4 +8020,10 @@ ul.nav li.nav-item a {
 ul.nav li.nav-item.active a {
   color: #0a6aa1; }
 
+div.form-actions {
+  text-align: right; }
+
+.views-form {
+  width: 100%; }
+
 /*# sourceMappingURL=style.css.map */
