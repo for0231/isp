@@ -4,7 +4,7 @@ global-styling:
 #    js/popper.min.js: {} #prod will be used.
     https://unpkg.com/popper.js@1.14.4/dist/umd/popper.js: { type: external }
     js/bootstrap.bundle.js: {}
-    js/extra.js: {}
+#    js/extra.js: {}
     js/global.js: {}
   css:
     component:
