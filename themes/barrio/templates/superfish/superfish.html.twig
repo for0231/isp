@@ -1,0 +1,23 @@
+{#
+/**
+ * @file
+ * Default theme implementation of the Superfish menus.
+ *
+ * Available variables:
+ * - id: Unique menu identifier.
+ * - menu_classes: Menu classes.
+ * - menu_items: Menu tree.
+ *
+ * @see template_preprocess_superfish()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<ul id="{{ id }}" class="{{ menu_classes }}">
+  {{ menu_items }}
+  <li class="header-nav-item-more header-nav-item-hide" data-key="more">
+    <a href="javascript:">更多</a>
+  </li>
+</ul>
+<div class="header-nav-hover-line" style="width: 0px; left: 0px;"></div>
