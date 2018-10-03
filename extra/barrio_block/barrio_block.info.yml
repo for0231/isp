@@ -1,0 +1,5 @@
+name: 'BarrioBlock'
+type: module
+description: 'Block for barrio.'
+core: 8.x
+package: 'isp'
