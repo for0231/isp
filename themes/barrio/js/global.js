@@ -23,15 +23,33 @@
 
       var setNavLine = {
         active: function ($activeNavItem) {
+          if($activeNavItem.length === 0 || !$activeNavItem.is(':visible')) {
+              this.fold();
+              return
+          }
+          var left = $activeNavItem.position().left;
+          var width = $activeNavItem.width();
+
+          $activeNavItem.addClass('active').siblings().removeClass('active');
+
+          $navLine.css({
+              left: left,
+              width: width
+          });
         },
       };
-      $(context).find('.header-nav-list li').once('barrio_header-nav-list').hover(function() {
-        console.log($(this).width());
+
+
+      $navItems.once('header_bottom').hover(function() {
+        var $this = $(this);
+        $this.addClass('hover');
+        $nav.addClass('item-hover');
+
+        setNavLine.active($this);
       }, function() {
-
+        var $this = $(this);
+        console.log('fdasfdaf');
       });
-
-
 
 
 

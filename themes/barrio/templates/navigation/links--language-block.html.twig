@@ -1,0 +1,58 @@
+<li class="header-search-switch" bi_name="searchIcon" mate_data_ts="www_china_zh-cn_index_navigation.click.searchIcon"><i class="header-icon header-icon-search"></i></li>
+<li class="header-lang">
+  <div class="header-lang-current"><i class="header-icon header-icon-lang-zh"></i><span class="header-lang-label">中国站</span></div>
+  <ul class="header-lang-list">
+    {#<li class="header-lang-item active"><a>中国站 - 简体中文</a></li>#}
+    {#<li class="header-lang-item"><a href="javascript:changeLang('en-us');">中国站 - English</a></li>#}
+    {#<li class="header-lang-item"><a href="//intl.huaweicloud.com/zh-cn/?locale=zh-cn">International - 简体中文</a></li>#}
+    {#<li class="header-lang-item"><a href="//intl.huaweicloud.com/?locale=en-us">International - English</a></li>#}
+
+    {%- for key, item in links -%}
+      <li{{ item.attributes.addClass("header-lang-item") }}>
+        {%- if item.link -%}
+          {{ item.link }}
+        {%- elseif item.text_attributes -%}
+          <span{{ item.text_attributes }}>{{ item.text }}</span>
+        {%- else -%}
+          {{ item.text }}
+        {%- endif -%}
+      </li>
+    {%- endfor -%}
+
+  </ul>
+</li>
+<li><a href="//console.huaweicloud.com?locale=zh-cn">控制台</a></li>
+<li><a href="//support.huaweicloud.com/beian_index.html">备案</a></li>
+<li class="header-login-mobile">
+  <a data-login-href="//auth.huaweicloud.com/authui/login?locale=zh-cn&amp;service=" href="//auth.huaweicloud.com/authui/login?locale=zh-cn&amp;service=https%3A%2F%2Fwww.huaweicloud.com%2F">
+    <span class="header-icon header-icon-user js-login"></span>
+  </a>
+</li>
+<li class="header-login"><a data-login-href="//auth.huaweicloud.com/authui/login?locale=zh-cn&amp;service=" href="//auth.huaweicloud.com/authui/login?locale=zh-cn&amp;service=https%3A%2F%2Fwww.huaweicloud.com%2F" mate_data_ts="www_v2_top_navigation.click.login" class="btn js-login">登录</a></li>
+<li class="header-register"><a href="//reg.huaweicloud.com/registerui/public/custom/register.html?locale=zh-cn#/register" class="btn js-register">注册</a></li>
+<li class="header-user user-info msg">
+  <div class="header-user-avator">
+    <img class="header-tool-user-avator-img account-pic" src="//static.huaweicloud.com/static/v2_resources/images/global/headPic.png?sttl=20180413&amp;sttl=20185176">
+  </div>
+  <div class="header-user-name"><span class="my-acct"> </span><i class="header-icon-corner-down"></i></div>
+  <div class="header-user-info user-info-layer">
+    <ul class="header-user-info-list account-nav">
+      <li class="header-user-info-item-account account-item">
+        <a href="//account.huaweicloud.com/usercenter/#/userindex/accountInfo">账号中心</a>
+        <a class="account-verification header-verification active" href="//account.huaweicloud.com/usercenter/#/userindex/realNameAuth">
+          <i class="header-icon header-icon-verification"></i>
+          <p class="state-unactive">未实名认证</p>
+          <p class="state-active">已实名认证</p>
+        </a>
+      </li>
+      <li><a href="//account.huaweicloud.com/usercenter/?locale=zh-cn#/userindex/allview">费用中心</a></li>
+      <li><a href="//console.huaweicloud.com/ticket/?locale=zh-cn#/ticketindex/serviceTickets">工单管理</a></li>
+      <li class="message"><a href="//console.huaweicloud.com/mc/">未读消息<span>0</span></a></li>
+      <li class="header-user-info-split"></li>
+      <li class="isVendor" style="display:none;"><a href="//account.huaweicloud.com/obmgr/#/obmgr/index">伙伴中心</a></li>
+      <li class="isIsv" style="display:none;"><a href="//console.huaweicloud.com/marketplace/isv/#/console/business">卖家中心</a></li>
+      <li class="header-user-info-split isVendor isIsv" style="display:none;"></li>
+      <li class="logout"><a href="//portal.huaweicloud.com/index/logout">退出</a></li>
+    </ul>
+  </div>
+</li>
