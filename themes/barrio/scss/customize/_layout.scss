@@ -396,3 +396,138 @@ ul, li, dd, dl {
 .header-tools-list > li > a:hover {
   color: #e41f2b;
 }
+
+.header-search-switch.show-search .header-icon-search {
+  background-position: -68px -36px;
+}
+
+.header-search-switch.show-search:hover .header-icon-search {
+  background-position: -68px -18px;
+}
+.header-lang-item.active > a, .header-lang-item:hover > a {
+  color: #e41f2b;
+}
+ul.header-lang-list {
+  padding-left: 0px;
+}
+.header-nav.overflow-visible {
+  overflow: visible;
+}
+footer a {
+  color: rgba(255,255,255,.7);
+}
+.site-footer {
+  color: rgba(255,255,255,.7);
+  background: #3D3E49!important;
+  padding: .1rem 0;
+}
+
+//Footer css
+footer {
+  color: rgba(255,255,255,.7);
+  background: #3D3E49!important;
+}
+
+@media (max-width: 1365px) {
+  .header-nav-list > li > a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-nav {
+    display: none;
+  }
+}
+
+.footer-copyright-container {
+  background: #3D3E49;
+  border-top: solid 1px #252B3A;
+}
+.footer-wrapper {
+  position: relative;
+  max-width: 1200px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-copyright-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.footer-wrapper:before, .footer-wrapper:after {
+  content: "";
+  display: table;
+}
+.footer-law {
+  float: right;
+  overflow: hidden;
+  font-size: 0;
+}
+.footer-copyright {
+  float: left;
+  font-size: 0;
+}
+.footer-record {
+  clear: both;
+  font-size: 0;
+}
+
+.footer-law > li {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 18px;
+}
+.footer-link {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+.footer-law > li + li:before {
+  content: "|";
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.footer-copyright span, .footer-copyright a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.footer-copyright span, .footer-copyright a {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 12px;
+  line-height: 18px;
+}
+.footer-icon-record1 {
+  background-image: url(../images/global/a6.png?sttl=0817008);
+}
+.footer-record i {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+  vertical-align: middle;
+  background-size: 100% 100%;
+}
+.footer-record i a {
+  display: block;
+  width: 18px;
+  height: 18px;
+}
+a:active, a:hover {
+  outline-width: 0;
+}
+.footer-link:hover {
+  color: #fff;
+}
+.footer-icon-record2 {
+  background-image: url(../images/global/a7.png?sttl=0817008);
+}
+.footer-record span {
+  font-size: 12px;
+  line-height: 24px;
+  vertical-align: middle;
+}
