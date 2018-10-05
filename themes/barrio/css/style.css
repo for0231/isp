@@ -8015,6 +8015,9 @@ ul, li, dd, dl {
   -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
 
+.topheader {
+  z-index: 999 !important; }
+
 .header-nav {
   position: relative;
   float: left;
@@ -8479,5 +8482,16 @@ a:active, a:hover {
   font-size: 12px;
   line-height: 24px;
   vertical-align: middle; }
+
+.header-nav-hover-line {
+  position: absolute;
+  z-index: 0;
+  height: 3px;
+  width: 0;
+  padding: 0;
+  background-color: #e41f2b;
+  bottom: 0;
+  -webkit-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
 
 /*# sourceMappingURL=style.css.map */

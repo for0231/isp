@@ -8,7 +8,7 @@ dependencies:
 id: barrio_help
 theme: barrio
 region: content
-weight: -30
+weight: 0
 provider: null
 plugin: help_block
 settings:
