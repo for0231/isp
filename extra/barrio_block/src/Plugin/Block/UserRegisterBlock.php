@@ -3,7 +3,6 @@
 namespace Drupal\barrio_block\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
-use Drupal\Core\Url;
 
 /**
  * Provides a 'UserRegisterBlock' block.
@@ -20,6 +19,7 @@ class UserRegisterBlock extends BlockBase {
    */
   public function build() {
     $build = [];
+    $build['user_register_block']['#markup'] = 'UserRegisterBlock.';
 
     return $build;
   }
