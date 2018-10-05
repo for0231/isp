@@ -13,3 +13,9 @@ global-styling:
   dependencies:
     - core/jquery
     - core/drupal
+
+login:
+  version: VERSION
+  css:
+    theme:
+      css/login.css: {}

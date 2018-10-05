@@ -16,21 +16,22 @@ foreach (glob($includes_path) as $filename) {
  *
  * Replace Barrio setting options with subtheme ones.
  */
-function barrio_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
-  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
-      'bg-primary' => t('Primary'),
-      'bg-secondary' => t('Secondary'),
-      'bg-light' => t('Light'),
-      'bg-dark' => t('Dark'),
-      'bg-white' => t('White'),
-      'bg-transparent' => t('Transparent'),
-  );
-  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = array(
-      'bg-primary' => t('Primary'),
-      'bg-secondary' => t('Secondary'),
-      'bg-light' => t('Light'),
-      'bg-dark' => t('Dark'),
-      'bg-white' => t('White'),
-      'bg-transparent' => t('Transparent'),
-  );
-}
+//function barrio_form_system_theme_settings_alter(&$form, FormStateInterface $form_state) {
+//  $form['components']['navbar']['bootstrap_barrio_navbar_top_background']['#options'] = array(
+//      'bg-primary' => t('Primary'),
+//      'bg-secondary' => t('Secondary'),
+//      'bg-light' => t('Light'),
+//      'bg-dark' => t('Dark'),
+//      'bg-white' => t('White'),
+//      'bg-transparent' => t('Transparent'),
+//  );
+//  $form['components']['navbar']['bootstrap_barrio_navbar_background']['#options'] = array(
+//      'bg-primary' => t('Primary'),
+//      'bg-secondary' => t('Secondary'),
+//      'bg-light' => t('Light'),
+//      'bg-dark' => t('Dark'),
+//      'bg-white' => t('White'),
+//      'bg-transparent' => t('Transparent'),
+//  );
+//}
+
