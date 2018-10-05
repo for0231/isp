@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  module:
+  - barrio_block
+  - user
+  theme:
+  - barrio
+id: userregisterblock
+theme: barrio
+region: header_form
+weight: -4
+provider: null
+plugin: user_register_block
+settings:
+  id: user_register_block
+  label: 'User register block'
+  provider: barrio_block
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      anonymous: anonymous
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

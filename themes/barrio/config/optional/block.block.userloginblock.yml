@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+  - barrio_block
+  - user
+  theme:
+  - barrio
+id: userloginblock
+theme: barrio
+region: header_form
+weight: -3
+provider: null
+plugin: user_logined_block
+settings:
+  id: user_logined_block
+  label: 'User login block'
+  provider: barrio_block
+  label_display: '0'
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+      administrator: administrator
+      implementor: implementor
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
