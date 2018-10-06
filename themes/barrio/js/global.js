@@ -10,14 +10,11 @@
   Drupal.behaviors.global= {
     attach: function (context, settings) {
       var $navLine = $('.header-nav-hover-line');
-
       var setNavLine = {
         // 按对应菜单激活下划线
         active: function ($activeNavItem) {
-
           var left = $activeNavItem.position().left;
           var width = $activeNavItem.width();
-
           $navLine.css({
             left: left,
             width: width
@@ -47,35 +44,31 @@
       $(window).resize(function () {
         resetMainMenu();
       });
-
       resetMainMenu();
-
       function resetMainMenu() {
-        $nav.removeClass('overflow-visible');
-        $navItems_notMore.removeClass('header-nav-item-hide');
-        $navItemMore.addClass('header-nav-item-hide');
+//        $nav.removeClass('overflow-visible');
+//        $navItems_notMore.removeClass('header-nav-item-hide');
+//        $navItemMore.addClass('header-nav-item-hide');
 
         if ($nav.height() <= $navItems.height()) {
           return;
         }
         // 有菜单隐藏的情况
         $navItemMore.removeClass('header-nav-item-hide');
-
-        hideLastNavItem($navItems_notMore);
+       hideLastNavItem($navItems_notMore);
 
         function hideLastNavItem($navItems_notMore) {
           if ($navItems_notMore.length === 0) return;
-
           $navItems_notMore.last().addClass('header-nav-item-hide');
           if ($nav.height() > $navItems.height()) {
             hideLastNavItem($navItems_notMore.not(':last'))
           }
         }
-
         $nav.addClass('overflow-visible');
       }
 
 
+      $(context).find('.header-tools-list').addClass('float-left');
 
     }
   };

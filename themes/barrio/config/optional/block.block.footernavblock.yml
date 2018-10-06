@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+  - barrio_block
+  theme:
+  - barrio
+id: footernavblock
+theme: barrio
+region: footer_fifth
+weight: -5
+provider: null
+plugin: footer_nav_block
+settings:
+  id: footer_nav_block
+  label: 'Footer nav block'
+  provider: barrio_block
+  label_display: '0'
+visibility: {  }

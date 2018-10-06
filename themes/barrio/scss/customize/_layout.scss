@@ -132,9 +132,7 @@ ul, li, a {
 }
 
 .header-tools-list > li {
-  float: left!important;
-  //display: -moz-inline-table;
-  //display: inline-table;
+  float: left;
   height: 100%;
   padding: 0 10px;
   font-size: 0;
@@ -451,7 +449,7 @@ footer {
 
 .footer-copyright-container {
   background: #3D3E49;
-  border-top: solid 1px #252B3A;
+  //border-top: solid 1px #252B3A;
 }
 .footer-wrapper {
   position: relative;
@@ -803,3 +801,4 @@ a:active, a:hover {
     background-image: url(../images/global/header/logo-mb.png?sttl=0817008);
   }
 }
+

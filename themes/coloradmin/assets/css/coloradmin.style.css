@@ -15599,6 +15599,9 @@ img {
     .page-sidebar-minified .sidebar .nav ul li:not(first) ul li {
       display: none; }
 
+.views-ui-view-name > h3 {
+  font-size: 20px; }
+
 .panel {
   padding: 0px; }
 
@@ -15642,5 +15645,3 @@ table.responsive-enabled td {
 a.tabledrag-handle .handle {
   width: 25px;
   height: 25px; }
-
-/*# sourceMappingURL=coloradmin.style.css.map */
