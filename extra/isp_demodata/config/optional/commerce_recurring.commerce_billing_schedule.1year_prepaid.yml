@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies: {  }
+id: 1year_prepaid
+label: '1Year Prepaid'
+displayLabel: '1Year Prepaid Display Label'
+billingType: prepaid
+retrySchedule:
+  - 1
+  - 3
+  - 5
+unpaidSubscriptionState: canceled
+plugin: fixed
+configuration:
+  interval:
+    number: 1
+    unit: year
+  start_month: 1
+  start_day: 1
+prorater: full_price
+proraterConfiguration: {  }

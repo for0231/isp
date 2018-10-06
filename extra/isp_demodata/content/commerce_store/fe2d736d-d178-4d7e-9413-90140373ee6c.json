@@ -1,0 +1,100 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/store\/1?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/commerce_store\/online"
+        },
+        "http:\/\/drupal.org\/rest\/relation\/commerce_store\/online\/uid": [
+            {
+                "href": "http:\/\/default\/user\/1?_format=hal_json"
+            }
+        ]
+    },
+    "store_id": [
+        {
+            "value": 1
+        }
+    ],
+    "uuid": [
+        {
+            "value": "fe2d736d-d178-4d7e-9413-90140373ee6c"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "type": [
+        {
+            "target_id": "online"
+        }
+    ],
+    "_embedded": {
+        "http:\/\/drupal.org\/rest\/relation\/commerce_store\/online\/uid": [
+            {
+                "_links": {
+                    "self": {
+                        "href": "http:\/\/default\/user\/1?_format=hal_json"
+                    },
+                    "type": {
+                        "href": "http:\/\/drupal.org\/rest\/type\/user\/user"
+                    }
+                },
+                "uuid": [
+                    {
+                        "value": "5c44c1b0-cf8c-4c3b-bf70-187456543371"
+                    }
+                ]
+            }
+        ]
+    },
+    "name": [
+        {
+            "value": "Ultrix",
+            "lang": "en"
+        }
+    ],
+    "mail": [
+        {
+            "value": "385897904@qq.com"
+        }
+    ],
+    "default_currency": [
+        {
+            "target_id": "USD",
+            "lang": "en"
+        }
+    ],
+    "address": [
+        {
+            "langcode": "en",
+            "country_code": "CN",
+            "administrative_area": "Chongqing Shi",
+            "locality": "Banan Qu",
+            "dependent_locality": "",
+            "postal_code": "400000",
+            "sorting_code": null,
+            "address_line1": "chongqing",
+            "address_line2": "",
+            "organization": null,
+            "given_name": null,
+            "additional_name": null,
+            "family_name": null
+        }
+    ],
+    "billing_countries": [
+        {
+            "value": "CN"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ]
+}

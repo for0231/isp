@@ -42,7 +42,7 @@
       var $navItemMore = $navItems.filter('.header-nav-item-more');
 
       $(window).resize(function () {
-        resetMainMenu();
+//        resetMainMenu();
       });
       resetMainMenu();
       function resetMainMenu() {

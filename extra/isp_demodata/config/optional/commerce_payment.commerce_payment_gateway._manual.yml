@@ -1,0 +1,17 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_payment_example
+id: _manual
+label: ' Manual'
+weight: null
+plugin: example_offsite_redirect
+configuration:
+  redirect_method: post
+  display_label: 'Manual Example Display name'
+  mode: live
+  payment_method_types:
+    - credit_card
+conditions: {  }
+conditionOperator: AND
