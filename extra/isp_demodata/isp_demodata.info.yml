@@ -3,3 +3,6 @@ type: module
 description: 'The default content for isp demo data.'
 core: 8.x
 package: 'isip'
+dependencies:
+  - commerce
+  - commerce_product

@@ -2,20 +2,20 @@ langcode: en
 status: true
 dependencies:
   config:
-  - commerce_product.commerce_product_type.default
-  - field.storage.commerce_product.field_image
+    - commerce_product.commerce_product_type.default
+    - core.entity_view_mode.commerce_product.products_collection
+    - field.storage.commerce_product.field_image
   module:
-  - commerce
-  - commerce_product
-  - image
+    - commerce
+    - commerce_product
+    - image
 id: products
 label: Products
-module: views
+module: isp_demodata
 description: ''
 tag: ''
 base_table: commerce_product_field_data
 base_field: product_id
-core: 8.x
 display:
   default:
     display_plugin: default
@@ -68,14 +68,18 @@ display:
       style:
         type: html_list
         options:
-          row_class: ''
+          grouping: {  }
+          row_class: product-compute-item
           default_row_class: true
           uses_fields: false
           type: ul
-          wrapper_class: item-list
-          class: ''
+          wrapper_class: 'product-compute-list-body swiper-container-horizontal'
+          class: product-compute-list
       row:
         type: 'entity:commerce_product'
+        options:
+          relationship: none
+          view_mode: products_collection
       fields:
         title:
           table: commerce_product_field_data
@@ -200,21 +204,22 @@ display:
           entity_field: type
           plugin_id: commerce_entity_bundle
       sorts: {  }
-      title: Products
+      title: ''
       header: {  }
       footer: {  }
       empty: {  }
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      css_class: 'product-wrapper product-compute-tabs-content product-compute-list-container show'
     cache_metadata:
       max-age: -1
       contexts:
-      - 'languages:language_content'
-      - 'languages:language_interface'
-      - url.query_args
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
       tags:
-      - 'config:field.storage.commerce_product.field_image'
+        - 'config:field.storage.commerce_product.field_image'
   page_1:
     display_plugin: page
     id: page_1
@@ -226,8 +231,8 @@ display:
     cache_metadata:
       max-age: -1
       contexts:
-      - 'languages:language_content'
-      - 'languages:language_interface'
-      - url.query_args
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url.query_args
       tags:
-      - 'config:field.storage.commerce_product.field_image'
+        - 'config:field.storage.commerce_product.field_image'

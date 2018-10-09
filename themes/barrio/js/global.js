@@ -44,7 +44,7 @@
       $(window).resize(function () {
 //        resetMainMenu();
       });
-      resetMainMenu();
+//      resetMainMenu();
       function resetMainMenu() {
 //        $nav.removeClass('overflow-visible');
 //        $navItems_notMore.removeClass('header-nav-item-hide');
