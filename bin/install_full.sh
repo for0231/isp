@@ -14,7 +14,10 @@ vendor/bin/drupal thi coloradmin -y
 vendor/bin/drupal thi barrio -y
 vendor/bin/drush cset -y system.theme default barrio
 vendor/bin/drush cset -y system.theme admin coloradmin
+vendor/bin/drush cset system.performance js.preprocess 0 -y
+vendor/bin/drush cset system.performance css.preprocess 0 -y
 vendor/bin/drush language-add zh-hans
 vendor/bin/drush pmu -y toolbar
 vendor/bin/drush en -y barrio_block isp_demodata
+vendor/bin/drush cr
 
