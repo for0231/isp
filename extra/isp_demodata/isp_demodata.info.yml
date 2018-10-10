@@ -6,3 +6,4 @@ package: 'isip'
 dependencies:
   - commerce
   - commerce_product
+  - views

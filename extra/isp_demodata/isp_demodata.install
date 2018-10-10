@@ -5,8 +5,8 @@
  */
 function isp_demodata_install() {
   // Set order type's workflow by order_default_validation.
-  $config_factory = \Drupal::configFactory();
-  $config = $config_factory->getEditable('commerce_order.commerce_order_type.default.yml');
-  $config->set('workflow', 'order_default_validation');
-  $config->save();
+//  $config_factory = \Drupal::configFactory();
+//  $config = $config_factory->getEditable('commerce_order.commerce_order_type.default.yml');
+//  $config->set('workflow', 'order_default_validation');
+//  $config->save();
 }
