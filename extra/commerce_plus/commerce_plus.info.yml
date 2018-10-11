@@ -1,0 +1,5 @@
+name: 'commerce_plus'
+type: module
+description: 'The upgrade of commerce for extension.'
+core: 8.x
+package: 'isp'
