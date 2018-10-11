@@ -22,3 +22,17 @@ function commerce_plus_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+
+/**
+ * Implements hook_inline_entity_form_table_fields_alter().
+ */
+function commerce_plus_inline_entity_form_table_fields_alter(&$fields, $context) {
+  if ($context['entity_type'] == 'commerce_product_variation') {
+    $fields['billing_schedule'] = [
+      'type' => 'field',
+      'label' => t('Billing schedule'),
+      'weight' => 101,
+    ];
+  }
+}
