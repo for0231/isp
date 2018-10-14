@@ -28,7 +28,7 @@
         }
       };
 
-      $(context).find('ul.menu--main > li').once('headernav').hover(function () {
+      $(context).find('.header-nav ul > li').once('headernav').hover(function () {
         setNavLine.active($(this));
       }, function () {
         setNavLine.fold();

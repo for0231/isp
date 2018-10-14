@@ -7,6 +7,9 @@ dependencies:
     - system
   theme:
     - aro
+third_party_settings:
+  block_class:
+    classes: header-nav
 id: aro_main_menu
 theme: aro
 region: navigation_collapsible
