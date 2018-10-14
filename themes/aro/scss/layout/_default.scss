@@ -1,0 +1,19 @@
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #e41f2b;
+}
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff;
+}
+
+.header-nav-hover-line {
+  position: relative;
+  top: 50px;
+  z-index: 0;
+  height: 3px;
+  width: 0;
+  padding: 0;
+  background-color: #e41f2b;
+  bottom: 0;
+  -webkit-transition: .3s cubic-bezier(.4,0,.2,1);
+  transition: .3s cubic-bezier(.4,0,.2,1);
+}

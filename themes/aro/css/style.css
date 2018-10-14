@@ -6392,4 +6392,22 @@ p:last-child,
   .help-block:first-child, .control-group .help-inline:first-child {
     margin-top: 0; }
 
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #e41f2b; }
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #ffffff; }
+
+.header-nav-hover-line {
+  position: relative;
+  top: 50px;
+  z-index: 0;
+  height: 3px;
+  width: 0;
+  padding: 0;
+  background-color: #e41f2b;
+  bottom: 0;
+  -webkit-transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+
 /*# sourceMappingURL=style.css.map */
