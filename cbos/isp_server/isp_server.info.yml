@@ -1,0 +1,5 @@
+name: 'Server'
+type: module
+description: 'The base servers.'
+core: 8.x
+package: 'isp'
