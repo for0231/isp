@@ -38,7 +38,7 @@ use Drupal\user\UserInterface;
  *   base_table = "isp_ip",
  *   data_table = "isp_ip_field_data",
  *   translatable = TRUE,
- *   admin_permission = "administer ip entities",
+ *   admin_permission = "administer ip",
  *   entity_keys = {
  *     "id" = "id",
  *     "bundle" = "type",
