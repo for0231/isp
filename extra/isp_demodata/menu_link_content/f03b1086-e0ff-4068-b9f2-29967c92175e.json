@@ -1,0 +1,87 @@
+{
+    "_links": {
+        "self": {
+            "href": "http:\/\/default\/admin\/structure\/menu\/item\/9\/edit?_format=hal_json"
+        },
+        "type": {
+            "href": "http:\/\/drupal.org\/rest\/type\/menu_link_content\/menu_link_content"
+        }
+    },
+    "id": [
+        {
+            "value": 9
+        }
+    ],
+    "uuid": [
+        {
+            "value": "f03b1086-e0ff-4068-b9f2-29967c92175e"
+        }
+    ],
+    "langcode": [
+        {
+            "value": "en",
+            "lang": "en"
+        }
+    ],
+    "bundle": [
+        {
+            "value": "menu_link_content"
+        }
+    ],
+    "enabled": [
+        {
+            "value": true
+        }
+    ],
+    "title": [
+        {
+            "value": "\u652f\u6301\u4e0e\u670d\u52a1",
+            "lang": "en"
+        }
+    ],
+    "menu_name": [
+        {
+            "value": "main"
+        }
+    ],
+    "link": [
+        {
+            "uri": "internal:\/",
+            "title": "",
+            "options": []
+        }
+    ],
+    "external": [
+        {
+            "value": false
+        }
+    ],
+    "rediscover": [
+        {
+            "value": true
+        }
+    ],
+    "weight": [
+        {
+            "value": -42
+        }
+    ],
+    "expanded": [
+        {
+            "value": false
+        }
+    ],
+    "changed": [
+        {
+            "value": "2018-10-14T13:36:01+00:00",
+            "lang": "en",
+            "format": "Y-m-d\\TH:i:sP"
+        }
+    ],
+    "default_langcode": [
+        {
+            "value": true,
+            "lang": "en"
+        }
+    ]
+}
