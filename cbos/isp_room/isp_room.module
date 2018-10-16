@@ -33,6 +33,7 @@ function isp_room_entity_base_field_info(EntityTypeInterface $entity_type) {
     $fields = [];
     $fields['room'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Room'))
+      ->setRequired(TRUE)
       ->setSetting('target_type', 'isp_room')
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',
