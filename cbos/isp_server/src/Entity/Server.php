@@ -38,7 +38,7 @@ use Drupal\user\UserInterface;
  *   base_table = "isp_server",
  *   data_table = "isp_server_field_data",
  *   translatable = TRUE,
- *   admin_permission = "administer server entities",
+ *   admin_permission = "administer servers",
  *   entity_keys = {
  *     "id" = "id",
  *     "bundle" = "type",

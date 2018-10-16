@@ -3,7 +3,7 @@
 entity.isp_server.collection:
   title: 'Server list'
   route_name: entity.isp_server.collection
-  description: 'List Server entities'
+  description: 'List servers'
   parent: system.admin_structure
   weight: 100
 

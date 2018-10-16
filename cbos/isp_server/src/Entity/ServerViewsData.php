@@ -5,7 +5,7 @@ namespace Drupal\isp_server\Entity;
 use Drupal\views\EntityViewsData;
 
 /**
- * Provides Views data for Server entities.
+ * Provides Views data for servers.
  */
 class ServerViewsData extends EntityViewsData {
 
