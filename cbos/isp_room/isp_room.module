@@ -38,3 +38,37 @@ function isp_room_entity_base_field_info(EntityTypeInterface $entity_type) {
     return $fields;
   }
 }
+
+/**
+ * Implements hook_theme().
+ */
+function isp_room_theme() {
+  $theme = [];
+  $theme['isp_room'] = [
+    'render element' => 'elements',
+    'file' => 'isp_room.page.inc',
+    'template' => 'isp_room',
+  ];
+  $theme['isp_room_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'isp_room.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function isp_room_theme_suggestions_isp_room(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#isp_room'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'isp_room__' . $sanitized_view_mode;
+  $suggestions[] = 'isp_room__' . $entity->bundle();
+  $suggestions[] = 'isp_room__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'isp_room__' . $entity->id();
+  $suggestions[] = 'isp_room__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}
