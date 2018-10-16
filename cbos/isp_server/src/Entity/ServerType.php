@@ -31,11 +31,11 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *     "uuid" = "uuid"
  *   },
  *   links = {
- *     "canonical" = "/admin/ispc/isp_server_type/{isp_server_type}",
- *     "add-form" = "/admin/ispc/isp_server_type/add",
- *     "edit-form" = "/admin/ispc/isp_server_type/{isp_server_type}/edit",
- *     "delete-form" = "/admin/ispc/isp_server_type/{isp_server_type}/delete",
- *     "collection" = "/admin/ispc/isp_server_type"
+ *     "canonical" = "/admin/isp/config/isp_server_type/{isp_server_type}",
+ *     "add-form" = "/admin/isp/config/isp_server_type/add",
+ *     "edit-form" = "/admin/isp/config/isp_server_type/{isp_server_type}/edit",
+ *     "delete-form" = "/admin/isp/config/isp_server_type/{isp_server_type}/delete",
+ *     "collection" = "/admin/isp/config/isp_server_type"
  *   }
  * )
  */

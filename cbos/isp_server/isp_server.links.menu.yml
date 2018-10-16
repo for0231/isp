@@ -4,7 +4,7 @@ entity.isp_server.collection:
   title: 'Server list'
   route_name: entity.isp_server.collection
   description: 'List servers'
-  parent: system.admin_structure
+  parent: isp_core.admin_isp
   weight: 100
 
 
@@ -13,6 +13,6 @@ entity.isp_server_type.collection:
   title: 'Server type'
   route_name: entity.isp_server_type.collection
   description: 'List Server type (bundles)'
-  parent: system.admin_structure
+  parent: isp_core.configuration
   weight: 99
 
