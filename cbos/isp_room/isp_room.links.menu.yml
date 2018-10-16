@@ -1,7 +1,7 @@
 
 # Room menu items definition
 entity.isp_room.collection:
-  title: 'Room list'
+  title: 'Rooms'
   route_name: entity.isp_room.collection
   description: 'List rooms'
   parent: isp_core.admin_isp

@@ -1,7 +1,7 @@
 
 # Server menu items definition
 entity.isp_server.collection:
-  title: 'Server list'
+  title: 'Servers'
   route_name: entity.isp_server.collection
   description: 'List servers'
   parent: isp_core.admin_isp
