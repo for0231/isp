@@ -23,7 +23,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *     },
  *   },
  *   config_prefix = "isp_room_type",
- *   admin_permission = "administer site configuration",
+ *   admin_permission = "administer rooms",
  *   bundle_of = "isp_room",
  *   entity_keys = {
  *     "id" = "id",

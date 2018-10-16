@@ -4,7 +4,7 @@
  * @file
  * Contains isp_room.page.inc.
  *
- * Page callback for Room entities.
+ * Page callback for rooms.
  */
 
 use Drupal\Core\Render\Element;

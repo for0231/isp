@@ -22,15 +22,15 @@ class RoomAccessControlHandler extends EntityAccessControlHandler {
     switch ($operation) {
       case 'view':
         if (!$entity->isPublished()) {
-          return AccessResult::allowedIfHasPermission($account, 'view unpublished room entities');
+          return AccessResult::allowedIfHasPermission($account, 'view unpublished rooms');
         }
-        return AccessResult::allowedIfHasPermission($account, 'view published room entities');
+        return AccessResult::allowedIfHasPermission($account, 'view published rooms');
 
       case 'update':
-        return AccessResult::allowedIfHasPermission($account, 'edit room entities');
+        return AccessResult::allowedIfHasPermission($account, 'edit rooms');
 
       case 'delete':
-        return AccessResult::allowedIfHasPermission($account, 'delete room entities');
+        return AccessResult::allowedIfHasPermission($account, 'delete rooms');
     }
 
     // Unknown operation, no opinion.
@@ -41,7 +41,7 @@ class RoomAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkCreateAccess(AccountInterface $account, array $context, $entity_bundle = NULL) {
-    return AccessResult::allowedIfHasPermission($account, 'add room entities');
+    return AccessResult::allowedIfHasPermission($account, 'add rooms');
   }
 
 }

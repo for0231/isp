@@ -5,7 +5,7 @@ namespace Drupal\isp_room\Entity;
 use Drupal\views\EntityViewsData;
 
 /**
- * Provides Views data for Room entities.
+ * Provides Views data for rooms.
  */
 class RoomViewsData extends EntityViewsData {
 

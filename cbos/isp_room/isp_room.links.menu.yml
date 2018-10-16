@@ -3,8 +3,8 @@
 entity.isp_room.collection:
   title: 'Room list'
   route_name: entity.isp_room.collection
-  description: 'List Room entities'
-  parent: system.admin_structure
+  description: 'List rooms'
+  parent: isp_core.admin_isp
   weight: 100
 
 
@@ -13,6 +13,6 @@ entity.isp_room_type.collection:
   title: 'Room type'
   route_name: entity.isp_room_type.collection
   description: 'List Room type (bundles)'
-  parent: system.admin_structure
+  parent: isp_core.configuration
   weight: 99
 

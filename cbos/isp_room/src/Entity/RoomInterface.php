@@ -7,7 +7,7 @@ use Drupal\Core\Entity\EntityChangedInterface;
 use Drupal\user\EntityOwnerInterface;
 
 /**
- * Provides an interface for defining Room entities.
+ * Provides an interface for defining rooms.
  *
  * @ingroup isp_room
  */

@@ -38,7 +38,7 @@ use Drupal\user\UserInterface;
  *   base_table = "isp_room",
  *   data_table = "isp_room_field_data",
  *   translatable = TRUE,
- *   admin_permission = "administer room entities",
+ *   admin_permission = "administer rooms",
  *   entity_keys = {
  *     "id" = "id",
  *     "bundle" = "type",

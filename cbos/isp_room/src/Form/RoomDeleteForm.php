@@ -5,7 +5,7 @@ namespace Drupal\isp_room\Form;
 use Drupal\Core\Entity\ContentEntityDeleteForm;
 
 /**
- * Provides a form for deleting Room entities.
+ * Provides a form for deleting rooms.
  *
  * @ingroup isp_room
  */
