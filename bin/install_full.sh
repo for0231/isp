@@ -22,3 +22,6 @@ vendor/bin/drush pmu -y toolbar
 vendor/bin/drush en -y barrio_block isp_demodata
 vendor/bin/drush cr
 
+#Install modules
+vendor/bin/drush en -y isp_core isp_server
+

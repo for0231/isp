@@ -23,7 +23,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *     },
  *   },
  *   config_prefix = "isp_server_type",
- *   admin_permission = "administer site configuration",
+ *   admin_permission = "administer servers",
  *   bundle_of = "isp_server",
  *   entity_keys = {
  *     "id" = "id",
