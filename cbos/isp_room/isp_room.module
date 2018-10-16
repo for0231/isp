@@ -5,6 +5,8 @@
  * Contains isp_room.module.
  */
 
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
@@ -20,5 +22,19 @@ function isp_room_help($route_name, RouteMatchInterface $route_match) {
       return $output;
 
     default:
+  }
+}
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function isp_room_entity_base_field_info(EntityTypeInterface $entity_type) {
+  if ($entity_type->id() == 'isp_server') {
+    $fields = [];
+    $fields['room'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Room'))
+      ->setSetting('target_type', 'isp_room');
+
+    return $fields;
   }
 }
