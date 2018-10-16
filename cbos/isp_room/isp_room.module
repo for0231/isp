@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains isp_room.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function isp_room_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the isp_room module.
+    case 'help.page.isp_room':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The server of room.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
