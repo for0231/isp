@@ -1,4 +1,4 @@
-isp_ip.isp_ip_type.*:
+isp_ip.type.*:
   type: config_entity
   label: 'IP type config'
   mapping:

@@ -1,4 +1,4 @@
-isp_server.isp_server_type.*:
+isp_server.type.*:
   type: config_entity
   label: 'Server type config'
   mapping:

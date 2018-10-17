@@ -22,7 +22,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *       "html" = "Drupal\isp_room\RoomTypeHtmlRouteProvider",
  *     },
  *   },
- *   config_prefix = "isp_room_type",
+ *   config_prefix = "type",
  *   admin_permission = "administer rooms",
  *   bundle_of = "isp_room",
  *   entity_keys = {
