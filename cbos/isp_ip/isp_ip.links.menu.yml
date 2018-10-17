@@ -21,8 +21,8 @@ entity.isp_ip_type.collection:
 entity.isp_inet.collection:
   title: 'Inet IP list'
   route_name: entity.isp_inet.collection
-  description: 'List Inet IP entities'
-  parent: system.admin_structure
+  description: 'List Inet IP'
+  parent: isp_core.admin_isp
   weight: 100
 
 
@@ -31,6 +31,6 @@ entity.isp_inet_type.collection:
   title: 'Inet IP type'
   route_name: entity.isp_inet_type.collection
   description: 'List Inet IP type (bundles)'
-  parent: system.admin_structure
+  parent: isp_core.configuration
   weight: 99
 

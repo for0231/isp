@@ -35,7 +35,7 @@ class InetSettingsForm extends FormBase {
   }
 
   /**
-   * Defines the settings form for Inet IP entities.
+   * Defines the settings form for Inet IP.
    *
    * @param array $form
    *   An associative array containing the structure of the form.
@@ -46,7 +46,7 @@ class InetSettingsForm extends FormBase {
    *   Form definition array.
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $form['inet_settings']['#markup'] = 'Settings form for Inet IP entities. Manage field settings here.';
+    $form['inet_settings']['#markup'] = 'Settings form for Inet IP. Manage field settings here.';
     return $form;
   }
 

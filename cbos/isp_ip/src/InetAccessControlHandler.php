@@ -22,15 +22,15 @@ class InetAccessControlHandler extends EntityAccessControlHandler {
     switch ($operation) {
       case 'view':
         if (!$entity->isPublished()) {
-          return AccessResult::allowedIfHasPermission($account, 'view unpublished inet ip entities');
+          return AccessResult::allowedIfHasPermission($account, 'view unpublished inet ip');
         }
-        return AccessResult::allowedIfHasPermission($account, 'view published inet ip entities');
+        return AccessResult::allowedIfHasPermission($account, 'view published inet ip');
 
       case 'update':
-        return AccessResult::allowedIfHasPermission($account, 'edit inet ip entities');
+        return AccessResult::allowedIfHasPermission($account, 'edit inet ip');
 
       case 'delete':
-        return AccessResult::allowedIfHasPermission($account, 'delete inet ip entities');
+        return AccessResult::allowedIfHasPermission($account, 'delete inet ip');
     }
 
     // Unknown operation, no opinion.
@@ -41,7 +41,7 @@ class InetAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkCreateAccess(AccountInterface $account, array $context, $entity_bundle = NULL) {
-    return AccessResult::allowedIfHasPermission($account, 'add inet ip entities');
+    return AccessResult::allowedIfHasPermission($account, 'add inet ip');
   }
 
 }

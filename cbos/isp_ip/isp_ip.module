@@ -41,23 +41,17 @@ function isp_ip_theme() {
     'variables' => ['content' => NULL],
     'file' => 'isp_ip.page.inc',
   ];
+  $theme['isp_inet'] = [
+    'render element' => 'elements',
+    'file' => 'isp_inet.page.inc',
+    'template' => 'isp_inet',
+  ];
+  $theme['isp_inet_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'isp_inet.page.inc',
+  ];
   return $theme;
-}
-
-/**
-* Implements hook_theme_suggestions_HOOK().
-*/
-function isp_ip_theme_suggestions_isp_ip(array $variables) {
-  $suggestions = [];
-  $entity = $variables['elements']['#isp_ip'];
-  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
-
-  $suggestions[] = 'isp_ip__' . $sanitized_view_mode;
-  $suggestions[] = 'isp_ip__' . $entity->bundle();
-  $suggestions[] = 'isp_ip__' . $entity->bundle() . '__' . $sanitized_view_mode;
-  $suggestions[] = 'isp_ip__' . $entity->id();
-  $suggestions[] = 'isp_ip__' . $entity->id() . '__' . $sanitized_view_mode;
-  return $suggestions;
 }
 
 // @todo Base field
@@ -115,23 +109,6 @@ function isp_ip_entity_base_field_info(EntityTypeInterface $entity_type) {
     return $fields;
   }
 }
-/**
- * Implements hook_theme().
- */
-function isp_ip_theme() {
-  $theme = [];
-  $theme['isp_inet'] = [
-    'render element' => 'elements',
-    'file' => 'isp_inet.page.inc',
-    'template' => 'isp_inet',
-  ];
-  $theme['isp_inet_content_add_list'] = [
-    'render element' => 'content',
-    'variables' => ['content' => NULL],
-    'file' => 'isp_inet.page.inc',
-  ];
-  return $theme;
-}
 
 /**
 * Implements hook_theme_suggestions_HOOK().
@@ -146,5 +123,22 @@ function isp_ip_theme_suggestions_isp_inet(array $variables) {
   $suggestions[] = 'isp_inet__' . $entity->bundle() . '__' . $sanitized_view_mode;
   $suggestions[] = 'isp_inet__' . $entity->id();
   $suggestions[] = 'isp_inet__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}
+
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function isp_ip_theme_suggestions_isp_ip(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#isp_ip'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'isp_ip__' . $sanitized_view_mode;
+  $suggestions[] = 'isp_ip__' . $entity->bundle();
+  $suggestions[] = 'isp_ip__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'isp_ip__' . $entity->id();
+  $suggestions[] = 'isp_ip__' . $entity->id() . '__' . $sanitized_view_mode;
   return $suggestions;
 }

@@ -4,7 +4,7 @@
  * @file
  * Contains isp_inet.page.inc.
  *
- * Page callback for Inet IP entities.
+ * Page callback for Inet IP.
  */
 
 use Drupal\Core\Render\Element;
