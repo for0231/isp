@@ -5,6 +5,9 @@
  * Contains isp_ip.module.
  */
 
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Field\FieldStorageDefinitionInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
@@ -60,3 +63,88 @@ function isp_ip_theme_suggestions_isp_ip(array $variables) {
 // @todo Base field
 // 1. 平台内-所属客户， 所属公司
 // 2. 服务器默认IP， 扩展IPs
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function isp_ip_entity_base_field_info(EntityTypeInterface $entity_type) {
+  if ($entity_type->id() == 'isp_server') {
+    $fields = [];
+
+    $fields['admin_ip'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Admin IP'))
+      ->setRequired(TRUE)
+      ->setSetting('target_type', 'isp_inet')
+      ->setDisplayOptions('view', [
+        'type' => 'entity_reference_label',
+        'weight' => 0,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'entity_reference_autocomplete',
+        'weight' => -4,
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'placeholder' => 'Inet ip',
+        ]
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
+    // @TODO 设置默认类型，如default-业务IP
+    $fields['extra_ip'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Extra IP'))
+      ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED)
+      ->setSetting('target_type', 'isp_ip')
+      ->setDisplayOptions('view', [
+        'type' => 'entity_reference_label',
+        'weight' => 0,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'entity_reference_autocomplete',
+        'weight' => -4,
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'placeholder' => 'Onet ip',
+        ]
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
+    return $fields;
+  }
+}
+/**
+ * Implements hook_theme().
+ */
+function isp_ip_theme() {
+  $theme = [];
+  $theme['isp_inet'] = [
+    'render element' => 'elements',
+    'file' => 'isp_inet.page.inc',
+    'template' => 'isp_inet',
+  ];
+  $theme['isp_inet_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'isp_inet.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function isp_ip_theme_suggestions_isp_inet(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#isp_inet'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'isp_inet__' . $sanitized_view_mode;
+  $suggestions[] = 'isp_inet__' . $entity->bundle();
+  $suggestions[] = 'isp_inet__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'isp_inet__' . $entity->id();
+  $suggestions[] = 'isp_inet__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

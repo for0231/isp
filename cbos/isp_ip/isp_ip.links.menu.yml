@@ -16,3 +16,21 @@ entity.isp_ip_type.collection:
   parent: isp_core.configuration
   weight: 99
 
+
+# Inet IP menu items definition
+entity.isp_inet.collection:
+  title: 'Inet IP list'
+  route_name: entity.isp_inet.collection
+  description: 'List Inet IP entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Inet IP type menu items definition
+entity.isp_inet_type.collection:
+  title: 'Inet IP type'
+  route_name: entity.isp_inet_type.collection
+  description: 'List Inet IP type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

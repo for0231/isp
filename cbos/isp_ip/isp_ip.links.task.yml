@@ -16,3 +16,21 @@ entity.isp_ip.delete_form:
   title: Delete
   weight: 10
 
+# Inet IP routing definition
+
+entity.isp_inet.canonical:
+  route_name: entity.isp_inet.canonical
+  base_route: entity.isp_inet.canonical
+  title: 'View'
+
+entity.isp_inet.edit_form:
+  route_name: entity.isp_inet.edit_form
+  base_route: entity.isp_inet.canonical
+  title: 'Edit'
+
+entity.isp_inet.delete_form:
+  route_name:  entity.isp_inet.delete_form
+  base_route:  entity.isp_inet.canonical
+  title: Delete
+  weight: 10
+

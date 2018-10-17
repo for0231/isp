@@ -1,0 +1,12 @@
+isp_ip.isp_inet_type.*:
+  type: config_entity
+  label: 'Inet IP type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

@@ -17,3 +17,22 @@ view published ip:
 
 view unpublished ip:
   title: 'View unpublished IP'
+add inet ip entities:
+  title: 'Create new Inet IP entities'
+
+administer inet ip entities:
+  title: 'Administer Inet IP entities'
+  description: 'Allow to access the administration form to configure Inet IP entities.'
+  restrict access: true
+
+delete inet ip entities:
+  title: 'Delete Inet IP entities'
+
+edit inet ip entities:
+  title: 'Edit Inet IP entities'
+
+view published inet ip entities:
+  title: 'View published Inet IP entities'
+
+view unpublished inet ip entities:
+  title: 'View unpublished Inet IP entities'
