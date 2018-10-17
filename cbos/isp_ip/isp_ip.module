@@ -69,6 +69,13 @@ function isp_ip_entity_base_field_info(EntityTypeInterface $entity_type) {
       ->setLabel(t('Admin IP'))
       ->setRequired(TRUE)
       ->setSetting('target_type', 'isp_inet')
+      ->setSetting('handler_settings', [
+        'auto_create' => TRUE,
+        'auto_create_bundle' => 'default',
+        'target_bundles' => [
+          'default' => 'default',
+        ],
+      ])
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',
         'weight' => 0,
@@ -90,6 +97,13 @@ function isp_ip_entity_base_field_info(EntityTypeInterface $entity_type) {
       ->setLabel(t('Extra IP'))
       ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED)
       ->setSetting('target_type', 'isp_ip')
+      ->setSetting('handler_settings', [
+        'auto_create' => TRUE,
+        'auto_create_bundle' => 'default',
+        'target_bundles' => [
+          'default' => 'default',
+        ],
+      ])
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',
         'weight' => 0,
