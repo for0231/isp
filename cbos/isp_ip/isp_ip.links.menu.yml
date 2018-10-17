@@ -19,7 +19,7 @@ entity.isp_ip_type.collection:
 
 # Inet IP menu items definition
 entity.isp_inet.collection:
-  title: 'Inet IP list'
+  title: 'Inet IPs'
   route_name: entity.isp_inet.collection
   description: 'List Inet IP'
   parent: isp_core.admin_isp
