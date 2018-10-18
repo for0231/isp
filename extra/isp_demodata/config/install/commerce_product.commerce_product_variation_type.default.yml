@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_autosku
+third_party_settings:
+  commerce_autosku:
+    mode: optional
+    plugin: token
+    configuration:
+      pattern: '[random:number]'
+id: default
+label: Default
+orderItemType: default
+generateTitle: true
+traits:
+  - purchasable_entity_subscription
+locked: false
