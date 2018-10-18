@@ -5,7 +5,7 @@
 #composer require drupal/migrate_source_csv
 #composer require drupal/migrate_tools
 vendor/bin/drush si -y --account-pass=admin --db-url=mysql://root:root@localhost/isp
-vendor/bin/drush en -y ds role_menu commerce_cart commerce_checkout commerce_payment_example commerce_recurring drush_language superfish
+vendor/bin/drush en -y config_rewrite ds role_menu commerce_cart commerce_checkout commerce_payment_example commerce_recurring drush_language superfish
 vendor/bin/drush en -y libraries commerce_autosku views_slideshow views_slideshow_cycle default_content
 # Install views_slideshow jquery libraries
 vendor/bin/drush views:slideshow:lib
