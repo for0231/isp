@@ -19,9 +19,10 @@ vendor/bin/drush cset system.performance js.preprocess 0 -y
 vendor/bin/drush cset system.performance css.preprocess 0 -y
 vendor/bin/drush language-add zh-hans
 vendor/bin/drush pmu -y toolbar
+#Install modules
+vendor/bin/drush en -y isp_core isp_server isp_ip isp_room
+#Install demo data
 vendor/bin/drush en -y barrio_block isp_demodata
 vendor/bin/drush cr
 
-#Install modules
-vendor/bin/drush en -y isp_core isp_server isp_ip isp_room
 

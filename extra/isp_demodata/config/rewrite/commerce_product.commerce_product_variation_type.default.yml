@@ -8,7 +8,7 @@ third_party_settings:
     mode: optional
     plugin: token
     configuration:
-      pattern: '[random:number]'
+      pattern: '[random:hash:?]'
 id: default
 label: Default
 orderItemType: default
