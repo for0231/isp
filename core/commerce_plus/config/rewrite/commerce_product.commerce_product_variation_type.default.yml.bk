@@ -1,8 +1,11 @@
+config_rewrite: 'replace'
 langcode: en
 status: true
 dependencies:
   module:
+    - commerce
     - commerce_autosku
+    - commerce_reccurring
 third_party_settings:
   commerce_autosku:
     mode: optional

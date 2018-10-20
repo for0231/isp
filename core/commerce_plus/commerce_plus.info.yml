@@ -3,3 +3,8 @@ type: module
 description: 'The upgrade of commerce for extension.'
 core: 8.x
 package: 'isp'
+dependencies:
+  - commerce
+  - commerce_autosku
+  - commerce_recurring
+  - config_rewrite
