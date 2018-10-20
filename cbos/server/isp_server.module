@@ -5,6 +5,9 @@
  * Contains isp_server.module.
  */
 
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Field\FieldStorageDefinitionInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
@@ -56,3 +59,35 @@ function isp_server_theme_suggestions_isp_server(array $variables) {
   $suggestions[] = 'isp_server__' . $entity->id() . '__' . $sanitized_view_mode;
   return $suggestions;
 }
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function isp_server_entity_base_field_info(EntityTypeInterface $entity_type) {
+  if ($entity_type->id() == 'commerce_order_item') {
+    $fields = [];
+
+    $fields['servers'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Servers'))
+      ->setSetting('target_type', 'isp_server')
+      ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED)
+      ->setDisplayOptions('view', [
+        'type' => 'entity_reference_label',
+        'weight' => 6,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'entity_reference_autocomplete',
+        'weight' => 6,
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'placeholder' => '',
+        ],
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
+    return $fields;
+  }
+}
+
