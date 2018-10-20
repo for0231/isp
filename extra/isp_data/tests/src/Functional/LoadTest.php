@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\isp_demodata\Functional;
+namespace Drupal\Tests\isp_data\Functional;
 
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;
@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Simple test to ensure that main page loads with module enabled.
  *
- * @group isp_demodata
+ * @group isp_data
  */
 class LoadTest extends BrowserTestBase {
 
@@ -17,7 +17,7 @@ class LoadTest extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = ['isp_demodata'];
+  public static $modules = ['isp_data'];
 
   /**
    * A user with permission to administer site configuration.
