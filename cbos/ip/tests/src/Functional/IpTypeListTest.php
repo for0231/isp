@@ -9,10 +9,10 @@ use Drupal\Core\Url;
  *
  * @group isp_ip
  */
-class AlertTypeListTest extends AlertTestBase {
+class IpTypeListTest extends IpTestBase {
 
   public function testList() {
-    $isp_ip_type = $this->createAlertType();
+    $isp_ip_type = $this->createIpType();
 
     $user = $this->drupalCreateUser([
       'administer isp ip',
