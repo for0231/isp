@@ -1,5 +1,11 @@
-name: 'Ultrix\'
+name: 'Ultrix'
 type: module
 description: 'The industry extension.'
 core: 8.x
 package: 'isp'
+dependencies:
+  - commerce_order
+  - isp_ip
+  - isp_server
+  - state_machine
+  - user
