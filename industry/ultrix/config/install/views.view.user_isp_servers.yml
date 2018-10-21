@@ -1,17 +1,16 @@
-config_rewrite: 'replace'
 langcode: en
 status: true
 dependencies:
   module:
     - commerce_order
-    - commerce_price
-    - options
+    - isp_ip
+    - isp_server
     - state_machine
     - user
-id: commerce_user_orders
-label: 'User orders'
-module: commerce_plus
-description: 'Display a list of placed orders for a user.'
+id: user_isp_servers
+label: 'User servers'
+module: ultrix
+description: 'Display a list of placed order servers for a user.'
 tag: Commerce
 base_table: commerce_order
 base_field: order_id
@@ -51,7 +50,7 @@ display:
       pager:
         type: full
         options:
-          items_per_page: 25
+          items_per_page: 50
           offset: 0
           id: 0
           total_pages: null
@@ -176,6 +175,136 @@ display:
           hide_alter_empty: true
           counter_start: 1
           plugin_id: counter
+        name:
+          id: name
+          table: isp_ip_field_data
+          field: name
+          relationship: extra_ip_target_id
+          group_type: group
+          admin_label: ''
+          label: Name
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: isp_ip
+          entity_field: name
+          plugin_id: field
+        type:
+          id: type
+          table: isp_ip_field_data
+          field: type
+          relationship: extra_ip_target_id
+          group_type: group
+          admin_label: ''
+          label: 'IP type'
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: true
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: entity_reference_label
+          settings:
+            link: true
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          entity_type: isp_ip
+          entity_field: type
+          plugin_id: field
         order_id:
           id: order_id
           table: commerce_order
@@ -307,72 +436,6 @@ display:
           entity_type: commerce_order_item
           entity_field: title
           plugin_id: field
-        total_price__number:
-          id: total_price__number
-          table: commerce_order
-          field: total_price__number
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: Total
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: number
-          type: commerce_price_default
-          settings:
-            strip_trailing_zeroes: false
-            currency_display: symbol
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: commerce_order
-          entity_field: total_price
-          plugin_id: field
         placed:
           id: placed
           table: commerce_order
@@ -440,135 +503,6 @@ display:
           entity_type: commerce_order
           entity_field: placed
           plugin_id: field
-        state:
-          id: state
-          table: commerce_order
-          field: state
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: State
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: list_default
-          settings: {  }
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: commerce_order
-          entity_field: state
-          plugin_id: field
-        servers_target_id:
-          id: servers_target_id
-          table: commerce_order_item__servers
-          field: servers_target_id
-          relationship: order_items
-          group_type: group
-          admin_label: ''
-          label: Servers
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: entity_reference_entity_view
-          settings:
-            view_mode: teaser
-          group_column: target_id
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          entity_type: commerce_order_item
-          entity_field: servers
-          plugin_id: field
         order_number:
           id: order_number
           table: commerce_order
@@ -580,7 +514,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: Detail
+            text: 'No: {{ order_id }}, Detail'
             make_link: true
             path: 'user/{{ arguments.uid }}/orders/{{ order_id }}'
             absolute: false
@@ -675,8 +609,50 @@ display:
           entity_type: commerce_order
           entity_field: state
           plugin_id: state_machine_state
+        name:
+          id: name
+          table: isp_ip_field_data
+          field: name
+          relationship: extra_ip_target_id
+          group_type: group
+          admin_label: ''
+          operator: contains
+          value: ''
+          group: 1
+          exposed: true
+          expose:
+            operator_id: name_op
+            label: Name
+            description: ''
+            use_operator: false
+            operator: name_op
+            identifier: name
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+              administer: '0'
+            placeholder: ''
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          entity_type: isp_ip
+          entity_field: name
+          plugin_id: string
       sorts: {  }
-      title: Orders
+      title: Servers
       header: {  }
       footer: {  }
       empty:
@@ -702,6 +678,28 @@ display:
           group_type: group
           admin_label: 'order_items: Order item'
           required: false
+          plugin_id: standard
+        servers_target_id:
+          id: servers_target_id
+          table: commerce_order_item__servers
+          field: servers_target_id
+          relationship: order_items
+          group_type: group
+          admin_label: Server
+          required: false
+          entity_type: commerce_order_item
+          entity_field: servers
+          plugin_id: standard
+        extra_ip_target_id:
+          id: extra_ip_target_id
+          table: isp_server__extra_ip
+          field: extra_ip_target_id
+          relationship: servers_target_id
+          group_type: group
+          admin_label: IP
+          required: false
+          entity_type: isp_server
+          entity_field: extra_ip
           plugin_id: standard
       arguments:
         uid:
@@ -753,17 +751,17 @@ display:
         - user
         - user.permissions
       tags: {  }
-  order_page:
+  server_page:
     display_plugin: page
-    id: order_page
+    id: server_page
     display_title: 'User orders'
     position: 1
     display_options:
       display_extenders: {  }
-      path: user/%user/orders
+      path: user/%user/servers
       menu:
         type: tab
-        title: Orders
+        title: Servers
         description: ''
         expanded: false
         parent: ''
