@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * Implements hook_install() for isp_ip.
+ */
+function isp_ip_install() {
+  user_role_grant_permissions('authenticated', [
+    'view published ip',
+  ]);
+}

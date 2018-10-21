@@ -65,6 +65,7 @@ display:
             unit_price__number: unit_price__number
             quantity: quantity
             total_price__number: total_price__number
+            servers_target_id: servers_target_id
           info:
             title:
               sortable: false
@@ -93,6 +94,11 @@ display:
               align: ''
               separator: ''
               empty_column: false
+              responsive: ''
+            servers_target_id:
+              align: ''
+              separator: ''
+              empty_column: true
               responsive: ''
           default: '-1'
           empty_table: true
@@ -369,14 +375,14 @@ display:
           entity_type: commerce_order_item
           entity_field: total_price
           plugin_id: field
-        extra_ip_target_id:
-          id: extra_ip_target_id
-          table: isp_server__extra_ip
-          field: extra_ip_target_id
-          relationship: servers_target_id
+        servers_target_id:
+          id: servers_target_id
+          table: commerce_order_item__servers
+          field: servers_target_id
+          relationship: none
           group_type: group
           admin_label: ''
-          label: 'Extra IP'
+          label: Servers
           exclude: false
           alter:
             alter_text: false
@@ -418,9 +424,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: entity_reference_label
+          type: entity_reference_entity_view
           settings:
-            link: false
+            view_mode: teaser
           group_column: target_id
           group_columns: {  }
           group_rows: true
@@ -431,8 +437,8 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          entity_type: isp_server
-          entity_field: extra_ip
+          entity_type: commerce_order_item
+          entity_field: servers
           plugin_id: field
       filters: {  }
       sorts: {  }
@@ -450,18 +456,7 @@ display:
           tokenize: false
           content: 'There are no order items yet.'
           plugin_id: text_custom
-      relationships:
-        servers_target_id:
-          id: servers_target_id
-          table: commerce_order_item__servers
-          field: servers_target_id
-          relationship: none
-          group_type: group
-          admin_label: Server
-          required: false
-          entity_type: commerce_order_item
-          entity_field: servers
-          plugin_id: standard
+      relationships: {  }
       arguments:
         order_id:
           id: order_id

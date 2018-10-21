@@ -27,3 +27,4 @@ vendor/bin/drush cr
 ## Install test environment
 #composer run-script drupal-phpunit-upgrade
 #vendor/bin/drush en -y simpletest
+vendor/bin/drush en -y entity_clone

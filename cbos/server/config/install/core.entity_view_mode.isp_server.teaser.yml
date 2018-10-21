@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - isp_server
+id: teaser
+label: Teaser
+targetEntityType: isp_server
+cache: true
