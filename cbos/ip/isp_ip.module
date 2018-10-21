@@ -156,3 +156,17 @@ function isp_ip_theme_suggestions_isp_ip(array $variables) {
   $suggestions[] = 'isp_ip__' . $entity->id() . '__' . $sanitized_view_mode;
   return $suggestions;
 }
+
+/**
+ * Implements hook_inline_entity_form_table_fields_alter().
+ * TODO commerce order edit page, add admin ip, extra ip to the inline entity form.
+ */
+function isp_ip_inline_entity_form_table_fields_alter(&$fields, $context) {
+//  if ($context['entity_type'] == 'commerce_order_item') {
+//    $fields['admin_ip'] = [
+//      'type' => 'field',
+//      'label' => t('Admin IP'),
+//      'weight' => 0,
+//    ];
+//  }
+}
