@@ -5,6 +5,7 @@
  * Contains isp_ip.module.
  */
 
+use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Field\FieldStorageDefinitionInterface;
@@ -169,4 +170,15 @@ function isp_ip_inline_entity_form_table_fields_alter(&$fields, $context) {
 //      'weight' => 0,
 //    ];
 //  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_update().
+ */
+function isp_ip_commerce_order_item_update(EntityInterface $entity) {
+  if ($entity->servers) {
+    // TODO Server diff, and update server status
+    // TODO Admin ip status
+    // TODO Extra ip status
+  }
 }
