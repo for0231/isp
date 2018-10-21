@@ -1,0 +1,7 @@
+<?php
+
+function isp_server_install() {
+  user_role_grant_permissions('authenticated', [
+    'view published servers',
+  ]);
+}
