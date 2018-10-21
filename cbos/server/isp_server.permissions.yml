@@ -17,3 +17,6 @@ view published servers:
 
 view unpublished servers:
   title: 'View unpublished servers'
+
+view own servers:
+  title: 'View own servers'

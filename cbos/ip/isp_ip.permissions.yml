@@ -18,6 +18,9 @@ view published ip:
 view unpublished ip:
   title: 'View unpublished IP'
 
+view own ip:
+  title: 'View own IP'
+
 add inet ip:
   title: 'Create new Inet IP'
 
