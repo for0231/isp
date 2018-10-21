@@ -94,7 +94,7 @@ function isp_ip_entity_base_field_info(EntityTypeInterface $entity_type) {
 
     // @TODO 设置默认类型，如default-业务IP
     $fields['extra_ip'] = BaseFieldDefinition::create('entity_reference')
-      ->setLabel(t('Extra IP'))
+      ->setLabel(t('IP'))
       ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED)
       ->setSetting('target_type', 'isp_ip')
       ->setSetting('handler_settings', [
