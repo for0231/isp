@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - isp_core
+id: role-menu-isp
+label: 'Administer role menu'
+description: 'Menu for administer role.'
+locked: true

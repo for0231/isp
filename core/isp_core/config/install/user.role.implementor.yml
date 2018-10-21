@@ -3,16 +3,16 @@ status: true
 dependencies:
   enforced:
     module:
-      - role_menu
+      - isp_core
   module:
-    - role_menu
+    - isp_core
 id: implementor
 label: Implementor
 weight: 3
 is_admin: false
 third_party_settings:
-  role_menu:
-    menu: role-menu-implementor
+  isp_core:
+    menu: role-menu-isp
   role_frontpage:
-    frontpage: '/implementation'
+    frontpage: '/admin/isp'
 permissions: {  }
