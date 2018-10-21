@@ -6,10 +6,11 @@ dependencies:
       - isp_core
   module:
     - isp_core
-id: implementor
-label: Implementor
+    - role_frontpage
+id: administer
+label: Administer
 weight: 3
-is_admin: false
+is_admin: true
 third_party_settings:
   isp_core:
     menu: role-menu-isp

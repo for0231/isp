@@ -1,6 +1,7 @@
 isp_core.admin_isp:
   title: 'Isp'
   route_name: 'isp_core.admin_isp'
+#  menu-name: role-menu-isp
   parent: 'system.admin'
   description: 'Administer and configuration your isp.'
   weight: -9
