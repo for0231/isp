@@ -210,6 +210,20 @@ class Server extends ContentEntityBase implements ServerInterface {
         'weight' => -3,
       ]);
 
+    $fields['state'] = BaseFieldDefinition::create('state')
+      ->setLabel(t('State'))
+      ->setDescription(t('The order state.'))
+      ->setRequired(TRUE)
+      ->setSetting('max_length', 255)
+      ->setDisplayOptions('view', [
+        'label' => 'hidden',
+        'type' => 'state_transition_form',
+        'weight' => 10,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE)
+      ->setSetting('workflow_callback', ['\Drupal\isp_server\Entity\Server', 'getWorkflowId']);
+
     $fields['created'] = BaseFieldDefinition::create('created')
       ->setLabel(t('Created'))
       ->setDescription(t('The time that the entity was created.'));
@@ -221,4 +235,16 @@ class Server extends ContentEntityBase implements ServerInterface {
     return $fields;
   }
 
+  public function getState() {
+    return $this->get('state')->first();
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function getWorkflowId(ServerInterface $server) {
+    $workflow = ServerType::load($server->bundle())->getWorkflowId();
+
+    return $workflow;
+  }
 }

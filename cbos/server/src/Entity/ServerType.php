@@ -30,6 +30,11 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *     "label" = "label",
  *     "uuid" = "uuid"
  *   },
+ *   config_export = {
+ *     "label",
+ *     "id",
+ *     "workflow",
+ *   },
  *   links = {
  *     "canonical" = "/admin/isp/config/isp_server_type/{isp_server_type}",
  *     "add-form" = "/admin/isp/config/isp_server_type/add",
@@ -55,4 +60,25 @@ class ServerType extends ConfigEntityBundleBase implements ServerTypeInterface {
    */
   protected $label;
 
+  /**
+   * The server type workflow ID.
+   * @var string
+   */
+  protected $workflow;
+
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getWorkflowId() {
+    return $this->workflow;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function setWorkflowId($workflow_id) {
+    $this->workflow = $workflow_id;
+    return $this;
+  }
 }

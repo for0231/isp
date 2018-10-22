@@ -176,9 +176,9 @@ function isp_ip_inline_entity_form_table_fields_alter(&$fields, $context) {
  * Implements hook_ENTITY_TYPE_update().
  */
 function isp_ip_commerce_order_item_update(EntityInterface $entity) {
-  if ($entity->servers) {
-    // TODO Server diff, and update server status
-    // TODO Admin ip status
-    // TODO Extra ip status
+  // TODO Server diff, and update server status
+  foreach ($entity->get('servers') as $server) {
   }
+  // TODO Admin ip status
+  // TODO Extra ip status
 }

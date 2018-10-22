@@ -8,5 +8,8 @@ isp_server.type.*:
     label:
       type: label
       label: 'Label'
+    workflow:
+      type: string
+      label: 'Workflow'
     uuid:
       type: string
