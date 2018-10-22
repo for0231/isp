@@ -1,0 +1,3 @@
+isp_server:
+  label: Server
+  entity_type: isp_server
