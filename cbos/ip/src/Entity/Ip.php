@@ -204,7 +204,7 @@ class Ip extends ContentEntityBase implements IpInterface {
 
     $fields['state'] = BaseFieldDefinition::create('state')
       ->setLabel(t('State'))
-      ->setDescription(t('The order state.'))
+      ->setDescription(t('The ip state.'))
       ->setRequired(TRUE)
       ->setSetting('max_length', 255)
       ->setDisplayOptions('view', [

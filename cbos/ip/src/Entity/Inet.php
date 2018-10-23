@@ -204,7 +204,7 @@ class Inet extends ContentEntityBase implements InetInterface {
 
     $fields['state'] = BaseFieldDefinition::create('state')
       ->setLabel(t('State'))
-      ->setDescription(t('The order state.'))
+      ->setDescription(t('The inet state.'))
       ->setRequired(TRUE)
       ->setSetting('max_length', 255)
       ->setDisplayOptions('view', [
