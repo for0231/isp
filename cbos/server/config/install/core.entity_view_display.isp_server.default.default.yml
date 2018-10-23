@@ -1,0 +1,61 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - isp_server.type.default
+  module:
+    - options
+    - user
+id: isp_server.default.default
+targetEntityType: isp_server
+bundle: default
+mode: default
+content:
+  admin_ip:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  extra_ip:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  room:
+    type: entity_reference_label
+    weight: 0
+    region: content
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+  state:
+    label: above
+    type: list_default
+    weight: 10
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

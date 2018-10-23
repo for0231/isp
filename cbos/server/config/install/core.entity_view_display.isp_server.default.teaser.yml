@@ -33,4 +33,5 @@ hidden:
   admin_ip: true
   langcode: true
   room: true
+  state: true
   user_id: true
