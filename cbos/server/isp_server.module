@@ -71,6 +71,7 @@ function isp_server_entity_base_field_info(EntityTypeInterface $entity_type) {
       ->setLabel(t('Servers'))
       ->setSetting('target_type', 'isp_server')
       ->setCardinality(FieldStorageDefinitionInterface::CARDINALITY_UNLIMITED)
+      ->addConstraint('ServerUnique')
       ->setDisplayOptions('view', [
         'type' => 'entity_reference_label',
         'weight' => 6,
@@ -91,3 +92,20 @@ function isp_server_entity_base_field_info(EntityTypeInterface $entity_type) {
   }
 }
 
+/**
+ * Implements hook_ENTITY_TYPE_update().
+ */
+function isp_server_commerce_order_item_update(Drupal\Core\Entity\EntityInterface $entity) {
+  if ($entity->getQuantity() < $entity->servers->count()) {
+    // error.
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_update().
+ */
+function isp_server_commerce_order_update(Drupal\Core\Entity\EntityInterface $entity) {
+  $b = 'a';
+  // verify server nums.
+
+}
