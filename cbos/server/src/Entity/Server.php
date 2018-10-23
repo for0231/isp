@@ -239,9 +239,6 @@ class Server extends ContentEntityBase implements ServerInterface {
     return $this->get('state')->first();
   }
 
-  /**
-   * {@inheritdoc}
-   */
   public static function getWorkflowId(ServerInterface $server) {
     $workflow = ServerType::load($server->bundle())->getWorkflowId();
 

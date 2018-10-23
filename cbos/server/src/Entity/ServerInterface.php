@@ -74,4 +74,6 @@ interface ServerInterface extends ContentEntityInterface, EntityChangedInterface
    */
   public function setPublished($published);
 
+  public function getState();
+
 }

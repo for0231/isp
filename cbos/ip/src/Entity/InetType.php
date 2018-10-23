@@ -55,4 +55,21 @@ class InetType extends ConfigEntityBundleBase implements InetTypeInterface {
    */
   protected $label;
 
+  protected $workflow;
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getWorkflowId() {
+    return $this->workflow;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function setWorkflowId($workflow_id) {
+    $this->workflow = $workflow_id;
+    return $this;
+  }
+
 }

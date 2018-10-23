@@ -74,4 +74,6 @@ interface IpInterface extends ContentEntityInterface, EntityChangedInterface, En
    */
   public function setPublished($published);
 
+  public function getState();
+
 }

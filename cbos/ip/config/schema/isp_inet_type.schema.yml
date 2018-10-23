@@ -10,3 +10,6 @@ isp_ip.inet_type.*:
       label: 'Label'
     uuid:
       type: string
+    workflow:
+      type: string
+      label: 'Workflow'

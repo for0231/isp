@@ -74,4 +74,5 @@ interface InetInterface extends ContentEntityInterface, EntityChangedInterface, 
    */
   public function setPublished($published);
 
+  public function getState();
 }

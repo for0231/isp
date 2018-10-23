@@ -55,4 +55,26 @@ class IpType extends ConfigEntityBundleBase implements IpTypeInterface {
    */
   protected $label;
 
+
+  /**
+   * The server type workflow ID.
+   * @var string
+   */
+  protected $workflow;
+
+
+  /**
+   * {@inheritdoc}
+   */
+  public function getWorkflowId() {
+    return $this->workflow;
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public function setWorkflowId($workflow_id) {
+    $this->workflow = $workflow_id;
+    return $this;
+  }
 }

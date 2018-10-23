@@ -201,6 +201,21 @@ class Ip extends ContentEntityBase implements IpInterface {
       ->setDisplayConfigurable('view', TRUE)
       ->setRequired(TRUE);
 
+
+    $fields['state'] = BaseFieldDefinition::create('state')
+      ->setLabel(t('State'))
+      ->setDescription(t('The order state.'))
+      ->setRequired(TRUE)
+      ->setSetting('max_length', 255)
+      ->setDisplayOptions('view', [
+        'label' => 'hidden',
+        'type' => 'state_transition_form',
+        'weight' => 10,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE)
+      ->setSetting('workflow_callback', ['\Drupal\isp_ip\Entity\Ip', 'getWorkflowId']);
+
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
       ->setDescription(t('A boolean indicating whether the IP is published.'))
@@ -221,4 +236,13 @@ class Ip extends ContentEntityBase implements IpInterface {
     return $fields;
   }
 
+  public function getState() {
+    return $this->get('state')->first();
+  }
+
+  public static function getWorkflowId(IpInterface $ip) {
+    $workflow = IpType::load($ip->bundle())->getWorkflowId();
+
+    return $workflow;
+  }
 }

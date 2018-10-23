@@ -1,0 +1,26 @@
+ip_default:
+  id: ip_default
+  group: isp_ip
+  label: 'Default'
+  states:
+    beon:
+      label: On(已上线)
+    saled:
+      label: Saled(已销售)
+    disabled:
+      label: Disabled(已停用)
+    rollback:
+      label: Rollback(回收库存)
+  transitions:
+    place:
+      label: 'Saled(已销售)'
+      from: [beon]
+      to: saled
+    disabled:
+      label: 'Disabled(停用)'
+      from: [saled]
+      to: disabled
+    rollback:
+      label: 'Rollback(回收库存)'
+      from: [disabled]
+      to: beon

@@ -201,6 +201,21 @@ class Inet extends ContentEntityBase implements InetInterface {
       ->setDisplayConfigurable('view', TRUE)
       ->setRequired(TRUE);
 
+
+    $fields['state'] = BaseFieldDefinition::create('state')
+      ->setLabel(t('State'))
+      ->setDescription(t('The order state.'))
+      ->setRequired(TRUE)
+      ->setSetting('max_length', 255)
+      ->setDisplayOptions('view', [
+        'label' => 'hidden',
+        'type' => 'state_transition_form',
+        'weight' => 10,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE)
+      ->setSetting('workflow_callback', ['\Drupal\isp_ip\Entity\Inet', 'getWorkflowId']);
+
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
       ->setDescription(t('A boolean indicating whether the Inet IP is published.'))
@@ -219,6 +234,16 @@ class Inet extends ContentEntityBase implements InetInterface {
       ->setDescription(t('The time that the entity was last edited.'));
 
     return $fields;
+  }
+
+  public function getState() {
+    return $this->get('state')->first();
+  }
+
+  public static function getWorkflowId(InetInterface $inet) {
+    $workflow = InetType::load($inet->bundle())->getWorkflowId();
+
+    return $workflow;
   }
 
 }
