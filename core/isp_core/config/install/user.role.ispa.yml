@@ -1,0 +1,16 @@
+langcode: en
+status: true
+dependencies:
+  module:
+  - role_frontpage
+  - role_menu
+third_party_settings:
+  role_frontpage:
+    frontpage: ''
+  role_menu:
+    menu: ispa
+id: ispa
+label: 'Administrator ISP'
+weight: 4
+is_admin: null
+permissions: {  }

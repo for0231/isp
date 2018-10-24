@@ -9,7 +9,7 @@ dependencies:
     - user
 id: user_isp_servers
 label: 'User servers'
-module: ultrix
+module: idcp
 description: 'Display a list of placed order servers for a user.'
 tag: Commerce
 base_table: commerce_order
