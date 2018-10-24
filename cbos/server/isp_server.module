@@ -97,13 +97,28 @@ function isp_server_entity_base_field_info(EntityTypeInterface $entity_type) {
  * Implements hook_ENTITY_TYPE_update().
  */
 function isp_server_commerce_order_item_update(Drupal\Core\Entity\EntityInterface $entity) {
+  // TODO 处理Server的State状态变更
+  $servers = $entity->servers->referencedEntities();
+  foreach ($servers as $server) {
+    /** @var \Drupal\state_machine\Plugin\Field\FieldType\StateItemInterface $state_item */
+    updateState($server);
 
-  // TODO 过滤
-  if ($entity->getQuantity() < $entity->servers->count()) {
+    $admin_ip = $server->get('admin_ip')->entity;
+    updateState($admin_ip);
 
+    $extra_ips = $server->referencedEntities();
+    foreach ($extra_ips as $extra_ip) {
+      updateState($extra_ip);
+    }
   }
 }
 
+function updateState($entity) {
+  $state_item = $entity->get('state')->first();
+  $transition = $entity->getState()->getTransitions();
+  $state_item->applyTransition($transition['place']);
+  $entity->save();
+}
 /**
  * Implements hook_ENTITY_TYPE_update().
  */

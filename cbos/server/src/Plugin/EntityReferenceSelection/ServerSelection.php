@@ -48,6 +48,7 @@ class ServerSelection extends DefaultSelection {
       $query->condition($or);
     }
 
+    $query->condition('state', 'beon');
     // Add entity-access tag.
     $query->addTag($target_type . '_access');
 
