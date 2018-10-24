@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\ultrix\Functional;
+namespace Drupal\Tests\idcp\Functional;
 
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;
@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Simple test to ensure that main page loads with module enabled.
  *
- * @group ultrix
+ * @group idcp
  */
 class LoadTest extends BrowserTestBase {
 
@@ -17,7 +17,7 @@ class LoadTest extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = ['ultrix'];
+  public static $modules = ['idcp'];
 
   /**
    * A user with permission to administer site configuration.

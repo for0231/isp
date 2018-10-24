@@ -20,11 +20,11 @@ vendor/bin/drush pmu -y toolbar
 #Install modules
 vendor/bin/drush en -y isp_core commerce_plus isp_server isp_ip isp_room
 #Install demo data
-vendor/bin/drush en -y barrio_block isp_data ultrix
+vendor/bin/drush en -y barrio_block isp_data idcp
 vendor/bin/drush cr
 
 
 ## Install test environment
 #composer run-script drupal-phpunit-upgrade
 #vendor/bin/drush en -y simpletest
-vendor/bin/drush en -y entity_clone
+#vendor/bin/drush en -y entity_clone
