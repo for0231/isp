@@ -8,6 +8,7 @@
 use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Field\FieldStorageDefinitionInterface;
+use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 
 /**
@@ -96,8 +97,10 @@ function isp_server_entity_base_field_info(EntityTypeInterface $entity_type) {
  * Implements hook_ENTITY_TYPE_update().
  */
 function isp_server_commerce_order_item_update(Drupal\Core\Entity\EntityInterface $entity) {
+
+  // TODO 过滤
   if ($entity->getQuantity() < $entity->servers->count()) {
-    // error.
+
   }
 }
 
@@ -108,4 +111,20 @@ function isp_server_commerce_order_update(Drupal\Core\Entity\EntityInterface $en
   $b = 'a';
   // verify server nums.
 
+}
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function isp_server_form_commerce_order_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  $form['#validate'][] = 'isp_server_order_items_quantity_validate';
+}
+
+function isp_server_order_items_quantity_validate($form, FormStateInterface $form_state) {
+  $order = $form_state->getFormObject()->getEntity();
+  foreach ($order->order_items->referencedEntities() as $row) {
+    if ($row->getQuantity() < $row->servers->count()) {
+      $form_state->setErrorByName('order_items[actions][bundle]', t('The order item quantity is not correct.'));
+    }
+  }
 }
