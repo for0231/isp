@@ -103,9 +103,11 @@ function isp_server_commerce_order_item_update(Drupal\Core\Entity\EntityInterfac
     /** @var \Drupal\state_machine\Plugin\Field\FieldType\StateItemInterface $state_item */
     updateState($server);
 
+    // 处理管理IP的State状态变更
     $admin_ip = $server->get('admin_ip')->entity;
     updateState($admin_ip);
 
+    // 处理业务IP的State状态变更
     $extra_ips = $server->referencedEntities();
     foreach ($extra_ips as $extra_ip) {
       updateState($extra_ip);
