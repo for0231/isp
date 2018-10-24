@@ -77,6 +77,14 @@ class Ip extends ContentEntityBase implements IpInterface {
   /**
    * {@inheritdoc}
    */
+  public function preSave(EntityStorageInterface $storage) {
+    parent::preSave($storage);
+    $this->set('nums', ip2long($this->label()));
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function getName() {
     return $this->get('name')->value;
   }
@@ -183,6 +191,8 @@ class Ip extends ContentEntityBase implements IpInterface {
     $fields['name'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Name'))
       ->setDescription(t('The name of the IP entity.'))
+      ->addConstraint('UniqueField')
+//      ->addConstraint('Ip')
       ->setSettings([
         'max_length' => 50,
         'text_processing' => 0,
@@ -215,6 +225,11 @@ class Ip extends ContentEntityBase implements IpInterface {
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE)
       ->setSetting('workflow_callback', ['\Drupal\isp_ip\Entity\Ip', 'getWorkflowId']);
+
+    $fields['nums'] = BaseFieldDefinition::create('integer')
+      ->setLabel(t('Nums'))
+      ->setSetting('unsigned', TRUE)
+      ->setDefaultValue(0);
 
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))

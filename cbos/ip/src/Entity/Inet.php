@@ -77,6 +77,14 @@ class Inet extends ContentEntityBase implements InetInterface {
   /**
    * {@inheritdoc}
    */
+  public function preSave(EntityStorageInterface $storage) {
+    parent::preSave($storage);
+    $this->set('nums', ip2long($this->label()));
+  }
+
+  /**
+   * {@inheritdoc}
+   */
   public function getName() {
     return $this->get('name')->value;
   }
@@ -183,6 +191,8 @@ class Inet extends ContentEntityBase implements InetInterface {
     $fields['name'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Name'))
       ->setDescription(t('The name of the Inet IP entity.'))
+      ->addConstraint('UniqueField')
+//      ->addConstraint('Ip')
       ->setSettings([
         'max_length' => 50,
         'text_processing' => 0,
@@ -224,6 +234,11 @@ class Inet extends ContentEntityBase implements InetInterface {
         'type' => 'boolean_checkbox',
         'weight' => -3,
       ]);
+
+    $fields['nums'] = BaseFieldDefinition::create('integer')
+      ->setLabel(t('Nums'))
+      ->setSetting('unsigned', TRUE)
+      ->setDefaultValue(0);
 
     $fields['created'] = BaseFieldDefinition::create('created')
       ->setLabel(t('Created'))

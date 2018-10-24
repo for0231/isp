@@ -2,7 +2,6 @@
 
 namespace Drupal\isp_server\Plugin\Validation\Constraint;
 
-use Drupal\Core\Validation\Plugin\Validation\Constraint\UniqueFieldValueValidator;
 use Symfony\Component\Validator\Constraint;
 use Symfony\Component\Validator\ConstraintValidatorInterface;
 use Symfony\Component\Validator\Context\ExecutionContextInterface;
