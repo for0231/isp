@@ -13,9 +13,9 @@ function isp_core_install() {
   $user->roles[] = 'ispa';
   $user->save();
 
-  // TODO fix role.
-  $role = Role::load(RoleInterface::AUTHENTICATED_ID);
-  $role->setThirdPartySetting('role_menu', 'menu', 'ispa');
-  $role->save();
+//  fix role menu for existed role.
+//  $role = Role::load(RoleInterface::AUTHENTICATED_ID);
+//  $role->setThirdPartySetting('role_menu', 'menu', 'ispa');
+//  $role->save();
 
 }
