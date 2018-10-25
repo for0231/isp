@@ -10,7 +10,7 @@ third_party_settings:
   role_menu:
     menu: ispa
 id: ispa
-label: 'Administrator ISP'
+label: 'IS Provider'
 weight: 4
 is_admin: null
 permissions: {  }

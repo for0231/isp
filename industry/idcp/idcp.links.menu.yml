@@ -8,22 +8,56 @@
 
 idcp.base:
   title: 'Resource'
-  route_name: entity.isp_ip.collection
+  route_name: isp_core.admin_isp
   parent: isp_core.admin_isp
 
 idcp.base.configuration:
   title: 'Configuration'
-  route_name: entity.isp_ip.collection
+  route_name: isp_core.admin_isp
   parent: idcp.base
   weight: 100
+
+idcp.base.ip.resource:
+  title: 'IP'
+  route_name: isp_core.admin_isp
+  parent: idcp.base
+  weight: 0
 
 # IP menu items definition
 entity.isp_ip.collection:
   title: 'IPs'
   route_name: entity.isp_ip.collection
-  description: 'List IP'
+  parent: idcp.base.ip.resource
+  weight: 0
+
+# Inet IP menu items definition
+entity.isp_inet.collection:
+  title: 'Inets'
+  route_name: entity.isp_inet.collection
+  parent: idcp.base.ip.resource
+  weight: 10
+
+idcp.base.server.resource:
+  title: 'Servers'
+  route_name: isp_core.admin_isp
   parent: idcp.base
   weight: 0
+
+# Server menu items definition
+entity.isp_server.collection:
+  title: 'Servers'
+  route_name: entity.isp_server.collection
+  description: 'List servers'
+  parent: idcp.base.server.resource
+  weight: 10
+
+# Room menu items definition
+entity.isp_room.collection:
+  title: 'Rooms'
+  route_name: entity.isp_room.collection
+  description: 'List rooms'
+  parent: idcp.base.server.resource
+  weight: 10
 
 
 # IP type menu items definition
@@ -33,15 +67,6 @@ entity.isp_ip_type.collection:
   parent: idcp.base.configuration
   weight: 9
 
-
-# Inet IP menu items definition
-entity.isp_inet.collection:
-  title: 'Inets'
-  route_name: entity.isp_inet.collection
-  parent: idcp.base
-  weight: 10
-
-
 # Inet IP type menu items definition
 entity.isp_inet_type.collection:
   title: 'Inet IP type'
@@ -50,16 +75,6 @@ entity.isp_inet_type.collection:
   parent: idcp.base.configuration
   weight: 9
 
-
-# Room menu items definition
-entity.isp_room.collection:
-  title: 'Rooms'
-  route_name: entity.isp_room.collection
-  description: 'List rooms'
-  parent: idcp.base
-  weight: 10
-
-
 # Room type menu items definition
 entity.isp_room_type.collection:
   title: 'Room type'
@@ -67,16 +82,6 @@ entity.isp_room_type.collection:
   description: 'List Room type (bundles)'
   parent: idcp.base.configuration
   weight: 9
-
-
-# Server menu items definition
-entity.isp_server.collection:
-  title: 'Servers'
-  route_name: entity.isp_server.collection
-  description: 'List servers'
-  parent: idcp.base
-  weight: 10
-
 
 # Server type menu items definition
 entity.isp_server_type.collection:
