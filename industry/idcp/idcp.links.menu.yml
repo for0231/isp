@@ -1,0 +1,11 @@
+#idcp.orders:
+#  title: '订单管理'
+#  route_name: 'entity.commerce_order.collection'
+#  menu_name: ispa
+#  weight: 10
+idcp.orders.manage:
+  title: 'Orders'
+  route_name: 'entity.commerce_order.collection'
+#  parent: idcp.orders
+  parent: isp_core.admin_isp
+  weight: 10
