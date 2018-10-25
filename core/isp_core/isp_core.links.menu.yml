@@ -5,9 +5,3 @@ isp_core.admin_isp:
   description: 'Administer and configuration your isp.'
   weight: -9
 
-isp_core.configuration:
-  title: 'Configuration'
-  route_name: 'isp_core.configuration'
-  parent: isp_core.admin_isp
-  description: 'Configuration your isp settings.'
-  weight: 999
