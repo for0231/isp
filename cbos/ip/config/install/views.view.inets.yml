@@ -4,6 +4,7 @@ dependencies:
   module:
     - isp_ip
     - options
+    - state_machine
     - user
 id: inets
 label: Inets
@@ -699,8 +700,8 @@ display:
           relationship: none
           group_type: group
           admin_label: ''
-          operator: '='
-          value: ''
+          operator: in
+          value: {  }
           group: 1
           exposed: true
           expose:
@@ -718,7 +719,7 @@ display:
               anonymous: '0'
               administrator: '0'
               ispa: '0'
-            placeholder: ''
+            reduce: false
           is_grouped: false
           group_info:
             label: ''
@@ -733,7 +734,7 @@ display:
             group_items: {  }
           entity_type: isp_inet
           entity_field: state
-          plugin_id: string
+          plugin_id: state_machine_state
       sorts: {  }
       title: Inets
       header: {  }
@@ -742,6 +743,10 @@ display:
       relationships: {  }
       arguments: {  }
       display_extenders: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
     cache_metadata:
       max-age: -1
       contexts:

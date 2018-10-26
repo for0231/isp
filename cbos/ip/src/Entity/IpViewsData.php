@@ -17,7 +17,9 @@ class IpViewsData extends EntityViewsData {
 
     // Additional information for Views integration, such as table joins, can be
     // put here.
-
+    $data['isp_ip_field_data']['state']['filter'] = [
+      'id' => 'state_machine_state',
+    ];
     return $data;
   }
 

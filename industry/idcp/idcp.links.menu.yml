@@ -69,7 +69,7 @@ entity.isp_ip_type.collection:
 
 # Inet IP type menu items definition
 entity.isp_inet_type.collection:
-  title: 'Inet IP type'
+  title: 'Inet type'
   route_name: entity.isp_inet_type.collection
   description: 'List Inet IP type (bundles)'
   parent: idcp.base.configuration
