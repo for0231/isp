@@ -118,8 +118,10 @@ function isp_server_commerce_order_item_update(Drupal\Core\Entity\EntityInterfac
 function updateState($entity) {
   $state_item = $entity->get('state')->first();
   $transition = $entity->getState()->getTransitions();
-  $state_item->applyTransition($transition['place']);
-  $entity->save();
+  if ($transition['place']) {
+    $state_item->applyTransition($transition['place']);
+    $entity->save();
+  }
 }
 /**
  * Implements hook_ENTITY_TYPE_update().
