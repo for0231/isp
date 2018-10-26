@@ -95,6 +95,7 @@ function isp_server_entity_base_field_info(EntityTypeInterface $entity_type) {
 
 /**
  * Implements hook_ENTITY_TYPE_update().
+ * // TODO 状态更新有问题，待处理.
  */
 function isp_server_commerce_order_item_update(Drupal\Core\Entity\EntityInterface $entity) {
   // 处理Server的State状态变更
