@@ -3,15 +3,15 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  modules/eabax/core/role_frontpage/role_frontpage.module: n/a
-#  modules/eabax/core/role_frontpage/role_frontpage.info.yml: n/a
-#  modules/eabax/core/role_frontpage/config/schema/role_frontpage.schema.yml: n/a
+#  modules/isp/core/role_frontpage/role_frontpage.module: n/a
+#  modules/isp/core/role_frontpage/role_frontpage.info.yml: n/a
+#  modules/isp/core/role_frontpage/config/schema/role_frontpage.schema.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-07-16 15:33+0800\n"
+"POT-Creation-Date: 2018-10-27 00:44+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -20,27 +20,27 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/eabax/core/role_frontpage/role_frontpage.module:21 modules/eabax/core/role_frontpage/role_frontpage.info.yml:0
+#: modules/isp/core/role_frontpage/role_frontpage.module:21 modules/isp/core/role_frontpage/role_frontpage.info.yml:0
 msgid "Role front page"
 msgstr ""
 
-#: modules/eabax/core/role_frontpage/role_frontpage.module:23
+#: modules/isp/core/role_frontpage/role_frontpage.module:23
 msgid "Optionally, specify a relative URL to display as the front page."
 msgstr ""
 
-#: modules/eabax/core/role_frontpage/role_frontpage.info.yml:0
+#: modules/isp/core/role_frontpage/role_frontpage.info.yml:0
 msgid "Front page per role."
 msgstr ""
 
-#: modules/eabax/core/role_frontpage/role_frontpage.info.yml:0
+#: modules/isp/core/role_frontpage/role_frontpage.info.yml:0
 msgid "Eabax core"
 msgstr ""
 
-#: modules/eabax/core/role_frontpage/config/schema/role_frontpage.schema.yml:0
+#: modules/isp/core/role_frontpage/config/schema/role_frontpage.schema.yml:0
 msgid "Per-role role front page settings"
 msgstr ""
 
-#: modules/eabax/core/role_frontpage/config/schema/role_frontpage.schema.yml:0
+#: modules/isp/core/role_frontpage/config/schema/role_frontpage.schema.yml:0
 msgid "Front page"
 msgstr ""
 

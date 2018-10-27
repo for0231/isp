@@ -1,0 +1,61 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/isp/core/isp_core/isp_core.module: n/a
+#  modules/isp/core/isp_core/isp_core.info.yml: n/a
+#  modules/isp/core/isp_core/isp_core.links.menu.yml: n/a
+#  modules/isp/core/isp_core/isp_core.routing.yml: n/a
+#  modules/isp/core/isp_core/src/Plugin/Validation/Constraint/IpConstraint.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-10-27 00:44+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/isp/core/isp_core/isp_core.module:18
+msgid "About"
+msgstr ""
+
+#: modules/isp/core/isp_core/isp_core.module:19 modules/isp/core/isp_core/isp_core.info.yml:0
+msgid "The core of isp base."
+msgstr ""
+
+#: modules/isp/core/isp_core/isp_core.info.yml:0
+msgid "Core"
+msgstr ""
+
+#: modules/isp/core/isp_core/isp_core.info.yml:0
+msgid "isp"
+msgstr ""
+
+#: modules/isp/core/isp_core/isp_core.links.menu.yml:0
+msgid "IDCP"
+msgstr ""
+
+#: modules/isp/core/isp_core/isp_core.links.menu.yml:0
+msgid "Administer and configuration your isp."
+msgstr ""
+
+#: modules/isp/core/isp_core/isp_core.routing.yml:0
+msgid "ISP"
+msgstr ""
+
+#: modules/isp/core/isp_core/isp_core.routing.yml:0
+msgid "Configuration"
+msgstr ""
+
+#: modules/isp/core/isp_core/src/Plugin/Validation/Constraint/IpConstraint.php:7
+msgctxt "Validation"
+msgid "Ip"
+msgstr ""
+

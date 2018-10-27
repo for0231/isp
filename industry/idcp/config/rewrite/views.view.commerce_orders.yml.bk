@@ -676,7 +676,6 @@ display:
     display_plugin: page
         title: Orders
         description: 'Manage your orders.'
-        weight: 0
     cache_metadata:
       contexts:
         - 'languages:language_content'

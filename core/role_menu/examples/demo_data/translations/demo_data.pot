@@ -3,16 +3,10 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  modules/isp/core/role_menu/role_menu.module: n/a
-#  modules/isp/core/role_menu/role_menu.info.yml: n/a
-#  modules/isp/core/role_menu/role_menu.routing.yml: n/a
-#  modules/isp/core/role_menu/config/schema/role_menu.schema.yml: n/a
 #  modules/isp/core/role_menu/examples/demo_data/demo_data.module: n/a
 #  modules/isp/core/role_menu/examples/demo_data/demo_data.info.yml: n/a
 #  modules/isp/core/role_menu/examples/demo_data/demo_data.links.menu.yml: n/a
 #  modules/isp/core/role_menu/examples/demo_data/demo_data.routing.yml: n/a
-#  modules/isp/core/role_menu/src/RoleMenuManager.php: n/a
-#  modules/isp/core/role_menu/src/Plugin/Block/RoleMenuBlock.php: n/a
 #
 #, fuzzy
 msgid ""
@@ -26,30 +20,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-
-#: modules/isp/core/role_menu/role_menu.module:26 modules/isp/core/role_menu/role_menu.info.yml:0;0
-msgid "Role menu"
-msgstr ""
-
-#: modules/isp/core/role_menu/role_menu.module:55
-msgid "Edit role menu"
-msgstr ""
-
-#: modules/isp/core/role_menu/role_menu.info.yml:0
-msgid "Eabax core"
-msgstr ""
-
-#: modules/isp/core/role_menu/role_menu.routing.yml:0
-msgid "Implementation"
-msgstr ""
-
-#: modules/isp/core/role_menu/config/schema/role_menu.schema.yml:0
-msgid "Per-role role menu settings"
-msgstr ""
-
-#: modules/isp/core/role_menu/config/schema/role_menu.schema.yml:0
-msgid "Menu"
-msgstr ""
 
 #: modules/isp/core/role_menu/examples/demo_data/demo_data.module:18
 msgid "About"
@@ -81,17 +51,5 @@ msgstr ""
 
 #: modules/isp/core/role_menu/examples/demo_data/demo_data.routing.yml:0;0
 msgid "Quote"
-msgstr ""
-
-#: modules/isp/core/role_menu/src/RoleMenuManager.php:52
-msgid "You do not have any menu items."
-msgstr ""
-
-#: modules/isp/core/role_menu/src/Plugin/Block/RoleMenuBlock.php:76
-msgid "@role navigation"
-msgstr ""
-
-#: modules/isp/core/role_menu/src/Plugin/Block/RoleMenuBlock.php:13
-msgid "Role menu block"
 msgstr ""
 
