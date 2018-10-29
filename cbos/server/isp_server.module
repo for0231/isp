@@ -99,30 +99,31 @@ function isp_server_entity_base_field_info(EntityTypeInterface $entity_type) {
  */
 function isp_server_commerce_order_item_update(Drupal\Core\Entity\EntityInterface $entity) {
   // 处理Server的State状态变更
-  $servers = $entity->servers->referencedEntities();
-  foreach ($servers as $server) {
-    /** @var \Drupal\state_machine\Plugin\Field\FieldType\StateItemInterface $state_item */
-    updateState($server);
-
-    // 处理管理IP的State状态变更
-    $admin_ip = $server->get('admin_ip')->entity;
-    updateState($admin_ip);
-
-    // 处理业务IP的State状态变更
-    $extra_ips = $server->referencedEntities();
-    foreach ($extra_ips as $extra_ip) {
-      updateState($extra_ip);
-    }
-  }
+//  $servers = $entity->servers->referencedEntities();
+  \Drupal::service('isp_server.manager')->updateServerState($entity);
+//  foreach ($servers as $server) {
+//    /** @var \Drupal\state_machine\Plugin\Field\FieldType\StateItemInterface $state_item */
+//    updateState($server);
+//
+//    // 处理管理IP的State状态变更
+//    $admin_ip = $server->get('admin_ip')->entity;
+//    updateState($admin_ip);
+//
+//    // 处理业务IP的State状态变更
+//    $extra_ips = $server->referencedEntities();
+//    foreach ($extra_ips as $extra_ip) {
+//      updateState($extra_ip);
+//    }
+//  }
 }
 
 function updateState($entity) {
-  $state_item = $entity->get('state')->first();
-  $transition = $entity->getState()->getTransitions();
-  if ($transition['place']) {
-    $state_item->applyTransition($transition['place']);
-    $entity->save();
-  }
+//  $state_item = $entity->get('state')->first();
+//  $transition = $entity->getState()->getTransitions();
+//  if ($transition['place']) {
+//    $state_item->applyTransition($transition['place']);
+//    $entity->save();
+//  }
 }
 /**
  * Implements hook_ENTITY_TYPE_update().
