@@ -18,3 +18,16 @@ framework:
     js/framework.js: {}
   dependencies:
     - core/jquery.once
+
+
+ab:
+  version: VERSION
+  css:
+    theme:
+      ab/css/bootstrap.min.css: {}
+      ab/css/index.css: {}
+  js:
+    https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js: { type: external }
+    https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js: { type: external }
+    ab/js/bootstrap.min.js: {}
+    ab/js/index.js: {}

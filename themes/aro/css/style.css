@@ -6496,4 +6496,5 @@ footer {
 a.footer-link:hover {
   text-decoration: none; }
 
-/*# sourceMappingURL=style.css.map */
+a.logo img {
+  width: 30px; }
