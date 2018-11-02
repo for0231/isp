@@ -141,7 +141,7 @@ display:
               empty_column: false
               responsive: ''
           default: nums
-          empty_table: false
+          empty_table: true
       row:
         type: fields
       fields:
@@ -654,7 +654,14 @@ display:
       title: Servers
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area_text_custom:
+          id: area_text_custom
+          table: views
+          field: area_text_custom
+          empty: true
+          content: 'No content available.'
+          plugin_id: text_custom
       relationships:
         admin_ip:
           id: admin_ip
