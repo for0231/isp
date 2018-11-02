@@ -31,3 +31,9 @@ ab:
     https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js: { type: external }
     ab/js/bootstrap.min.js: {}
     ab/js/index.js: {}
+
+
+user:
+  css:
+    theme:
+      css/fontcloud.css: {}
