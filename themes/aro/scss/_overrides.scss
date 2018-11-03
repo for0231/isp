@@ -17,7 +17,7 @@
 
 // jQuery UI style overrides.
 @import "jquery-ui/autocomplete";
-a {
+a,a:focus, a:hover {
   text-decoration: none;
 }
 
