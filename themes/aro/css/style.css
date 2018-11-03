@@ -6390,6 +6390,17 @@ p:last-child,
   .help-block:first-child, .control-group .help-inline:first-child {
     margin-top: 0; }
 
+/* Override bootstrap/_type.scss */
+.page-header {
+  padding-bottom: 0;
+  margin: 0;
+  border-bottom: 0;
+  line-height: 40px; }
+
+/* Override bootstrap/_type.scss */
+h1, .h1 {
+  font-size: 24px; }
+
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
   color: #e41f2b; }
 
@@ -6667,7 +6678,7 @@ div.item-list ul > li + li {
   z-index: 0;
   padding-top: 50px;
   padding-bottom: 34px;
-  min-height: 600px; }
+  min-height: 720px; }
 
 .service-content > [ui-view] {
   min-height: 100%; }
