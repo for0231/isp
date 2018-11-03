@@ -35,6 +35,26 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family:'tiFont';
+  src:url(../fonts/tiFont.eot);
+  src:url(../fonts/tiFont.woff2) format('woff2'),url(../fonts/tiFont.woff) format('woff'),url(../fonts/tiFont.ttf) format('truetype'),url(../fonts/tiFont.svg) format('svg');
+  font-weight:normal;
+  font-style:normal
+}
+.ti-icon,.ti-table-soldout,.ti-select-dominator-plus-btn,.ti-btn-item-sup-soldout {
+  font-family:'tiFont' !important;
+  speak:none;
+  font-style:normal;
+  font-weight:normal;
+  font-variant:normal;
+  text-transform:none;
+  text-rendering:auto;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
+}
+
+
 [class^="cf-icon-status"], [class*=" cf-icon-status"] {
   font-family: 'cfStatusIcomoon';
   font-style: normal;

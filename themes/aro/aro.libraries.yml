@@ -36,4 +36,4 @@ ab:
 user:
   css:
     theme:
-      css/fontcloud.css: {}
+      css/user_alone.css: {}

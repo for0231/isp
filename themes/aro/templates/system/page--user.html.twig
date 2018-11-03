@@ -1,43 +1,48 @@
 {% extends "@bootstrap/system/page.html.twig" %}
 
-{# Navbar for User #}
-{#{% if page.navigation or page.navigation_collapsible %}#}
-  {#{% block navbar %}#}
-    {#<header id="navbar-user" role="banner">#}
-      {#<div class="navbar-user-header">#}
-        {#{{ page.navigation }}#}
-        {# .btn-navbar is used as the toggle for collapsed navbar content #}
-        {#{% if page.navigation_collapsible %}#}
-          {#<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">#}
-            {#<span class="sr-only">{{ 'Toggle navigation'|t }}</span>#}
-            {#<span class="icon-bar"></span>#}
-            {#<span class="icon-bar"></span>#}
-            {#<span class="icon-bar"></span>#}
-          {#</button>#}
-        {#{% endif %}#}
-      {#</div>#}
-
-      {# Navigation (collapsible) #}
-      {#{% if page.navigation_collapsible %}#}
-        {#<div id="navbar-user-collapse" class="navbar-user-collapse collapse">#}
-          {#{{ page.navigation_collapsible }}#}
-        {#</div>#}
-      {#{% endif %}#}
-
-    {#</header>#}
-  {#{% endblock %}#}
-{#{% endif %}#}
-{#{% block navbar %}#}
-  {#{% include 'hwuser.html.twig' %}#}
-{#{% endblock %}#}
-{# Inherit Main #}
 {% block main %}
-  Test main
+  {{ attach_library('aro/user') }}
+  <div class="service-content">
+    <div class="service-content-view">
+      <div class="common-content-screen console-content-padding frame-padding-left-0 general">
+        <div class="tiny-layout-container clearfix" style="background-color: #ffffff;">
+          <div class="ti-leftmenu-container">
+            Left menu
+          </div>
+          <div class="view-style">
+            <div class="mainSide realNameAuth">
+              {# Header #}
+              {% if page.header %}
+                {% block header %}
+                  <div class="col-sm-12" role="heading">
+                    {{ page.header }}
+                  </div>
+                {% endblock %}
+              {% endif %}
+
+              {# Highlighted #}
+              {% if page.highlighted %}
+                {% block highlighted %}
+                  <div class="highlighted">{{ page.highlighted }}</div>
+                {% endblock %}
+              {% endif %}
+
+              {# Help #}
+              {% if page.help %}
+                {% block help %}
+                  {{ page.help }}
+                {% endblock %}
+              {% endif %}
+
+              {# Content #}
+              {% block content %}
+                <a id="main-content"></a>
+                {{ page.content }}
+              {% endblock %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 {% endblock %}
-{% if page.footer %}
-  {% block footer %}
-    <footer class="footer user {{ container }}" role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endblock %}
-{% endif %}
