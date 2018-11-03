@@ -1,33 +1,35 @@
 {% extends "@bootstrap/system/page.html.twig" %}
 
 {# Navbar for User #}
-{% if page.navigation or page.navigation_collapsible %}
-  {% block navbar %}
-    <header id="navbar-user" role="banner">
-      <div class="navbar-user-header">
-        {{ page.navigation }}
+{#{% if page.navigation or page.navigation_collapsible %}#}
+  {#{% block navbar %}#}
+    {#<header id="navbar-user" role="banner">#}
+      {#<div class="navbar-user-header">#}
+        {#{{ page.navigation }}#}
         {# .btn-navbar is used as the toggle for collapsed navbar content #}
-        {% if page.navigation_collapsible %}
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
-            <span class="sr-only">{{ 'Toggle navigation'|t }}</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        {% endif %}
-      </div>
+        {#{% if page.navigation_collapsible %}#}
+          {#<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">#}
+            {#<span class="sr-only">{{ 'Toggle navigation'|t }}</span>#}
+            {#<span class="icon-bar"></span>#}
+            {#<span class="icon-bar"></span>#}
+            {#<span class="icon-bar"></span>#}
+          {#</button>#}
+        {#{% endif %}#}
+      {#</div>#}
 
       {# Navigation (collapsible) #}
-      {% if page.navigation_collapsible %}
-        <div id="navbar-user-collapse" class="navbar-user-collapse collapse">
-          {{ page.navigation_collapsible }}
-        </div>
-      {% endif %}
+      {#{% if page.navigation_collapsible %}#}
+        {#<div id="navbar-user-collapse" class="navbar-user-collapse collapse">#}
+          {#{{ page.navigation_collapsible }}#}
+        {#</div>#}
+      {#{% endif %}#}
 
-    </header>
-  {% endblock %}
-{% endif %}
-
+    {#</header>#}
+  {#{% endblock %}#}
+{#{% endif %}#}
+{#{% block navbar %}#}
+  {#{% include 'hwuser.html.twig' %}#}
+{#{% endblock %}#}
 {# Inherit Main #}
 {% block main %}
   Test main
