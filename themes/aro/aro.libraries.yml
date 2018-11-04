@@ -37,7 +37,7 @@ user:
   css:
     theme:
       css/user_alone.css: {}
-
+#for user login page.
 user.login:
   css:
     theme:
