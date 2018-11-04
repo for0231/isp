@@ -6,6 +6,7 @@ use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -18,12 +19,18 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
  */
 class UserPrimaryBlock extends BlockBase implements ContainerFactoryPluginInterface {
 
+  /** @var \Drupal\Core\Entity\EntityTypeManagerInterface */
+  protected $entityTypeManager;
+
+  /** @var \Drupal\Core\Routing\RouteMatchInterface */
+  protected $routeMatch;
   /**
    * {@inheritdoc}
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, EntityTypeManagerInterface $entity_type_manager) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, EntityTypeManagerInterface $entity_type_manager, RouteMatchInterface $route_match) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
     $this->entityTypeManager = $entity_type_manager;
+    $this->routeMatch = $route_match;
   }
 
   /**
@@ -34,12 +41,11 @@ class UserPrimaryBlock extends BlockBase implements ContainerFactoryPluginInterf
       $configuration,
       $plugin_id,
       $plugin_definition,
-      $container->get('entity_type.manager')
+      $container->get('entity_type.manager'),
+      $container->get('current_route_match')
     );
   }
 
-  /** @var \Drupal\Core\Entity\EntityTypeManagerInterface */
-  protected $entityTypeManager;
 
   /**
    * {@inheritdoc}
@@ -85,9 +91,16 @@ class UserPrimaryBlock extends BlockBase implements ContainerFactoryPluginInterf
    */
   public function build() {
     $build = [];
-    $build['user_primary_block']['#markup'] = 'UserPrimaryBlock.';
+    $routeName = $this->routeMatch->getRouteObject();
+    $build['user_primary_block']['#markup'] = $this->configuration['menus'];
 
     return $build;
   }
 
+  /**
+   * {@inheritdoc}
+   */
+  public function getCacheMaxAge() {
+    return 0;
+  }
 }
