@@ -34,6 +34,7 @@
     border-color: rgba(228,228,228,1);
     border-radius: 0;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,.1);
+    //top: -500px;
     position: absolute;
     .loginTypeDiv {
       color: #666;
@@ -86,11 +87,11 @@
   padding-left: 40px;
 }
 
-@media screen and (max-width: 48em) {
-  #loginAdv {
-    display: none;
-  }
-}
+//@media screen and (max-width: 48em) {
+//  #loginAdv {
+//    display: none;
+//  }
+//}
 
 .tiny-input-text {
   border: 1px solid #ddd;
