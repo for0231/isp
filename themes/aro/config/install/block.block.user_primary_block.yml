@@ -1,0 +1,29 @@
+langcode: en
+status: true
+dependencies:
+  module:
+  - idcp
+  theme:
+  - aro
+id: user_primary_block
+theme: aro
+region: sidebar_first
+weight: 0
+provider: null
+plugin: user_primary_block
+settings:
+  id: user_primary_block
+  label: 'User Primary Block'
+  provider: idcp
+  label_display: '0'
+  menus:
+    user-account-center: user-account-center
+    user-fee-center: user-fee-center
+    user-resource-center: user-resource-center
+visibility:
+  request_path:
+    id: request_path
+    pages: '/user/*'
+    negate: false
+    context_mapping: {  }
+
