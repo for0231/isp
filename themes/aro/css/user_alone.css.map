@@ -5,5 +5,5 @@
 		"../scss/theme/user_alone.scss"
 	],
 	"names": [],
-	"mappings": "AACA,AAAA,IAAI,AAAA,oBAAoB,CAAC;EACvB,UAAU,EAAE,GAAG,GAChB;;AACD,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EACjC,UAAU,EAAE,GAAG"
+	"mappings": ";AAAA,uCAAuC;AACvC,AAAA,IAAI,AAAA,oBAAoB,CAAC;EACvB,UAAU,EAAE,GAAG,GAChB"
 }

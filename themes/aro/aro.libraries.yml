@@ -37,3 +37,8 @@ user:
   css:
     theme:
       css/user_alone.css: {}
+
+user.login:
+  css:
+    theme:
+      css/user.login.css: {}

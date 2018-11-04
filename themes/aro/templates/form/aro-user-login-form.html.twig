@@ -1,0 +1,24 @@
+
+<div class="loginTypeDiv">
+  <span class="loginTypeNoSelected ng-scope ng-binding">账号登录</span>
+</div>
+<ul>
+  <li class="inputField" style="margin-top: 20px; margin-left: 10px; margin-bottom: 10px;">{{ form.name }}</li>
+  <li class="inputField" style="margin-top: 20px; margin-left: 10px; margin-bottom: 5px;">{{ form.pass}}</li>
+</ul>
+
+<div>
+  <div id="buttonArea">
+    <div id="loginBtn">
+      {{ form.actions }}
+    </div>
+
+    <div id="bottomBtns">
+      <a target="_blank" href="{{ path('user.register') }}" style="float: left;" class="loginBottomColor">{% trans %} Register {% endtrans %}</a>
+      <span id="subUserLogin" class="loginswap loginBottomColor" style="margin-right:5px;">
+        <a href="{{ path('user.pass') }}" target="_blank" class="loginBottomColor">{% trans %}Forgot?{% endtrans %}</a>
+      </span>
+    </div>
+
+  </div>
+</div>
