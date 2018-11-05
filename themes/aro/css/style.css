@@ -6921,4 +6921,14 @@ footer.user {
   background: url(../en_images/global/header/lang-en.png) no-repeat;
   background-size: contain; }
 
+.header-icon-lang-en-on {
+  background-position: -86px 0px;
+  width: 18px;
+  height: 14px; }
+
+.header-icon-lang-en {
+  background-position: -58px -64px;
+  width: 18px;
+  height: 14px; }
+
 /*# sourceMappingURL=style.css.map */

@@ -29,7 +29,3 @@ function aro_theme() {
 }
 
 
-
-function aro_preprocess_links(&$variables) {
-  $a = 'a';
-}
