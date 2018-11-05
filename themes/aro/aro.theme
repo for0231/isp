@@ -19,5 +19,11 @@ function aro_theme() {
     'aro_user_login_form' => [
       'render element' => 'form',
     ],
+    'aro_user_pass' => [
+      'render element' => 'form',
+    ],
+    'aro_user_register_form' => [
+      'render element' => 'form',
+    ],
   ];
 }

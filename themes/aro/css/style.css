@@ -6360,8 +6360,11 @@ body.toolbar-loading {
 a, a:focus, a:hover {
   text-decoration: none; }
 
-.popover ol:last-child, .popover ul:last-child {
-  margin-bottom: 0; }
+ol, ul {
+  -webkit-padding-start: 0px;
+  -webkit-padding-start: 0px; }
+  .popover ol:last-child, .popover ul:last-child {
+    margin-bottom: 0; }
 
 .page-header {
   margin-top: 0; }

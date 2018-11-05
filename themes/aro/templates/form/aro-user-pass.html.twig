@@ -1,11 +1,10 @@
 {{ form.form_build_id }}
 {{ form.form_id }}
 <div class="loginTypeDiv">
-  <span class="loginTypeNoSelected ng-scope ng-binding">{% trans %}Account login{% endtrans %}</span>
+  <span class="loginTypeNoSelected ng-scope ng-binding">{% trans %}Find my password {% endtrans %}</span>
 </div>
 <ul>
   <li class="inputField" style="margin-top: 20px; margin-left: 10px; margin-bottom: 10px;">{{ form.name }}</li>
-  <li class="inputField" style="margin-top: 20px; margin-left: 10px; margin-bottom: 5px;">{{ form.pass}}</li>
 </ul>
 
 <div>
@@ -17,7 +16,7 @@
     <div id="bottomBtns">
       <a target="_self" href="{{ path('user.register') }}" style="float: left;" class="loginBottomColor">{% trans %} Register {% endtrans %}</a>
       <span id="subUserLogin" class="loginswap loginBottomColor" style="margin-right:5px;">
-        <a href="{{ path('user.pass') }}" target="_self" class="loginBottomColor">{% trans %}Forgot?{% endtrans %}</a>
+        <a href="{{ path('user.login') }}" target="_self" class="loginBottomColor">{% trans %}Login{% endtrans %}</a>
       </span>
     </div>
 

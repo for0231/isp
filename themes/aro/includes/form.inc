@@ -29,6 +29,21 @@ function aro_form_user_login_form_alter(&$form, FormStateInterface $form_state, 
  */
 function aro_form_user_register_form_alter(&$form, FormStateInterface $form_state, $form_id) {
   $form['#attributes']['class'] = ['container-fluid'];
+  $form['#theme'] = 'aro_user_register_form';
+  $form['account']['name']['#placeholder'] = t('Name');
+  $form['account']['mail']['#placeholder'] = t('Email');
+  $form['account']['name']['#attributes'] = [
+    'class' => [
+      'tiny-input-text',
+    ],
+  ];
+  $form['account']['mail']['#attributes'] = [
+    'class' => [
+      'tiny-input-text',
+    ],
+  ];
+  unset($form['account']['name']['#title']);
+  unset($form['account']['mail']['#title']);
 }
 
 /**
@@ -36,4 +51,12 @@ function aro_form_user_register_form_alter(&$form, FormStateInterface $form_stat
  */
 function aro_form_user_pass_alter(&$form, FormStateInterface $form_state, $form_id) {
   $form['#attributes']['class'] = ['container-fluid'];
+  $form['#theme'] = 'aro_user_pass';
+  $form['name']['#placeholder'] = t('Name');
+  $form['name']['#attributes'] = [
+    'class' => [
+      'tiny-input-text',
+    ],
+  ];
+  unset($form['name']['#title']);
 }

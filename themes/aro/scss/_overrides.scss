@@ -23,6 +23,8 @@ a,a:focus, a:hover {
 
 ol, ul {
   //padding-left: 1.5em;
+  -webkit-padding-start: 0px;
+  -webkit-padding-start: 0px;
   .popover &:last-child {
     margin-bottom: 0;
   }
