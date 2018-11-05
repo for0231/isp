@@ -27,3 +27,13 @@ function aro_theme() {
     ],
   ];
 }
+
+
+
+/**
+ * Implements hook_element_info_alter().
+ */
+function aro_room_element_info_alter(array &$info) {
+  $a = 'c';
+}
+
