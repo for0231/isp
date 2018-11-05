@@ -6931,4 +6931,9 @@ footer.user {
   width: 18px;
   height: 14px; }
 
+.language-switcher-language-url:hover .header-icon-lang-en {
+  background-position: -86px 0px;
+  width: 18px;
+  height: 14px; }
+
 /*# sourceMappingURL=style.css.map */
