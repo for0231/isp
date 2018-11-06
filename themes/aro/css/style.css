@@ -6843,8 +6843,7 @@ footer.user {
 .language-switcher-language-url {
   float: right;
   line-height: 50px;
-  cursor: pointer;
-  right: 50px; }
+  cursor: pointer; }
 
 .header-icon {
   display: inline-block;
@@ -6864,15 +6863,18 @@ footer.user {
   font-size: 14px;
   color: white; }
 
+.header-lang-current {
+  margin-right: 10px; }
+
 .header-lang-list {
   display: none;
   position: absolute;
   top: 100%;
-  min-width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   background: #222222;
-  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4); }
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.4);
+  right: 10px; }
 
 .language-switcher-language-url:hover .header-icon-lang-zh {
   background-position: -38px -64px; }

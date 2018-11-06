@@ -39,7 +39,7 @@ footer.user {
   float: right;
   line-height: 50px;
   cursor: pointer;
-  right: 50px;
+  //right: 50px;
 }
 
 .header-icon {
@@ -60,16 +60,22 @@ footer.user {
   font-size: 14px;
   color: white;
 }
+
+.header-lang-current {
+  margin-right: 10px;
+}
+
 .header-lang-list {
   display: none;
   position: absolute;
   top: 100%;
   //left: 0;
-  min-width: 100%;
+  //min-width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
   background: rgba(34, 34, 34, 1);
   box-shadow: 0 2px 15px rgba(0, 0, 0, .4);
+  right: 10px;
 }
 
 .language-switcher-language-url:hover .header-icon-lang-zh {
