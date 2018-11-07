@@ -6,6 +6,7 @@
 #  modules/isp/extra/barrio_block/barrio_block.info.yml: n/a
 #  modules/isp/extra/barrio_block/src/Plugin/Block/FooterNavBlock.php: n/a
 #  modules/isp/extra/barrio_block/src/Plugin/Block/FooterServiceBlock.php: n/a
+#  modules/isp/extra/barrio_block/src/Plugin/Block/UserFooterBlock.php: n/a
 #  modules/isp/extra/barrio_block/src/Plugin/Block/UserLoginedBlock.php: n/a
 #  modules/isp/extra/barrio_block/src/Plugin/Block/UserRegisterBlock.php: n/a
 #
@@ -13,7 +14,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-10-27 00:44+0000\n"
+"POT-Creation-Date: 2018-11-06 04:03+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -40,6 +41,10 @@ msgstr ""
 
 #: modules/isp/extra/barrio_block/src/Plugin/Block/FooterServiceBlock.php:7
 msgid "Footer service block"
+msgstr ""
+
+#: modules/isp/extra/barrio_block/src/Plugin/Block/UserFooterBlock.php:7
+msgid "User footer block"
 msgstr ""
 
 #: modules/isp/extra/barrio_block/src/Plugin/Block/UserLoginedBlock.php:7

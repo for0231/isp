@@ -5,12 +5,13 @@
 # Generated from files:
 #  modules/isp/industry/idcp/idcp.info.yml: n/a
 #  modules/isp/industry/idcp/idcp.links.menu.yml: n/a
+#  modules/isp/industry/idcp/src/Plugin/Block/UserPrimaryBlock.php: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-10-27 00:44+0000\n"
+"POT-Creation-Date: 2018-11-06 04:03+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -117,5 +118,17 @@ msgstr ""
 
 #: modules/isp/industry/idcp/idcp.links.menu.yml:0
 msgid "List Server type (bundles)"
+msgstr ""
+
+#: modules/isp/industry/idcp/src/Plugin/Block/UserPrimaryBlock.php:71
+msgid "Menus"
+msgstr ""
+
+#: modules/isp/industry/idcp/src/Plugin/Block/UserPrimaryBlock.php:72
+msgid "Select the menus for display for user page."
+msgstr ""
+
+#: modules/isp/industry/idcp/src/Plugin/Block/UserPrimaryBlock.php:12
+msgid "User Primary Block"
 msgstr ""
 

@@ -8,7 +8,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-10-27 00:44+0000\n"
+"POT-Creation-Date: 2018-11-06 04:03+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: modules/isp/extra/isp_data/isp_data.info.yml:0
 msgid "Isp Data"
-msgstr "Isp 数据"
+msgstr ""
 
 #: modules/isp/extra/isp_data/isp_data.info.yml:0
 msgid "The default content for isp demo data."
-msgstr "默认演示数据."
+msgstr ""
 
 #: modules/isp/extra/isp_data/isp_data.info.yml:0
 msgid "isp"

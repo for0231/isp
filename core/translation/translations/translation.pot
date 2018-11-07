@@ -2,13 +2,13 @@
 #
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
-# Generated from file: modules/isp/core/user_plus/user_plus.info.yml: n/a
+# Generated from file: modules/isp/core/translation/translation.info.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-11-06 04:02+0000\n"
+"POT-Creation-Date: 2018-11-06 04:01+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -17,15 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/isp/core/user_plus/user_plus.info.yml:0
-msgid "UserPlus"
+#: modules/isp/core/translation/translation.info.yml:0;0
+msgid "Translation"
 msgstr ""
 
-#: modules/isp/core/user_plus/user_plus.info.yml:0
-msgid "The user of extension."
-msgstr ""
-
-#: modules/isp/core/user_plus/user_plus.info.yml:0
-msgid "isp"
+#: modules/isp/core/translation/translation.info.yml:0
+msgid "core"
 msgstr ""
 

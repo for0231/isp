@@ -5,6 +5,10 @@
 # Generated from files:
 #  modules/isp/themes/aro/aro.info.yml: n/a
 #  modules/isp/themes/aro/config/schema/aro.schema.yml: n/a
+#  modules/isp/themes/aro/includes/form.inc: n/a
+#  modules/isp/themes/aro/templates/form/aro-user-login-form.html.twig: n/a
+#  modules/isp/themes/aro/templates/form/aro-user-pass.html.twig: n/a
+#  modules/isp/themes/aro/templates/form/aro-user-register-form.html.twig: n/a
 #  modules/isp/themes/aro/config/optional/block.block.aro_account_menu.yml: n/a
 #  modules/isp/themes/aro/config/optional/block.block.aro_branding.yml: n/a
 #  modules/isp/themes/aro/config/optional/block.block.aro_breadcrumbs.yml: n/a
@@ -21,7 +25,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-10-27 00:45+0000\n"
+"POT-Creation-Date: 2018-11-06 04:05+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -40,6 +44,46 @@ msgstr ""
 
 #: modules/isp/themes/aro/config/schema/aro.schema.yml:0
 msgid "Aro settings"
+msgstr ""
+
+#: modules/isp/themes/aro/includes/form.inc:11
+msgid "Name/eMail"
+msgstr ""
+
+#: modules/isp/themes/aro/includes/form.inc:12
+msgid "Password"
+msgstr ""
+
+#: modules/isp/themes/aro/includes/form.inc:33;55
+msgid "Name"
+msgstr ""
+
+#: modules/isp/themes/aro/includes/form.inc:34
+msgid "Email"
+msgstr ""
+
+#: modules/isp/themes/aro/templates/form/aro-user-login-form.html.twig:4
+msgid "Account login"
+msgstr ""
+
+#: modules/isp/themes/aro/templates/form/aro-user-login-form.html.twig:18 modules/isp/themes/aro/templates/form/aro-user-pass.html.twig:17
+msgid "Register"
+msgstr ""
+
+#: modules/isp/themes/aro/templates/form/aro-user-login-form.html.twig:20 modules/isp/themes/aro/templates/form/aro-user-register-form.html.twig:22
+msgid "Forgot?"
+msgstr ""
+
+#: modules/isp/themes/aro/templates/form/aro-user-pass.html.twig:4
+msgid "Find my password"
+msgstr ""
+
+#: modules/isp/themes/aro/templates/form/aro-user-pass.html.twig:19 modules/isp/themes/aro/templates/form/aro-user-register-form.html.twig:20
+msgid "Login"
+msgstr ""
+
+#: modules/isp/themes/aro/templates/form/aro-user-register-form.html.twig:5
+msgid "Account Register"
 msgstr ""
 
 #: modules/isp/themes/aro/config/optional/block.block.aro_account_menu.yml:0
