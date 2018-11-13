@@ -8,6 +8,8 @@ package: 'Bootstrap'
 regions:
   page_top: 'Page top'
   header: 'Header'
+  header_first: 'Header first'
+  heaer_second: 'Header second'
   breadcrumb: Breadcrumb
   highlighted: 'Highlighted'
   help: 'Help'
@@ -16,6 +18,7 @@ regions:
   sidebar_first: 'Primary'
   sidebar_second: 'Secondary'
   footer: 'Footer'
+  shortcut: 'Shortcut'
   page_bottom: 'Page bottom'
 
 libraries:
