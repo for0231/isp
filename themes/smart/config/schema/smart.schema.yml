@@ -1,5 +1,0 @@
-# Schema for the theme setting configuration file of the smart theme.
-
-smart.settings:
-  type: theme_settings
-  label: 'Smart settings'
