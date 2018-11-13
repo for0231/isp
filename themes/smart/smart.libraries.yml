@@ -1,9 +1,8 @@
 framework:
   css:
-    base:
-      https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700: { type: external }
     theme:
-      css/style.css: {}
+      https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700: { type: external, minified: true }
+      assets/css/style.css: {}
   js:
     assets/bootstrap/assets/javascripts/bootstrap/affix.js: {}
     assets/bootstrap/assets/javascripts/bootstrap/alert.js: {}
