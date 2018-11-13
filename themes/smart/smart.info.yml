@@ -3,18 +3,18 @@ type: theme
 base theme: seven
 
 name: 'Smart'
-description: 'Uses the Smartadmin.'
+description: 'Uses the Smartadmin for admin and frontend pages.'
 package: 'Bootstrap'
 
 regions:
-  navigation: 'Navigation'
-  navigation_collapsible: 'Navigation (Collapsible)'
-  header: 'Top Bar'
+  page_top: 'Page top'
+  header: 'Header'
+  breadcrumb: Breadcrumb
   highlighted: 'Highlighted'
   help: 'Help'
+  pre_content: 'Pre-content'
   content: 'Content'
   sidebar_first: 'Primary'
   sidebar_second: 'Secondary'
   footer: 'Footer'
-  page_top: 'Page top'
   page_bottom: 'Page bottom'
