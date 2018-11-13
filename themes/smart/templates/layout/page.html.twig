@@ -92,7 +92,14 @@
   </aside>
 {% endif %}
 <!-- END NAVIGATION -->
-
+{% if page.sidebar_second %}
+  <aside id="right-panel" class="col-sm-3 pull-right">
+    {% block sidebar_second %}
+      {{ page.sidebar_second }}
+    {% endblock %}
+  </aside>
+{% endif %}
+<!-- END NAVIGATION -->
 <!-- #MAIN PANEL -->
 {%
   set content_classes = [
