@@ -16,3 +16,8 @@ framework:
     assets/bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
     assets/bootstrap/assets/javascripts/bootstrap/tab.js: {}
     assets/bootstrap/assets/javascripts/bootstrap/transition.js: {}
+    assets/js/smartwidgets/jarvis.widget.js: {}
+    assets/js/app.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui
