@@ -13415,35 +13415,35 @@ p:last-child,
 .ui-icon {
   width: 16px;
   height: 16px;
-  background-image: url("../img/jqueryui/ui-icons_222222_256x240.png"); }
+  background-image: url("../images/jqueryui/ui-icons_222222_256x240.png"); }
 
 /* line 364, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/library/jqueryui/_jquery-ui-1.10.3.custom.scss */
 .ui-widget-content .ui-icon {
-  background-image: url("../img/jqueryui/ui-icons_222222_256x240.png"); }
+  background-image: url("../images/jqueryui/ui-icons_222222_256x240.png"); }
 
 /* line 368, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/library/jqueryui/_jquery-ui-1.10.3.custom.scss */
 .ui-widget-header .ui-icon {
-  background-image: url("../img/jqueryui/ui-icons_222222_256x240.png"); }
+  background-image: url("../images/jqueryui/ui-icons_222222_256x240.png"); }
 
 /* line 372, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/library/jqueryui/_jquery-ui-1.10.3.custom.scss */
 .ui-state-default .ui-icon {
-  background-image: url("../img/jqueryui/ui-icons_888888_256x240.png"); }
+  background-image: url("../images/jqueryui/ui-icons_888888_256x240.png"); }
 
 /* line 376, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/library/jqueryui/_jquery-ui-1.10.3.custom.scss */
 .ui-state-hover .ui-icon, .ui-state-focus .ui-icon {
-  background-image: url("../img/jqueryui/ui-icons_454545_256x240.png"); }
+  background-image: url("../images/jqueryui/ui-icons_454545_256x240.png"); }
 
 /* line 380, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/library/jqueryui/_jquery-ui-1.10.3.custom.scss */
 .ui-state-active .ui-icon {
-  background-image: url("../img/jqueryui/ui-icons_454545_256x240.png"); }
+  background-image: url("../images/jqueryui/ui-icons_454545_256x240.png"); }
 
 /* line 384, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/library/jqueryui/_jquery-ui-1.10.3.custom.scss */
 .ui-state-highlight .ui-icon {
-  background-image: url("../img/jqueryui/ui-icons_2e83ff_256x240.png"); }
+  background-image: url("../images/jqueryui/ui-icons_2e83ff_256x240.png"); }
 
 /* line 388, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/library/jqueryui/_jquery-ui-1.10.3.custom.scss */
 .ui-state-error .ui-icon, .ui-state-error-text .ui-icon {
-  background-image: url("../img/jqueryui/ui-icons_f6cf3b_256x240.png"); }
+  background-image: url("../images/jqueryui/ui-icons_f6cf3b_256x240.png"); }
 
 /* positioning */
 /* line 394, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/library/jqueryui/_jquery-ui-1.10.3.custom.scss */
@@ -19475,7 +19475,7 @@ label {
     padding-top: 20px; }
   /* line 47, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/smartadmin/_page-extr.scss */
   #extr-page .hero {
-    background-image: url("../img/gradient/login.png");
+    background-image: url("../images/gradient/login.png");
     background-repeat: no-repeat;
     background-position: 0 137px;
     height: 360px;
@@ -21258,7 +21258,7 @@ html {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background: url("../img/mybg.png") #ffffff;
+  background: url("../images/mybg.png") #ffffff;
   position: relative; }
 
 /* line 9, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/smartadmin/_main.scss */
@@ -21266,7 +21266,7 @@ body {
   margin: 0;
   padding: 0;
   min-height: 100%;
-  background: url("../img/mybg.png") #ffffff;
+  background: url("../images/mybg.png") #ffffff;
   direction: ltr; }
 
 /* when mobile menu is active */
@@ -22681,7 +22681,7 @@ input[type="url"].ui-autocomplete-loading,
 input[type="search"].ui-autocomplete-loading,
 input[type="tel"].ui-autocomplete-loading,
 input[type="color"].ui-autocomplete-loading {
-  background-image: url("../img/select2-spinner.gif") !important;
+  background-image: url("../images/select2-spinner.gif") !important;
   background-repeat: no-repeat;
   background-position: 99% 50%;
   padding-right: 27px; }
@@ -25530,7 +25530,7 @@ img.away {
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   font-weight: bold;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-image: url("../img/pattern/overlay-pattern.png"); }
+  background-image: url("../images/pattern/overlay-pattern.png"); }
 
 /* line 196, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/smartadmin/_main-progress.scss */
 .progress-striped .progress-bar {
