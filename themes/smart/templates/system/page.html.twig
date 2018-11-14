@@ -84,7 +84,7 @@
 </header>
 
 {% if page.sidebar_first %}
-  <aside id="left-panel" class="col-sm-3">
+  <aside id="left-panel">
   {% block sidebar_first %}
     {{ page.sidebar_first }}
   {% endblock %}
@@ -93,7 +93,7 @@
 {% endif %}
 <!-- END NAVIGATION -->
 {% if page.sidebar_second %}
-  <aside id="right-panel" class="col-sm-3 pull-right">
+  <aside id="right-panel" class="pull-right">
     {% block sidebar_second %}
       {{ page.sidebar_second }}
     {% endblock %}
@@ -109,7 +109,7 @@
   page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
 ]
 %}
-<div id="main" role="main" {{ content_attributes.addClass(content_classes) }}>
+<div id="main" role="main">
   {% if page.breadcrumb %}
     <div id="ribbon">
       {% block ribbon %}
