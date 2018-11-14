@@ -1,0 +1,5 @@
+name: 'Message Plus'
+type: module
+description: 'The message plus for contrib module message.'
+core: 8.x
+package: 'isp'
