@@ -15,10 +15,10 @@ vendor/bin/drush cset -y system.theme default aro
 vendor/bin/drush cset -y system.theme admin coloradmin
 vendor/bin/drush cset system.performance js.preprocess 0 -y
 vendor/bin/drush cset system.performance css.preprocess 0 -y
-vendor/bin/drush cset user.settings password_strength false
-vendor/bin/drush cset user.settings register visitors
-vendor/bin/drush cset user.settings verify_mail false
-vendor/bin/drush cset user.settings user_password_strength 0
+vendor/bin/drush cset user.settings password_strength false -y
+vendor/bin/drush cset user.settings register visitors -y
+vendor/bin/drush cset user.settings verify_mail false -y
+#vendor/bin/drush cset user.settings user_password_strength 0
 vendor/bin/drush language-add zh-hans
 vendor/bin/drush pmu -y toolbar
 #Install modules
