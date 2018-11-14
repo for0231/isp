@@ -7994,6 +7994,10 @@ p:last-child,
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+/* line 77, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/_overrides.scss */
+.label {
+  color: unset; }
+
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -29885,5 +29889,19 @@ body.smart-style-3, .smart-style-3 body {
   color: #333 !important; }
 
 /********************************************************************* Skin-4 *************************************************************/
+/* line 2, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/theme/alter/_base.scss */
+.block-system-branding-block {
+  float: left; }
+
+/* line 5, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/theme/alter/_base.scss */
+.region-breadcrumb {
+  height: 40px; }
+  /* line 8, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/theme/alter/_base.scss */
+  .region-breadcrumb .block-system-breadcrumb-block {
+    height: inherit; }
+    /* line 10, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/theme/alter/_base.scss */
+    .region-breadcrumb .block-system-breadcrumb-block .breadcrumb {
+      height: inherit;
+      line-height: unset; }
 
 /*# sourceMappingURL=style.css.map */

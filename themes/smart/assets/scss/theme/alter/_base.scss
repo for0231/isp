@@ -1,4 +1,15 @@
-
-#logo {
-  //margin-left: 22px;
+//for header block float left;
+.block-system-branding-block {
+  float: left;
+}
+.region-breadcrumb {
+  //height: 2.5rem;
+  height: 40px;
+  .block-system-breadcrumb-block {
+    height: inherit;
+    .breadcrumb {
+      height: inherit;
+      line-height: unset;
+    }
+  }
 }
