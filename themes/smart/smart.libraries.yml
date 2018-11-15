@@ -21,3 +21,4 @@ framework:
   dependencies:
     - core/jquery
     - core/jquery.ui
+    - core/jquery.ui.effects.highlight
