@@ -109,7 +109,7 @@
   page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
 ]
 %}
-<div id="main" role="main">
+<div id="main" class="{{ content_classes.addClass(content_classes) }}" role="main">
   {% if page.breadcrumb %}
     <div id="ribbon">
       {% block ribbon %}
@@ -117,33 +117,33 @@
       {% endblock %}
     </div>
   {% endif %}
+  <div id="content">
+    {% if page.precontent %}
+      {% block precontent %}
+        {{ page.precontent }}
+      {% endblock %}
+    {% endif %}
 
-  {% if page.precontent %}
-    {% block precontent %}
-      {{ page.precontent }}
+    {# Highlighted #}
+    {% if page.highlighted %}
+      {% block highlighted %}
+        <div class="highlighted">{{ page.highlighted }}</div>
+      {% endblock %}
+    {% endif %}
+
+    {# Help #}
+    {% if page.help %}
+      {% block help %}
+        {{ page.help }}
+      {% endblock %}
+    {% endif %}
+
+    {# Content #}
+    {% block content %}
+      <a id="main-content"></a>
+      {{ page.content }}
     {% endblock %}
-  <!-- end col -->
-  {% endif %}
-
-  {# Highlighted #}
-  {% if page.highlighted %}
-    {% block highlighted %}
-      <div class="highlighted">{{ page.highlighted }}</div>
-    {% endblock %}
-  {% endif %}
-
-  {# Help #}
-  {% if page.help %}
-    {% block help %}
-      {{ page.help }}
-    {% endblock %}
-  {% endif %}
-
-  {# Content #}
-  {% block content %}
-    <a id="main-content"></a>
-    {{ page.content }}
-  {% endblock %}
+  </div>
 
 </div>
 

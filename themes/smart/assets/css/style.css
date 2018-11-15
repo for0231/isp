@@ -29904,4 +29904,9 @@ body.smart-style-3, .smart-style-3 body {
       height: inherit;
       line-height: unset; }
 
+/* line 17, Users/leo/projects/drupal/modules/isp/themes/smart/assets/scss/theme/alter/_base.scss */
+a.tabledrag-handle .handle {
+  width: 25px;
+  height: 25px; }
+
 /*# sourceMappingURL=style.css.map */
