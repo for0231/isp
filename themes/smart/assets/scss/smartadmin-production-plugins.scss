@@ -6,8 +6,9 @@
  */
 
 // Core variables and mixins
-@import "variables";
-@import "bootstrap/mixins";
+@import "default-variables";
+@import "../bootstrap/assets/stylesheets/bootstrap/mixins";
+@import "custom"; // custom variable overrides
 
 
 // Plugins imported alphabatically and by order (remove if not needed)
