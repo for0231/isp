@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+  - message_plus
+  theme:
+  - smart
+id: smart_message_icon_block
+theme: smart
+region: header
+weight: 0
+provider: null
+plugin: message_icon_block
+settings:
+  id: message_icon_block
+  label: 'Message icon'
+  provider: message_plus
+  label_display: '0'
+visibility: {  }
