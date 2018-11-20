@@ -68,7 +68,7 @@ function role_menu_entity_operation(EntityInterface $entity) {
  */
 function role_menu_preprocess_menu__role_menu(&$variables) {
   $icons = [
-    'system.admin' => 'fa fa-gem',
+    'system.admin' => 'fa fa-lg fa-fw fa-cube',
   ];
   _role_menu_set_menu_items_icon($variables['items'], $icons);
 }
