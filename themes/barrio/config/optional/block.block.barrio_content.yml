@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   module:
-  - system
+    - system
   theme:
-  - barrio
+    - barrio
 id: barrio_content
 theme: barrio
 region: content

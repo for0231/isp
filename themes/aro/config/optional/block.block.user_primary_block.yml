@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   module:
-  - idcp
+    - idcp
   theme:
-  - aro
+    - aro
 id: user_primary_block
 theme: aro
 region: sidebar_first

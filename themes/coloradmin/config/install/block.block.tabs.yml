@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   theme:
-   - coloradmin
+    - coloradmin
 id: tabs
 theme: coloradmin
 region: content

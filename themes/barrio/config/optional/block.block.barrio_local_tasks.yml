@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies:
   theme:
-  - barrio
+    - barrio
 id: barrio_local_tasks
 theme: barrio
 region: content

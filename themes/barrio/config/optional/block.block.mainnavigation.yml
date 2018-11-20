@@ -2,12 +2,12 @@ langcode: en
 status: true
 dependencies:
   config:
-  - system.menu.main
+    - system.menu.main
   module:
-  - block_class
-  - superfish
+    - block_class
+    - superfish
   theme:
-  - barrio
+    - barrio
 third_party_settings:
   block_class:
     classes: header-nav

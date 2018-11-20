@@ -2,9 +2,9 @@ langcode: en
 status: true
 dependencies:
   module:
-  - barrio_block
+    - barrio_block
   theme:
-  - barrio
+    - barrio
 id: footernavblock
 theme: barrio
 region: footer_fifth
