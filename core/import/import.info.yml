@@ -1,0 +1,11 @@
+name: 'Import'
+type: module
+description: 'Import'
+core: 8.x
+version: VERSION
+interface translation project: import
+interface translation server pattern: modules/eabax/core/import/translations/import.%language.po
+package: 'isp'
+dependencies:
+  - eabax_core
+  - migrate_tools

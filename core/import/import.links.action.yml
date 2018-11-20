@@ -1,0 +1,10 @@
+import.import:
+  class: \Drupal\Core\Menu\LocalActionDefault
+  deriver: \Drupal\import\Plugin\Derivative\ImportLocalAction
+  weight: 10
+entity.excel_migrate.add_form:
+  route_name: entity.excel_migrate.add_form
+  title: 'Add Excel migrate'
+  appears_on:
+    - entity.excel_migrate.collection
+
