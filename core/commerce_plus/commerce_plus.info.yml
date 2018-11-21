@@ -8,3 +8,5 @@ dependencies:
   - commerce_autosku
   - commerce_recurring
   - config_rewrite
+  - image
+  - taxonomy
