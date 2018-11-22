@@ -7,7 +7,7 @@
 
     'use strict';
 
-    Drupal.behaviors.bootstrap_barrio_subtheme = {
+    Drupal.behaviors.color = {
         attach: function(context, settings) {
             $(window).scroll(function() {
                 if ($(this).scrollTop() > 50) {
