@@ -772,7 +772,7 @@
    * RESIZER WITH THROTTLE
    * Source: http://benalman.com/code/projects/jquery-resize/examples/resize/
    */
-  // (function ($, window, undefined) {
+  (function ($, window, undefined) {
 
     var elems = $([]),
       jq_resize = $.resize = $.extend($.resize, {}),
@@ -883,7 +883,7 @@
 
     }
 
-  // })(jQuery, this);
+  })(jQuery, this);
   /*
   * ADD CLASS WHEN BELOW CERTAIN WIDTH (MOBILE MENU)
   * Description: tracks the page min-width of #CONTENT and NAV when navigation is resized.
