@@ -1,5 +1,5 @@
-# Schema for the configuration files of the Bootstrap SASS Subtheme.
+# Schema for the theme setting configuration file of the THEMETITLE theme.
 
 colors.settings:
   type: theme_settings
-  label: 'Color settings'
+  label: 'Colors settings'
