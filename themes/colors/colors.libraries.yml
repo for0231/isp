@@ -3,6 +3,11 @@ base:
     theme:
       https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700: {}
       assets/css/colors.style.css: {}
+  js:
+    assets/js/plugins/pace/pace.js: { attributes: { data-pace-options: '{"restartOnRequestAfter": "true"}'} }
+    node_modules/bootstrap/dist/js/bootstrap.js: {}
   dependencies:
-    - core/jquery
     - core/drupal
+    - core/jquery
+    - core/jquery.ui
+    - core/jquery.ui.touch-punch
