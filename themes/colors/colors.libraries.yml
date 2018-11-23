@@ -1,0 +1,7 @@
+base:
+  css:
+    theme:
+      assets/css/colors.style.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal

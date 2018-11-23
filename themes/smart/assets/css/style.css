@@ -32462,4 +32462,7 @@ a.tabledrag-handle .handle {
   width: 25px;
   height: 25px; }
 
+.form--inline .form-actions {
+  clear: none; }
+
 /*# sourceMappingURL=style.css.map */
