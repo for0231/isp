@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 vendor/bin/drush si -y --account-pass=admin --db-url=mysql://root:root@mariadb/idcp
-vendor/bin/drush en -y config_rewrite ds role_menu role_frontpage commerce_cart commerce_checkout commerce_payment_example commerce_recurring drush_language superfish
+vendor/bin/drush en -y config_rewrite ds role_menu memcached_storage role_frontpage commerce_cart commerce_checkout commerce_payment_example commerce_recurring drush_language superfish
 vendor/bin/drush en -y libraries commerce_autosku views_slideshow views_slideshow_cycle default_content
 # Contribute Modules for Experience
 #vendor/bin/drush en -y better_messages
