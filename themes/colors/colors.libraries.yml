@@ -6,8 +6,11 @@ base:
   js:
     assets/js/plugins/pace/pace.js: { attributes: { data-pace-options: '{"restartOnRequestAfter": "true"}'} }
     node_modules/bootstrap/dist/js/bootstrap.js: {}
+    assets/js/smartwidgets/jarvis.widget.js: {}
+    assets/js/app.js: {}
   dependencies:
     - core/drupal
     - core/jquery
     - core/jquery.ui
     - core/jquery.ui.touch-punch
+    - core/jquery.ui.effects.highlight
