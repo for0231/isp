@@ -19137,6 +19137,16 @@ a.tabledrag-handle .handle {
 span.label {
   color: rgba(100, 91, 78, 0.76);
 }
+.form--inline .form-actions {
+  clear: none;
+}
+.form--inline {
+  margin-bottom: 10px;
+}
+.form-actions {
+  margin-left: 0;
+  margin-right: 0;
+}
 .animated {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
