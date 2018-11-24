@@ -19121,6 +19121,22 @@ a.editable-click.editable-disabled:hover {
  * Copyright 2014 bootstraphunter.com
  * Designed and built with all the love in the world by @bootstraphunt.
  */
+.toolbar-fixed #left-panel {
+  padding-top: 88px;
+}
+a.tabledrag-handle .handle {
+  width: 24px;
+  height: 24px;
+}
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  margin-left: 0;
+}
+span.label {
+  color: rgba(100, 91, 78, 0.76);
+}
 .animated {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
