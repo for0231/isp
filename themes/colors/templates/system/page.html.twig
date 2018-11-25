@@ -118,9 +118,11 @@
     </div>
   {% endif %}
   <div id="content">
+    
+    {# Precontent #}
     {% if page.precontent %}
       {% block precontent %}
-        {{ page.precontent }}
+        <div class="precontent">{{ page.precontent }}</div>
       {% endblock %}
     {% endif %}
     
