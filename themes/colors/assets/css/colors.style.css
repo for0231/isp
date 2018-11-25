@@ -19147,6 +19147,39 @@ span.label {
   margin-left: 0;
   margin-right: 0;
 }
+.path-admin .page-title {
+  margin: 0;
+}
+.tabs__tab {
+  width: auto;
+}
+ul.nav-tabs {
+  margin: 0;
+}
+.jarviswidget.nav-tabs {
+  margin-bottom: 5px;
+}
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  vertical-align: middle;
+}
+.table > tbody > tr > td,
+.table > tbody > tr > th,
+.table > tfoot > tr > td,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > thead > tr > th {
+  padding: 0 5px;
+}
+.jarviswidget header .nav-tabs > li > a {
+  border-radius: 0px;
+  border: none;
+  padding: 5px 15px 10px;
+}
 .animated {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
