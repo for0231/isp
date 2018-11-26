@@ -16,7 +16,7 @@ regions:
   breadcrumb: 'Breadcrumb'
   highlighted: 'Highlighted'
   help: 'Help'
-  pre_content: 'Pre-content'
+  precontent: 'Pre-content'
   content: 'Content'
   sidebar_first: 'Primary'
   sidebar_second: 'Secondary'

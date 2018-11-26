@@ -51,7 +51,8 @@
   'responsive'
 ]
 %}
-<div class="table-responsive">
+<div class="row">
+{#<div class="table-responsive">#}
   <table{{ attributes.addClass(classes) }}>
     {% if caption %}
       <caption>{{ caption }}</caption>
