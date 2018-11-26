@@ -2,4 +2,6 @@ name: 'Server'
 type: module
 description: 'The base servers.'
 core: 8.x
+interface translation project: server
+interface translation server pattern: modules/isp/cbos/server/translations/server.%language.po
 package: 'isp'

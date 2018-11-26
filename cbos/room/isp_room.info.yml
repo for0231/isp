@@ -2,6 +2,8 @@ name: 'Room'
 type: module
 description: 'The server of room.'
 core: 8.x
+interface translation project: room
+interface translation server pattern: modules/isp/cbos/room/translations/room.%language.po
 package: 'isp'
 dependencies:
   - isp_core

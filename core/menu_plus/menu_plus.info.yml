@@ -2,4 +2,6 @@ name: 'Menu Plus'
 type: module
 description: 'The extra menu plus.'
 core: 8.x
+interface translation project: menu_plus
+interface translation server pattern: modules/isp/core/menu_plus/translations/menu_plus.%language.po
 package: 'isp'
