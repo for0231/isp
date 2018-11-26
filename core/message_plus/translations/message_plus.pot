@@ -1,0 +1,42 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/isp/core/message_plus/message_plus.module: n/a
+#  modules/isp/core/message_plus/message_plus.info.yml: n/a
+#  modules/isp/core/message_plus/src/Plugin/Block/MessageIconBlock.php: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-11-26 13:33+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/isp/core/message_plus/message_plus.module:18
+msgid "About"
+msgstr ""
+
+#: modules/isp/core/message_plus/message_plus.module:19 modules/isp/core/message_plus/message_plus.info.yml:0
+msgid "The message plus for contrib module message."
+msgstr ""
+
+#: modules/isp/core/message_plus/message_plus.info.yml:0
+msgid "Message Plus"
+msgstr ""
+
+#: modules/isp/core/message_plus/message_plus.info.yml:0
+msgid "isp"
+msgstr ""
+
+#: modules/isp/core/message_plus/src/Plugin/Block/MessageIconBlock.php:7
+msgid "Message icon block"
+msgstr ""
+

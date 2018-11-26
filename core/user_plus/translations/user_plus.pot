@@ -2,13 +2,15 @@
 #
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
-# Generated from file: modules/isp/core/user_plus/user_plus.info.yml: n/a
+# Generated from files:
+#  modules/isp/core/user_plus/user_plus.info.yml: n/a
+#  modules/isp/core/user_plus/src/Plugin/Block/AvatarBlock.php: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-11-06 04:02+0000\n"
+"POT-Creation-Date: 2018-11-26 13:33+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -27,5 +29,13 @@ msgstr ""
 
 #: modules/isp/core/user_plus/user_plus.info.yml:0
 msgid "isp"
+msgstr ""
+
+#: modules/isp/core/user_plus/src/Plugin/Block/AvatarBlock.php:95
+msgid "View mode"
+msgstr ""
+
+#: modules/isp/core/user_plus/src/Plugin/Block/AvatarBlock.php:13
+msgid "Avatar block"
 msgstr ""
 
