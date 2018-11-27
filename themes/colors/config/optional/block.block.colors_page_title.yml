@@ -6,8 +6,8 @@ dependencies:
     - colors
 id: colors_page_title
 theme: colors
-region: content
-weight: -50
+region: precontent
+weight: -4
 provider: null
 plugin: page_title_block
 settings:
