@@ -10,7 +10,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-11-27 12:47+0000\n"
+"POT-Creation-Date: 2018-11-27 05:38+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -25,7 +25,7 @@ msgstr ""
 
 #: modules/isp/core/user_plus/user_plus.info.yml:0
 msgid "The user of extension."
-msgstr ""
+msgstr "User的扩展."
 
 #: modules/isp/core/user_plus/user_plus.info.yml:0
 msgid "isp"
@@ -33,9 +33,9 @@ msgstr ""
 
 #: modules/isp/core/user_plus/src/Plugin/Block/AvatarBlock.php:95
 msgid "View mode"
-msgstr ""
+msgstr "显示模式"
 
 #: modules/isp/core/user_plus/src/Plugin/Block/AvatarBlock.php:13
 msgid "Avatar block"
-msgstr ""
+msgstr "头像区块"
 

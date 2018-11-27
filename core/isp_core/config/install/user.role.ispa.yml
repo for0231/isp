@@ -2,8 +2,8 @@ langcode: en
 status: true
 dependencies:
   module:
-  - role_frontpage
-  - role_menu
+    - role_frontpage
+    - role_menu
 third_party_settings:
   role_frontpage:
     frontpage: ''
