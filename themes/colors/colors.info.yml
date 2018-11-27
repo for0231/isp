@@ -4,6 +4,7 @@ base theme: seven
 description: 'The colors of theme.'
 package: isp
 core: 8.x
+version: VERSION
 interface translation project: colors
 interface translation server pattern: modules/isp/themes/colors/translations/colors.%language.po
 

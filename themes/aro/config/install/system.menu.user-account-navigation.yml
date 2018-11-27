@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: user-account-navigation
-label: 'User Account Navigation'
-description: 'User page right'
-locked: true

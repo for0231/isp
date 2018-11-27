@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "user_alone.css",
-	"sources": [
-		"../scss/theme/user_alone.scss"
-	],
-	"names": [],
-	"mappings": ";AAAA,uCAAuC;AACvC,AAAA,IAAI,AAAA,oBAAoB,CAAC;EACvB,UAAU,EAAE,GAAG,GAChB"
-}

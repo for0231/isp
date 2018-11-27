@@ -49,9 +49,9 @@ ul.nav-tabs {
   vertical-align: middle;
 }
 
-// Fix smart plugin
+// Fix smart plugin for block layout table
 .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
-  padding: 0 5px;
+  padding: 4px;
 }
 
 // Fix block layout nav tabs padding
@@ -59,4 +59,12 @@ ul.nav-tabs {
   border-radius: 0px;
   border: none;
   padding: 5px 15px 10px;
+}
+
+.filter-wrapper.form-wrapper {
+  height: unset;
+}
+// Fix font color on /admin/config
+.alert-danger a, .alert-danger a:hover, .alert-danger a:focus {
+  color: yellow;
 }

@@ -19170,12 +19170,20 @@ ul.nav-tabs {
 .table > tfoot > tr > th,
 .table > thead > tr > td,
 .table > thead > tr > th {
-  padding: 0 5px;
+  padding: 4px;
 }
 .jarviswidget header .nav-tabs > li > a {
   border-radius: 0px;
   border: none;
   padding: 5px 15px 10px;
+}
+.filter-wrapper.form-wrapper {
+  height: unset;
+}
+.alert-danger a,
+.alert-danger a:hover,
+.alert-danger a:focus {
+  color: yellow;
 }
 .animated {
   -webkit-animation-duration: 1s;
