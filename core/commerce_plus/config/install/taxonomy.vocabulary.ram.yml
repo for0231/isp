@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: RAM
-vid: ram
-description: 'Computer memory'
-hierarchy: 0
-weight: 0

@@ -1,4 +1,0 @@
-services:
-  isp_server.manager:
-    class: Drupal\isp_server\ServerManager
-    arguments: ['@entity_type.manager']

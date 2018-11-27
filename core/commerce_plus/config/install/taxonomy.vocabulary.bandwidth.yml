@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: Bandwidth
-vid: bandwidth
-description: ''
-hierarchy: 0
-weight: 0

@@ -19185,6 +19185,9 @@ ul.nav-tabs {
 .alert-danger a:focus {
   color: yellow;
 }
+.no-touchevents .button--small {
+  font-size: 12px;
+}
 .animated {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;

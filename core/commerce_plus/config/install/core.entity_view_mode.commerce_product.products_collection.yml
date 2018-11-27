@@ -1,9 +1,0 @@
-langcode: en
-status: true
-dependencies:
-  module:
-    - commerce_product
-id: commerce_product.products_collection
-label: Collection
-targetEntityType: commerce_product
-cache: true

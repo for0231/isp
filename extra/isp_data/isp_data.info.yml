@@ -1,5 +1,0 @@
-name: 'Isp Data'
-type: module
-description: 'The default content for isp demo data.'
-core: 8.x
-package: 'isp'

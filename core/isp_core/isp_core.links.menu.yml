@@ -1,7 +1,0 @@
-isp_core.admin_isp:
-  title: 'IDCP'
-  route_name: 'isp_core.admin_isp'
-  menu_name: ispa
-  description: 'Administer and configuration your isp.'
-  weight: -9
-

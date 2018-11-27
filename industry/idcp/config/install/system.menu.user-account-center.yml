@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: user-account-center
-label: 'User Account Center'
-description: 'Sidebar for User account center'
-locked: true

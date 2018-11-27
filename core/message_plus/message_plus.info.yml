@@ -1,7 +1,0 @@
-name: 'Message Plus'
-type: module
-description: 'The message plus for contrib module message.'
-core: 8.x
-interface translation project: message_plus
-interface translation server pattern: modules/isp/core/message_plus/translations/message_plus.%language.po
-package: 'isp'

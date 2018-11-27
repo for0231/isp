@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: CPU
-vid: cpu
-description: 'Computer cpu'
-hierarchy: 0
-weight: 0

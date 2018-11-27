@@ -1,7 +1,0 @@
-<?php
-
-function isp_ip_install() {
-  user_role_grant_permissions('authenticated', [
-    'view published ip',
-  ]);
-}
