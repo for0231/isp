@@ -21,6 +21,6 @@ vendor/bin/drupal thi colors -y
 vendor/bin/drush cset -y system.theme default colors
 vendor/bin/drush cset -y system.theme admin colors
 
-vendor/bin/drush en -y isp_core commerce_plus isp_server isp_ip isp_room \
-                       message_plus
+#vendor/bin/drush en -y isp_core commerce_plus isp_server isp_ip isp_room \
+#                       message_plus
 
