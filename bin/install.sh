@@ -7,7 +7,7 @@ vendor/bin/drupal moi -y config_rewrite ds role_menu memcache \
                        commerce_payment_example commerce_recurring \
                        drush_language superfish libraries commerce_autosku \
                        views_slideshow views_slideshow_cycle default_content \
-                       config_update_ui migrate_source_csv block_class locale \
+                       config_update_ui migrate_source_csv migrate_source_xls block_class locale \
                        config_translation potx translation
 ## Install for dev
 vendor/bin/drupal moi -y memcache_admin
