@@ -1,19 +1,16 @@
-add ip+ entities:
-  title: 'Create new IP+ entities'
+add ip plus:
+  title: 'Create new IP+'
 
-administer ip+ entities:
-  title: 'Administer IP+ entities'
-  description: 'Allow to access the administration form to configure IP+ entities.'
+administer ip plus:
+  title: 'Administer IP+'
+  description: 'Allow to access the administration form to configure IP+.'
   restrict access: true
 
-delete ip+ entities:
-  title: 'Delete IP+ entities'
+delete ip plus:
+  title: 'Delete IP+'
 
-edit ip+ entities:
-  title: 'Edit IP+ entities'
+edit ip plus:
+  title: 'Edit IP+'
 
-view published ip+ entities:
-  title: 'View published IP+ entities'
-
-view unpublished ip+ entities:
-  title: 'View unpublished IP+ entities'
+view ip plus:
+  title: 'View IP+'

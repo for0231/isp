@@ -4,7 +4,7 @@
  * @file
  * Contains ipplus.page.inc.
  *
- * Page callback for IP+ entities.
+ * Page callback for IP+.
  */
 
 use Drupal\Core\Render\Element;

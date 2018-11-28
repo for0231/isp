@@ -22,15 +22,15 @@ class IpplusAccessControlHandler extends EntityAccessControlHandler {
     switch ($operation) {
       case 'view':
         if (!$entity->isPublished()) {
-          return AccessResult::allowedIfHasPermission($account, 'view unpublished ip+ entities');
+          return AccessResult::allowedIfHasPermission($account, 'view unpublished ip plus');
         }
-        return AccessResult::allowedIfHasPermission($account, 'view published ip+ entities');
+        return AccessResult::allowedIfHasPermission($account, 'view published ip plus');
 
       case 'update':
-        return AccessResult::allowedIfHasPermission($account, 'edit ip+ entities');
+        return AccessResult::allowedIfHasPermission($account, 'edit ip plus');
 
       case 'delete':
-        return AccessResult::allowedIfHasPermission($account, 'delete ip+ entities');
+        return AccessResult::allowedIfHasPermission($account, 'delete ip plus');
     }
 
     // Unknown operation, no opinion.
@@ -41,7 +41,7 @@ class IpplusAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkCreateAccess(AccountInterface $account, array $context, $entity_bundle = NULL) {
-    return AccessResult::allowedIfHasPermission($account, 'add ip+ entities');
+    return AccessResult::allowedIfHasPermission($account, 'add ip plus');
   }
 
 }

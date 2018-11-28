@@ -3,7 +3,7 @@
 entity.ipplus.collection:
   title: 'IP+ list'
   route_name: entity.ipplus.collection
-  description: 'List IP+ entities'
+  description: 'List IP+'
   parent: system.admin_structure
   weight: 100
 

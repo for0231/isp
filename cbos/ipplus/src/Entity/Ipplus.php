@@ -38,7 +38,7 @@ use Drupal\user\UserInterface;
  *   base_table = "ipplus",
  *   data_table = "ipplus_field_data",
  *   translatable = TRUE,
- *   admin_permission = "administer ip+ entities",
+ *   admin_permission = "administer ip plus",
  *   entity_keys = {
  *     "id" = "id",
  *     "bundle" = "type",
