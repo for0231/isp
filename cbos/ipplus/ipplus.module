@@ -22,3 +22,37 @@ function ipplus_help($route_name, RouteMatchInterface $route_match) {
     default:
   }
 }
+
+/**
+ * Implements hook_theme().
+ */
+function ipplus_theme() {
+  $theme = [];
+  $theme['ipplus'] = [
+    'render element' => 'elements',
+    'file' => 'ipplus.page.inc',
+    'template' => 'ipplus',
+  ];
+  $theme['ipplus_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'ipplus.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function ipplus_theme_suggestions_ipplus(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#ipplus'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'ipplus__' . $sanitized_view_mode;
+  $suggestions[] = 'ipplus__' . $entity->bundle();
+  $suggestions[] = 'ipplus__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'ipplus__' . $entity->id();
+  $suggestions[] = 'ipplus__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

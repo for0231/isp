@@ -1,0 +1,18 @@
+# IP+ routing definition
+
+entity.ipplus.canonical:
+  route_name: entity.ipplus.canonical
+  base_route: entity.ipplus.canonical
+  title: 'View'
+
+entity.ipplus.edit_form:
+  route_name: entity.ipplus.edit_form
+  base_route: entity.ipplus.canonical
+  title: 'Edit'
+
+entity.ipplus.delete_form:
+  route_name:  entity.ipplus.delete_form
+  base_route:  entity.ipplus.canonical
+  title: Delete
+  weight: 10
+
