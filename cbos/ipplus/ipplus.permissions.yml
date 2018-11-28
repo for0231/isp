@@ -12,5 +12,8 @@ delete ip plus:
 edit ip plus:
   title: 'Edit IP+'
 
-view ip plus:
-  title: 'View IP+'
+view unpublished ip plus:
+  title: 'View published IP+'
+
+view published ip plus:
+  title: 'View published IP+'
