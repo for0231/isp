@@ -22,8 +22,8 @@ use Drupal\Core\Config\Entity\ConfigEntityBundleBase;
  *       "html" = "Drupal\ipplus\IpplusTypeHtmlRouteProvider",
  *     },
  *   },
- *   config_prefix = "ipplus_type",
- *   admin_permission = "administer site configuration",
+ *   config_prefix = "type",
+ *   admin_permission = "administer ip plus",
  *   bundle_of = "ipplus",
  *   entity_keys = {
  *     "id" = "id",

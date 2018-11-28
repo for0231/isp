@@ -1,4 +1,4 @@
-ipplus.ipplus_type.*:
+ipplus.type.*:
   type: config_entity
   label: 'IP+ type config'
   mapping:
