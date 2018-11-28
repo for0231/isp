@@ -1,0 +1,18 @@
+
+# Sip menu items definition
+entity.sip.collection:
+  title: 'Sip list'
+  route_name: entity.sip.collection
+  description: 'List Sip entities'
+  parent: system.admin_structure
+  weight: 100
+
+
+# Sip type menu items definition
+entity.sip_type.collection:
+  title: 'Sip type'
+  route_name: entity.sip_type.collection
+  description: 'List Sip type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

@@ -1,0 +1,5 @@
+
+ISP 18.11 dev
+---------------------------------
+- Add modules:
+    * Common business objects: ip

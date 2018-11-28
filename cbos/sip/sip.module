@@ -1,0 +1,58 @@
+<?php
+
+/**
+ * @file
+ * Contains sip.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function sip_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the sip module.
+    case 'help.page.sip':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The ip for idcp components.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function sip_theme() {
+  $theme = [];
+  $theme['sip'] = [
+    'render element' => 'elements',
+    'file' => 'sip.page.inc',
+    'template' => 'sip',
+  ];
+  $theme['sip_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'sip.page.inc',
+  ];
+  return $theme;
+}
+
+/**
+* Implements hook_theme_suggestions_HOOK().
+*/
+function sip_theme_suggestions_sip(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#sip'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'sip__' . $sanitized_view_mode;
+  $suggestions[] = 'sip__' . $entity->bundle();
+  $suggestions[] = 'sip__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'sip__' . $entity->id();
+  $suggestions[] = 'sip__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

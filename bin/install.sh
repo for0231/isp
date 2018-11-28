@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 vendor/bin/drush si -y --account-pass=admin --db-url=mysql://root:root@mariadb/idcp
+## Install for prod
 vendor/bin/drupal moi -y config_rewrite ds role_menu memcache \
                        role_frontpage commerce_cart commerce_checkout \
                        commerce_payment_example commerce_recurring \
@@ -8,6 +9,8 @@ vendor/bin/drupal moi -y config_rewrite ds role_menu memcache \
                        views_slideshow views_slideshow_cycle default_content \
                        config_update_ui migrate_source_csv block_class locale \
                        config_translation potx translation
+## Install for dev
+vendor/bin/drupal moi -y memcache_admin
 vendor/bin/drush views:slideshow:lib
 vendor/bin/drush cset system.performance js.preprocess 0 -y
 vendor/bin/drush cset system.performance css.preprocess 0 -y

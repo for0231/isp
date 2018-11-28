@@ -1,0 +1,19 @@
+add sip entities:
+  title: 'Create new Sip entities'
+
+administer sip entities:
+  title: 'Administer Sip entities'
+  description: 'Allow to access the administration form to configure Sip entities.'
+  restrict access: true
+
+delete sip entities:
+  title: 'Delete Sip entities'
+
+edit sip entities:
+  title: 'Edit Sip entities'
+
+view published sip entities:
+  title: 'View published Sip entities'
+
+view unpublished sip entities:
+  title: 'View unpublished Sip entities'

@@ -1,0 +1,11 @@
+entity.sip.add_form:
+  route_name: entity.sip.add_page
+  title: 'Add Sip'
+  appears_on:
+    - entity.sip.collection
+entity.sip_type.add_form:
+  route_name: entity.sip_type.add_form
+  title: 'Add Sip type'
+  appears_on:
+    - entity.sip_type.collection
+
