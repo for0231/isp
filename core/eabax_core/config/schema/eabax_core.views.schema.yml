@@ -1,0 +1,3 @@
+views.field.bundle_fields:
+  type: views.field.prerender_list
+  label: 'Bundle fields'

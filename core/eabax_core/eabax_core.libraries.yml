@@ -1,0 +1,18 @@
+category:
+  css:
+    theme:
+      css/category.css: {}
+
+wizard:
+  css:
+    theme:
+      css/wizard.css: {}
+
+container_layout:
+  css:
+    theme:
+      css/container-layout.css: {}
+
+select_submit:
+  js:
+    js/select-submit.js: {}

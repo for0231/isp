@@ -5,10 +5,8 @@ namespace Drupal\import\Controller;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\DependencyInjection\ContainerInjectionInterface;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
-use Drupal\Core\StreamWrapper\PrivateStream;
 use Drupal\migrate\Plugin\MigrationPluginManagerInterface;
 use Symfony\Component\DependencyInjection\ContainerInterface;
-use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class ImportController extends ControllerBase implements ContainerInjectionInterface {
@@ -24,9 +22,7 @@ class ImportController extends ControllerBase implements ContainerInjectionInter
   protected $migrationPluginManager;
 
   /**
-   * ImportController constructor.
-   *
-   * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entity_type_manager
+   * {@inheritdoc}
    */
   public function __construct(EntityTypeManagerInterface $entity_type_manager, MigrationPluginManagerInterface $migration_plugin_manager) {
     $this->entityTypeManager = $entity_type_manager;

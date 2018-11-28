@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - eabax_core
+id: role-menu-system-administrator
+label: 'System administrator role menu'
+description: 'Menu for system administrator role.'
+locked: true

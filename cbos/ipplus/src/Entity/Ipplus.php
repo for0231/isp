@@ -16,8 +16,9 @@ use Drupal\user\UserInterface;
  *
  * @ContentEntityType(
  *   id = "ipplus",
- *   label = @Translation("IP+"),
- *   bundle_label = @Translation("IP+ type"),
+ *   label = @Translation("IP"),
+ *   label_collection = @Translation("IP"),
+ *   bundle_label = @Translation("IP type"),
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\ipplus\IpplusListBuilder",
@@ -49,12 +50,12 @@ use Drupal\user\UserInterface;
  *     "status" = "status",
  *   },
  *   links = {
- *     "canonical" = "//ipplus/{ipplus}",
- *     "add-page" = "//ipplus/add",
- *     "add-form" = "//ipplus/add/{ipplus_type}",
- *     "edit-form" = "//ipplus/{ipplus}/edit",
- *     "delete-form" = "//ipplus/{ipplus}/delete",
- *     "collection" = "//ipplus",
+ *     "canonical" = "/ipplus/{ipplus}",
+ *     "add-page" = "/ipplus/add",
+ *     "add-form" = "/ipplus/add/{ipplus_type}",
+ *     "edit-form" = "/ipplus/{ipplus}/edit",
+ *     "delete-form" = "/ipplus/{ipplus}/delete",
+ *     "collection" = "/ipplus",
  *   },
  *   bundle_entity_type = "ipplus_type",
  *   field_ui_base_route = "entity.ipplus_type.edit_form"
