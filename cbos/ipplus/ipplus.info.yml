@@ -1,0 +1,5 @@
+name: 'Ipplus'
+type: module
+description: 'The IP component for idcp.'
+core: 8.x
+package: 'isp'

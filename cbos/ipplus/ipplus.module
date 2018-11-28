@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains ipplus.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ipplus_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ipplus module.
+    case 'help.page.ipplus':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The IP component for idcp.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

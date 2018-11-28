@@ -1,5 +1,0 @@
-name: 'ip'
-type: module
-description: 'The ip for idcp components.'
-core: 8.x
-package: 'isp'
