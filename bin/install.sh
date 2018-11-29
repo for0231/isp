@@ -12,8 +12,9 @@ vendor/bin/drupal moi -y config_rewrite \
  commerce_payment_example \
  commerce_recurring \
  default_content \
- ds \
  drush_language \
+ field_group \
+ layout_builder \
  libraries \
  locale \
  migrate_source_csv \

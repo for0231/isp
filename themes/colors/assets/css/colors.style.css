@@ -19191,6 +19191,13 @@ ul.nav-tabs {
 .admin-list li:first-child {
   border-top: unset;
 }
+.ui-dialog.ui-dialog-off-canvas .ui-dialog-titlebar-close {
+  all: unset;
+}
+.ui-dialog.ui-dialog-off-canvas .ui-dialog-titlebar-close:hover,
+.ui-dialog.ui-dialog-off-canvas .ui-dialog-titlebar-close:focus {
+  all: unset;
+}
 .animated {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
