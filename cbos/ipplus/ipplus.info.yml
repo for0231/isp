@@ -1,7 +1,0 @@
-name: 'Ipplus'
-type: module
-description: 'The IP component for idcp.'
-core: 8.x
-interface translation project: ipplus
-interface translation server pattern: modules/isp/cbos/ipplus/translations/ipplus.%language.po
-package: 'isp'
