@@ -1,0 +1,19 @@
+add ip:
+  title: 'Create new IP'
+
+administer ip:
+  title: 'Administer IP'
+  description: 'Allow to access the administration form to configure IP.'
+  restrict access: true
+
+delete ip:
+  title: 'Delete IP'
+
+edit ip:
+  title: 'Edit IP'
+
+view published ip:
+  title: 'View published IP'
+
+view unpublished ip:
+  title: 'View unpublished IP'

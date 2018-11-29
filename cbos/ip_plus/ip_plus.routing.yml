@@ -1,0 +1,7 @@
+ip_plus.settings:
+  path: '/ip_plus/settings'
+  defaults:
+    _form: '\Drupal\ip_plus\Form\IPSettingsForm'
+    _title: 'IP settings'
+  requirements:
+    _permission: 'administer ip'
