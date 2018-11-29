@@ -2,13 +2,30 @@
 
 vendor/bin/drush si -y --account-pass=admin --db-url=mysql://root:root@mariadb/idcp
 ## Install for prod
-vendor/bin/drupal moi -y config_rewrite ds role_menu memcache \
-                       role_frontpage commerce_cart commerce_checkout \
-                       commerce_payment_example commerce_recurring \
-                       drush_language superfish libraries commerce_autosku \
-                       views_slideshow views_slideshow_cycle default_content \
-                       config_update_ui migrate_source_csv migrate_source_xls block_class locale \
-                       config_translation potx translation
+vendor/bin/drupal moi -y config_rewrite \
+ block_class \
+ config_translation \
+ config_update_ui \
+ commerce_autosku \
+ commerce_cart \
+ commerce_checkout \
+ commerce_payment_example \
+ commerce_recurring \
+ default_content \
+ ds \
+ drush_language \
+ libraries \
+ locale \
+ migrate_source_csv \
+ migrate_source_xls \
+ potx \
+ pinyin \
+ role_menu memcache \
+ role_frontpage \
+ superfish \
+ translation \
+ views_slideshow \
+ views_slideshow_cycle
 ## Install for dev
 vendor/bin/drupal moi -y memcache_admin
 vendor/bin/drush views:slideshow:lib
