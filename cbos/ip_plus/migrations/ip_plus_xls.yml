@@ -1,0 +1,31 @@
+id: ip_plus_xls
+label: Base IPs(xls)
+migration_tags: { }
+source:
+  plugin: xls
+  header_row: 1
+  path: modules/isp/cbos/ipplus/tests/data/ips.xls
+  sheet_name: 工作表1
+  keys:
+    - 名称
+  columns:
+    0:
+      名称: 名称
+    1:
+      类型: 类型
+process:
+  name: 名称
+  type:
+    -
+      plugin: machine_name
+      source: 类型
+    -
+      plugin: entity_generate
+      entity_type: ip_type
+      value_key: id
+      ignore_case: true
+      values:
+        label: 类型
+      
+destination:
+  plugin: entity:ip

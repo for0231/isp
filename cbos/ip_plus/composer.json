@@ -1,0 +1,14 @@
+{
+  "name": "drupal/ip_plus",
+  "type": "drupal-module",
+  "description": "The IP Plus module.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/ip_plus",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/ip_plus",
+    "source": "http://cgit.drupalcode.org/ip_plus"
+  },
+  "require": { }
+}

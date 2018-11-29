@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains ip_plus.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ip_plus_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the ip_plus module.
+    case 'help.page.ip_plus':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The IP Plus module.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
