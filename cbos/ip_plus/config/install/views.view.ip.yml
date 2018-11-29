@@ -1,6 +1,9 @@
 langcode: en
 status: true
 dependencies:
+  enforced:
+    module:
+      - ip_plus
   module:
     - ip_plus
     - user
