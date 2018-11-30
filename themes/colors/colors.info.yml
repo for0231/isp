@@ -18,7 +18,6 @@ regions:
   heaer_second: 'Header second'
   breadcrumb: 'Breadcrumb'
   highlighted: 'Highlighted'
-  help: 'Help'
   precontent: 'Pre-content'
   content: 'Content'
   sidebar_first: 'Primary'

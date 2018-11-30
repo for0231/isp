@@ -5,8 +5,8 @@ dependencies:
     - colors
 id: colors_local_tasks
 theme: colors
-region: content
-weight: -40
+region: highlighted
+weight: -2
 provider: null
 plugin: local_tasks_block
 settings:

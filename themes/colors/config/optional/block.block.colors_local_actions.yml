@@ -5,8 +5,8 @@ dependencies:
     - colors
 id: colors_local_actions
 theme: colors
-region: content
-weight: -20
+region: highlighted
+weight: -3
 provider: null
 plugin: local_actions_block
 settings:

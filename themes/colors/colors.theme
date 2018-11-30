@@ -49,7 +49,7 @@ function colors_preprocess_page(array &$variables) {
  * Implements hook_theme_suggestions_page_alter().
  */
 function colors_theme_suggestions_page_alter(array &$suggestions, array $variables) {
-
+  $i = 1;
 }
 
 /**
@@ -147,3 +147,4 @@ function colors_theme_suggestions_details_alter(array &$suggestions, array $vari
 function colors_preprocess_menu_local_task(array &$variables) {
   //$variables['element']['#link']['url']->setOption('attributes', ['class'=>'rounded']);
 }
+

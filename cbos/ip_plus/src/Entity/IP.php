@@ -207,7 +207,7 @@ class IP extends ContentEntityBase implements IPInterface {
       ->setDefaultValue(TRUE)
       ->setDisplayOptions('form', [
         'type' => 'boolean_checkbox',
-        'weight' => -3,
+        'weight' => 99,
       ]);
 
     $fields['created'] = BaseFieldDefinition::create('created')
