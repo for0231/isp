@@ -12,7 +12,7 @@ font-awesome@^4.7.0:
   resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
   integrity sha1-j6jPBBGhoxr9B7BtKQK7n8gVoTM=
 
-pace-progressbar@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/pace-progressbar/-/pace-progressbar-1.0.8.tgz#49b5c25b5a3c6c77b3f96cd975edb30d9515a1a4"
-  integrity sha512-qEOkKwBFABlUYpY5VNoOcgTHAnaqwFoP4ib1dIjoDjc16aBgdoSy2J4sUXLYI/4vmouNs7bRnQBKIDR8SBlrjA==
+pace-js@^1.0.2:
+  version "1.0.2"
+  resolved "http://registry.npm.taobao.org/pace-js/download/pace-js-1.0.2.tgz#673a717f833ccb4f4315531b75ee4788376600f7"
+  integrity sha1-Zzpxf4M8y09DFVMbde5HiDdmAPc=

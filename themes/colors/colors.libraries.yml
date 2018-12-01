@@ -7,6 +7,7 @@ base:
     assets/js/plugins/pace/pace.js: { attributes: { data-pace-options: '{"restartOnRequestAfter": "true"}'} }
     node_modules/bootstrap/dist/js/bootstrap.js: {}
     assets/js/smartwidgets/jarvis.widget.js: {}
+    assets/js/notification/SmartNotification.js: {}
     assets/js/app.js: {}
   dependencies:
     - core/drupal
