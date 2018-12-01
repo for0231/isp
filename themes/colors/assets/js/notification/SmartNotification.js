@@ -1,4 +1,5 @@
-(function ($, window, document, undefined) {
+(function($, Drupal) {
+// (function ($, window, document, undefined) {
   /*
    Copyright 2015 - SmartAdmin Template
    
@@ -694,9 +695,9 @@ function checkVersion() {
     var ver = getInternetExplorerVersion();
     if (ver > -1) {
         if (ver >= 8.0)
-            msg = "You're using a recent copy of Windows Internet Explorer."
+            msg = Drupal.t("You're using a recent copy of Windows Internet Explorer.")
         else
-            msg = "You should upgrade your copy of Windows Internet Explorer.";
+            msg = Drupal.t("You should upgrade your copy of Windows Internet Explorer.");
     }
     alert(msg);
 
@@ -715,4 +716,5 @@ function isIE8orlower() {
     return msg;
     // alert(msg);
 }
-})(jQuery, window, document);
+// })(jQuery, window, document);
+})(jQuery, Drupal);

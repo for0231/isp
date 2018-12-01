@@ -571,8 +571,8 @@
             $.SmartMessageBox({
               title: "<i class='fa fa-sign-out txt-color-orangeDark'></i> Logout <span class='txt-color-orangeDark'><strong>" + $('#show-shortcut')
                 .text() + "</strong></span> ?",
-              content: $this.data('logout-msg') || "You can improve your security further after logging out by closing this opened browser",
-              buttons: '[No][Yes]'
+              content: $this.data('logout-msg') || Drupal.t("You can improve your security further after logging out by closing this opened browser"),
+              buttons: '[' + Drupal.t('No') + '][' + Drupal.t('Yes') + ']'
               
             }, function (ButtonPressed) {
               if (ButtonPressed == "Yes") {
@@ -591,11 +591,11 @@
           resetWidgets: function ($this) {
             
             $.SmartMessageBox({
-              title: "<i class='fa fa-refresh' style='color:green'></i> Clear Local Storage",
-              content: $this.data('reset-msg') || "Would you like to RESET all your saved widgets and clear LocalStorage?1",
-              buttons: '[No][Yes]'
+              title: "<i class='fa fa-refresh' style='color:green'></i> " + Drupal.t("Clear Local Storage"),
+              content: $this.data('reset-msg') || Drupal.t("Would you like to RESET all your saved widgets and clear LocalStorage?"),
+              buttons: '[' + Drupal.t('No') + '][' + Drupal.t('Yes') + ']'
             }, function (ButtonPressed) {
-              if (ButtonPressed == "Yes" && localStorage) {
+              if (ButtonPressed == Drupal.t("Yes") && localStorage) {
                 localStorage.clear();
                 location.reload();
               }
