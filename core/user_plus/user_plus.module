@@ -1,0 +1,32 @@
+<?php
+
+use Drupal\Core\Entity\Display\EntityViewDisplayInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Url;
+
+/**
+ * Implements hook_entity_base_field_info_alter().
+ */
+function user_plus_entity_base_field_info_alter(&$fields, EntityTypeInterface $entity_type) {
+  if ($entity_type->id() == 'user' && !empty($fields['name'])) {
+    $fields['name']
+      ->setDisplayOptions('view', [
+        'type' => 'string',
+        'weight' => 0,
+      ])
+      ->setDisplayConfigurable('view', TRUE);
+  }
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK() for user.
+ */
+function user_plus_theme_suggestions_user(array $variables) {
+  $suggestions = [];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'user__' . $sanitized_view_mode;
+
+  return $suggestions;
+}
