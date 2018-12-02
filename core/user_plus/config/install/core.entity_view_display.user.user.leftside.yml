@@ -1,0 +1,47 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.leftside
+    - field.field.user.user.commerce_remote_id
+    - field.field.user.user.user_picture
+    - image.style.avatar_28x28_
+  module:
+    - image
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    sections: {  }
+    allow_custom: false
+    enabled: false
+id: user.user.leftside
+targetEntityType: user
+bundle: user
+mode: leftside
+content:
+  name:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_picture:
+    type: image
+    weight: 0
+    region: content
+    settings:
+      image_style: avatar_28x28_
+      image_link: ''
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  commerce_remote_id: true
+  dropdown_menu: true
+  langcode: true
+  logout: true
+  member_for: true
+  password_link: true
+  profile_customer: true

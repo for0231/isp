@@ -3,8 +3,8 @@ type: module
 description: Eabax core
 core: 8.x
 interface translation project: eabax_core
-interface translation server pattern: modules/eabax/core/eabax_core/translations/eabax_core.%language.po
-package: Eabax core
+interface translation server pattern: modules/isp/core/eabax_core/translations/eabax_core.%language.po
+package: Isp core
 dependencies:
   - custom_formatters
   - file

@@ -36,12 +36,22 @@ vendor/bin/drush cset user.settings password_strength false -y
 vendor/bin/drush cset user.settings register visitors -y
 vendor/bin/drush cset user.settings verify_mail false -y
 
-#vendor/bin/drush language-add zh-hans
 
 vendor/bin/drupal thi colors -y
 vendor/bin/drush cset -y system.theme default colors
 vendor/bin/drush cset -y system.theme admin colors
 
+# core modules
+vendor/bin/drush en -y eabax_core \
+  import \
+  role_frontpage \
+  role_menu \
+  translation \
+  use_plus
+
+#vendor/bin/drush language-add zh-hans
+
+# isp modules
 #vendor/bin/drush en -y isp_core commerce_plus isp_server isp_ip isp_room \
 #                       message_plus
 

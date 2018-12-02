@@ -19201,6 +19201,9 @@ ul.nav-tabs {
 #ribbon .breadcrumb {
   padding: 14px 34px 11px 0 !important;
 }
+div.login-info span a div {
+  display: inline;
+}
 .animated {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;

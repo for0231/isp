@@ -1,0 +1,9 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.header_second
+label: 'Header Second'
+targetEntityType: user
+cache: true

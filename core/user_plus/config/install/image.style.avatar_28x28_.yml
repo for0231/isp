@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies: {  }
+name: avatar_28x28_
+label: Avatar(28x28)
+effects:
+  36090d97-1546-4538-88f8-d42be7dbc147:
+    uuid: 36090d97-1546-4538-88f8-d42be7dbc147
+    id: image_resize
+    weight: 1
+    data:
+      width: 28
+      height: 28
