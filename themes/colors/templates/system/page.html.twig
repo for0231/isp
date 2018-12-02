@@ -70,15 +70,15 @@
   <!-- pulled right: nav area -->
   <div class="pull-right">
     <!-- collapse menu button -->
-    <div id="hide-menu" class="btn-header pull-right">
-      <span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
-    </div>
-    <!-- end collapse menu -->
     {% if page.header_second %}
       {% block header_second %}
         {{ page.header_second }}
       {% endblock %}
     {% endif %}
+    <div id="hide-menu" class="btn-header pull-right">
+      <span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+    </div>
+    <!-- end collapse menu -->
   </div>
   <!-- end pulled right: nav area -->
 </header>

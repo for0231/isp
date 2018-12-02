@@ -4,6 +4,6 @@ dependencies:
   module:
     - user
 id: user.header_second
-label: 'Header Second'
+label: 'Header Secondary'
 targetEntityType: user
 cache: true

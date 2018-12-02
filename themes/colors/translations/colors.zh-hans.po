@@ -88,7 +88,7 @@ msgstr "二级菜单"
 
 #: modules/isp/themes/colors/templates/system/breadcrumb.html.twig:11
 msgid "Warning! This will reset all your widget settings."
-msgstr "警告！将会重置您的网站控件设置。"
+msgstr "警告！将会重置您的控件设置。"
 
 #: modules/isp/themes/colors/templates/system/breadcrumb.html.twig:17
 msgid "Breadcrumb"

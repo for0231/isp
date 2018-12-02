@@ -31948,7 +31948,13 @@ button {
   padding: 0 10px;
   border-bottom: 1px solid #1A1817;
 }
+/** @customfix
+   border-radius: 25px;
+ */
 .login-info img {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-radius: 25px;
   width: 25px;
   height: auto;
   display: inline-block;

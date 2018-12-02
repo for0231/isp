@@ -46,13 +46,6 @@ function user_plus_entity_extra_field_info() {
 }
 
 /**
- * Implements hook_preprocess_HOOK() for user.
- */
-function user_plus_preprocess_user(&$variables) {
-  $variables['attributes']['class'][] = 'user-' . $variables['elements']['#view_mode'];
-}
-
-/**
  * Implements hook_ENTITY_TYPE_view() for user.
  */
 function user_plus_user_view(array &$build, EntityInterface $entity, EntityViewDisplayInterface $display, $view_mode) {
@@ -64,4 +57,11 @@ function user_plus_user_view(array &$build, EntityInterface $entity, EntityViewD
       '#attributes' => ['class' => ['btn', 'btn-default', 'btn-flat']],
     ];
   }
+}
+
+/**
+ * Implements hook_preprocess_HOOK() for user.
+ */
+function user_plus_preprocess_user(&$variables) {
+  $variables['attributes']['class'][] = 'user-' . $variables['elements']['#view_mode'];
 }
