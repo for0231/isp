@@ -1,0 +1,216 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/isp/cbos/ip_plus/ip_plus.module: n/a
+#  modules/isp/cbos/ip_plus/ip_plus.info.yml: n/a
+#  modules/isp/cbos/ip_plus/src/Entity/IP.php: n/a
+#  modules/isp/cbos/ip_plus/ip_plus.links.action.yml: n/a
+#  modules/isp/cbos/ip_plus/ip_plus.links.menu.yml: n/a
+#  modules/isp/cbos/ip_plus/src/IPTypeListBuilder.php: n/a
+#  modules/isp/cbos/ip_plus/src/Entity/IPType.php: n/a
+#  modules/isp/cbos/ip_plus/ip_plus.links.task.yml: n/a
+#  modules/isp/cbos/ip_plus/src/Form/IPTypeDeleteForm.php: n/a
+#  modules/isp/cbos/ip_plus/ip_plus.permissions.yml: n/a
+#  modules/isp/cbos/ip_plus/ip_plus.routing.yml: n/a
+#  modules/isp/cbos/ip_plus/config/schema/ip_type.schema.yml: n/a
+#  modules/isp/cbos/ip_plus/src/IPListBuilder.php: n/a
+#  modules/isp/cbos/ip_plus/src/Form/IPForm.php: n/a
+#  modules/isp/cbos/ip_plus/src/Form/IPTypeForm.php: n/a
+#  modules/isp/cbos/ip_plus/config/install/ip_plus.type.inet.yml: n/a
+#  modules/isp/cbos/ip_plus/config/install/ip_plus.type.onet.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-12-02 02:38+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/isp/cbos/ip_plus/ip_plus.module:18
+msgid "About"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.module:19 modules/isp/cbos/ip_plus/ip_plus.info.yml:0
+msgid "The IP Plus module."
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.info.yml:0 modules/isp/cbos/ip_plus/src/Entity/IP.php:12
+msgid "IP"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.info.yml:0
+msgid "isp"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.links.action.yml:0
+msgid "Add IP"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.links.action.yml:0
+msgid "Add IP type"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.links.menu.yml:0
+msgid "IP list"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.links.menu.yml:0 modules/isp/cbos/ip_plus/src/IPTypeListBuilder.php:17 modules/isp/cbos/ip_plus/src/Entity/IP.php:12 modules/isp/cbos/ip_plus/src/Entity/IPType.php:7;7
+msgid "IP type"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.links.menu.yml:0
+msgid "List IP"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.links.menu.yml:0
+msgid "List IP type (bundles)"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.links.task.yml:0
+msgid "View"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.links.task.yml:0
+msgid "Edit"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.links.task.yml:0 modules/isp/cbos/ip_plus/src/Form/IPTypeDeleteForm.php:32
+msgid "Delete"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.permissions.yml:0
+msgid "Create new IP"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.permissions.yml:0
+msgid "Administer IP"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.permissions.yml:0
+msgid "Allow to access the administration form to configure IP."
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.permissions.yml:0
+msgid "Delete IP"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.permissions.yml:0
+msgid "Edit IP"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.permissions.yml:0
+msgid "View published IP"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.permissions.yml:0
+msgid "View unpublished IP"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.routing.yml:0
+msgid "IP settings"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/config/schema/ip_type.schema.yml:0
+msgid "IP type config"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/config/schema/ip_type.schema.yml:0
+msgid "ID"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/IPListBuilder.php:21
+msgid "IP ID"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/IPListBuilder.php:22 modules/isp/cbos/ip_plus/src/Entity/IP.php:184
+msgid "Name"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/IPTypeListBuilder.php:18
+msgid "Machine name"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:159
+msgid "Authored by"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:160
+msgid "The user ID of author of the IP entity."
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:185
+msgid "The name of the IP entity."
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:205
+msgid "Publishing status"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:206
+msgid "A boolean indicating whether the IP is published."
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:214
+msgid "Created"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:215
+msgid "The time that the entity was created."
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:218
+msgid "Changed"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:219
+msgid "The time that the entity was last edited."
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Form/IPForm.php:37
+msgid "Created the %label IP."
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Form/IPForm.php:43
+msgid "Saved the %label IP."
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Form/IPTypeDeleteForm.php:18
+msgid "Are you sure you want to delete %name?"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Form/IPTypeDeleteForm.php:42
+msgid "content @type: deleted @label."
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Form/IPTypeForm.php:22
+msgid "Label"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Form/IPTypeForm.php:25
+msgid "Label for the IP type."
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Form/IPTypeForm.php:52
+msgid "Created the %label IP type."
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/src/Form/IPTypeForm.php:58
+msgid "Saved the %label IP type."
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/config/install/ip_plus.type.inet.yml:0
+msgid "Inet"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/config/install/ip_plus.type.onet.yml:0
+msgid "Onet"
+msgstr ""
+

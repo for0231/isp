@@ -2,6 +2,7 @@
   Drupal.behaviors.app = {
     attach: function attach(context) {
       console.log('fdsafda');
+      pageSetUp();
     }
   };
   /*
@@ -2507,7 +2508,7 @@
       // activate tooltips
       $("[rel=tooltip], [data-rel=tooltip]")
         .tooltip();
-      
+
       // activate popovers
       $("[rel=popover], [data-rel=popover]")
         .popover();

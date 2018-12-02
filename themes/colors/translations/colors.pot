@@ -4,9 +4,12 @@
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
 #  modules/isp/themes/colors/colors.info.yml: n/a
+#  modules/isp/themes/colors/assets/js/app.js: n/a
+#  modules/isp/themes/colors/assets/js/notification/SmartNotification.js: n/a
 #  modules/isp/themes/colors/config/schema/colors.schema.yml: n/a
 #  modules/isp/themes/colors/templates/block/block--system-branding-block.html.twig: n/a
 #  modules/isp/themes/colors/templates/menu/menu-local-tasks.html.twig: n/a
+#  modules/isp/themes/colors/templates/system/breadcrumb.html.twig: n/a
 #  modules/isp/themes/colors/templates/system/status-messages.html.twig: n/a
 #  modules/isp/themes/colors/config/optional/block.block.colors_branding.yml: n/a
 #  modules/isp/themes/colors/config/optional/block.block.colors_breadcrumbs.yml: n/a
@@ -22,7 +25,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-11-27 12:52+0000\n"
+"POT-Creation-Date: 2018-12-02 02:41+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -43,6 +46,34 @@ msgstr ""
 msgid "isp"
 msgstr ""
 
+#: modules/isp/themes/colors/assets/js/app.js:0
+msgid "You can improve your security further after logging out by closing this opened browser"
+msgstr ""
+
+#: modules/isp/themes/colors/assets/js/app.js:0;0
+msgid "No"
+msgstr ""
+
+#: modules/isp/themes/colors/assets/js/app.js:0;0;0
+msgid "Yes"
+msgstr ""
+
+#: modules/isp/themes/colors/assets/js/app.js:0
+msgid "Clear Local Storage"
+msgstr ""
+
+#: modules/isp/themes/colors/assets/js/app.js:0
+msgid "Would you like to RESET all your saved widgets and clear LocalStorage?"
+msgstr ""
+
+#: modules/isp/themes/colors/assets/js/notification/SmartNotification.js:0
+msgid "You're using a recent copy of Windows Internet Explorer."
+msgstr ""
+
+#: modules/isp/themes/colors/assets/js/notification/SmartNotification.js:0
+msgid "You should upgrade your copy of Windows Internet Explorer."
+msgstr ""
+
 #: modules/isp/themes/colors/config/schema/colors.schema.yml:0
 msgid "Colors settings"
 msgstr ""
@@ -53,6 +84,14 @@ msgstr ""
 
 #: modules/isp/themes/colors/templates/menu/menu-local-tasks.html.twig:22
 msgid "Secondary tabs"
+msgstr ""
+
+#: modules/isp/themes/colors/templates/system/breadcrumb.html.twig:11
+msgid "Warning! This will reset all your widget settings."
+msgstr ""
+
+#: modules/isp/themes/colors/templates/system/breadcrumb.html.twig:17
+msgid "Breadcrumb"
 msgstr ""
 
 #: modules/isp/themes/colors/templates/system/status-messages.html.twig:49
