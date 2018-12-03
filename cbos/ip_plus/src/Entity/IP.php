@@ -201,6 +201,26 @@ class IP extends ContentEntityBase implements IPInterface {
       ->setDisplayConfigurable('view', TRUE)
       ->setRequired(TRUE);
 
+    $fields['description'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Description'))
+      ->setSetting('max_length', 64)
+      ->setDisplayOptions('view', [
+        'type' => 'text_default',
+        'weight' => 0,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'text_textarea',
+        'weight' => 0,
+        'rows' => 5,
+        'placeholder' => t('Descriptions for IP.'),
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
+    $fields['pinyin'] = BaseFieldDefinition::create('pinyin_shortcode')
+      ->setLabel(t('Pinyin shortcode'))
+      ->setSetting('source_field', 'description');
+
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
       ->setDescription(t('A boolean indicating whether the IP is published.'))
