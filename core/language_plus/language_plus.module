@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains language_plus.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function language_plus_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the language_plus module.
+    case 'help.page.language_plus':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Language Plus.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,5 @@
+name: 'Language Plus'
+type: module
+description: 'Language Plus.'
+core: 8.x
+package: 'isp'
