@@ -4,6 +4,7 @@ vendor/bin/drush si -y --account-pass=admin --db-url=mysql://root:root@mariadb/i
 ## Install for prod
 vendor/bin/drupal moi -y config_rewrite \
  block_class \
+ coffee \
  config_translation \
  config_update_ui \
  commerce_autosku \
@@ -42,7 +43,8 @@ vendor/bin/drush cset -y system.theme default colors
 vendor/bin/drush cset -y system.theme admin colors
 
 # core modules
-vendor/bin/drush en -y eabax_core \
+vendor/bin/drush en -y \
+  eabax_core \
   import \
   role_frontpage \
   role_menu \

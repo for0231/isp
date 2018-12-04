@@ -19215,6 +19215,7 @@ body.minified li.nav-header {
   display: none;
 }
 #left-panel nav > ul > li > ul > li > a,
+#left-panel nav ul ul ul li a,
 #left-panel nav ul ul ul ul li a,
 #left-panel nav > ul > li > ul > li > ul > li > a {
   padding-bottom: 0!important;
