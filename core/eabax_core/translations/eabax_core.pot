@@ -17,7 +17,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-02 02:38+0000\n"
+"POT-Creation-Date: 2018-12-04 04:13+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -26,8 +26,12 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/isp/core/eabax_core/eabax_core.info.yml:0;0;0
+#: modules/isp/core/eabax_core/eabax_core.info.yml:0;0
 msgid "Eabax core"
+msgstr ""
+
+#: modules/isp/core/eabax_core/eabax_core.info.yml:0
+msgid "Isp core"
 msgstr ""
 
 #: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0

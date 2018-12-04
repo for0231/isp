@@ -9,10 +9,9 @@ base:
     assets/js/smartwidgets/jarvis.widget.js: {}
     assets/js/notification/SmartNotification.js: {}
     assets/js/app.js: {}
+#    assets/js/speech/voicecommand.js: {}
   dependencies:
     - core/drupal
-    - core/jquery
-    - core/jquery.ui
     - core/jquery.ui.touch-punch
     - core/jquery.ui.effects.highlight
     - core/jquery.ui.tooltip

@@ -3,16 +3,16 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  modules/eabax/core/user_plus/user_plus.module: n/a
-#  modules/eabax/core/user_plus/user_plus.routing.yml: n/a
-#  modules/eabax/core/user_plus/user_plus.info.yml: n/a
-#  modules/eabax/core/user_plus/src/Plugin/Block/AvatarBlock.php: n/a
+#  modules/isp/core/user_plus/user_plus.module: n/a
+#  modules/isp/core/user_plus/user_plus.info.yml: n/a
+#  modules/isp/core/user_plus/user_plus.routing.yml: n/a
+#  modules/isp/core/user_plus/src/Plugin/Block/AvatarBlock.php: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-01 14:06+0800\n"
+"POT-Creation-Date: 2018-12-04 04:13+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -21,35 +21,35 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/eabax/core/user_plus/user_plus.module:27
-msgid "Dropdown menu"
-msgstr ""
-
-#: modules/eabax/core/user_plus/user_plus.module:32;63
+#: modules/isp/core/user_plus/user_plus.module:40;66
 msgid "Logout"
 msgstr ""
 
-#: modules/eabax/core/user_plus/user_plus.module:37
-msgid "Password link"
+#: modules/isp/core/user_plus/user_plus.module:45;74
+msgid "Screen"
 msgstr ""
 
-#: modules/eabax/core/user_plus/user_plus.module:71 modules/eabax/core/user_plus/user_plus.routing.yml:0
-msgid "Change password"
+#: modules/isp/core/user_plus/user_plus.module:50;82
+msgid "Speech"
 msgstr ""
 
-#: modules/eabax/core/user_plus/user_plus.info.yml:0;0
+#: modules/isp/core/user_plus/user_plus.info.yml:0;0
 msgid "User Plus"
 msgstr ""
 
-#: modules/eabax/core/user_plus/user_plus.info.yml:0
-msgid "Eabax core"
+#: modules/isp/core/user_plus/user_plus.info.yml:0
+msgid "isp"
 msgstr ""
 
-#: modules/eabax/core/user_plus/src/Plugin/Block/AvatarBlock.php:95
+#: modules/isp/core/user_plus/user_plus.routing.yml:0
+msgid "Change password"
+msgstr ""
+
+#: modules/isp/core/user_plus/src/Plugin/Block/AvatarBlock.php:95
 msgid "View mode"
 msgstr ""
 
-#: modules/eabax/core/user_plus/src/Plugin/Block/AvatarBlock.php:13
+#: modules/isp/core/user_plus/src/Plugin/Block/AvatarBlock.php:13
 msgid "Avatar block"
 msgstr ""
 
