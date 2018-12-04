@@ -1,0 +1,37 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.speech
+    - field.field.user.user.commerce_remote_id
+    - field.field.user.user.user_picture
+  module:
+    - layout_builder
+    - user
+third_party_settings:
+  layout_builder:
+    sections: {  }
+    allow_custom: false
+    enabled: false
+id: user.user.speech
+targetEntityType: user
+bundle: user
+mode: speech
+content:
+  speech:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  commerce_remote_id: true
+  dropdown_menu: true
+  fullscreen: true
+  langcode: true
+  logout: true
+  member_for: true
+  name: true
+  password_link: true
+  profile_customer: true
+  screen: true
+  user_picture: true

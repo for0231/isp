@@ -19219,6 +19219,9 @@ body.minified li.nav-header {
 #left-panel nav > ul > li > ul > li > ul > li > a {
   padding-bottom: 0!important;
 }
+div.region-header-second ul.header-dropdown-list {
+  float: left;
+}
 .animated {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
