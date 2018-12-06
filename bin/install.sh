@@ -28,8 +28,10 @@ vendor/bin/drupal moi -y config_rewrite \
  translation \
  views_slideshow \
  views_slideshow_cycle
+
 ## Install for dev
-vendor/bin/drupal moi -y memcache_admin
+vendor/bin/drupal moi -y memcache_admin devel kint webprofiler
+
 vendor/bin/drush views:slideshow:lib
 vendor/bin/drush cset system.performance js.preprocess 0 -y
 vendor/bin/drush cset system.performance css.preprocess 0 -y
