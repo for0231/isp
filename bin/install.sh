@@ -51,7 +51,7 @@ vendor/bin/drush en -y \
   role_frontpage \
   role_menu \
   translation \
-  use_plus
+  user_plus
 
 #vendor/bin/drush language-add zh-hans
 
