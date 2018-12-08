@@ -11,6 +11,7 @@ use Drupal\Core\DependencyInjection\ServiceProviderBase;
 class EabaxCoreServiceProvider extends ServiceProviderBase {
 
   public function alter(ContainerBuilder $container) {
+  
     // Add entity_type_id placeholder support for access checker.
     $definition = $container->getDefinition('access_check.entity_create');
     $definition->setClass('Drupal\eabax_core\Entity\EntityCreateAccessCheck');

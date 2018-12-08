@@ -9,7 +9,7 @@ details.container-3cols > .details-wrapper {
 
 /* view display */
 div.container-2cols > div.field,
-div.container-2cols-inline > div.field,
+div.container-2cols-inline > div,
 div.container-3cols > div.field,
 div.container-3cols-inline > div.field {
   flex: 0 1 100%;
@@ -17,7 +17,7 @@ div.container-3cols-inline > div.field {
 
 @media screen and (min-width: 40em) {
   div.container-2cols > div.field,
-  div.container-2cols-inline > div.field {
+  div.container-2cols-inline > div {
     flex: 0 1 50%;
   }
   div.container-3cols > div.field,

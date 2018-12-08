@@ -71,7 +71,8 @@ class ImportForm extends ImportFormBase {
 
     $form['update'] = [
       '#type' => 'checkbox',
-      '#title' => t('Update'),
+      '#title' => t('Update existing data'),
+      '#weight' => 10,
     ];
 
     $form['actions']['#type'] = 'actions';
@@ -80,6 +81,10 @@ class ImportForm extends ImportFormBase {
       '#value' => t('Import'),
       '#button_type' => 'primary',
     ];
+
+    // Polish style
+    $form['#attributes']['class'][] = 'form-horizontal';
+    $form['#theme_wrappers'] = ['form__box'];
 
     return $form;
   }

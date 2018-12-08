@@ -1,8 +1,7 @@
 import.import_rules_form:
   title: Define import rules
   route_name: import.import_rules_form
-#  parent: isp_core.configuration
-  parent: system.admin_structure
+  parent: eabax_core.implementor.tools
 
 # Excel migrate menu items definition
 entity.excel_migrate.collection:

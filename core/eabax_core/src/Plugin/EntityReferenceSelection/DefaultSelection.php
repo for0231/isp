@@ -36,7 +36,12 @@ class DefaultSelection extends DefaultSelectionBase {
     // Filter by conditions settings
     if (isset($configuration['conditions']) && is_array($configuration['conditions'])) {
       foreach ($configuration['conditions'] as $key => $value) {
-        $query->condition($key, $value);
+        if (is_array($value)) {
+          $query->condition($key, $value, 'IN');
+        }
+        else {
+          $query->condition($key, $value);
+        }
       }
     }
 

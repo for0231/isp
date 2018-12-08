@@ -32,6 +32,7 @@ class ImportFormSelectSheet extends ImportFormBase {
     $this->options = $session->get('import_entity.import_form.options');
 
     $xls = \PHPExcel_IOFactory::load(drupal_realpath($this->options['configuration']['source']['path']));
+
     $sheets = $xls->getAllSheets();
     $options = ['- Select -'];
     foreach ($sheets as $sheet) {
@@ -76,7 +77,7 @@ class ImportFormSelectSheet extends ImportFormBase {
     $form['sources'] = [
       '#title' => $this->t('Sources'),
       '#type' => 'table',
-      '#header' => [$this->t('Source'), $this->t('Column')],
+      '#header' => [$this->t('Data item'), $this->t('Excel column')],
       '#prefix' => '<div id="sources-wrapper">',
       '#suffix' => '</div>',
     ];
@@ -103,13 +104,12 @@ class ImportFormSelectSheet extends ImportFormBase {
         $header_row = $new_header_row;
       }
 
-      $xls = \PHPExcel_IOFactory::load(drupal_realpath($this->options['configuration']['source']['path']));
-      $options = $this->getExcelColumns($xls, $default_sheet, $header_row);
+      list($options, $column_map) = $this->getExcelColumns($xls, $default_sheet, $header_row);
 
       foreach ($columns as $key => $value) {
         $form['sources'][$key]['column']['#options'] = $options;
-        if (isset($options[$value])) {
-          $form['sources'][$key]['column']['#default_value'] = $value;
+        if (isset($column_map[$value])) {
+          $form['sources'][$key]['column']['#default_value'] = $column_map[$value];
         }
       }
     }
@@ -121,25 +121,14 @@ class ImportFormSelectSheet extends ImportFormBase {
       '#button_type' => 'primary',
     ];
 
+    // Polish style
+    $form['#attributes']['class'][] = 'form-horizontal';
+    $form['#theme_wrappers'] = ['form__box'];
+
     return $form;
   }
 
   public function sheetSwitch($form, FormStateInterface $form_state) {
-    if ($sheet_name = $form_state->getValue('sheet')) {
-      $header_row = $form_state->getValue('header_row');
-
-      $columns = $this->getColumns();
-
-      $xls = \PHPExcel_IOFactory::load(drupal_realpath($this->options['configuration']['source']['path']));
-      $options = $this->getExcelColumns($xls, $sheet_name, $header_row);
-
-      foreach ($columns as $key => $value) {
-        if (isset($options[$value])) {
-          $form['sources'][$key]['column']['#value'] = $value;
-        }
-      }
-    }
-
     return $form['sources'];
   }
 
@@ -165,30 +154,32 @@ class ImportFormSelectSheet extends ImportFormBase {
     }
 
     $columns = [];
+    $column_map = [];
 
     $iterator = $xls->getActiveSheet()->getRowIterator($header_row, $header_row);
     foreach ($iterator->current()->getCellIterator() as $cell) {
       $column = rtrim($cell->getValue());
-      if (isset($column)) {
-        $key = str_replace('/', '_', $column);
-        $columns[$key] = $column;
-      }
+      $col = $cell->getColumn();
+      $columns['_' . $col] = $col . '-' . $column;
+      $column_map[$column] = '_' . $col;
     }
 
-    return $columns;
+    return [$columns, $column_map];
   }
 
   /**
    * {@inheritdoc}
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    $configuration = $this->options['configuration'] + $this->migration->getPluginDefinition();
+    $configuration = $this->options['configuration'];
 
+    $configuration['source']['plugin'] = 'xls_plus';
     $configuration['source']['sheet_name'] = $form_state->getValue('sheet');
+
+    // columns
     $sources = array_map(function ($item) {
       return $item['column'];
     }, $form_state->getValue('sources'));
-
     $columns = [];
     $i = 0;
     foreach ($sources as $key => $value) {
