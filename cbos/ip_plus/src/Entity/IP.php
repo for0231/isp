@@ -216,6 +216,12 @@ class IP extends ContentEntityBase implements IPInterface {
       ])
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
+    
+    // TODO
+    // belong to server
+    // belong to agent, default is ultrix, only disappear to ultrix
+    // 所属代理，默认ultrix
+    // 所属客户UID
 
     $fields['pinyin'] = BaseFieldDefinition::create('pinyin_shortcode')
       ->setLabel(t('Pinyin shortcode'))
