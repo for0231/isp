@@ -8,4 +8,5 @@ package: 'isp'
 dependencies:
   - field_group
   - image
+  - layout_builder
   - user

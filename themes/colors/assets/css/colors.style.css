@@ -23722,7 +23722,7 @@ div.region-header-second ul.header-dropdown-list {
   opacity: .30;
   filter: alpha(opacity=30);
   position: absolute;
-  z-index: 949 !important;
+  z-index: 949;
   top: 0;
   left: 0;
   width: 100%;
@@ -26337,7 +26337,7 @@ div.wijmo-wijmenu .wijmo-wijmenu-child .wijmo-wijmenu-text {
   background-image: none;
   background: #AAA;
   height: 100%;
-  z-index: 949 !important;
+  z-index: 949;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -26686,9 +26686,6 @@ div.wijmo-wijmenu .wijmo-wijmenu-child .wijmo-wijmenu-text {
 }
 .widget-header > :first-child {
   margin: 13px 0;
-}
-.ui-widget-overlay {
-  z-index: 999;
 }
 .ui-dialog .ui-dialog-titlebar {
   padding: 0 10px;

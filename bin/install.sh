@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-vendor/bin/drush si -y --account-pass=admin --db-url=mysql://root:root@mariadb/idcp
+vendor/bin/drush si -y --account-pass=admin --db-url=mysql://root:root@localhost/icp
 ## Install for prod
 vendor/bin/drupal moi -y config_rewrite \
  block_class \
@@ -22,15 +22,17 @@ vendor/bin/drupal moi -y config_rewrite \
  migrate_source_xls \
  potx \
  pinyin \
- role_menu memcache \
+ role_menu \
  role_frontpage \
  superfish \
  translation \
  views_slideshow \
  views_slideshow_cycle
 
+# enable it in prod.
+#vendor/bin/drupal moi -y memcache memcache_admin
 ## Install for dev
-vendor/bin/drupal moi -y memcache_admin devel kint webprofiler
+vendor/bin/drupal moi -y devel kint webprofiler
 
 vendor/bin/drush views:slideshow:lib
 vendor/bin/drush cset system.performance js.preprocess 0 -y
