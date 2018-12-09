@@ -11,5 +11,6 @@ entity.ip_type.add_form:
 
 entity.ip.import:
   route_name: entity.ip.import
+  title: 'Import IP'
   appears_on:
     - entity.ip.collection
