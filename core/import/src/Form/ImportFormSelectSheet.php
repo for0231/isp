@@ -141,6 +141,8 @@ class ImportFormSelectSheet extends ImportFormBase {
     foreach ($this->migration->getSourceConfiguration()['columns'] as $values) {
       $columns = $values + $columns;
     }
+    
+    $columns = array_reverse($columns);
 
     return array_flip($columns);
   }
