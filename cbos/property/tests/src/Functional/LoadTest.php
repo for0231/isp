@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\property2\Functional;
+namespace Drupal\Tests\property\Functional;
 
 use Drupal\Core\Url;
 use Drupal\Tests\BrowserTestBase;
@@ -8,7 +8,7 @@ use Drupal\Tests\BrowserTestBase;
 /**
  * Simple test to ensure that main page loads with module enabled.
  *
- * @group property2
+ * @group property
  */
 class LoadTest extends BrowserTestBase {
 
@@ -17,7 +17,7 @@ class LoadTest extends BrowserTestBase {
    *
    * @var array
    */
-  public static $modules = ['property2'];
+  public static $modules = ['property'];
 
   /**
    * A user with permission to administer site configuration.

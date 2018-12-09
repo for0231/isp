@@ -1,1 +1,0 @@
-Example for other entity, like property right for ip, server, cabinet, and so on.
