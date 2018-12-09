@@ -8,7 +8,7 @@ dependencies:
 id: colors_content
 theme: colors
 region: content
-weight: -4
+weight: -3
 provider: null
 plugin: system_main_block
 settings:

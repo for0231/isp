@@ -125,14 +125,14 @@
         <div class="precontent">{{ page.precontent }}</div>
       {% endblock %}
     {% endif %}
-    
-    {# Highlighted #}
+
+    {# Highlighted not in admin #}
     {% if page.highlighted %}
       {% block highlighted %}
         <div class="highlighted">{{ page.highlighted }}</div>
       {% endblock %}
     {% endif %}
-    
+
     {# Content #}
     {% block content %}
       {{ page.content }}

@@ -7,8 +7,8 @@ dependencies:
     - colors
 id: colors_help
 theme: colors
-region: highlighted
-weight: -1
+region: content
+weight: -5
 provider: null
 plugin: help_block
 settings:
