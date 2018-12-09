@@ -1,5 +1,7 @@
 name: 'Property'
 type: module
 description: 'The property for isp, server, cabinet, and so on.'
+interface translation project: property
+interface translation server pattern: modules/isp/cbos/property/translations/property.%language.po
 core: 8.x
 package: 'isp'

@@ -25,7 +25,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-04 04:14+0000\n"
+"POT-Creation-Date: 2018-12-09 12:19+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -56,6 +56,10 @@ msgstr ""
 
 #: modules/isp/cbos/ip_plus/ip_plus.links.action.yml:0
 msgid "Add IP type"
+msgstr ""
+
+#: modules/isp/cbos/ip_plus/ip_plus.links.action.yml:0
+msgid "Import IP"
 msgstr ""
 
 #: modules/isp/cbos/ip_plus/ip_plus.links.menu.yml:0
@@ -158,31 +162,31 @@ msgstr ""
 msgid "Descriptions for IP."
 msgstr ""
 
-#: modules/isp/cbos/ip_plus/src/Entity/IP.php:221
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:227
 msgid "Pinyin shortcode"
 msgstr ""
 
-#: modules/isp/cbos/ip_plus/src/Entity/IP.php:225
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:231
 msgid "Publishing status"
 msgstr ""
 
-#: modules/isp/cbos/ip_plus/src/Entity/IP.php:226
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:232
 msgid "A boolean indicating whether the IP is published."
 msgstr ""
 
-#: modules/isp/cbos/ip_plus/src/Entity/IP.php:234
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:240
 msgid "Created"
 msgstr ""
 
-#: modules/isp/cbos/ip_plus/src/Entity/IP.php:235
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:241
 msgid "The time that the entity was created."
 msgstr ""
 
-#: modules/isp/cbos/ip_plus/src/Entity/IP.php:238
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:244
 msgid "Changed"
 msgstr ""
 
-#: modules/isp/cbos/ip_plus/src/Entity/IP.php:239
+#: modules/isp/cbos/ip_plus/src/Entity/IP.php:245
 msgid "The time that the entity was last edited."
 msgstr ""
 

@@ -8,6 +8,7 @@
 #  modules/isp/themes/colors/templates/user/block--avatarblock-2.html.twig: n/a
 #  modules/isp/themes/colors/assets/js/notification/SmartNotification.js: n/a
 #  modules/isp/themes/colors/config/schema/colors.schema.yml: n/a
+#  modules/isp/themes/colors/templates/block/block--searchform.html.twig: n/a
 #  modules/isp/themes/colors/templates/block/block--system-branding-block.html.twig: n/a
 #  modules/isp/themes/colors/templates/menu/menu-local-tasks.html.twig: n/a
 #  modules/isp/themes/colors/templates/system/breadcrumb.html.twig: n/a
@@ -15,6 +16,9 @@
 #  modules/isp/themes/colors/templates/user/block--avatarblock-3.html.twig: n/a
 #  modules/isp/themes/colors/templates/user/block--avatarblock-4.html.twig: n/a
 #  modules/isp/themes/colors/config/optional/block.block.avatarblock.yml: n/a
+#  modules/isp/themes/colors/config/optional/block.block.avatarblock_2.yml: n/a
+#  modules/isp/themes/colors/config/optional/block.block.avatarblock_3.yml: n/a
+#  modules/isp/themes/colors/config/optional/block.block.avatarblock_4.yml: n/a
 #  modules/isp/themes/colors/config/optional/block.block.colors_branding.yml: n/a
 #  modules/isp/themes/colors/config/optional/block.block.colors_breadcrumbs.yml: n/a
 #  modules/isp/themes/colors/config/optional/block.block.colors_content.yml: n/a
@@ -25,12 +29,13 @@
 #  modules/isp/themes/colors/config/optional/block.block.colors_page_title.yml: n/a
 #  modules/isp/themes/colors/config/optional/block.block.colors_role_menu.yml: n/a
 #  modules/isp/themes/colors/config/optional/block.block.languageswitcher.yml: n/a
+#  modules/isp/themes/colors/config/optional/block.block.searchform.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-04 04:16+0000\n"
+"POT-Creation-Date: 2018-12-09 12:19+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -81,6 +86,14 @@ msgstr ""
 
 #: modules/isp/themes/colors/config/schema/colors.schema.yml:0
 msgid "Colors settings"
+msgstr ""
+
+#: modules/isp/themes/colors/templates/block/block--searchform.html.twig:3
+msgid "Please input keyword"
+msgstr ""
+
+#: modules/isp/themes/colors/templates/block/block--searchform.html.twig:7
+msgid "Cancel Search"
 msgstr ""
 
 #: modules/isp/themes/colors/templates/block/block--system-branding-block.html.twig:1
@@ -167,6 +180,18 @@ msgstr ""
 msgid "Avatar block"
 msgstr ""
 
+#: modules/isp/themes/colors/config/optional/block.block.avatarblock_2.yml:0
+msgid "Avatar Logout"
+msgstr ""
+
+#: modules/isp/themes/colors/config/optional/block.block.avatarblock_3.yml:0
+msgid "Avatar Screen"
+msgstr ""
+
+#: modules/isp/themes/colors/config/optional/block.block.avatarblock_4.yml:0
+msgid "Avatar Speech"
+msgstr ""
+
 #: modules/isp/themes/colors/config/optional/block.block.colors_branding.yml:0
 msgid "Site branding"
 msgstr ""
@@ -205,5 +230,9 @@ msgstr ""
 
 #: modules/isp/themes/colors/config/optional/block.block.languageswitcher.yml:0
 msgid "Language switcher"
+msgstr ""
+
+#: modules/isp/themes/colors/config/optional/block.block.searchform.yml:0
+msgid "Search form"
 msgstr ""
 
