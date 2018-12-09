@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains property2.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function property2_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the property2 module.
+    case 'help.page.property2':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The Property of sth for other entity.') . '</p>';
+      return $output;
+
+    default:
+  }
+}

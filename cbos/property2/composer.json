@@ -1,0 +1,14 @@
+{
+  "name": "drupal/property2",
+  "type": "drupal-module",
+  "description": "The Property of sth for other entity.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/property2",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/property2",
+    "source": "http://cgit.drupalcode.org/property2"
+  },
+  "require": { }
+}

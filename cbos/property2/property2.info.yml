@@ -1,0 +1,5 @@
+name: 'Propery'
+type: module
+description: 'The Property of sth for other entity.'
+core: 8.x
+package: 'isp'
