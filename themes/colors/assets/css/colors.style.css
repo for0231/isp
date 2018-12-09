@@ -26681,6 +26681,7 @@ div.wijmo-wijmenu .wijmo-wijmenu-child .wijmo-wijmenu-text {
 .ui-dialog {
   -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  z-index: 999!important;
   border: 1px solid #999999;
   border: 1px solid rgba(0, 0, 0, 0.2);
 }
