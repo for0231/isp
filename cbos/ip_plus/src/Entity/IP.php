@@ -220,7 +220,7 @@ class IP extends ContentEntityBase implements IPInterface {
     // TODO
     // belong to server
     // belong to agent, default is ultrix, only disappear to ultrix
-    // 所属代理，默认ultrix
+    
     // 所属客户UID
 
     $fields['pinyin'] = BaseFieldDefinition::create('pinyin_shortcode')

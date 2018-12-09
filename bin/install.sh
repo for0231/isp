@@ -33,6 +33,7 @@ vendor/bin/drupal moi -y config_rewrite \
 #vendor/bin/drupal moi -y memcache memcache_admin
 ## Install for dev
 vendor/bin/drupal moi -y devel kint webprofiler
+vendor/bin/drush pmu -y toolbar
 
 vendor/bin/drush views:slideshow:lib
 vendor/bin/drush cset system.performance js.preprocess 0 -y
