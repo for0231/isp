@@ -5,7 +5,7 @@ namespace Drupal\property\Entity;
 use Drupal\views\EntityViewsData;
 
 /**
- * Provides Views data for Property entities.
+ * Provides Views data for Property.
  */
 class PropertyViewsData extends EntityViewsData {
 

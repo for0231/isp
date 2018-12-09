@@ -21,16 +21,13 @@ class PropertyAccessControlHandler extends EntityAccessControlHandler {
     /** @var \Drupal\property\Entity\PropertyInterface $entity */
     switch ($operation) {
       case 'view':
-        if (!$entity->isPublished()) {
-          return AccessResult::allowedIfHasPermission($account, 'view unpublished property entities');
-        }
-        return AccessResult::allowedIfHasPermission($account, 'view published property entities');
+        return AccessResult::allowedIfHasPermission($account, 'view property');
 
       case 'update':
-        return AccessResult::allowedIfHasPermission($account, 'edit property entities');
+        return AccessResult::allowedIfHasPermission($account, 'edit property');
 
       case 'delete':
-        return AccessResult::allowedIfHasPermission($account, 'delete property entities');
+        return AccessResult::allowedIfHasPermission($account, 'delete property');
     }
 
     // Unknown operation, no opinion.
@@ -41,7 +38,7 @@ class PropertyAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkCreateAccess(AccountInterface $account, array $context, $entity_bundle = NULL) {
-    return AccessResult::allowedIfHasPermission($account, 'add property entities');
+    return AccessResult::allowedIfHasPermission($account, 'add property');
   }
 
 }

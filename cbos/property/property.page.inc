@@ -4,7 +4,7 @@
  * @file
  * Contains property.page.inc.
  *
- * Page callback for Property entities.
+ * Page callback for Property.
  */
 
 use Drupal\Core\Render\Element;

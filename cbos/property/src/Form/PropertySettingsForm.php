@@ -35,7 +35,7 @@ class PropertySettingsForm extends FormBase {
   }
 
   /**
-   * Defines the settings form for Property entities.
+   * Defines the settings form for Property.
    *
    * @param array $form
    *   An associative array containing the structure of the form.
@@ -46,7 +46,7 @@ class PropertySettingsForm extends FormBase {
    *   Form definition array.
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $form['property_settings']['#markup'] = 'Settings form for Property entities. Manage field settings here.';
+    $form['property_settings']['#markup'] = 'Settings form for Property. Manage field settings here.';
     return $form;
   }
 

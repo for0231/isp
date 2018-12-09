@@ -5,7 +5,7 @@ namespace Drupal\property\Form;
 use Drupal\Core\Entity\ContentEntityDeleteForm;
 
 /**
- * Provides a form for deleting Property entities.
+ * Provides a form for deleting Property.
  *
  * @ingroup property
  */

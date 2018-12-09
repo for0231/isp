@@ -1,19 +1,16 @@
-add property entities:
-  title: 'Create new Property entities'
+add property:
+  title: 'Create new Property'
 
-administer property entities:
-  title: 'Administer Property entities'
-  description: 'Allow to access the administration form to configure Property entities.'
+administer property:
+  title: 'Administer Property'
+  description: 'Allow to access the administration form to configure Property.'
   restrict access: true
 
-delete property entities:
-  title: 'Delete Property entities'
+delete property:
+  title: 'Delete Property'
 
-edit property entities:
-  title: 'Edit Property entities'
+edit property:
+  title: 'Edit Property'
 
-view published property entities:
-  title: 'View published Property entities'
-
-view unpublished property entities:
-  title: 'View unpublished Property entities'
+view property:
+  title: 'View Property'

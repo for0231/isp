@@ -3,12 +3,12 @@
 entity.property.collection:
   title: 'Property list'
   route_name: entity.property.collection
-  description: 'List Property entities'
+  description: 'List Property'
   parent: system.admin_structure
   weight: 100
 
 property.admin.structure.settings:
   title: 'Property settings'
-  description: 'Configure Property entities'
+  description: 'Configure Property'
   route_name: property.settings
   parent: system.admin_structure
