@@ -11,7 +11,7 @@ use Drupal\user\EntityOwnerInterface;
  *
  * @ingroup property
  */
-interface PropertyInterface extends ContentEntityInterface, EntityChangedInterface, EntityOwnerInterface {
+interface PropertyInterface extends ContentEntityInterface, EntityChangedInterface {
 
   // Add get/set methods for your configuration properties here.
 
@@ -52,26 +52,5 @@ interface PropertyInterface extends ContentEntityInterface, EntityChangedInterfa
    *   The called Property entity.
    */
   public function setCreatedTime($timestamp);
-
-  /**
-   * Returns the Property published status indicator.
-   *
-   * Unpublished Property are only visible to restricted users.
-   *
-   * @return bool
-   *   TRUE if the Property is published.
-   */
-  public function isPublished();
-
-  /**
-   * Sets the published status of a Property.
-   *
-   * @param bool $published
-   *   TRUE to set this Property to published, FALSE to set it to unpublished.
-   *
-   * @return \Drupal\property\Entity\PropertyInterface
-   *   The called Property entity.
-   */
-  public function setPublished($published);
 
 }

@@ -1,0 +1,13 @@
+<?php
+
+use Drupal\property\Entity\Property;
+
+/**
+ * Implements hook_install().
+ */
+function property_install() {
+  // Initialize the first property
+  Property::create([
+    'name' => t('Default Property'),
+  ])->save();
+}
