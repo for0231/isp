@@ -9,3 +9,7 @@ entity.ip_type.add_form:
   appears_on:
     - entity.ip_type.collection
 
+entity.ip.import:
+  route_name: entity.ip.import
+  appears_on:
+    - entity.ip.collection

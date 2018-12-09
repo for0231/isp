@@ -5,3 +5,8 @@ ip_plus.settings:
     _title: 'IP settings'
   requirements:
     _permission: 'administer ip'
+    
+entity.ip.import:
+  path: '/entity_import/ip'
+  requirements:
+    _permission: 'administer ip'
