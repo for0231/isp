@@ -22,15 +22,15 @@ class ServerAccessControlHandler extends EntityAccessControlHandler {
     switch ($operation) {
       case 'view':
         if (!$entity->isPublished()) {
-          return AccessResult::allowedIfHasPermission($account, 'view unpublished server entities');
+          return AccessResult::allowedIfHasPermission($account, 'view unpublished server');
         }
-        return AccessResult::allowedIfHasPermission($account, 'view published server entities');
+        return AccessResult::allowedIfHasPermission($account, 'view published server');
 
       case 'update':
-        return AccessResult::allowedIfHasPermission($account, 'edit server entities');
+        return AccessResult::allowedIfHasPermission($account, 'edit server');
 
       case 'delete':
-        return AccessResult::allowedIfHasPermission($account, 'delete server entities');
+        return AccessResult::allowedIfHasPermission($account, 'delete server');
     }
 
     // Unknown operation, no opinion.
@@ -41,7 +41,7 @@ class ServerAccessControlHandler extends EntityAccessControlHandler {
    * {@inheritdoc}
    */
   protected function checkCreateAccess(AccountInterface $account, array $context, $entity_bundle = NULL) {
-    return AccessResult::allowedIfHasPermission($account, 'add server entities');
+    return AccessResult::allowedIfHasPermission($account, 'add server');
   }
 
 }

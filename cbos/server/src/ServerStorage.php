@@ -8,10 +8,10 @@ use Drupal\Core\Language\LanguageInterface;
 use Drupal\server\Entity\ServerInterface;
 
 /**
- * Defines the storage handler class for Server entities.
+ * Defines the storage handler class for Server.
  *
  * This extends the base storage class, adding required special handling for
- * Server entities.
+ * Server.
  *
  * @ingroup server
  */
