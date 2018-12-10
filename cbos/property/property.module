@@ -26,7 +26,7 @@ function property_help($route_name, RouteMatchInterface $route_match) {
 }
 
 /**
- * Implement hook_entity_base_field_info() for ip.
+ * Implement hook_entity_base_field_info() for ip, server.
  */
 function property_entity_base_field_info(EntityTypeInterface $entity_type) {
   if ($entity_type->id() == 'ip') {
