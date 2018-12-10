@@ -11,7 +11,7 @@ use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\user\UserInterface;
 
 /**
- * Defines the Server entity.
+ * Defines the Server.
  *
  * @ingroup server
  *
@@ -205,7 +205,7 @@ class Server extends RevisionableContentEntityBase implements ServerInterface {
 
     $fields['user_id'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Authored by'))
-      ->setDescription(t('The user ID of author of the Server entity.'))
+      ->setDescription(t('The user ID of author of the Server.'))
       ->setRevisionable(TRUE)
       ->setSetting('target_type', 'user')
       ->setSetting('handler', 'default')
@@ -230,7 +230,7 @@ class Server extends RevisionableContentEntityBase implements ServerInterface {
 
     $fields['name'] = BaseFieldDefinition::create('string')
       ->setLabel(t('Name'))
-      ->setDescription(t('The name of the Server entity.'))
+      ->setDescription(t('The name of the Server.'))
       ->setRevisionable(TRUE)
       ->setSettings([
         'max_length' => 50,
