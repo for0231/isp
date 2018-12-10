@@ -1,0 +1,76 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a pager.
+ *
+ * Available variables:
+ * - heading_id: Pagination heading ID.
+ * - items: List of pager items.
+ *   The list is keyed by the following elements:
+ *   - first: Item for the first page; not present on the first page of results.
+ *   - previous: Item for the previous page; not present on the first page
+ *     of results.
+ *   - next: Item for the next page; not present on the last page of results.
+ *   - last: Item for the last page; not present on the last page of results.
+ *   - pages: List of pages, keyed by page number.
+ *   Sub-sub elements:
+ *   items.first, items.previous, items.next, items.last, and each item inside
+ *   items.pages contain the following elements:
+ *   - href: URL with appropriate query parameters for the item.
+ *   - attributes: A keyed list of HTML attributes for the item.
+ *   - text: The visible text used for the item link, such as "‹ Previous"
+ *     or "Next ›".
+ * - current: The page number of the current page.
+ * - ellipses: If there are more pages than the quantity allows, then an
+ *   ellipsis before or after the listed pages may be present.
+ *   - previous: Present if the currently visible list of pages does not start
+ *     at the first page.
+ *   - next: Present if the visible list of pages ends before the last page.
+ *
+ * @see template_preprocess_pager()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if items %}
+  <div class="dt-toolbar-footer">
+    <div class="col-sm-6 col-xs-12 hidden-xs">
+      <div class="dataTables_info" id="datatable_fixed_column_info" role="status" aria-live="polite">
+        {{ 'Need to do'|t }}
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <div class="dataTables_paginate paging_simple_numbers" id="datatable_fixed_column_paginate">
+        <ul class="pagination">
+          {% if items.first %}
+          <li class="paginate_button previous"><a href="{{ items.first.href }}" aria-controls="datatable_fixed_column" tabindex="0">{{ '« First'|t }}</a></li>
+          {% endif %}
+          {% if items.previous %}
+          <li class="paginate_button previous" id="datatable_fixed_column_previous"><a href="{{ items.previous.href }}" aria-controls="datatable_fixed_column" data-dt-idx="0" tabindex="0">{{ items.previous.text|default('‹ Previous'|t) }}</a></li>
+          {% endif %}
+          {% if ellipses.previous %}
+          <li class="paginate_button disabled" id="dt_basic_ellipsis">&hellip;</li>
+          {% endif %}
+  
+          {# Now generate the actual pager piece. #}
+          {% for key, item in items.pages %}
+            {% if current == key %}
+              <li class="paginate_button active"><a href="{{ item.href }}" aria-controls="datatable_fixed_column" data-dt-idx="{{ key }}" tabindex="0">{{- key -}}</a></li>
+            {% else %}
+              <li class="paginate_button "><a href="{{ item.href }}" aria-controls="datatable_fixed_column" data-dt-idx="{{ key }}" tabindex="0">{{- key -}}</a></li>
+            {% endif %}
+          {% endfor %}
+          {% if ellipses.next %}
+          <li class="paginate_button disabled" id="dt_basic_ellipsis">&hellip;</li>
+          {% endif %}
+          {% if items.next %}
+          <li class="paginate_button next" id="datatable_fixed_column_next"><a href="{{ items.next.href }}" aria-controls="datatable_fixed_column" data-dt-idx="7" tabindex="0">{{ items.next.text|default('Next ›'|t) }}</a></li>
+          {% endif %}
+          {% if items.last %}
+          <li class="paginate_button next" id="dt_basic_next"><a href="{{ items.last.href }}" aria-controls="dt_basic" data-dt-idx="8" tabindex="0">{{ items.last.text|default('Last »'|t) }}</a></li>
+          {% endif %}
+        </ul>
+      </div>
+    </div>
+  </div>
+{% endif %}
