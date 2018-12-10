@@ -40559,4 +40559,11 @@ body.smart-style-6.menu-on-top aside#left-panel nav > ul > li:hover > a {
     color: #fff;
   }
 }
+.action-links {
+  margin: 0 0;
+}
+.form-actions {
+  margin-top: inherit;
+  text-align: left;
+}
 /*# sourceMappingURL=colors.style.css.map */
