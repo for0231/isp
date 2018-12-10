@@ -220,9 +220,53 @@ class IP extends ContentEntityBase implements IPInterface {
     
     // TODO
     // belong to server
+    $fields['server'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Server'))
+      ->setSetting('target_type', 'server')
+      ->setDefaultValue(0)
+      ->setDisplayOptions('view', [
+        'type' => 'entity_reference_label',
+        'weight' => -3,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'entity_reference_autocomplete',
+        'weight' => 6,
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'placeholder' => '',
+        ],
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+    
     // belong to agent, default is ultrix, only disappear to ultrix
     
     // 所属客户UID
+    $fields['client'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Client'))
+      ->setDescription(t('The user ID of Client.'))
+      ->setRevisionable(TRUE)
+      ->setSetting('target_type', 'user')
+      ->setSetting('handler', 'default')
+      ->setTranslatable(TRUE)
+      ->setDisplayOptions('view', [
+        'label' => 'hidden',
+        'type' => 'author',
+        'weight' => 0,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'entity_reference_autocomplete',
+        'weight' => 5,
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'autocomplete_type' => 'tags',
+          'placeholder' => t('Client user name.'),
+        ],
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
 
     $fields['pinyin'] = BaseFieldDefinition::create('pinyin_shortcode')
       ->setLabel(t('Pinyin shortcode'))
