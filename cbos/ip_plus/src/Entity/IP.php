@@ -21,6 +21,7 @@ use Drupal\user\UserInterface;
  *   handlers = {
  *     "view_builder" = "Drupal\Core\Entity\EntityViewBuilder",
  *     "list_builder" = "Drupal\ip_plus\IPListBuilder",
+ *     "storage_schema" = "Drupal\ip_plus\IPStorageSchema",
  *     "views_data" = "Drupal\ip_plus\Entity\IPViewsData",
  *     "translation" = "Drupal\ip_plus\IPTranslationHandler",
  *
