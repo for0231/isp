@@ -3,3 +3,5 @@ type: module
 description: 'The servers for idc.'
 core: 8.x
 package: 'isp'
+dependencies:
+  - ip_plus

@@ -3,7 +3,5 @@ type: module
 description: 'The IP Plus module.'
 core: 8.x
 interface translation project: ip_plus
-interface translation server pattern: modules/isp/cbos/ip_plus/translations/ip_plus.%language.po
+interface translation server pattern: modules/isp/cbos/%project/translations/%project.%language.po
 package: 'isp'
-dependencies:
-  - server
