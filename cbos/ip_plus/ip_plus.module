@@ -30,13 +30,13 @@ function ip_plus_theme() {
   $theme = [];
   $theme['ip'] = [
     'render element' => 'elements',
-    'file' => 'ip.page.inc',
+    'file' => 'ip_plus.page.inc',
     'template' => 'ip',
   ];
   $theme['ip_content_add_list'] = [
     'render element' => 'content',
     'variables' => ['content' => NULL],
-    'file' => 'ip.page.inc',
+    'file' => 'ip_plus.page.inc',
   ];
   return $theme;
 }
