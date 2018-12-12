@@ -53,6 +53,7 @@ vendor/bin/drush en -y \
   import \
   role_frontpage \
   role_menu \
+  small_title \
   translation \
   user_plus
 

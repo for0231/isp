@@ -12,6 +12,7 @@
 #  modules/isp/themes/colors/templates/block/block--system-branding-block.html.twig: n/a
 #  modules/isp/themes/colors/templates/menu/menu-local-tasks.html.twig: n/a
 #  modules/isp/themes/colors/templates/system/breadcrumb.html.twig: n/a
+#  modules/isp/themes/colors/templates/system/pager.html.twig: n/a
 #  modules/isp/themes/colors/templates/system/status-messages.html.twig: n/a
 #  modules/isp/themes/colors/templates/user/block--avatarblock-3.html.twig: n/a
 #  modules/isp/themes/colors/templates/user/block--avatarblock-4.html.twig: n/a
@@ -35,7 +36,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-09 12:19+0000\n"
+"POT-Creation-Date: 2018-12-12 03:00+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -110,6 +111,14 @@ msgstr ""
 
 #: modules/isp/themes/colors/templates/system/breadcrumb.html.twig:17
 msgid "Breadcrumb"
+msgstr ""
+
+#: modules/isp/themes/colors/templates/system/pager.html.twig:39
+msgid "Need to do"
+msgstr ""
+
+#: modules/isp/themes/colors/templates/system/pager.html.twig:46
+msgid "« First"
 msgstr ""
 
 #: modules/isp/themes/colors/templates/system/status-messages.html.twig:49
