@@ -1,0 +1,3 @@
+views.filter.entity_status:
+  type: views.filter.many_to_one
+  label: 'Entity status'

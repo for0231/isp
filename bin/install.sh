@@ -50,6 +50,7 @@ vendor/bin/drush cset -y system.theme admin colors
 # core modules
 vendor/bin/drush en -y \
   eabax_core \
+  eabax_workflow \
   import \
   role_frontpage \
   role_menu \

@@ -1,0 +1,74 @@
+<?php
+
+/**
+ * @file
+ */
+
+use Drupal\Core\Entity\ContentEntityTypeInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\system\Entity\Action;
+
+/**
+ * Implements hook_field_formatter_info_alter().
+ */
+function eabax_workflows_field_formatter_info_alter(array &$info) {
+  $info['list_default']['field_types'][] = 'entity_status';
+}
+
+/**
+ * Implements hook_field_widget_info_alter().
+ */
+function eabax_workflows_field_widget_info_alter(array &$info) {
+  $info['options_select']['field_types'][] = 'entity_status';
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_insert() for workflow.
+ */
+function eabax_workflows_workflow_insert(EntityInterface $entity) {
+  eabax_workflows_workflow_update($entity);
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_update() for workflow.
+ */
+function eabax_workflows_workflow_update(EntityInterface $entity) {
+  /** @var \Drupal\Core\Entity\EntityFieldManagerInterface $entity_field_manager */
+  $entity_field_manager = \Drupal::service('entity_field.manager');
+
+  $entity_types = \Drupal::service('entity_type.manager')->getDefinitions();
+  $finds = [];
+  foreach ($entity_types as $entity_type) {
+    if ($entity_type instanceof ContentEntityTypeInterface) {
+      $fields = $entity_field_manager->getBaseFieldDefinitions($entity_type->id());
+      foreach ($fields as $field) {
+        if ($field->getType() == 'entity_status' && $field->getSetting('workflow') == $entity->id()) {
+          $finds[$entity_type->id()] = $field;
+          break;
+        }
+      }
+    }
+  }
+
+  /** @var \Drupal\workflows\WorkflowInterface $entity */
+  $transitions = $entity->getTypePlugin()->getTransitions();
+  foreach ($finds as $entity_type_id => $field) {
+    foreach ($transitions as $transition) {
+      $id = $entity_type_id . '_wst_' . $transition->id();
+      if (!$action = Action::load($id)) {
+        $action = Action::create([
+          'id' => $id,
+          'type' => $entity_type_id,
+          'label' => $transition->label(),
+          'configuration' => [
+            'workflow' => $field->getSetting('workflow'),
+            'field' => $field->getName(),
+            'transition' => $transition->id(),
+          ],
+          'plugin' => 'entity:wst:' . $entity_type_id,
+        ]);
+        $action->trustData()->save();
+      }
+    }
+  }
+}
