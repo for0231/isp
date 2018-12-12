@@ -121,7 +121,21 @@ class Property extends ContentEntityBase implements PropertyInterface {
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE)
       ->setRequired(TRUE);
-
+  
+    $fields['description'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Description'))
+      ->setSetting('max_length', 128)
+      ->setDisplayOptions('view', [
+        'type' => 'string',
+        'weight' => -4,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'string_textfield',
+        'weight' => -4,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+    
     $fields['created'] = BaseFieldDefinition::create('created')
       ->setLabel(t('Created'))
       ->setDescription(t('The time that the entity was created.'));

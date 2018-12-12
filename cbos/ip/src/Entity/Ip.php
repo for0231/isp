@@ -249,7 +249,21 @@ class Ip extends RevisionableContentEntityBase implements IpInterface {
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE)
       ->setRequired(TRUE);
-
+  
+    $fields['description'] = BaseFieldDefinition::create('string')
+      ->setLabel(t('Description'))
+      ->setSetting('max_length', 128)
+      ->setDisplayOptions('view', [
+        'type' => 'string',
+        'weight' => -4,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'string_textfield',
+        'weight' => -4,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+    
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
       ->setDescription(t('A boolean indicating whether the IP is published.'))
