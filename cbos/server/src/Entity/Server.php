@@ -122,7 +122,18 @@ class Server extends RevisionableContentEntityBase implements ServerInterface {
       $this->setRevisionUserId($this->getOwnerId());
     }
   }
-
+  
+  /**
+   * {@inheritdoc}
+   */
+  public function postSave(EntityStorageInterface $storage, $update = TRUE) {
+    // Ensure there's a back-reference on each component
+    foreach ($this->get('ips') as $ip) {
+      $ip->entity->set('client', $this->getClientId())
+        ->save();
+    }
+  }
+  
   /**
    * {@inheritdoc}
    */
@@ -182,7 +193,39 @@ class Server extends RevisionableContentEntityBase implements ServerInterface {
     $this->set('user_id', $account->id());
     return $this;
   }
-
+  
+  /**
+   * {@inheritdoc}
+   */
+  public function getClient() {
+    return $this->get('client')->entity;
+  }
+  
+  /**
+   * {@inheritdoc}
+   */
+  public function getClientId() {
+    return $this->get('client')->target_id;
+  }
+  
+  /**
+   * {@inheritdoc}
+   */
+  public function setClient(UserInterface $user) {
+    $this->set('client', $user->id());
+    
+    return $this;
+  }
+  
+  /**
+   * {@inheritdoc}
+   */
+  public function setClientId($uid) {
+    $this->set('client', $uid);
+    
+    return $this;
+  }
+  
   /**
    * {@inheritdoc}
    */
@@ -203,7 +246,11 @@ class Server extends RevisionableContentEntityBase implements ServerInterface {
    */
   public static function baseFieldDefinitions(EntityTypeInterface $entity_type) {
     $fields = parent::baseFieldDefinitions($entity_type);
-
+    
+    $fields['type']
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+    
     $fields['user_id'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Authored by'))
       ->setDescription(t('The user ID of author of the Server.'))
@@ -332,6 +379,32 @@ class Server extends RevisionableContentEntityBase implements ServerInterface {
           'allow_existing' => FALSE,
           'match_operator' => 'CONTAINS',
         ]
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+  
+    // 所属客户UID
+    $fields['client'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Client'))
+      ->setDescription(t('The user ID of Client.'))
+      ->setRevisionable(TRUE)
+      ->setSetting('target_type', 'user')
+      ->setSetting('handler', 'default')
+      ->setTranslatable(TRUE)
+      ->setDisplayOptions('view', [
+        'label' => 'hidden',
+        'type' => 'author',
+        'weight' => 0,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'entity_reference_autocomplete',
+        'weight' => 5,
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'autocomplete_type' => 'tags',
+          'placeholder' => t('Client user name.'),
+        ],
       ])
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);

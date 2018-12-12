@@ -6,6 +6,7 @@ use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Entity\RevisionLogInterface;
 use Drupal\Core\Entity\EntityChangedInterface;
 use Drupal\user\EntityOwnerInterface;
+use Drupal\user\UserInterface;
 
 /**
  * Provides an interface for defining Server.
@@ -112,5 +113,25 @@ interface ServerInterface extends ContentEntityInterface, RevisionLogInterface, 
    *   The called Server.
    */
   public function setRevisionUserId($uid);
-
+  
+  /**
+   * @param $uid Client user id.
+   *
+   * @return mixed
+   */
+  public function setClientId($uid);
+  
+  /**
+   * Set Client.
+   */
+  public function setClient(UserInterface $user);
+  /**
+   * @return \Drupal\user\Entity\UserInterface
+   */
+  public function getClient();
+  
+  /**
+   * Get client user id.
+   */
+  public function getClientId();
 }
