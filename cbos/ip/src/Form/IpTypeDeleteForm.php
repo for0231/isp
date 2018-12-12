@@ -7,7 +7,7 @@ use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Url;
 
 /**
- * Builds the form to delete IP type entities.
+ * Builds the form to delete IP type.
  */
 class IpTypeDeleteForm extends EntityConfirmFormBase {
 

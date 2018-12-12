@@ -6,7 +6,7 @@ use Drupal\Core\Config\Entity\ConfigEntityListBuilder;
 use Drupal\Core\Entity\EntityInterface;
 
 /**
- * Provides a listing of IP type entities.
+ * Provides a listing of IP type.
  */
 class IpTypeListBuilder extends ConfigEntityListBuilder {
 

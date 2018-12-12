@@ -5,7 +5,7 @@ namespace Drupal\ip\Entity;
 use Drupal\Core\Config\Entity\ConfigEntityInterface;
 
 /**
- * Provides an interface for defining IP type entities.
+ * Provides an interface for defining IP type.
  */
 interface IpTypeInterface extends ConfigEntityInterface {
 
