@@ -1,6 +1,6 @@
 entity.ip.add_form:
   route_name: entity.ip.add_page
-  title: 'Add IP'
+  title: 'Add'
   options:
     query:
       destination: '/ip'
@@ -8,7 +8,7 @@ entity.ip.add_form:
     - entity.ip.collection
 entity.ip_type.add_form:
   route_name: entity.ip_type.add_form
-  title: 'Add IP type'
+  title: 'Add type'
   options:
     query:
       destination: '/ip/type'

@@ -66,6 +66,15 @@
   {% endif %}
   {% if header %}
     <thead>
+      {% if has_col_header %}
+      <tr>
+        {% for key, column in col_header %}
+          <th>
+            {{ column.content }}
+          </th>
+        {% endfor %}
+      </tr>
+      {% endif %}
       <tr>
         {% for key, column in header %}
           {% if column.default_classes %}
@@ -111,7 +120,11 @@
               {% set column_classes = column_classes|merge(['views-field-' ~ field]) %}
             {% endfor %}
           {% endif %}
-          <td{{ column.attributes.addClass(column_classes) }}>
+          {% if key == row_header %}
+          <th scope="row"{{ column.attributes.addClass(column_classes) }}>
+          {% else %}
+            <td{{ column.attributes.addClass(column_classes) }}>
+          {% endif %}
             {%- if column.wrapper_element -%}
               <{{ column.wrapper_element }}>
               {% for content in column.content %}
@@ -123,7 +136,11 @@
                 {{- content.separator }}{{ content.field_output -}}
               {% endfor %}
             {%- endif %}
-          </td>
+          {% if key == row_header %}
+            </th>
+          {% else %}
+            </td>
+          {% endif %}
         {% endfor %}
       </tr>
     {% endfor %}

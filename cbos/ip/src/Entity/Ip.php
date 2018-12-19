@@ -323,10 +323,30 @@ class Ip extends RevisionableContentEntityBase implements IpInterface {
       ->setLabel(t('Pinyin shortcode'))
       ->setSetting('source_field', 'description');
   
-//    $fields['state'] = BaseFieldDefinition::create('ip_status')
+    $fields['property'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Property'))
+      ->setDescription(t('Property right'))
+      ->setSetting('target_type', 'property')
+      ->setDefaultValue(1)
+      ->setDisplayOptions('view', [
+        'type' => 'entity_reference_label',
+        'weight' => -3,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'entity_reference_autocomplete',
+        'weight' => 6,
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'placeholder' => '',
+        ],
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+//    $fields['state'] = BaseFieldDefinition::create('ip_state')
 //      ->setLabel(t('State'))
 //      ->setRequired(TRUE)
-//      ->setSetting('workflow', 'default_ip_status')
+//      ->setSetting('workflow', 'default_ip_state')
 //      ->setRevisionable(TRUE)
 //      ->setDisplayOptions('view', [
 //        'type' => 'list_default',

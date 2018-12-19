@@ -2,7 +2,7 @@ name: 'IP'
 type: module
 description: 'The ip for isp.'
 core: 8.x
-interface translation project: server
+interface translation project: ip
 interface translation server pattern: modules/isp/cbos/%project/translations/%project.%language.po
 package: 'isp'
 dependencies:

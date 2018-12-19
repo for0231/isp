@@ -22,12 +22,15 @@
 #  modules/isp/cbos/ip/src/Form/IpForm.php: n/a
 #  modules/isp/cbos/ip/src/Form/IpRevisionRevertTranslationForm.php: n/a
 #  modules/isp/cbos/ip/src/Form/IpTypeForm.php: n/a
+#  modules/isp/cbos/ip/src/Plugin/WorkflowType/IpState.php: n/a
+#  modules/isp/cbos/ip/config/install/ip.type.inet.yml: n/a
+#  modules/isp/cbos/ip/config/install/ip.type.onet.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-12 03:00+0000\n"
+"POT-Creation-Date: 2018-12-19 09:02+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -53,11 +56,11 @@ msgid "isp"
 msgstr ""
 
 #: modules/isp/cbos/ip/ip.links.action.yml:0
-msgid "Add IP"
+msgid "Add"
 msgstr ""
 
 #: modules/isp/cbos/ip/ip.links.action.yml:0
-msgid "Add IP type"
+msgid "Add type"
 msgstr ""
 
 #: modules/isp/cbos/ip/ip.links.action.yml:0
@@ -152,11 +155,35 @@ msgstr ""
 msgid "ID"
 msgstr ""
 
+#: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "IP state settings"
+msgstr ""
+
+#: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "Workflow"
+msgstr ""
+
+#: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "Initial status"
+msgstr ""
+
+#: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "IP states"
+msgstr ""
+
+#: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "States"
+msgstr ""
+
+#: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "Transitions"
+msgstr ""
+
 #: modules/isp/cbos/ip/src/IpListBuilder.php:21
 msgid "IP ID"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/IpListBuilder.php:22 modules/isp/cbos/ip/src/Entity/Ip.php:232
+#: modules/isp/cbos/ip/src/IpListBuilder.php:22 modules/isp/cbos/ip/src/Entity/Ip.php:236
 msgid "Name"
 msgstr ""
 
@@ -196,63 +223,67 @@ msgstr ""
 msgid "@date by @username"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:207
+#: modules/isp/cbos/ip/src/Entity/Ip.php:211
 msgid "Authored by"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:208
+#: modules/isp/cbos/ip/src/Entity/Ip.php:212
 msgid "The user ID of author of the IP entity."
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:233
+#: modules/isp/cbos/ip/src/Entity/Ip.php:237
 msgid "The name of the IP entity."
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:254
-msgid "Publishing status"
-msgstr ""
-
-#: modules/isp/cbos/ip/src/Entity/Ip.php:255
-msgid "A boolean indicating whether the IP is published."
-msgstr ""
-
-#: modules/isp/cbos/ip/src/Entity/Ip.php:264
-msgid "Created"
-msgstr ""
-
-#: modules/isp/cbos/ip/src/Entity/Ip.php:265
-msgid "The time that the entity was created."
-msgstr ""
-
-#: modules/isp/cbos/ip/src/Entity/Ip.php:268
-msgid "Changed"
-msgstr ""
-
-#: modules/isp/cbos/ip/src/Entity/Ip.php:269
-msgid "The time that the entity was last edited."
+#: modules/isp/cbos/ip/src/Entity/Ip.php:258
+msgid "Description"
 msgstr ""
 
 #: modules/isp/cbos/ip/src/Entity/Ip.php:272
-msgid "Revision translation affected"
+msgid "Publishing status"
 msgstr ""
 
 #: modules/isp/cbos/ip/src/Entity/Ip.php:273
+msgid "A boolean indicating whether the IP is published."
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Entity/Ip.php:282
+msgid "Created"
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Entity/Ip.php:283
+msgid "The time that the entity was created."
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Entity/Ip.php:286
+msgid "Changed"
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Entity/Ip.php:287
+msgid "The time that the entity was last edited."
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Entity/Ip.php:290
+msgid "Revision translation affected"
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Entity/Ip.php:291
 msgid "Indicates if the last edit of a translation belongs to current revision."
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:280
+#: modules/isp/cbos/ip/src/Entity/Ip.php:298
 msgid "Client"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:281
+#: modules/isp/cbos/ip/src/Entity/Ip.php:299
 msgid "The user ID of Client."
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:298
+#: modules/isp/cbos/ip/src/Entity/Ip.php:316
 msgid "Client user name."
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:305
+#: modules/isp/cbos/ip/src/Entity/Ip.php:323
 msgid "Pinyin shortcode"
 msgstr ""
 
@@ -334,5 +365,17 @@ msgstr ""
 
 #: modules/isp/cbos/ip/src/Form/IpTypeForm.php:58
 msgid "Saved the %label IP type."
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Plugin/WorkflowType/IpState.php:7
+msgid "IP Status"
+msgstr ""
+
+#: modules/isp/cbos/ip/config/install/ip.type.inet.yml:0
+msgid "Inet"
+msgstr ""
+
+#: modules/isp/cbos/ip/config/install/ip.type.onet.yml:0
+msgid "Onet"
 msgstr ""
 

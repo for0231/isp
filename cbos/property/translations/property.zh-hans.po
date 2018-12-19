@@ -18,7 +18,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-09 12:19+0000\n"
+"POT-Creation-Date: 2018-12-19 09:02+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -35,11 +35,11 @@ msgstr "关于"
 msgid "The property for isp, server, cabinet, and so on."
 msgstr "isp, server, cabinet等的产权."
 
-#: modules/isp/cbos/property/property.module:35 modules/isp/cbos/property/property.info.yml:0 modules/isp/cbos/property/src/Entity/Property.php:12
+#: modules/isp/cbos/property/property.module:35;61 modules/isp/cbos/property/property.info.yml:0 modules/isp/cbos/property/src/Entity/Property.php:12
 msgid "Property"
 msgstr "产权"
 
-#: modules/isp/cbos/property/property.module:36
+#: modules/isp/cbos/property/property.module:36;62
 msgid "Property right"
 msgstr "产权"
 

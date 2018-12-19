@@ -3,17 +3,17 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  modules/eabax/core/eabax_workflows/eabax_workflows.info.yml: n/a
-#  modules/eabax/core/eabax_workflows/config/schema/eabax_workflows.views.schema.yml: n/a
-#  modules/eabax/core/eabax_workflows/src/Plugin/Action/WorkflowStatusTransition.php: n/a
-#  modules/eabax/core/eabax_workflows/src/Plugin/Action/Derivative/EntityStatusTransitionDeriver.php: n/a
-#  modules/eabax/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php: n/a
+#  modules/isp/core/eabax_workflows/eabax_workflows.info.yml: n/a
+#  modules/isp/core/eabax_workflows/config/schema/eabax_workflows.views.schema.yml: n/a
+#  modules/isp/core/eabax_workflows/src/Plugin/Action/WorkflowStatusTransition.php: n/a
+#  modules/isp/core/eabax_workflows/src/Plugin/Action/Derivative/EntityStatusTransitionDeriver.php: n/a
+#  modules/isp/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-10 08:03+0000\n"
+"POT-Creation-Date: 2018-12-19 09:02+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -22,39 +22,39 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/eabax/core/eabax_workflows/eabax_workflows.info.yml:0;0
+#: modules/isp/core/eabax_workflows/eabax_workflows.info.yml:0;0
 msgid "Eabax workflows"
 msgstr ""
 
-#: modules/eabax/core/eabax_workflows/eabax_workflows.info.yml:0
+#: modules/isp/core/eabax_workflows/eabax_workflows.info.yml:0
 msgid "Eabax core"
 msgstr ""
 
-#: modules/eabax/core/eabax_workflows/config/schema/eabax_workflows.views.schema.yml:0
+#: modules/isp/core/eabax_workflows/config/schema/eabax_workflows.views.schema.yml:0
 msgid "Entity status"
 msgstr ""
 
-#: modules/eabax/core/eabax_workflows/src/Plugin/Action/WorkflowStatusTransition.php:9
+#: modules/isp/core/eabax_workflows/src/Plugin/Action/WorkflowStatusTransition.php:9
 msgid "Workflow status transition"
 msgstr ""
 
-#: modules/eabax/core/eabax_workflows/src/Plugin/Action/Derivative/EntityStatusTransitionDeriver.php:20
+#: modules/isp/core/eabax_workflows/src/Plugin/Action/Derivative/EntityStatusTransitionDeriver.php:20
 msgid "Transition @entity_type status"
 msgstr ""
 
-#: modules/eabax/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:82
+#: modules/isp/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:82
 msgid "Workflow type"
 msgstr ""
 
-#: modules/eabax/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:101
+#: modules/isp/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:101
 msgid "Workflow"
 msgstr ""
 
-#: modules/eabax/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:50
+#: modules/isp/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:50
 msgid "State"
 msgstr ""
 
-#: modules/eabax/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:15
+#: modules/isp/core/eabax_workflows/src/Plugin/Field/FieldType/EntityStatusFieldItem.php:15
 msgid "Workflow status"
 msgstr ""
 

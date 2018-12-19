@@ -27,7 +27,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-12 03:00+0000\n"
+"POT-Creation-Date: 2018-12-19 09:02+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -152,7 +152,7 @@ msgstr ""
 msgid "Server ID"
 msgstr ""
 
-#: modules/isp/cbos/server/src/ServerListBuilder.php:22 modules/isp/cbos/server/src/Entity/Server.php:258
+#: modules/isp/cbos/server/src/ServerListBuilder.php:22 modules/isp/cbos/server/src/Entity/Server.php:305
 msgid "Name"
 msgstr ""
 
@@ -192,60 +192,72 @@ msgstr ""
 msgid "@date by @username"
 msgstr ""
 
-#: modules/isp/cbos/server/src/Entity/Server.php:208
+#: modules/isp/cbos/server/src/Entity/Server.php:255
 msgid "Authored by"
 msgstr ""
 
-#: modules/isp/cbos/server/src/Entity/Server.php:209
+#: modules/isp/cbos/server/src/Entity/Server.php:256
 msgid "The user ID of author of the Server."
 msgstr ""
 
-#: modules/isp/cbos/server/src/Entity/Server.php:233
+#: modules/isp/cbos/server/src/Entity/Server.php:280;388
 msgid "Client"
 msgstr ""
 
-#: modules/isp/cbos/server/src/Entity/Server.php:234
+#: modules/isp/cbos/server/src/Entity/Server.php:281
 msgid "The user ID of client of the Server."
 msgstr ""
 
-#: modules/isp/cbos/server/src/Entity/Server.php:259
+#: modules/isp/cbos/server/src/Entity/Server.php:306
 msgid "The name of the Server."
 msgstr ""
 
-#: modules/isp/cbos/server/src/Entity/Server.php:280
+#: modules/isp/cbos/server/src/Entity/Server.php:327
+msgid "Description"
+msgstr ""
+
+#: modules/isp/cbos/server/src/Entity/Server.php:341
 msgid "Publishing status"
 msgstr ""
 
-#: modules/isp/cbos/server/src/Entity/Server.php:281
+#: modules/isp/cbos/server/src/Entity/Server.php:342
 msgid "A boolean indicating whether the Server is published."
 msgstr ""
 
-#: modules/isp/cbos/server/src/Entity/Server.php:290
+#: modules/isp/cbos/server/src/Entity/Server.php:351
 msgid "Created"
 msgstr ""
 
-#: modules/isp/cbos/server/src/Entity/Server.php:291
+#: modules/isp/cbos/server/src/Entity/Server.php:352
 msgid "The time that the entity was created."
 msgstr ""
 
-#: modules/isp/cbos/server/src/Entity/Server.php:294
+#: modules/isp/cbos/server/src/Entity/Server.php:355
 msgid "Changed"
 msgstr ""
 
-#: modules/isp/cbos/server/src/Entity/Server.php:295
+#: modules/isp/cbos/server/src/Entity/Server.php:356
 msgid "The time that the entity was last edited."
 msgstr ""
 
-#: modules/isp/cbos/server/src/Entity/Server.php:298
+#: modules/isp/cbos/server/src/Entity/Server.php:359
 msgid "Revision translation affected"
 msgstr ""
 
-#: modules/isp/cbos/server/src/Entity/Server.php:299
+#: modules/isp/cbos/server/src/Entity/Server.php:360
 msgid "Indicates if the last edit of a translation belongs to current revision."
 msgstr ""
 
-#: modules/isp/cbos/server/src/Entity/Server.php:305
+#: modules/isp/cbos/server/src/Entity/Server.php:366
 msgid "IPs"
+msgstr ""
+
+#: modules/isp/cbos/server/src/Entity/Server.php:389
+msgid "The user ID of Client."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Entity/Server.php:406
+msgid "Client user name."
 msgstr ""
 
 #: modules/isp/cbos/server/src/Form/ServerForm.php:25

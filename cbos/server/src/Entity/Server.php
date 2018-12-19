@@ -408,6 +408,27 @@ class Server extends RevisionableContentEntityBase implements ServerInterface {
       ])
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
+  
+    $fields['property'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Property'))
+      ->setDescription(t('Property right'))
+      ->setSetting('target_type', 'property')
+      ->setDefaultValue(1)
+      ->setDisplayOptions('view', [
+        'type' => 'entity_reference_label',
+        'weight' => -3,
+      ])
+      ->setDisplayOptions('form', [
+        'type' => 'entity_reference_autocomplete',
+        'weight' => 6,
+        'settings' => [
+          'match_operator' => 'CONTAINS',
+          'size' => '60',
+          'placeholder' => '',
+        ],
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
     
     return $fields;
   }
