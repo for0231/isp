@@ -343,6 +343,7 @@ class Ip extends RevisionableContentEntityBase implements IpInterface {
       ])
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
+    
 //    $fields['state'] = BaseFieldDefinition::create('ip_state')
 //      ->setLabel(t('State'))
 //      ->setRequired(TRUE)
