@@ -30,7 +30,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-19 09:02+0000\n"
+"POT-Creation-Date: 2018-12-23 01:21+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -164,19 +164,19 @@ msgstr ""
 
 #: modules/isp/cbos/ip/src/Entity/Ip.php:323
 msgid "Pinyin shortcode"
-msgstr ""
+msgstr "拼音简码"
 
 #: modules/isp/cbos/ip/src/Form/IpForm.php:58
 msgid "Created the %label IP."
-msgstr ""
+msgstr "已创建IP%label."
 
 #: modules/isp/cbos/ip/src/Form/IpForm.php:64
 msgid "Saved the %label IP."
-msgstr ""
+msgstr "已保存IP%label."
 
 #: modules/isp/cbos/ip/src/Form/IpRevisionDeleteForm.php:109
 msgid "IP: deleted %title revision %revision."
-msgstr ""
+msgstr "IP:删除%title的版本%revision."
 
 #: modules/isp/cbos/ip/src/Form/IpRevisionRevertForm.php:123
 msgid "IP %title has been reverted to the revision from %revision-date."
