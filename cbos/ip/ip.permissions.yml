@@ -28,3 +28,6 @@ revert all ip revisions:
 delete all ip revisions:
   title: 'Delete all revisions'
   description: 'Role requires permission to <em>view IP revisions</em> and <em>delete rights</em> for ip in question or <em>administer ip</em>.'
+
+view own ip:
+  title: 'View own ip'

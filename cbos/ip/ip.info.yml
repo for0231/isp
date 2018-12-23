@@ -7,5 +7,6 @@ interface translation server pattern: modules/isp/cbos/%project/translations/%pr
 package: 'isp'
 dependencies:
   - import
+  - pinyin
   - property
   - views

@@ -21,6 +21,9 @@ class IpAccessControlHandler extends EntityAccessControlHandler {
     /** @var \Drupal\ip\Entity\IpInterface $entity */
     switch ($operation) {
       case 'view':
+        if ($entity->getClientId() == $account->id()) {
+          return AccessResult::allowedIfHasPermission($account, 'view own ip');
+        }
         if (!$entity->isPublished()) {
           return AccessResult::allowedIfHasPermission($account, 'view unpublished ip');
         }

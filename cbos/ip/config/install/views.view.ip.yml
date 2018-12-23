@@ -377,7 +377,6 @@ display:
           exclude: false
           alter:
             alter_text: false
-            element_type: ''
           element_class: ''
           empty: ''
           hide_empty: false

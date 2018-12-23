@@ -361,5 +361,15 @@ class Ip extends RevisionableContentEntityBase implements IpInterface {
 //      ->setDisplayConfigurable('view', TRUE);
     return $fields;
   }
-
+  
+  /**
+   * {@inheritdoc}
+   */
+  public function getClient() {
+    return $this->get('client')->entity;
+  }
+  
+  public function getClientId() {
+    return $this->getClient()->id();
+  }
 }

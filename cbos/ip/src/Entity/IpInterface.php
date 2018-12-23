@@ -112,5 +112,10 @@ interface IpInterface extends ContentEntityInterface, RevisionLogInterface, Enti
    *   The called IP entity.
    */
   public function setRevisionUserId($uid);
+  
+  /**
+   * @return \Drupal\user\UserInterface
+   */
+  public function getClient();
 
 }
