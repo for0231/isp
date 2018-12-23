@@ -1,15 +1,15 @@
-#!/bin/bash
+#!/bin/sh
 
-modules=( \
-  'isp_room,isp_server' \
-  'isp_ip' \
-)
+echo $(pwd)
 
-#sudo rm sites/simpletest/browser_output -rf
+PROJECT="modules/isp"
 OUTPUT="simpletest-`date +%Y%m%d`.txt"
-for module in ${modules[@]}; do
-  echo "Testing $module"
+NUMS=`find ${PROJECT} -name "*.info.yml" |wc -l`
+echo ${NUMS}
+for file in `find ${PROJECT} -name "*.info.yml"`; do
+  echo $(dirname ${file}) -- $(basename $(dirname ${file}));
   sudo -u $USER php \
-    ./core/scripts/run-tests.sh --url http://localhost --verbose \
-    $module >> $OUTPUT
+    ./core/scripts/run-tests.sh --url http://drupal.server.host --verbose \
+    $(basename $(dirname ${file})) >> $OUTPUT
 done
+
