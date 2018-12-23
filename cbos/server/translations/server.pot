@@ -27,7 +27,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-19 09:02+0000\n"
+"POT-Creation-Date: 2018-12-23 01:20+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -53,11 +53,11 @@ msgid "isp"
 msgstr ""
 
 #: modules/isp/cbos/server/server.links.action.yml:0
-msgid "Add Server"
+msgid "Add"
 msgstr ""
 
 #: modules/isp/cbos/server/server.links.action.yml:0
-msgid "Add Server type"
+msgid "Add type"
 msgstr ""
 
 #: modules/isp/cbos/server/server.links.menu.yml:0
@@ -258,6 +258,14 @@ msgstr ""
 
 #: modules/isp/cbos/server/src/Entity/Server.php:406
 msgid "Client user name."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Entity/Server.php:413
+msgid "Property"
+msgstr ""
+
+#: modules/isp/cbos/server/src/Entity/Server.php:414
+msgid "Property right"
 msgstr ""
 
 #: modules/isp/cbos/server/src/Form/ServerForm.php:25

@@ -30,7 +30,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-19 09:02+0000\n"
+"POT-Creation-Date: 2018-12-23 01:21+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -287,6 +287,14 @@ msgstr ""
 msgid "Pinyin shortcode"
 msgstr ""
 
+#: modules/isp/cbos/ip/src/Entity/Ip.php:327
+msgid "Property"
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Entity/Ip.php:328
+msgid "Property right"
+msgstr ""
+
 #: modules/isp/cbos/ip/src/Entity/IpViewsData.php:19
 msgid "Operations bulk form"
 msgstr ""
@@ -368,7 +376,7 @@ msgid "Saved the %label IP type."
 msgstr ""
 
 #: modules/isp/cbos/ip/src/Plugin/WorkflowType/IpState.php:7
-msgid "IP Status"
+msgid "IP State"
 msgstr ""
 
 #: modules/isp/cbos/ip/config/install/ip.type.inet.yml:0
