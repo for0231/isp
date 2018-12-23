@@ -1,0 +1,5 @@
+name: 'Common comp'
+type: module
+description: 'The common module to construct isp web for companies.'
+core: 8.x
+package: 'isp'
