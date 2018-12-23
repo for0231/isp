@@ -3,7 +3,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.speech
-    - field.field.user.user.commerce_remote_id
     - field.field.user.user.user_picture
   module:
     - layout_builder
@@ -24,7 +23,6 @@ content:
     settings: {  }
     third_party_settings: {  }
 hidden:
-  commerce_remote_id: true
   dropdown_menu: true
   fullscreen: true
   langcode: true
