@@ -3,6 +3,7 @@ type: module
 description: 'The common module to construct isp web for companies.'
 core: 8.x
 package: 'isp'
+version: VERSION
 dependencies:
   - server
   - user_plus
