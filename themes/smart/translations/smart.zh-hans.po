@@ -1,0 +1,209 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/isp/themes/colors/colors.info.yml: n/a
+#  modules/isp/themes/colors/assets/js/app.js: n/a
+#  modules/isp/themes/colors/templates/user/block--avatarblock-2.html.twig: n/a
+#  modules/isp/themes/colors/assets/js/notification/SmartNotification.js: n/a
+#  modules/isp/themes/colors/config/schema/colors.schema.yml: n/a
+#  modules/isp/themes/colors/templates/block/block--system-branding-block.html.twig: n/a
+#  modules/isp/themes/colors/templates/menu/menu-local-tasks.html.twig: n/a
+#  modules/isp/themes/colors/templates/system/breadcrumb.html.twig: n/a
+#  modules/isp/themes/colors/templates/system/status-messages.html.twig: n/a
+#  modules/isp/themes/colors/templates/user/block--avatarblock-3.html.twig: n/a
+#  modules/isp/themes/colors/templates/user/block--avatarblock-4.html.twig: n/a
+#  modules/isp/themes/colors/config/optional/block.block.avatarblock.yml: n/a
+#  modules/isp/themes/colors/config/optional/block.block.colors_branding.yml: n/a
+#  modules/isp/themes/colors/config/optional/block.block.colors_breadcrumbs.yml: n/a
+#  modules/isp/themes/colors/config/optional/block.block.colors_content.yml: n/a
+#  modules/isp/themes/colors/config/optional/block.block.colors_help.yml: n/a
+#  modules/isp/themes/colors/config/optional/block.block.colors_local_actions.yml: n/a
+#  modules/isp/themes/colors/config/optional/block.block.colors_local_tasks.yml: n/a
+#  modules/isp/themes/colors/config/optional/block.block.colors_messages.yml: n/a
+#  modules/isp/themes/colors/config/optional/block.block.colors_page_title.yml: n/a
+#  modules/isp/themes/colors/config/optional/block.block.colors_role_menu.yml: n/a
+#  modules/isp/themes/colors/config/optional/block.block.languageswitcher.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-12-04 04:16+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/isp/themes/colors/colors.info.yml:0
+msgid "Smart"
+msgstr ""
+
+#: modules/isp/themes/colors/colors.info.yml:0
+msgid "The colors of theme."
+msgstr "Smart主题."
+
+#: modules/isp/themes/colors/colors.info.yml:0
+msgid "isp"
+msgstr ""
+
+#: modules/isp/themes/colors/assets/js/app.js:0 modules/isp/themes/colors/templates/user/block--avatarblock-2.html.twig:3
+msgid "You can improve your security further after logging out by closing this opened browser"
+msgstr "退出后关闭浏览器可提高账号安全性"
+
+#: modules/isp/themes/colors/assets/js/app.js:0;0
+msgid "No"
+msgstr "否"
+
+#: modules/isp/themes/colors/assets/js/app.js:0;0;0
+msgid "Yes"
+msgstr "是"
+
+#: modules/isp/themes/colors/assets/js/app.js:0
+msgid "Clear Local Storage"
+msgstr "清除本地缓存"
+
+#: modules/isp/themes/colors/assets/js/app.js:0
+msgid "Would you like to RESET all your saved widgets and clear LocalStorage?"
+msgstr "确认希望重置所有保存的控件设置并清除缓存?"
+
+#: modules/isp/themes/colors/assets/js/notification/SmartNotification.js:0
+msgid "You're using a recent copy of Windows Internet Explorer."
+msgstr "您正在使用最新的Windows IE浏览器。"
+
+#: modules/isp/themes/colors/assets/js/notification/SmartNotification.js:0
+msgid "You should upgrade your copy of Windows Internet Explorer."
+msgstr "您需要升级您的浏览器。"
+
+#: modules/isp/themes/colors/config/schema/colors.schema.yml:0
+msgid "Smart settings"
+msgstr "Smart设置"
+
+#: modules/isp/themes/colors/templates/block/block--system-branding-block.html.twig:1
+msgid "Home"
+msgstr "首页"
+
+#: modules/isp/themes/colors/templates/menu/menu-local-tasks.html.twig:22
+msgid "Secondary tabs"
+msgstr "二级菜单"
+
+#: modules/isp/themes/colors/templates/system/breadcrumb.html.twig:11
+msgid "Warning! This will reset all your widget settings."
+msgstr "警告！将会重置您的控件设置。"
+
+#: modules/isp/themes/colors/templates/system/breadcrumb.html.twig:17
+msgid "Breadcrumb"
+msgstr "面包屑"
+
+#: modules/isp/themes/colors/templates/system/status-messages.html.twig:49
+msgid "Info!"
+msgstr "信息！"
+
+#: modules/isp/themes/colors/templates/system/status-messages.html.twig:53
+msgid "Warning！"
+msgstr "警告！"
+
+#: modules/isp/themes/colors/templates/system/status-messages.html.twig:57
+msgid "Error！"
+msgstr "错误！"
+
+#: modules/isp/themes/colors/templates/user/block--avatarblock-2.html.twig:3
+msgid "Sign Out"
+msgstr "退出"
+
+#: modules/isp/themes/colors/templates/user/block--avatarblock-3.html.twig:3
+msgid "Full Screen"
+msgstr "全屏"
+
+#: modules/isp/themes/colors/templates/user/block--avatarblock-4.html.twig:3
+msgid "Voice Command"
+msgstr "声控"
+
+#: modules/isp/themes/colors/templates/user/block--avatarblock-4.html.twig:6
+msgid "Voice command activated"
+msgstr "激活声控"
+
+#: modules/isp/themes/colors/templates/user/block--avatarblock-4.html.twig:6
+msgid "Please speak clearly into the mic"
+msgstr "语音清晰的对Micro讲话"
+
+#: modules/isp/themes/colors/templates/user/block--avatarblock-4.html.twig:8
+msgid "Voice command failed"
+msgstr "激活声控失败"
+
+#: modules/isp/themes/colors/templates/user/block--avatarblock-4.html.twig:9
+msgid "Must"
+msgstr "必须"
+
+#: modules/isp/themes/colors/templates/user/block--avatarblock-4.html.twig:9
+msgid "\"Allow\""
+msgstr "\"允许\""
+
+#: modules/isp/themes/colors/templates/user/block--avatarblock-4.html.twig:9
+msgid "Microphone"
+msgstr "Micro"
+
+#: modules/isp/themes/colors/templates/user/block--avatarblock-4.html.twig:10
+msgid "Must have"
+msgstr "必须有"
+
+#: modules/isp/themes/colors/templates/user/block--avatarblock-4.html.twig:10
+msgid "Internet Connection"
+msgstr "互联网连接"
+
+#: modules/isp/themes/colors/templates/user/block--avatarblock-4.html.twig:12
+msgid "See Commands"
+msgstr "查看命令"
+
+#: modules/isp/themes/colors/templates/user/block--avatarblock-4.html.twig:13
+msgid "Close Popup"
+msgstr "关闭弹窗"
+
+#: modules/isp/themes/colors/config/optional/block.block.avatarblock.yml:0
+msgid "Avatar block"
+msgstr "头像区块"
+
+#: modules/isp/themes/colors/config/optional/block.block.colors_branding.yml:0
+msgid "Site branding"
+msgstr "LOGO"
+
+#: modules/isp/themes/colors/config/optional/block.block.colors_breadcrumbs.yml:0
+msgid "Breadcrumbs"
+msgstr "面包屑"
+
+#: modules/isp/themes/colors/config/optional/block.block.colors_content.yml:0
+msgid "Main page content"
+msgstr "主要内容区"
+
+#: modules/isp/themes/colors/config/optional/block.block.colors_help.yml:0
+msgid "Help"
+msgstr "帮助"
+
+#: modules/isp/themes/colors/config/optional/block.block.colors_local_actions.yml:0
+msgid "Primary admin actions"
+msgstr "主要管理按钮"
+
+#: modules/isp/themes/colors/config/optional/block.block.colors_local_tasks.yml:0
+msgid "Tabs"
+msgstr "选项卡"
+
+#: modules/isp/themes/colors/config/optional/block.block.colors_messages.yml:0
+msgid "Status messages"
+msgstr "状态信息"
+
+#: modules/isp/themes/colors/config/optional/block.block.colors_page_title.yml:0
+msgid "Page title"
+msgstr "页面标题"
+
+#: modules/isp/themes/colors/config/optional/block.block.colors_role_menu.yml:0
+msgid "Role menu block"
+msgstr "角色菜单区块"
+
+#: modules/isp/themes/colors/config/optional/block.block.languageswitcher.yml:0
+msgid "Language switcher"
+msgstr "语言选择器"
+

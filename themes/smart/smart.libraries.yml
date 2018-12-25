@@ -1,0 +1,17 @@
+base:
+  css:
+    theme:
+      https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700: {}
+      assets/css/smart.style.css: {}
+  js:
+    assets/js/plugins/pace/pace.js: { attributes: { data-pace-options: '{"restartOnRequestAfter": "true"}'} }
+    node_modules/bootstrap/dist/js/bootstrap.js: {}
+    assets/js/smartwidgets/jarvis.widget.js: {}
+    assets/js/notification/SmartNotification.js: {}
+    assets/js/app.js: {}
+#    assets/js/speech/voicecommand.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery.ui.touch-punch
+    - core/jquery.ui.effects.highlight
+    - core/jquery.ui.tooltip

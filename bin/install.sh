@@ -43,9 +43,9 @@ vendor/bin/drush cset user.settings register visitors -y
 vendor/bin/drush cset user.settings verify_mail false -y
 
 
-vendor/bin/drupal thi colors -y
-vendor/bin/drush cset -y system.theme default colors
-vendor/bin/drush cset -y system.theme admin colors
+vendor/bin/drupal thi smart -y
+vendor/bin/drush cset -y system.theme default smart
+vendor/bin/drush cset -y system.theme admin smart
 
 # core modules
 #vendor/bin/drush en -y \

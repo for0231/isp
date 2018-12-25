@@ -1,0 +1,27 @@
+name: Smart
+type: theme
+base theme: seven
+description: 'The smart of theme.'
+package: isp
+core: 8.x
+version: VERSION
+interface translation project: smart
+interface translation server pattern: modules/isp/themes/%project/translations/%project.%language.po
+
+libraries:
+  - smart/base
+
+regions:
+  page_top: 'Page top'
+  header: 'Header'
+  header_first: 'Header Primary'
+  header_second: 'Header Secondary'
+  breadcrumb: 'Breadcrumb'
+  highlighted: 'Highlighted'
+  precontent: 'Pre Content'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  footer: 'Footer'
+  shortcut: 'Shortcut'
+  page_bottom: 'Page bottom'
