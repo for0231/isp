@@ -4,7 +4,6 @@
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
 #  modules/isp/core/eabax_core/eabax_core.info.yml: n/a
-#  modules/isp/core/eabax_core/eabax_core.links.menu.yml: n/a
 #  modules/isp/core/eabax_core/eabax_core.routing.yml: n/a
 #  modules/isp/core/eabax_core/config/schema/eabax_core.views.schema.yml: n/a
 #  modules/isp/core/eabax_core/src/EabaxCoreManager.php: n/a
@@ -17,7 +16,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-23 01:20+0000\n"
+"POT-Creation-Date: 2018-12-25 08:15+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -34,68 +33,16 @@ msgstr ""
 msgid "Isp core"
 msgstr ""
 
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0
-msgid "Data modeling"
-msgstr ""
-
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0 modules/isp/core/eabax_core/eabax_core.routing.yml:0;0
+#: modules/isp/core/eabax_core/eabax_core.routing.yml:0;0
 msgid "Implementation"
-msgstr ""
-
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0
-msgid "Implementor tools"
-msgstr ""
-
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0
-msgid "Define pages"
-msgstr ""
-
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0
-msgid "Define rules"
-msgstr ""
-
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0
-msgid "Define Workflows"
-msgstr ""
-
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0
-msgid "Define reports"
-msgstr ""
-
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0
-msgid "Custom formatters"
-msgstr ""
-
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0
-msgid "Configuration Management"
-msgstr ""
-
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0
-msgid "User interface translation"
-msgstr ""
-
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0 modules/isp/core/eabax_core/eabax_core.routing.yml:0
-msgid "System administration"
-msgstr ""
-
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0
-msgid "Define roles"
-msgstr ""
-
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0
-msgid "Define menus"
-msgstr ""
-
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0
-msgid "User Management"
-msgstr ""
-
-#: modules/isp/core/eabax_core/eabax_core.links.menu.yml:0
-msgid "Administer custom formatters."
 msgstr ""
 
 #: modules/isp/core/eabax_core/eabax_core.routing.yml:0
 msgid "Implementation tools"
+msgstr ""
+
+#: modules/isp/core/eabax_core/eabax_core.routing.yml:0
+msgid "System administration"
 msgstr ""
 
 #: modules/isp/core/eabax_core/config/schema/eabax_core.views.schema.yml:0

@@ -1,0 +1,15 @@
+comp.manager.commerce:
+  title: Store management
+  route_name: commerce.admin_commerce
+  menu_name: role-menu-manager
+  weight: 10
+comp.manager.commerce.admin:
+  title: Store management
+  route_name: commerce.store_configuration
+  parent: comp.manager.commerce
+  weight: 5
+com.manager.commerce.config:
+  title: Commerce Config
+  route_name: commerce.configuration
+  parent: comp.manager.commerce
+  weight: 10

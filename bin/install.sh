@@ -48,19 +48,20 @@ vendor/bin/drush cset -y system.theme default colors
 vendor/bin/drush cset -y system.theme admin colors
 
 # core modules
-vendor/bin/drush en -y \
-  eabax_core \
-  eabax_workflow \
-  import \
-  role_frontpage \
-  role_menu \
-  small_title \
-  translation \
-  user_plus
+#vendor/bin/drush en -y \
+#  eabax_core \
+#  eabax_workflow \
+#  import \
+#  role_frontpage \
+#  role_menu \
+#  small_title \
+#  translation \
+#  user_plus
 
 vendor/bin/drush language-add zh-hans
 
 # isp modules
+vendor/bin/drush en -y comp
 #vendor/bin/drush en -y isp_core commerce_plus isp_server isp_ip isp_room \
 #                       message_plus
 

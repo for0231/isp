@@ -10,13 +10,12 @@
 #  modules/isp/core/import/src/Form/ImportForm.php: n/a
 #  modules/isp/core/import/src/Form/ImportFormSelectSheet.php: n/a
 #  modules/isp/core/import/import.links.action.yml: n/a
-#  modules/isp/core/import/import.links.menu.yml: n/a
-#  modules/isp/core/import/src/ExcelMigrateListBuilder.php: n/a
-#  modules/isp/core/import/src/Entity/ExcelMigrate.php: n/a
 #  modules/isp/core/import/config/schema/excel_migrate.schema.yml: n/a
 #  modules/isp/core/import/config/schema/import.schema.yml: n/a
 #  modules/isp/core/import/src/Form/ImportDemoDataForm.php: n/a
 #  modules/isp/core/import/src/Plugin/Action/ImportExcelMigrate.php: n/a
+#  modules/isp/core/import/src/ExcelMigrateListBuilder.php: n/a
+#  modules/isp/core/import/src/Entity/ExcelMigrate.php: n/a
 #  modules/isp/core/import/src/MigrateBatchExecutable.php: n/a
 #  modules/isp/core/import/src/Controller/ImportController.php: n/a
 #  modules/isp/core/import/src/Form/ImportRulesForm.php: n/a
@@ -26,7 +25,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-23 01:20+0000\n"
+"POT-Creation-Date: 2018-12-25 08:15+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -47,18 +46,6 @@ msgstr ""
 msgid "Add Excel migrate"
 msgstr ""
 
-#: modules/isp/core/import/import.links.menu.yml:0 modules/isp/core/import/import.routing.yml:0
-msgid "Define import rules"
-msgstr ""
-
-#: modules/isp/core/import/import.links.menu.yml:0 modules/isp/core/import/src/ExcelMigrateListBuilder.php:17 modules/isp/core/import/src/Entity/ExcelMigrate.php:7
-msgid "Excel migrate"
-msgstr ""
-
-#: modules/isp/core/import/import.links.menu.yml:0
-msgid "List Excel migrate (bundles)"
-msgstr ""
-
 #: modules/isp/core/import/import.routing.yml:0
 msgid "Select sheet for import"
 msgstr ""
@@ -69,6 +56,10 @@ msgstr ""
 
 #: modules/isp/core/import/import.routing.yml:0
 msgid "Import demo data"
+msgstr ""
+
+#: modules/isp/core/import/import.routing.yml:0
+msgid "Define import rules"
 msgstr ""
 
 #: modules/isp/core/import/config/schema/excel_migrate.schema.yml:0
@@ -93,6 +84,10 @@ msgstr ""
 
 #: modules/isp/core/import/config/schema/import.schema.yml:0 modules/isp/core/import/src/Form/ExcelImportForm.php:74 modules/isp/core/import/src/Form/ExcelImportSelectSheetForm.php:87 modules/isp/core/import/src/Form/ImportDemoDataForm.php:26 modules/isp/core/import/src/Plugin/Action/ImportExcelMigrate.php:64
 msgid "Update"
+msgstr ""
+
+#: modules/isp/core/import/src/ExcelMigrateListBuilder.php:17 modules/isp/core/import/src/Entity/ExcelMigrate.php:7
+msgid "Excel migrate"
 msgstr ""
 
 #: modules/isp/core/import/src/ExcelMigrateListBuilder.php:18

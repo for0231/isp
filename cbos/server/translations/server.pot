@@ -15,6 +15,7 @@
 #  modules/isp/cbos/server/src/Form/ServerRevisionDeleteForm.php: n/a
 #  modules/isp/cbos/server/src/Form/ServerTypeDeleteForm.php: n/a
 #  modules/isp/cbos/server/server.permissions.yml: n/a
+#  modules/isp/cbos/server/config/schema/server.schema.yml: n/a
 #  modules/isp/cbos/server/config/schema/server_type.schema.yml: n/a
 #  modules/isp/cbos/server/src/ServerListBuilder.php: n/a
 #  modules/isp/cbos/server/src/Form/ServerRevisionRevertForm.php: n/a
@@ -27,7 +28,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-23 01:20+0000\n"
+"POT-Creation-Date: 2018-12-25 08:15+0000\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -138,6 +139,14 @@ msgstr ""
 
 #: modules/isp/cbos/server/server.permissions.yml:0
 msgid "Role requires permission to <em>view Server revisions</em> and <em>delete rights</em> for server in question or <em>administer server</em>."
+msgstr ""
+
+#: modules/isp/cbos/server/config/schema/server.schema.yml:0
+msgid "Server settings"
+msgstr ""
+
+#: modules/isp/cbos/server/config/schema/server.schema.yml:0
+msgid "The master ip for unique for all server."
 msgstr ""
 
 #: modules/isp/cbos/server/config/schema/server_type.schema.yml:0
