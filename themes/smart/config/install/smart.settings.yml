@@ -13,3 +13,41 @@
 
 # Disable the CDN provider so compiled source files can be used.
 cdn_provider: ''
+favicon:
+  mimetype: image/vnd.microsoft.icon
+  path: ''
+  url: 'http://drupal.server.host/modules/isp/themes/smart/favicon.ico'
+  use_default: true
+schemas:
+  bootstrap: 8000
+  smart: 8000
+navbar_inverse: 1
+region_wells:
+  navigation: ''
+  navigation_collapsible: ''
+  header: ''
+  highlighted: ''
+  help: ''
+  content: ''
+  sidebar_first: ''
+  sidebar_second: ''
+  footer: ''
+button_size: btn-lg
+fluid_container: 1
+image_shape: img-rounded
+table_responsive: '-1'
+table: ''
+forms_required_has_error: 1
+features:
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+  node_user_picture: true
+logo:
+  path: ''
+  url: ''
+  use_default: true
+forms_smart_descriptions_limit: ''
+table_bordered: 1
+table_condensed: 1
+
