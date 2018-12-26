@@ -324,10 +324,10 @@ class Theme {
   /**
    * Retrieves the theme's setting plugin instances.
    *
-   * @return \Drupal\bootstrap\Plugin\Setting\SettingInterface[]
+   * @return \Drupal\smart\Plugin\Setting\SettingInterface[]
    *   An associative array of setting objects, keyed by their name.
    *
-   * @deprecated Will be removed in a future release. Use \Drupal\bootstrap\Theme::getSettingPlugin instead.
+   * @deprecated Will be removed in a future release. Use \Drupal\smart\Theme::getSettingPlugin instead.
    */
   public function getSettingPlugins() {
     // TODO
@@ -341,7 +341,7 @@ class Theme {
    * @param string $name
    *   Optional. The name of a specific setting plugin instance to return.
    *
-   * @return \Drupal\bootstrap\Plugin\Setting\SettingInterface|\Drupal\bootstrap\Plugin\Setting\SettingInterface[]|null
+   * @return \Drupal\smart\Plugin\Setting\SettingInterface|\Drupal\smart\Plugin\Setting\SettingInterface[]|null
    *   If $name was provided, it will either return a specific setting plugin
    *   instance or NULL if not set. If $name was omitted it will return an array
    *   of setting plugin instances, keyed by their name.
