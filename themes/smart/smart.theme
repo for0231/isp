@@ -1,9 +1,0 @@
-<?php
-
-/**
- * Initialize the active theme.
- */
-
-use Drupal\smart\Smart;
-
-Smart::initialize();
