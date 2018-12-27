@@ -2,7 +2,12 @@
 @import "default-variables";
 
 // Bootstrap Framework.
-@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+//@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import "smart/bootstrap";
 
 // Base-theme overrides.
 @import 'overrides';
+
+@import "smart/smartadmin-production";
+@import "smart/smartadmin-production-plugins";
+@import "smart/smartadmin-skins";
