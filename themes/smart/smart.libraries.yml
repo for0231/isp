@@ -5,6 +5,10 @@ framework:
       assets/css/style.css: {}
   js:
     node_modules/bootstrap-sass/assets/javascripts/bootstrap.js: {}
+    assets/js/plugins/pace/pace.js: { attributes: { data-pace-options: '{"restartOnRequestAfter": "true"}'} }
+    assets/js/smartwidgets/jarvis.widget.js: {}
+    assets/js/notification/SmartNotification.js: {}
+    assets/js/app.js: {}
 #    js/bootstrap/assets/javascripts/bootstrap/affix.js: {}
 #    js/bootstrap/assets/javascripts/bootstrap/alert.js: {}
 #    js/bootstrap/assets/javascripts/bootstrap/button.js: {}
@@ -17,3 +21,8 @@ framework:
 #    js/bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
 #    js/bootstrap/assets/javascripts/bootstrap/tab.js: {}
 #    js/bootstrap/assets/javascripts/bootstrap/transition.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery.ui.touch-punch
+    - core/jquery.ui.effects.highlight
+    - core/jquery.ui.tooltip

@@ -1,2 +1,132 @@
-// Add anything custom here -- mixins, variable overrides.
-// by adding things here instead of overriding existing .LESS files, it makes merging changes on product updates easier
+
+//Fixed Smart leftpanel margin top
+.toolbar-fixed #left-panel {
+  padding-top: 88px;
+}
+
+a.tabledrag-handle .handle {
+  width: 24px;
+  height: 24px;
+}
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+  margin-left: 0;
+}
+
+//Fixed for views edit page
+span.label {
+  color: rgba(100, 91, 78, 0.76);
+}
+
+.form--inline .form-actions {
+  clear: none;
+}
+.form--inline {
+  margin-bottom: 10px;
+}
+.form-actions {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+//.path-admin .page-title {
+//  margin: 0;
+//}
+
+.tabs__tab {
+  width: auto;
+}
+
+ul.nav-tabs {
+  margin: 0;
+}
+// Fix for block layout nav tabs style.
+.jarviswidget.nav-tabs {
+  margin-bottom: 5px;
+}
+
+// Fix bootstrap table.less
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+  vertical-align: middle;
+}
+
+// Fix smart plugin for block layout table
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+  padding: 4px;
+}
+
+// Fix block layout nav tabs padding
+.jarviswidget header .nav-tabs > li > a {
+  border-radius: 0px;
+  border: none;
+  padding: 5px 15px 10px;
+}
+
+.filter-wrapper.form-wrapper {
+  height: unset;
+}
+// Fix font color on /admin/config
+.alert-danger a, .alert-danger a:hover, .alert-danger a:focus {
+  color: yellow;
+}
+
+.no-touchevents .button--small {
+  font-size: 12px;
+}
+
+// Admin index list
+.admin-list li:first-child {
+  border-top: unset;
+}
+
+// builder layout close button style.
+.ui-dialog.ui-dialog-off-canvas .ui-dialog-titlebar-close {
+  all: unset;
+}
+.ui-dialog.ui-dialog-off-canvas .ui-dialog-titlebar-close:hover,
+.ui-dialog.ui-dialog-off-canvas .ui-dialog-titlebar-close:focus {
+  all: unset;
+}
+
+#ribbon .breadcrumb {
+  padding: 14px 34px 11px 0 !important;
+}
+
+div.login-info span a div {
+  display: inline;
+}
+div.region-header-second {
+  display: inline-block;
+}
+
+li.nav-header {
+  margin: 4px 24px 0px 0px;
+  color: #686868;
+}
+body.minified li.nav-header {
+  display: none;
+}
+//body.minified a:hover span.menu-item-parent {
+//  background-color: crimson;
+//  color: #fff;
+//}
+#left-panel nav > ul > li > ul > li > a ,
+#left-panel nav ul ul ul li a,
+#left-panel nav ul ul ul ul li a,
+#left-panel nav > ul > li > ul > li > ul > li > a {
+  padding-bottom: 0!important;
+}
+
+div.region-header-second ul.header-dropdown-list {
+  float: left;
+}
+.field-plugin-settings-edit-form .form-actions {
+  background: none;
+  border-top: none;
+}
+
+.radio input[type="radio"], .radio-inline input[type="radio"], .checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"] {
+  position: relative;
+}
+.radio label, .checkbox label {
+  padding-left: 0;
+}
