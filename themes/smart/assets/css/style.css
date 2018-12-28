@@ -15272,7 +15272,7 @@ body.nooverflow {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1050; }
+  z-index: 550; }
   /* line 320, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/smartadmin/_plugin-jarviswidget.scss */
   #jarviswidget-fullscreen-mode .jarviswidget {
     margin: 0;
@@ -17883,7 +17883,7 @@ disabled look for disabled choices in the results dropdown
   bottom: 0;
   box-shadow: rgba(0, 0, 0, 0.3) 0 2px 6px;
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 2px 6px;
-  z-index: 959; }
+  z-index: 459; }
 
 /* line 10, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/smartadmin/_plugin-smartchat.scss */
 .ui-chatbox-titlebar {
@@ -19996,6 +19996,14 @@ ul.nav-tabs li a {
 /* line 159, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/_custom.scss */
 .region-content {
   min-height: 500px; }
+
+/* line 163, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/_custom.scss */
+.form-group {
+  margin-top: 7px; }
+
+/* line 166, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/_custom.scss */
+.views-admin .icon, .views-admin .icon-text {
+  background: transparent; }
 
 /* line 1, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/library/animation/_animation-engine.scss */
 .animated {
@@ -23990,7 +23998,7 @@ ul.nav-tabs li a {
   opacity: .30;
   filter: Alpha(Opacity=30);
   position: absolute;
-  z-index: 949 !important;
+  z-index: 449 !important;
   top: 0;
   left: 0;
   width: 100%;
@@ -27071,7 +27079,7 @@ div.wijmo-wijmenu .wijmo-wijmenu-child .wijmo-wijmenu-text {
   background-image: none;
   background: #aaa;
   height: 100%;
-  z-index: 949 !important;
+  z-index: 449 !important;
   position: fixed;
   top: 0px;
   left: 0px; }
@@ -27503,7 +27511,7 @@ div.wijmo-wijmenu .wijmo-wijmenu-child .wijmo-wijmenu-text {
 
 /* line 434, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/smartadmin/_component-jqueryui.scss */
 .ui-autocomplete {
-  z-index: 905 !important; }
+  z-index: 405 !important; }
 
 /*
  * CSS TABLES
@@ -31321,7 +31329,7 @@ aside {
   background-image: linear-gradient(to bottom, #f3f3f3, #e2e2e2);
   background-repeat: repeat-x;
   position: relative;
-  z-index: 905; }
+  z-index: 405; }
 
 /* line 276, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/smartadmin/_main.scss */
 #header > div {
@@ -31338,7 +31346,7 @@ aside {
 .fixed-header #header {
   position: fixed;
   width: 100%;
-  z-index: 905;
+  z-index: 405;
   top: 0px;
   border-bottom: 2px solid #999999;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
@@ -31356,7 +31364,7 @@ aside {
 
 /* line 307, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/smartadmin/_main.scss */
 .fixed-header #header .ajax-dropdown {
-  z-index: 906; }
+  z-index: 406; }
 
 /* line 311, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/smartadmin/_main.scss */
 .fixed-header #shortcut {
@@ -31565,7 +31573,7 @@ aside {
   position: absolute;
   top: 0px;
   left: 0px;
-  z-index: 904;
+  z-index: 404;
   padding-top: 49px; }
 
 /*
@@ -31612,7 +31620,7 @@ aside {
   right: 0;
   left: 220px;
   top: 49px;
-  z-index: 901; }
+  z-index: 401; }
 
 /* line 571, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/smartadmin/_main.scss */
 .container.fixed-ribbon #ribbon {
@@ -32269,10 +32277,10 @@ fieldset {
 /* line 1239, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/smartadmin/_main.scss */
 .form-actions {
   display: block;
-  padding: 13px 14px 15px;
+  padding: 0px;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   background: rgba(249, 249, 249, 0.9);
-  margin-left: -13px;
+  margin-left: 0px;
   margin-right: -13px;
   margin-bottom: -13px;
   text-align: right; }
@@ -33874,11 +33882,11 @@ img.away {
 /* line 2789, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/smartadmin/_main.scss */
 .morris-hover {
   position: absolute;
-  z-index: 903; }
+  z-index: 403; }
 
 /* line 2793, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/smartadmin/_main.scss */
 .fixed-page-footer .morris-hover {
-  z-index: 900; }
+  z-index: 400; }
 
 /*
  * Flot Chart 
@@ -33927,7 +33935,7 @@ img.away {
 /* line 2843, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/smartadmin/_main.scss */
 .hidden-menu #left-panel {
   left: -210px;
-  z-index: 903; }
+  z-index: 403; }
 
 /* line 2847, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/smartadmin/_main.scss */
 .hidden-menu #main {
@@ -34039,7 +34047,7 @@ img.away {
 .ajax-dropdown {
   position: absolute;
   display: none;
-  z-index: 905;
+  z-index: 405;
   background: white;
   top: 48px;
   left: 16px;
@@ -34739,7 +34747,7 @@ img.away {
   width: 100%;
   background-color: #33302F;
   background-color: rgba(0, 0, 0, 0.85);
-  z-index: 907;
+  z-index: 407;
   display: none;
   color: #ffffff;
   -webkit-box-sizing: border-box;
@@ -36896,7 +36904,7 @@ label:hover input[type="checkbox"][disabled].checkbox:checked + span:before {
   /* line 12, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/smartadmin/_main-page-footer.scss */
   .fixed-page-footer .page-footer {
     position: fixed;
-    z-index: 901; }
+    z-index: 401; }
   /* line 17, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/smartadmin/_main-page-footer.scss */
   .minified .page-footer {
     padding-left: 58px; }
