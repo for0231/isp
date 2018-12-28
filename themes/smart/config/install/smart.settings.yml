@@ -32,7 +32,7 @@ region_wells:
   sidebar_first: ''
   sidebar_second: ''
   footer: ''
-button_size: btn-lg
+button_size: btn-sm
 fluid_container: 1
 image_shape: img-rounded
 table_responsive: '-1'

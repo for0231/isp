@@ -23,10 +23,10 @@ span.label {
 .form--inline {
   margin-bottom: 10px;
 }
-.form-actions {
-  margin-left: 0;
-  margin-right: 0;
-}
+//.form-actions {
+//  margin-left: 0;
+//  margin-right: 0;
+//}
 
 //.path-admin .page-title {
 //  margin: 0;
@@ -138,4 +138,24 @@ a.panel-title.collapsed .fa-angle-down{
 }
 a.panel-title .fa-angle-down{
   display: none;
+}
+
+div.vertical-tabs .fa-angle-down, div.vertical-tabs .fa-angle-up{
+  display: none;
+}
+ul.tabs--primary, .region-content {
+  background-color: #ffffff;
+}
+
+ul.nav-tabs li a {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  background-color: #F5F5F5;
+  border: 1px solid #F5F5F5;
+  border-bottom: 1px solid #ddd;
+  color: #838383;
+}
+
+.region-content {
+  min-height: 500px;
 }
