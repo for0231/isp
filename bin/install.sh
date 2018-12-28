@@ -15,6 +15,7 @@ vendor/bin/drupal moi -y config_rewrite \
  default_content \
  drush_language \
  field_group \
+ languageicons \
  layout_builder \
  libraries \
  locale \
