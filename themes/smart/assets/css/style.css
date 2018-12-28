@@ -16360,6 +16360,15 @@ div.region-header-second ul.header-dropdown-list {
 .checkbox label {
   padding-left: 0; }
 
+a.panel-title.collapsed .fa-angle-up {
+  display: none; }
+
+a.panel-title.collapsed .fa-angle-down {
+  display: block; }
+
+a.panel-title .fa-angle-down {
+  display: none; }
+
 .animated {
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;

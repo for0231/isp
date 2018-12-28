@@ -46,6 +46,7 @@
  */
 #}
 
+{% set container = theme.settings.fluid_container ? 'container-fluid' : 'container' %}
 <!-- #HEADER -->
 <header id="header">
   <div id="logo-group">
@@ -96,15 +97,7 @@
 {% endif %}
 <!-- END NAVIGATION -->
 <!-- #MAIN PANEL -->
-{%
-  set cs = [
-  page.sidebar_first and page.sidebar_second ? 'col-sm-6',
-  page.sidebar_first and page.sidebar_second is empty ? 'col-sm-9',
-  page.sidebar_second and page.sidebar_first is empty ? 'col-sm-9',
-  page.sidebar_first is empty and page.sidebar_second is empty ? 'col-sm-12'
-]
-%}
-<div id="main" class="{{ content_classes.addClass(cs) }}" role="main">
+<div id="main" role="main">
   {% if page.breadcrumb %}
     <div id="ribbon">
       {% block ribbon %}

@@ -130,3 +130,12 @@ div.region-header-second ul.header-dropdown-list {
 .radio label, .checkbox label {
   padding-left: 0;
 }
+a.panel-title.collapsed .fa-angle-up {
+  display: none;
+}
+a.panel-title.collapsed .fa-angle-down{
+  display: block;
+}
+a.panel-title .fa-angle-down{
+  display: none;
+}
