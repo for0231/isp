@@ -9,20 +9,9 @@ framework:
     assets/js/smartwidgets/jarvis.widget.js: {}
     assets/js/notification/SmartNotification.js: {}
     assets/js/app.js: {}
-#    js/bootstrap/assets/javascripts/bootstrap/affix.js: {}
-#    js/bootstrap/assets/javascripts/bootstrap/alert.js: {}
-#    js/bootstrap/assets/javascripts/bootstrap/button.js: {}
-#    js/bootstrap/assets/javascripts/bootstrap/carousel.js: {}
-#    js/bootstrap/assets/javascripts/bootstrap/collapse.js: {}
-#    js/bootstrap/assets/javascripts/bootstrap/dropdown.js: {}
-#    js/bootstrap/assets/javascripts/bootstrap/modal.js: {}
-#    js/bootstrap/assets/javascripts/bootstrap/tooltip.js: {}
-#    js/bootstrap/assets/javascripts/bootstrap/popover.js: {}
-#    js/bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
-#    js/bootstrap/assets/javascripts/bootstrap/tab.js: {}
-#    js/bootstrap/assets/javascripts/bootstrap/transition.js: {}
+    assets/js/extension.js: {}
   dependencies:
-    - core/drupal
     - core/jquery.ui.touch-punch
     - core/jquery.ui.effects.highlight
     - core/jquery.ui.tooltip
+    - drupal.dropbutton

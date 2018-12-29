@@ -10971,13 +10971,6 @@ ol, ul {
 .page-header {
   margin-top: 0; }
 
-/* line 34, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/_overrides.scss */
-.footer {
-  margin-top: 45px;
-  padding-top: 35px;
-  padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5; }
-
 /* line 42, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/_overrides.scss */
 p:last-child,
 .form-group:last-child,
@@ -20004,6 +19997,16 @@ ul.nav-tabs li a {
 /* line 166, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/_custom.scss */
 .views-admin .icon, .views-admin .icon-text {
   background: transparent; }
+
+/* line 171, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/_custom.scss */
+#views-display-extra-actions {
+  float: right; }
+
+/* line 174, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/_custom.scss */
+ul#views-display-menu-tabs li {
+  list-style: none;
+  list-style-type: none;
+  list-style-image: none; }
 
 /* line 1, Users/nie/projects/drupal/modules/isp/themes/smart/assets/scss/smart/library/animation/_animation-engine.scss */
 .animated {

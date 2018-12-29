@@ -24,3 +24,8 @@ regions:
 libraries-extend:
   bootstrap/framework:
     - smart/framework
+
+libraries-override:
+  views_ui/views_ui.admin:
+    js:
+      js/views-admin.js: assets/js/views-admin.js

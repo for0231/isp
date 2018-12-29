@@ -166,3 +166,14 @@ ul.nav-tabs li a {
 .views-admin .icon, .views-admin .icon-text {
   background: transparent;
 }
+
+//fix for views
+#views-display-extra-actions {
+  float: right;
+}
+ul#views-display-menu-tabs li {
+  list-style: none;
+  list-style-type: none;
+  list-style-image: none;
+}
+
