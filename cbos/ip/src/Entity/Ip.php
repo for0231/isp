@@ -18,6 +18,7 @@ use Drupal\user\UserInterface;
  * @ContentEntityType(
  *   id = "ip",
  *   label = @Translation("IP"),
+ *   label_collection = @Translation("IP"),
  *   bundle_label = @Translation("IP type"),
  *   handlers = {
  *     "storage" = "Drupal\ip\IpStorage",
