@@ -1,9 +1,0 @@
-name: 'Small title'
-type: module
-description: 'Small title'
-core: 8.x
-interface translation project: small_title
-interface translation server pattern: modules/eabax/core/small_title/translations/small_title.%language.po
-package: 'Eabax core'
-dependencies:
-  - block

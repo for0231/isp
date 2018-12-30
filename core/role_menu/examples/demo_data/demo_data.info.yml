@@ -1,8 +1,0 @@
-name: 'Demo Data'
-type: module
-description: 'Demo'
-core: 8.x
-package: 'isp'
-dependencies:
-  - role_menu
-  - role_frontpage

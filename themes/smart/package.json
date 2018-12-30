@@ -1,9 +1,0 @@
-{
-  "name": "smart",
-  "dependencies": {
-    "bootstrap-sass": "^3.4.0",
-    "font-awesome": "^4.7.0",
-    "pace-js": "^1.0.2"
-  },
-  "devDependencies": {}
-}

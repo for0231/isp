@@ -1,7 +1,0 @@
-name: 'Eabax workflows'
-type: module
-description: 'Eabax workflows'
-core: 8.x
-interface translation project: eabax_workflows
-interface translation server pattern: modules/eabax/core/eabax_workflows/translations/eabax_workflows.%language.po
-package: 'Eabax core'

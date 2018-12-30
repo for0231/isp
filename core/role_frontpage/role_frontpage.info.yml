@@ -1,7 +1,0 @@
-name: 'Role front page'
-type: module
-description: 'Front page per role.'
-core: 8.x
-interface translation project: role_frontpage
-interface translation server pattern: modules/isp/core/role_frontpage/translations/role_frontpage.%language.po
-package: 'core'

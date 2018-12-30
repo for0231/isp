@@ -1,9 +1,0 @@
-name: Role menu
-type: module
-description: Role menu
-core: 8.x
-interface translation project: role_menu
-interface translation server pattern: modules/isp/core/role_menu/translations/role_menu.%language.po
-package: core
-dependencies:
-  - menu_ui
