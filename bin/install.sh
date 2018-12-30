@@ -44,9 +44,9 @@ vendor/bin/drush cset user.settings register visitors -y
 vendor/bin/drush cset user.settings verify_mail false -y
 
 
-#vendor/bin/drupal thi smart -y
-#vendor/bin/drush cset -y system.theme default smart
-#vendor/bin/drush cset -y system.theme admin smart
+vendor/bin/drupal thi smart -y
+vendor/bin/drush cset -y system.theme default smart
+vendor/bin/drush cset -y system.theme admin smart
 
 # core modules
 #vendor/bin/drush en -y \
@@ -59,10 +59,8 @@ vendor/bin/drush cset user.settings verify_mail false -y
 #  translation \
 #  user_plus
 
-vendor/bin/drush language-add zh-hans
+#vendor/bin/drush language-add zh-hans
 
 # isp modules
-vendor/bin/drush en -y comp
-#vendor/bin/drush en -y isp_core commerce_plus isp_server isp_ip isp_room \
-#                       message_plus
+#vendor/bin/drush en -y comp
 

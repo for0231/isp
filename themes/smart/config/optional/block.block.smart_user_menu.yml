@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - user_plus
+  theme:
+    - smart
+third_party_settings:
+  block_class:
+    classes: 'dropdown user-menu'
+id: smart_user_menu
+theme: smart
+region: navbar
+weight: 10
+provider: null
+plugin: avatar_block
+settings:
+  id: avatar_block
+  label: 'Avatar block'
+  provider: user_plus
+  label_display: '0'
+  view_mode: navbar
+visibility: {  }

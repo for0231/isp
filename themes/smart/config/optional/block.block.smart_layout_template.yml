@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - block_class
+    - layout_template
+  theme:
+    - smart
+third_party_settings:
+  block_class:
+    classes: pull-right
+id: smart_layout_template
+theme: smart
+region: header
+weight: -40
+provider: null
+plugin: layout_template_block
+settings:
+  id: layout_template_block
+  label: 'Layout template'
+  provider: layout_template
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - task
+  theme:
+    - smart
+id: taskiconblock
+theme: smart
+region: navbar
+weight: 0
+provider: null
+plugin: task_icon_block
+settings:
+  id: task_icon_block
+  label: 'Task icon'
+  provider: task
+  label_display: '0'
+visibility: {  }
