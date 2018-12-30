@@ -1,0 +1,6 @@
+{
+  "name": "eabax_seven",
+  "dependencies": {
+    "admin-lte": "^2.4.2"
+  }
+}

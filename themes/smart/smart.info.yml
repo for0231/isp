@@ -1,0 +1,21 @@
+name: Smart
+type: theme
+base theme: eabax_seven
+description: 'More effective.'
+package: isp
+core: 8.x
+libraries:
+  - smart/framework
+
+regions:
+  logo: 'Logo'
+  navbar: 'Navbar'
+  sidebar: 'Sidebar'
+  header: 'Header'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
