@@ -11,7 +11,14 @@ framework:
     assets/js/app.js: {}
     assets/js/extension.js: {}
   dependencies:
+    - core/drupal
     - core/jquery.ui.touch-punch
     - core/jquery.ui.effects.highlight
     - core/jquery.ui.tooltip
-    - drupal.dropbutton
+#    - smart/dropbutton
+#dropbutton:
+#  version: VERSION
+#  css:
+#    component:
+#      assets/css/dropbutton.component.css: {}
+#      assets/css/dropbutton.css: { weight: -10 }
