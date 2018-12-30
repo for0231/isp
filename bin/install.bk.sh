@@ -1,23 +1,34 @@
-#!/bin/bash
-# Install system
-
-#sed -i 's/^include/#include/' sites/default/settings.php
+#!/usr/bin/env bash
 
 vendor/bin/drush si -y --account-pass=admin --db-url=mysql://root:root@localhost/icp
-
-vendor/bin/drupal moi memcache
-#sed -i 's/^#include/include/' sites/default/settings.php
-
-# Fix Plugin (language) instance class "\Drupal\language\DefaultLanguageItem" does not exist.
-vendor/bin/drush cr
-
-vendor/bin/drush pmu -y contextual dblog toolbar
-
-#vendor/bin/drupal thi eabax_seven -y
-#vendor/bin/drush cset -y system.theme default eabax_seven
-#vendor/bin/drush cset -y system.theme admin eabax_seven
-
-vendor/bin/drupal moi block_class business_model layout_template role_frontpage role_menu small_title user_plus
+## Install for prod
+vendor/bin/drupal moi -y config_rewrite \
+ block_class \
+ coffee \
+ config_translation \
+ config_update_ui \
+ commerce_autosku \
+ commerce_cart \
+ commerce_checkout \
+ commerce_payment_example \
+ commerce_recurring \
+ default_content \
+ drush_language \
+ field_group \
+ languageicons \
+ layout_builder \
+ libraries \
+ locale \
+ migrate_source_csv \
+ migrate_source_xls \
+ potx \
+ pinyin \
+ role_menu \
+ role_frontpage \
+ superfish \
+ translation \
+ views_slideshow \
+ views_slideshow_cycle
 
 # enable it in prod.
 #vendor/bin/drupal moi -y memcache memcache_admin
@@ -25,7 +36,7 @@ vendor/bin/drupal moi block_class business_model layout_template role_frontpage 
 vendor/bin/drupal moi -y devel kint webprofiler
 vendor/bin/drush pmu -y toolbar
 
-#vendor/bin/drush views:slideshow:lib
+vendor/bin/drush views:slideshow:lib
 vendor/bin/drush cset system.performance js.preprocess 0 -y
 vendor/bin/drush cset system.performance css.preprocess 0 -y
 vendor/bin/drush cset user.settings password_strength false -y
