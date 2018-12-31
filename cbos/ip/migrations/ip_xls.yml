@@ -24,7 +24,6 @@ process:
       value_key: id
       entity_type: ip_type
       ignore_case: true
-      bundle_key: type
       values:
         label: 类型
       

@@ -2,6 +2,7 @@
 
 namespace Drupal\server\Entity;
 
+use Drupal\client\Entity\ClientTrait;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Entity\RevisionableContentEntityBase;
