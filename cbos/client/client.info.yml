@@ -1,0 +1,5 @@
+name: 'Client'
+type: module
+description: 'The clients for all message.'
+core: 8.x
+package: 'isp'

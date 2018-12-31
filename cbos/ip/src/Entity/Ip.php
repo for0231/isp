@@ -371,6 +371,6 @@ class Ip extends RevisionableContentEntityBase implements IpInterface {
   }
   
   public function getClientId() {
-    return $this->getClient()->id();
+    return $this->getClient() ? $this->getClient()->id() : NULL;
   }
 }
