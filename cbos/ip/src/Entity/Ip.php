@@ -2,6 +2,7 @@
 
 namespace Drupal\ip\Entity;
 
+use Drupal\client\Entity\ClientTrait;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Entity\RevisionableContentEntityBase;
@@ -74,6 +75,7 @@ use Drupal\user\UserInterface;
 class Ip extends RevisionableContentEntityBase implements IpInterface {
 
   use EntityChangedTrait;
+  use ClientTrait;
 
   /**
    * {@inheritdoc}
@@ -363,14 +365,4 @@ class Ip extends RevisionableContentEntityBase implements IpInterface {
     return $fields;
   }
   
-  /**
-   * {@inheritdoc}
-   */
-  public function getClient() {
-    return $this->get('client')->entity;
-  }
-  
-  public function getClientId() {
-    return $this->getClient() ? $this->getClient()->id() : NULL;
-  }
 }

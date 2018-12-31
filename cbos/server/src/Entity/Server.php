@@ -75,6 +75,7 @@ use Drupal\user\UserInterface;
 class Server extends RevisionableContentEntityBase implements ServerInterface {
 
   use EntityChangedTrait;
+  use ClientTrait;
 
   /**
    * {@inheritdoc}
