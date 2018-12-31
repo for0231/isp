@@ -6,5 +6,7 @@ package: 'isp'
 version: VERSION
 dependencies:
   - commerce_order
+  - comp
+  - migrate_source_xls
   - server
   - user_plus

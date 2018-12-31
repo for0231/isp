@@ -21,8 +21,8 @@ process:
       source: 类型
     -
       plugin: entity_generate
-      entity_type: ip_type
       value_key: id
+      entity_type: ip_type
       ignore_case: true
       values:
         label: 类型
