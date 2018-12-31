@@ -13,7 +13,7 @@ vendor/bin/drush cr
 
 vendor/bin/drush pmu -y contextual dblog toolbar
 
-vendor/bin/drupal moi block_class business_model layout_template role_frontpage role_menu small_title user_plus
+vendor/bin/drupal moi block_class role_frontpage role_menu small_title user_plus
 
 # enable it in prod.
 #vendor/bin/drupal moi -y memcache memcache_admin
