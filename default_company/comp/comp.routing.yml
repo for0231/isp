@@ -15,3 +15,11 @@ comp.manager:
     menu_id: role-menu-manager
   requirements:
     _role: 'manager'
+    
+comp.account_settings:
+  path: '/account/settings'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Account Settings'
+  requirements:
+    _user_is_logged_in: 'TRUE'

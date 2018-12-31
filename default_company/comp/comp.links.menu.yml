@@ -41,3 +41,15 @@ comp.manager.users.collection:
   route_name: entity.user.collection
   parent: comp.manager.users
   weight: 10
+
+comp.account.setting:
+  title: 'Account Settings'
+  route_name: comp.account_settings
+  menu_name: role-menu-authenticated
+  weight: 99
+  
+comp.account.setting.user:
+  title: 'Personal Account'
+  route_name: entity.user.canonical
+  parent: comp.account.setting
+  weight: 10
