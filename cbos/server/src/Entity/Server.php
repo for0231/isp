@@ -19,6 +19,7 @@ use Drupal\user\UserInterface;
  * @ContentEntityType(
  *   id = "server",
  *   label = @Translation("Server"),
+ *   label_collection = @Translation("Server"),
  *   bundle_label = @Translation("Server type"),
  *   handlers = {
  *     "storage" = "Drupal\server\ServerStorage",
