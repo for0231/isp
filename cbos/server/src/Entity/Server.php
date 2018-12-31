@@ -200,38 +200,6 @@ class Server extends RevisionableContentEntityBase implements ServerInterface {
   /**
    * {@inheritdoc}
    */
-  public function getClient() {
-    return $this->get('client')->entity;
-  }
-  
-  /**
-   * {@inheritdoc}
-   */
-  public function getClientId() {
-    return $this->get('client')->target_id;
-  }
-  
-  /**
-   * {@inheritdoc}
-   */
-  public function setClient(UserInterface $user) {
-    $this->set('client', $user->id());
-    
-    return $this;
-  }
-  
-  /**
-   * {@inheritdoc}
-   */
-  public function setClientId($uid) {
-    $this->set('client', $uid);
-    
-    return $this;
-  }
-  
-  /**
-   * {@inheritdoc}
-   */
   public function isPublished() {
     return (bool) $this->getEntityKey('status');
   }
@@ -379,7 +347,7 @@ class Server extends RevisionableContentEntityBase implements ServerInterface {
         'settings' => [
           'form_mode' => 'default',
           'allow_new' => TRUE,
-          'allow_existing' => FALSE,
+          'allow_existing' => TRUE,
           'match_operator' => 'CONTAINS',
         ]
       ])
