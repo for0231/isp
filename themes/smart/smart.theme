@@ -16,6 +16,18 @@ function smart_preprocess_html(array &$variables) {
   /*if (isset($variables['head_title_array']['title']) && isset($variables['head_title_array']['name']) && ($variables['head_title_array']['title'] == $variables['head_title_array']['name'])) {
     $variables['head_title'] = $variables['head_title_array']['name'];
   }*/
+  if (\Drupal::service('path.current')->getPath() == '/user/login') {
+    $variables['attributes']['class'][] = 'login-page';
+  }
+  else {
+    $skin = theme_get_setting('skin');
+    $variables['attributes']['class'][] = empty($skin) ? 'skin-blue' : $skin;
+    $variables['attributes']['class'][] = 'sidebar-mini';
+    if ($sidebar_collapse = \Drupal::request()->cookies->get('Drupal_collapsed_pushMenu', 1)) {
+      $variables['attributes']['class'][] = 'sidebar-collapse';
+    }
+    $variables['#cache']['contexts'][] = 'cookies:Drupal.collapsed.pushMenu';
+  }
 }
 
 /**

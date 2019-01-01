@@ -1,0 +1,4 @@
+framework:
+  css:
+    theme:
+      css/component/base.css: {}

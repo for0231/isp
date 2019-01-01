@@ -4,11 +4,6 @@ comp.manager.commerce:
   menu_name: role-menu-manager
   weight: 10
 
-#comp.manager.stores:
-#  title: 商城管理
-#  route_name: entity.commerce_store.collection
-#  parent: comp.manager.commerce
-#  weight: 10
 comp.manager.orders:
   title: Order Management
   route_name: entity.commerce_order.collection
@@ -40,16 +35,4 @@ comp.manager.users.collection:
   title: Users management
   route_name: entity.user.collection
   parent: comp.manager.users
-  weight: 10
-
-comp.account.setting:
-  title: 'Account Settings'
-  route_name: comp.account_settings
-  menu_name: role-menu-authenticated
-  weight: 99
-  
-comp.account.setting.user:
-  title: 'Personal Account'
-  route_name: entity.user.canonical
-  parent: comp.account.setting
   weight: 10
