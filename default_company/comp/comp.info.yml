@@ -9,6 +9,7 @@ dependencies:
   - commerce_order
   - commerce_product
   - commerce_recurring
+  - ludwig
   - migrate_source_xls
   - server
   - user_plus
