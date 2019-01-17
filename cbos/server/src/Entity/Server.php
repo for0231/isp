@@ -2,6 +2,7 @@
 
 namespace Drupal\server\Entity;
 
+use Drupal\client\Entity\ClientTrait;
 use Drupal\Core\Entity\EntityStorageInterface;
 use Drupal\Core\Field\BaseFieldDefinition;
 use Drupal\Core\Entity\RevisionableContentEntityBase;
@@ -19,6 +20,7 @@ use Drupal\user\UserInterface;
  * @ContentEntityType(
  *   id = "server",
  *   label = @Translation("Server"),
+ *   label_collection = @Translation("Server"),
  *   bundle_label = @Translation("Server type"),
  *   handlers = {
  *     "storage" = "Drupal\server\ServerStorage",
@@ -74,6 +76,7 @@ use Drupal\user\UserInterface;
 class Server extends RevisionableContentEntityBase implements ServerInterface {
 
   use EntityChangedTrait;
+  use ClientTrait;
 
   /**
    * {@inheritdoc}
@@ -191,38 +194,6 @@ class Server extends RevisionableContentEntityBase implements ServerInterface {
    */
   public function setOwner(UserInterface $account) {
     $this->set('user_id', $account->id());
-    return $this;
-  }
-  
-  /**
-   * {@inheritdoc}
-   */
-  public function getClient() {
-    return $this->get('client')->entity;
-  }
-  
-  /**
-   * {@inheritdoc}
-   */
-  public function getClientId() {
-    return $this->get('client')->target_id;
-  }
-  
-  /**
-   * {@inheritdoc}
-   */
-  public function setClient(UserInterface $user) {
-    $this->set('client', $user->id());
-    
-    return $this;
-  }
-  
-  /**
-   * {@inheritdoc}
-   */
-  public function setClientId($uid) {
-    $this->set('client', $uid);
-    
     return $this;
   }
   
@@ -376,7 +347,7 @@ class Server extends RevisionableContentEntityBase implements ServerInterface {
         'settings' => [
           'form_mode' => 'default',
           'allow_new' => TRUE,
-          'allow_existing' => FALSE,
+          'allow_existing' => TRUE,
           'match_operator' => 'CONTAINS',
         ]
       ])

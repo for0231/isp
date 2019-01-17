@@ -13,11 +13,7 @@ vendor/bin/drush cr
 
 vendor/bin/drush pmu -y contextual dblog toolbar
 
-#vendor/bin/drupal thi eabax_seven -y
-#vendor/bin/drush cset -y system.theme default eabax_seven
-#vendor/bin/drush cset -y system.theme admin eabax_seven
-
-vendor/bin/drupal moi block_class business_model layout_template role_frontpage role_menu small_title user_plus
+vendor/bin/drupal moi block_class role_frontpage role_menu small_title user_plus
 
 # enable it in prod.
 #vendor/bin/drupal moi -y memcache memcache_admin
@@ -36,17 +32,6 @@ vendor/bin/drush cset user.settings verify_mail false -y
 vendor/bin/drupal thi smart -y
 vendor/bin/drush cset -y system.theme default smart
 vendor/bin/drush cset -y system.theme admin smart
-
-# core modules
-#vendor/bin/drush en -y \
-#  eabax_core \
-#  eabax_workflow \
-#  import \
-#  role_frontpage \
-#  role_menu \
-#  small_title \
-#  translation \
-#  user_plus
 
 #vendor/bin/drush language-add zh-hans
 

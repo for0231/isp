@@ -4,11 +4,6 @@ comp.manager.commerce:
   menu_name: role-menu-manager
   weight: 10
 
-#comp.manager.stores:
-#  title: 商城管理
-#  route_name: entity.commerce_store.collection
-#  parent: comp.manager.commerce
-#  weight: 10
 comp.manager.orders:
   title: Order Management
   route_name: entity.commerce_order.collection
