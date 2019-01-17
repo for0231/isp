@@ -5,6 +5,10 @@ core: 8.x
 package: 'isp'
 version: VERSION
 dependencies:
+  - commerce_cart
+  - commerce_checkout
   - commerce_order
+  - commerce_product
+  - commerce_recurring
   - server
   - user_plus
