@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - isp_core
+id: role-menu-busi-employee
+label: 'Bemp role menu'
+description: 'Menu for Bemp role.'
+locked: true

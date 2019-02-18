@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_preprocess_HOOK() for menu__role_menu.
+ */
+function comp_preprocess_menu__role_menu(&$variables) {
+  $icons = [
+    'comp.manager.commerce' => 'fa fa-cubes',
+    'comp.manager.users' => 'fa fa-tasks',
+  ];
+  _eabax_core_set_menu_items_icon($variables['items'], $icons);
+}

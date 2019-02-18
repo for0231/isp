@@ -1,0 +1,212 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/isp/cbos/ip/ip.module: n/a
+#  modules/isp/cbos/ip/ip.info.yml: n/a
+#  modules/isp/cbos/ip/src/Entity/Ip.php: n/a
+#  modules/isp/cbos/ip/ip.links.action.yml: n/a
+#  modules/isp/cbos/ip/ip.links.menu.yml: n/a
+#  modules/isp/cbos/ip/src/IpTypeListBuilder.php: n/a
+#  modules/isp/cbos/ip/src/Entity/IpType.php: n/a
+#  modules/isp/cbos/ip/ip.links.task.yml: n/a
+#  modules/isp/cbos/ip/src/Controller/IpController.php: n/a
+#  modules/isp/cbos/ip/src/Form/IpRevisionDeleteForm.php: n/a
+#  modules/isp/cbos/ip/src/Form/IpTypeDeleteForm.php: n/a
+#  modules/isp/cbos/ip/ip.permissions.yml: n/a
+#  modules/isp/cbos/ip/config/schema/ip_type.schema.yml: n/a
+#  modules/isp/cbos/ip/src/IpListBuilder.php: n/a
+#  modules/isp/cbos/ip/src/Form/IpRevisionRevertForm.php: n/a
+#  modules/isp/cbos/ip/src/Entity/IpViewsData.php: n/a
+#  modules/isp/cbos/ip/src/Form/IpForm.php: n/a
+#  modules/isp/cbos/ip/src/Form/IpRevisionRevertTranslationForm.php: n/a
+#  modules/isp/cbos/ip/src/Form/IpTypeForm.php: n/a
+#  modules/isp/cbos/ip/src/Plugin/WorkflowType/IpState.php: n/a
+#  modules/isp/cbos/ip/config/install/ip.type.inet.yml: n/a
+#  modules/isp/cbos/ip/config/install/ip.type.onet.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-12-23 01:21+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/isp/cbos/ip/ip.info.yml:0 modules/isp/cbos/ip/src/Entity/Ip.php:13
+msgid "IP"
+msgstr ""
+
+#: modules/isp/cbos/ip/ip.info.yml:0
+msgid "The ip for isp."
+msgstr "ISP的IP类目."
+
+#: modules/isp/cbos/ip/ip.info.yml:0
+msgid "isp"
+msgstr ""
+#: modules/isp/cbos/ip/ip.links.action.yml:0
+msgid "Add type"
+msgstr "添加类型"
+
+#: modules/isp/cbos/ip/ip.links.action.yml:0
+msgid "Import"
+msgstr "导入"
+
+#: modules/isp/cbos/ip/ip.links.menu.yml:0
+msgid "IP list"
+msgstr "IP列表"
+
+#: modules/isp/cbos/ip/ip.links.menu.yml:0 modules/isp/cbos/ip/src/IpTypeListBuilder.php:17 modules/isp/cbos/ip/src/Entity/Ip.php:13 modules/isp/cbos/ip/src/Entity/IpType.php:7
+msgid "IP type"
+msgstr "IP类型"
+
+#: modules/isp/cbos/ip/ip.links.menu.yml:0
+msgid "List IP"
+msgstr "IP列表"
+
+#: modules/isp/cbos/ip/ip.links.menu.yml:0
+msgid "List IP type (bundles)"
+msgstr "IP类型列表"
+
+#: modules/isp/cbos/ip/ip.permissions.yml:0
+msgid "Create new IP"
+msgstr "创建IP"
+
+#: modules/isp/cbos/ip/ip.permissions.yml:0
+msgid "Administer IP"
+msgstr "管理IP"
+
+#: modules/isp/cbos/ip/ip.permissions.yml:0
+msgid "Allow to access the administration form to configure IP."
+msgstr "允许访问IP配置的管理表单."
+
+#: modules/isp/cbos/ip/ip.permissions.yml:0
+msgid "Delete IP"
+msgstr "删除IP"
+
+#: modules/isp/cbos/ip/ip.permissions.yml:0
+msgid "Edit IP"
+msgstr "编辑IP"
+
+#: modules/isp/cbos/ip/ip.permissions.yml:0
+msgid "View published IP"
+msgstr "查看已发布IP"
+
+#: modules/isp/cbos/ip/ip.permissions.yml:0
+msgid "View unpublished IP"
+msgstr "查看未发布IP"
+
+#: modules/isp/cbos/ip/ip.permissions.yml:0
+msgid "View all IP revisions"
+msgstr "查看所有IP版本"
+
+#: modules/isp/cbos/ip/ip.permissions.yml:0
+msgid "Revert all IP revisions"
+msgstr "恢复所有IP版本"
+
+#: modules/isp/cbos/ip/ip.permissions.yml:0
+msgid "Role requires permission <em>view IP revisions</em> and <em>edit rights</em> for ip in question or <em>administer ip</em>."
+msgstr ""
+
+#: modules/isp/cbos/ip/ip.permissions.yml:0
+msgid "Delete all revisions"
+msgstr ""
+
+#: modules/isp/cbos/ip/ip.permissions.yml:0
+msgid "Role requires permission to <em>view IP revisions</em> and <em>delete rights</em> for ip in question or <em>administer ip</em>."
+msgstr ""
+
+#: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "IP type config"
+msgstr "IP类型配置"
+
+#: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "ID"
+msgstr ""
+
+#: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "IP state settings"
+msgstr "IP状态设置"
+
+#: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "Workflow"
+msgstr "工作流"
+
+#: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "Initial status"
+msgstr "初始状态"
+
+#: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
+msgid "IP states"
+msgstr "IP状态"
+
+#: modules/isp/cbos/ip/src/IpListBuilder.php:21
+msgid "IP ID"
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Entity/Ip.php:212
+msgid "The user ID of author of the IP entity."
+msgstr "IP的创建人ID."
+
+#: modules/isp/cbos/ip/src/Entity/Ip.php:237
+msgid "The name of the IP entity."
+msgstr "IP的名称."
+
+#: modules/isp/cbos/ip/src/Entity/Ip.php:273
+msgid "A boolean indicating whether the IP is published."
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Entity/Ip.php:323
+msgid "Pinyin shortcode"
+msgstr "拼音简码"
+
+#: modules/isp/cbos/ip/src/Form/IpForm.php:58
+msgid "Created the %label IP."
+msgstr "已创建IP%label."
+
+#: modules/isp/cbos/ip/src/Form/IpForm.php:64
+msgid "Saved the %label IP."
+msgstr "已保存IP%label."
+
+#: modules/isp/cbos/ip/src/Form/IpRevisionDeleteForm.php:109
+msgid "IP: deleted %title revision %revision."
+msgstr "IP:删除%title的版本%revision."
+
+#: modules/isp/cbos/ip/src/Form/IpRevisionRevertForm.php:123
+msgid "IP %title has been reverted to the revision from %revision-date."
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Form/IpRevisionRevertForm.php:122
+msgid "IP: reverted %title revision %revision."
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Form/IpTypeForm.php:25
+msgid "Label for the IP type."
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Form/IpTypeForm.php:52
+msgid "Created the %label IP type."
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Form/IpTypeForm.php:58
+msgid "Saved the %label IP type."
+msgstr ""
+
+#: modules/isp/cbos/ip/src/Plugin/WorkflowType/IpState.php:7
+msgid "IP Status"
+msgstr ""
+
+#: modules/isp/cbos/ip/config/install/ip.type.inet.yml:0
+msgid "Inet"
+msgstr "内网"
+
+#: modules/isp/cbos/ip/config/install/ip.type.onet.yml:0
+msgid "Onet"
+msgstr "公网"
+

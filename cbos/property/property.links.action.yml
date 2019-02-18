@@ -1,0 +1,5 @@
+entity.property.add_form:
+  route_name: entity.property.add_form
+  title: 'Add Property'
+  appears_on:
+    - entity.property.collection

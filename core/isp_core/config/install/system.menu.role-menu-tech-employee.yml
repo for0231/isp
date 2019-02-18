@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - isp_core
+id: role-menu-tech-employee
+label: 'Temp role menu'
+description: 'Menu for Temp role.'
+locked: true

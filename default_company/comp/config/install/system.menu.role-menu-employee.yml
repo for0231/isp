@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - comp
+id: role-menu-employee
+label: 'Employee role menu'
+description: 'Menu for employee role.'
+locked: true

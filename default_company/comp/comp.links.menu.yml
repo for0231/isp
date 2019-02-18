@@ -1,0 +1,38 @@
+comp.manager.commerce:
+  title: Store management
+  route_name: commerce.admin_commerce
+  menu_name: role-menu-manager
+  weight: 10
+
+comp.manager.orders:
+  title: Order Management
+  route_name: entity.commerce_order.collection
+  parent: comp.manager.commerce
+  weight: 20
+
+comp.manager.store.configuration:
+  title: Store configuration
+  route_name: commerce_order.configuration
+  parent: comp.manager.commerce
+  weight: 30
+comp.manager.orders.types:
+  title: Order types
+  route_name: entity.commerce_order_type.collection
+  parent: comp.manager.store.configuration
+  weight: 40
+comp.manager.order.item_type:
+  title: Order item type
+  route_name: entity.commerce_order_item_type.collection
+  parent: comp.manager.store.configuration
+  weight: 50
+  
+comp.manager.users:
+  title: Users management
+  route_name: entity.user.collection
+  menu_name: role-menu-manager
+  weight: 20
+comp.manager.users.collection:
+  title: Users management
+  route_name: entity.user.collection
+  parent: comp.manager.users
+  weight: 10

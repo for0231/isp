@@ -1,0 +1,9 @@
+name: 'Server'
+type: module
+description: 'The servers for idc.'
+core: 8.x
+package: 'isp'
+interface translation project: ip
+interface translation server pattern: modules/isp/cbos/%project/translations/%project.%language.po
+dependencies:
+  - ip

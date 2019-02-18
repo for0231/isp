@@ -1,0 +1,210 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/isp/cbos/server/server.module: n/a
+#  modules/isp/cbos/server/server.info.yml: n/a
+#  modules/isp/cbos/server/src/Entity/Server.php: n/a
+#  modules/isp/cbos/server/server.links.action.yml: n/a
+#  modules/isp/cbos/server/server.links.menu.yml: n/a
+#  modules/isp/cbos/server/src/ServerTypeListBuilder.php: n/a
+#  modules/isp/cbos/server/src/Entity/ServerType.php: n/a
+#  modules/isp/cbos/server/server.links.task.yml: n/a
+#  modules/isp/cbos/server/src/Controller/ServerController.php: n/a
+#  modules/isp/cbos/server/src/Form/ServerRevisionDeleteForm.php: n/a
+#  modules/isp/cbos/server/src/Form/ServerTypeDeleteForm.php: n/a
+#  modules/isp/cbos/server/server.permissions.yml: n/a
+#  modules/isp/cbos/server/config/schema/server_type.schema.yml: n/a
+#  modules/isp/cbos/server/src/ServerListBuilder.php: n/a
+#  modules/isp/cbos/server/src/Form/ServerRevisionRevertForm.php: n/a
+#  modules/isp/cbos/server/src/Form/ServerForm.php: n/a
+#  modules/isp/cbos/server/src/Form/ServerRevisionRevertTranslationForm.php: n/a
+#  modules/isp/cbos/server/src/Form/ServerTypeForm.php: n/a
+#  modules/isp/cbos/server/config/install/server.type.default.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-12-19 09:02+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/isp/cbos/server/server.module:19 modules/isp/cbos/server/server.info.yml:0
+msgid "The servers for idc."
+msgstr ""
+
+#: modules/isp/cbos/server/server.info.yml:0 modules/isp/cbos/server/src/Entity/Server.php:14
+msgid "Server"
+msgstr "服务器"
+
+#: modules/isp/cbos/server/server.info.yml:0
+msgid "isp"
+msgstr ""
+
+#: modules/isp/cbos/server/server.links.menu.yml:0
+msgid "Server list"
+msgstr "服务器列表"
+
+#: modules/isp/cbos/server/server.links.menu.yml:0 modules/isp/cbos/server/src/ServerTypeListBuilder.php:17 modules/isp/cbos/server/src/Entity/Server.php:14 modules/isp/cbos/server/src/Entity/ServerType.php:7
+msgid "Server type"
+msgstr "服务器类型"
+
+#: modules/isp/cbos/server/server.links.menu.yml:0
+msgid "List Server"
+msgstr "服务器列表"
+
+#: modules/isp/cbos/server/server.links.menu.yml:0
+msgid "List Server type (bundles)"
+msgstr "服务器类型列表"
+
+#: modules/isp/cbos/server/server.permissions.yml:0
+msgid "Create new Server"
+msgstr "创建新的服务器"
+
+#: modules/isp/cbos/server/server.permissions.yml:0
+msgid "Administer Server"
+msgstr "管理服务器"
+
+#: modules/isp/cbos/server/server.permissions.yml:0
+msgid "Allow to access the administration form to configure Server."
+msgstr "允许管理服务器配置表单."
+
+#: modules/isp/cbos/server/server.permissions.yml:0
+msgid "Delete Server"
+msgstr "删除服务器"
+
+#: modules/isp/cbos/server/server.permissions.yml:0
+msgid "Edit Server"
+msgstr "编辑服务器"
+
+#: modules/isp/cbos/server/server.permissions.yml:0
+msgid "View published Server"
+msgstr "查看已发布服务器"
+
+#: modules/isp/cbos/server/server.permissions.yml:0
+msgid "View unpublished Server"
+msgstr "查看未发布服务器"
+
+#: modules/isp/cbos/server/server.permissions.yml:0
+msgid "View all Server revisions"
+msgstr "查看所有服务器版本"
+
+#: modules/isp/cbos/server/server.permissions.yml:0
+msgid "Revert all Server revisions"
+msgstr "恢复所有服务器版本"
+
+#: modules/isp/cbos/server/server.permissions.yml:0
+msgid "Role requires permission <em>view Server revisions</em> and <em>edit rights</em> for server in question or <em>administer server</em>."
+msgstr ""
+
+#: modules/isp/cbos/server/server.permissions.yml:0
+msgid "Delete all revisions"
+msgstr "删除所有版本"
+
+#: modules/isp/cbos/server/server.permissions.yml:0
+msgid "Role requires permission to <em>view Server revisions</em> and <em>delete rights</em> for server in question or <em>administer server</em>."
+msgstr ""
+
+#: modules/isp/cbos/server/config/schema/server_type.schema.yml:0
+msgid "Server type config"
+msgstr "服务器类型配置"
+
+#: modules/isp/cbos/server/config/schema/server_type.schema.yml:0
+msgid "ID"
+msgstr ""
+
+#: modules/isp/cbos/server/src/ServerListBuilder.php:21
+msgid "Server ID"
+msgstr "服务器ID"
+
+#: modules/isp/cbos/server/src/Entity/Server.php:209
+msgid "The user ID of author of the Server."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Entity/Server.php:234
+msgid "The user ID of client of the Server."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Entity/Server.php:259
+msgid "The name of the Server."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Entity/Server.php:281
+msgid "A boolean indicating whether the Server is published."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Entity/Server.php:305
+msgid "IPs"
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerForm.php:58
+msgid "Created the %label Server."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerForm.php:64
+msgid "Saved the %label Server."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerRevisionDeleteForm.php:76
+msgid "Are you sure you want to delete the revision from %revision-date?"
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerRevisionDeleteForm.php:110
+msgid "Revision from %revision-date of Server %title has been deleted."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerRevisionDeleteForm.php:109
+msgid "Server: deleted %title revision %revision."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerRevisionRevertForm.php:76
+msgid "Are you sure you want to revert to the revision from %revision-date?"
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerRevisionRevertForm.php:119
+msgid "Copy of the revision from %date."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerRevisionRevertForm.php:123
+msgid "Server %title has been reverted to the revision from %revision-date."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerRevisionRevertForm.php:122
+msgid "Server: reverted %title revision %revision."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerRevisionRevertTranslationForm.php:71
+msgid "Are you sure you want to revert @language translation to the revision from %revision-date?"
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerRevisionRevertTranslationForm.php:83
+msgid "Revert content shared among translations"
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerTypeDeleteForm.php:18
+msgid "Are you sure you want to delete %name?"
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerTypeDeleteForm.php:42
+msgid "content @type: deleted @label."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerTypeForm.php:25
+msgid "Label for the Server type."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerTypeForm.php:52
+msgid "Created the %label Server type."
+msgstr ""
+
+#: modules/isp/cbos/server/src/Form/ServerTypeForm.php:58
+msgid "Saved the %label Server type."
+msgstr ""
+

@@ -1,0 +1,40 @@
+ip.type.*:
+  type: config_entity
+  label: 'IP type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string
+
+task.type.*.third_party.ip_state:
+  type: mapping
+  label: 'IP state settings'
+  mapping:
+    workflow:
+      type: string
+      label: 'Workflow'
+    initial_status:
+      type: string
+      label: 'Initial status'
+
+workflow.type_settings.ip_state:
+  type: mapping
+  mapping:
+    states:
+      type: sequence
+      label: 'IP states'
+      orderby: key
+      sequence:
+        type: workflows.state
+        label: 'States'
+    transitions:
+      type: sequence
+      orderby: key
+      sequence:
+        type: workflows.transition
+        label: 'Transitions'

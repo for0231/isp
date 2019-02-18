@@ -1,0 +1,52 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/isp/company/comp/comp.info.yml: n/a
+#  modules/isp/company/comp/comp.links.menu.yml: n/a
+#  modules/isp/company/comp/comp.routing.yml: n/a
+#  modules/isp/company/comp/config/install/user.role.employee.yml: n/a
+#  modules/isp/company/comp/config/install/user.role.manager.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2018-12-25 08:15+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/isp/company/comp/comp.info.yml:0
+msgid "Common comp"
+msgstr ""
+
+#: modules/isp/company/comp/comp.info.yml:0
+msgid "The common module to construct isp web for companies."
+msgstr ""
+
+#: modules/isp/company/comp/comp.info.yml:0
+msgid "isp"
+msgstr ""
+
+#: modules/isp/company/comp/comp.links.menu.yml:0;0
+msgid "Store management"
+msgstr ""
+
+#: modules/isp/company/comp/comp.links.menu.yml:0
+msgid "Commerce Config"
+msgstr ""
+
+#: modules/isp/company/comp/comp.routing.yml:0 modules/isp/company/comp/config/install/user.role.employee.yml:0
+msgid "Employee"
+msgstr ""
+
+#: modules/isp/company/comp/comp.routing.yml:0 modules/isp/company/comp/config/install/user.role.manager.yml:0
+msgid "Manager"
+msgstr ""
+

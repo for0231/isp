@@ -1,0 +1,16 @@
+add property:
+  title: 'Create new Property'
+
+administer property:
+  title: 'Administer Property'
+  description: 'Allow to access the administration form to configure Property.'
+  restrict access: true
+
+delete property:
+  title: 'Delete Property'
+
+edit property:
+  title: 'Edit Property'
+
+view property:
+  title: 'View Property'

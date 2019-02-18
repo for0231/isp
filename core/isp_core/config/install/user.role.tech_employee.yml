@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - isp_core
+  module:
+    - role_menu
+id: tech_employee
+label: 'Tech Employee'
+weight: 3
+is_admin: false
+third_party_settings:
+  role_menu:
+    menu: role-menu-tech-employee
+  role_frontpage:
+    frontpage: '/tech_employee'
+permissions: {  }

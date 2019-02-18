@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Contains property.module.
+ */
+
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function property_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the property module.
+    case 'help.page.property':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('The property for isp, server, cabinet, and so on.') . '</p>';
+      return $output;
+
+    default:
+  }
+}
