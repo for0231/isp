@@ -5,7 +5,7 @@
  */
 
 /**
- * Implements hook_preprocess_menu_local_task().
+ * Implements hook_preprocess_hook().
  */
 function tark_preprocess_menu_local_task(array &$variables) {
   $variables['attributes']['class'] = ['nav-item'];
@@ -16,6 +16,34 @@ function tark_preprocess_menu_local_task(array &$variables) {
   }
 }
 
+
+/**
+ * Implements hook_preprocess_hook().
+ */
+function tark_preprocess_menu_local_action(array &$variables) {
+  $link = $variables['element']['#link'];
+  $link += [
+    'localized_options' => [],
+  ];
+  unset($link['localized_options']['attributes']['class']);
+  $link['localized_options']['attributes']['class'] = [
+    'btn',
+    'bg-magenta',
+    'text-white',
+  ];
+  $link['localized_options']['set_active_class'] = TRUE;
+
+  $variables['link'] = [
+    '#type' => 'link',
+    '#title' => $link['title'],
+    '#options' => $link['localized_options'],
+    '#url' => $link['url'],
+  ];
+}
+
+/**
+ * Implements hook_preprocess_hook().
+ */
 function tark_preprocess_menu__role_menu(array &$variables) {
   $icons = [
     'eabax_core.implementor.data_modeling' => 'fa-lg',
