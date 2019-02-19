@@ -12423,6 +12423,10 @@ label {
   top: 0 !important;
 }
 
+.alert {
+  margin-bottom: 10px;
+}
+
 /*# sourceMappingURL=app.bundle.css.map */
 
 /*# sourceMappingURL=app.css.map */

@@ -10,7 +10,7 @@
  * @see template_preprocess_input()
  */
 #}
-<button {{ attributes.addClass('btn btn-primary') }} type="submit">
+<button {{ attributes.addClass('btn btn-default').removeClass('button--primary') }} type="submit">
     <i class="fa fa-save"></i>
     {{ 'Submit'|t }}
 </button>
