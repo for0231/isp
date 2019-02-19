@@ -12345,92 +12345,6 @@ img.online {
   padding: 3px 5px;
 }
 
-ul, ol {
-  margin: 0;
-}
-
-.sa-theme-settings label {
-  font-weight: normal;
-}
-
-a.tabledrag-handle .handle {
-  width: 1.65rem;
-  height: 1.8rem;
-}
-
-ul.sidebar-menu li.header {
-  color: #c0bbb7;
-  border-bottom-color: #1A1817;
-  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.13);
-  margin-bottom: 1px;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  padding: 0.6153846154rem 0.7692307692rem 0.4615384615rem;
-  height: 30px;
-  font-size: .8rem;
-  line-height: 15px;
-  background-color: rgba(58, 39, 31, 0.52) !important;
-}
-
-.minified .sa-left-menu-outer ul.sidebar-menu {
-  display: none;
-}
-
-.block-system-breadcrumb-block nav.sa-page-ribbon {
-  padding: 0 .3rem;
-}
-
-.minified .menu-item-item-0, span.menu-item-parent {
-  display: none;
-}
-
-span.fa-lg {
-  padding-right: .75rem;
-}
-
-.form-item, .form-actions {
-  /* margin-top: 1em; */
-  /* margin-bottom: 1em; */
-}
-
-.form-actions {
-  display: block;
-  padding: 13px 14px 15px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  background: rgba(249, 249, 249, 0.9);
-  margin: 0;
-  text-align: left;
-}
-
-label {
-  font-weight: normal;
-}
-
-.block-local-tasks-block .jarviswidget {
-  margin-bottom: 5px;
-}
-
-.btn-group button.btn.sa-btn-primary a, .btn-group button.sa-btn-primary.editable-cancel a, .btn-group button.sa-btn-primary.editable-submit a {
-  color: #fff0f0;
-}
-
-.btn-group button.btn.sa-btn-primary a:hover, .btn-group button.sa-btn-primary.editable-cancel a:hover, .btn-group button.sa-btn-primary.editable-submit a:hover {
-  color: #ffffff;
-}
-
-.dropdown > .dropdown-menu,
-.dropdown-toggle + .dropdown-menu {
-  top: 0 !important;
-}
-
-.alert {
-  margin-bottom: 10px;
-}
-
-.pace {
-  height: 5px;
-}
-
 /* This is a compiled file, you should be editing the file in the templates directory */
 .pace {
   -webkit-pointer-events: none;
@@ -12541,6 +12455,88 @@ label {
     transform: rotate(360deg);
     transform: rotate(360deg);
   }
+}
+
+ul, ol {
+  margin: 0;
+}
+
+.sa-theme-settings label {
+  font-weight: normal;
+}
+
+a.tabledrag-handle .handle {
+  width: 1.65rem;
+  height: 1.8rem;
+}
+
+ul.sidebar-menu li.header {
+  color: #c0bbb7;
+  border-bottom-color: #1A1817;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.13);
+  margin-bottom: 1px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  padding: 0.6153846154rem 0.7692307692rem 0.4615384615rem;
+  height: 30px;
+  font-size: .8rem;
+  line-height: 15px;
+  background-color: rgba(58, 39, 31, 0.52) !important;
+}
+
+.minified .sa-left-menu-outer ul.sidebar-menu {
+  display: none;
+}
+
+.block-system-breadcrumb-block nav.sa-page-ribbon {
+  padding: 0 .3rem;
+}
+
+.minified .menu-item-item-0, span.menu-item-parent {
+  display: none;
+}
+
+span.fa-lg {
+  padding-right: .75rem;
+}
+
+.form-item, .form-actions {
+  /* margin-top: 1em; */
+  /* margin-bottom: 1em; */
+}
+
+.form-actions {
+  display: block;
+  padding: 13px 14px 15px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(249, 249, 249, 0.9);
+  margin: 0;
+  text-align: left;
+}
+
+label {
+  font-weight: normal;
+}
+
+.block-local-tasks-block .jarviswidget {
+  margin-bottom: 5px;
+}
+
+.btn-group button.btn.sa-btn-primary a, .btn-group button.sa-btn-primary.editable-cancel a, .btn-group button.sa-btn-primary.editable-submit a {
+  color: #fff0f0;
+}
+
+.btn-group button.btn.sa-btn-primary a:hover, .btn-group button.sa-btn-primary.editable-cancel a:hover, .btn-group button.sa-btn-primary.editable-submit a:hover {
+  color: #ffffff;
+}
+
+.dropdown > .dropdown-menu,
+.dropdown-toggle + .dropdown-menu {
+  top: 0 !important;
+}
+
+.alert {
+  margin-bottom: 10px;
 }
 
 /*# sourceMappingURL=app.bundle.css.map */
