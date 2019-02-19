@@ -28,10 +28,9 @@ vendor/bin/drush cset user.settings password_strength false -y
 vendor/bin/drush cset user.settings register visitors -y
 vendor/bin/drush cset user.settings verify_mail false -y
 
-
-vendor/bin/drupal thi mongo -y
-vendor/bin/drush cset -y system.theme default mongo
-vendor/bin/drush cset -y system.theme admin mongo
+vendor/bin/drupal thi tark -y
+vendor/bin/drush cset -y system.theme default tark
+vendor/bin/drush cset -y system.theme admin tark
 
 #vendor/bin/drush language-add zh-hans
 
