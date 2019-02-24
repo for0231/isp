@@ -1,0 +1,76 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/isp/themes/tark/tark.breakpoints.yml: n/a
+#  modules/isp/themes/tark/tark.info.yml: n/a
+#  modules/isp/themes/tark/config/schema/tark.schema.yml: n/a
+#  modules/isp/themes/tark/templates/block/block--system-branding-block.html.twig: n/a
+#  modules/isp/themes/tark/templates/menu/menu-local-tasks.html.twig: n/a
+#  modules/isp/themes/tark/templates/navigation/breadcrumb.html.twig: n/a
+#  modules/isp/themes/tark/templates/system/html.html.twig: n/a
+#  modules/isp/themes/tark/config/optional/block.block.avatarblock.yml: n/a
+#  modules/isp/themes/tark/config/optional/block.block.rolemenublock.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-02-24 13:00+0800\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/isp/themes/tark/tark.breakpoints.yml:0
+msgid "narrow"
+msgstr ""
+
+#: modules/isp/themes/tark/tark.info.yml:0
+msgid "Tark"
+msgstr ""
+
+#: modules/isp/themes/tark/tark.info.yml:0
+msgid "The smart admin theme for tark."
+msgstr ""
+
+#: modules/isp/themes/tark/tark.info.yml:0
+msgid "Isp"
+msgstr ""
+
+#: modules/isp/themes/tark/config/schema/tark.schema.yml:0
+msgid "Tark settings"
+msgstr ""
+
+#: modules/isp/themes/tark/templates/block/block--system-branding-block.html.twig:18;19;24
+msgid "Home"
+msgstr ""
+
+#: modules/isp/themes/tark/templates/menu/menu-local-tasks.html.twig:17
+msgid "Primary tabs"
+msgstr ""
+
+#: modules/isp/themes/tark/templates/menu/menu-local-tasks.html.twig:27
+msgid "Secondary tabs"
+msgstr ""
+
+#: modules/isp/themes/tark/templates/navigation/breadcrumb.html.twig:19
+msgid "Breadcrumb"
+msgstr ""
+
+#: modules/isp/themes/tark/templates/system/html.html.twig:42
+msgid "Skip to main content"
+msgstr ""
+
+#: modules/isp/themes/tark/config/optional/block.block.avatarblock.yml:0
+msgid "Avatar block"
+msgstr ""
+
+#: modules/isp/themes/tark/config/optional/block.block.rolemenublock.yml:0
+msgid "Role menu block"
+msgstr ""
+

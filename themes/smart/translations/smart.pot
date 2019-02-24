@@ -1,0 +1,56 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from files:
+#  modules/isp/themes/smart/smart.info.yml: n/a
+#  modules/isp/themes/smart/config/schema/smart.schema.yml: n/a
+#  modules/isp/themes/smart/templates/block/block--local-tasks-block.html.twig: n/a
+#  modules/isp/themes/smart/templates/menu/menu-local-tasks.html.twig: n/a
+#  modules/isp/themes/smart/templates/system/html.html.twig: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-02-24 13:00+0800\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/isp/themes/smart/smart.info.yml:0
+msgid "Smart"
+msgstr ""
+
+#: modules/isp/themes/smart/smart.info.yml:0
+msgid "Uses the Bootstrap framework for Smart."
+msgstr ""
+
+#: modules/isp/themes/smart/smart.info.yml:0
+msgid "Bootstrap"
+msgstr ""
+
+#: modules/isp/themes/smart/config/schema/smart.schema.yml:0
+msgid "Smart settings"
+msgstr ""
+
+#: modules/isp/themes/smart/templates/block/block--local-tasks-block.html.twig:15
+msgid "Tabs"
+msgstr ""
+
+#: modules/isp/themes/smart/templates/menu/menu-local-tasks.html.twig:22
+msgid "Primary tabs"
+msgstr ""
+
+#: modules/isp/themes/smart/templates/menu/menu-local-tasks.html.twig:26
+msgid "Secondary tabs"
+msgstr ""
+
+#: modules/isp/themes/smart/templates/system/html.html.twig:67
+msgid "Skip to main content"
+msgstr ""
+

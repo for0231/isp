@@ -31,7 +31,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-25 08:15+0000\n"
+"POT-Creation-Date: 2019-02-24 13:00+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -44,7 +44,7 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: modules/isp/cbos/ip/ip.info.yml:0 modules/isp/cbos/ip/src/Entity/Ip.php:13 modules/isp/cbos/ip/config/install/views.view.ip.yml:0;0
+#: modules/isp/cbos/ip/ip.info.yml:0 modules/isp/cbos/ip/src/Entity/Ip.php:14;14 modules/isp/cbos/ip/config/install/views.view.ip.yml:0;0
 msgid "IP"
 msgstr ""
 
@@ -72,7 +72,7 @@ msgstr ""
 msgid "IP list"
 msgstr ""
 
-#: modules/isp/cbos/ip/ip.links.menu.yml:0 modules/isp/cbos/ip/src/IpTypeListBuilder.php:17 modules/isp/cbos/ip/src/Entity/Ip.php:13 modules/isp/cbos/ip/src/Entity/IpType.php:7
+#: modules/isp/cbos/ip/ip.links.menu.yml:0 modules/isp/cbos/ip/src/IpTypeListBuilder.php:17 modules/isp/cbos/ip/src/Entity/Ip.php:14 modules/isp/cbos/ip/src/Entity/IpType.php:7;7
 msgid "IP type"
 msgstr ""
 
@@ -188,7 +188,7 @@ msgstr ""
 msgid "IP ID"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/IpListBuilder.php:22 modules/isp/cbos/ip/src/Entity/Ip.php:236 modules/isp/cbos/ip/config/install/views.view.ip.yml:0
+#: modules/isp/cbos/ip/src/IpListBuilder.php:22 modules/isp/cbos/ip/src/Entity/Ip.php:239 modules/isp/cbos/ip/config/install/views.view.ip.yml:0
 msgid "Name"
 msgstr ""
 
@@ -228,75 +228,75 @@ msgstr ""
 msgid "@date by @username"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:211 modules/isp/cbos/ip/config/install/views.view.ip.yml:0
+#: modules/isp/cbos/ip/src/Entity/Ip.php:214 modules/isp/cbos/ip/config/install/views.view.ip.yml:0
 msgid "Authored by"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:212
+#: modules/isp/cbos/ip/src/Entity/Ip.php:215
 msgid "The user ID of author of the IP entity."
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:237
+#: modules/isp/cbos/ip/src/Entity/Ip.php:240
 msgid "The name of the IP entity."
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:258 modules/isp/cbos/ip/config/install/views.view.ip.yml:0
+#: modules/isp/cbos/ip/src/Entity/Ip.php:261 modules/isp/cbos/ip/config/install/views.view.ip.yml:0
 msgid "Description"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:272
+#: modules/isp/cbos/ip/src/Entity/Ip.php:275
 msgid "Publishing status"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:273
+#: modules/isp/cbos/ip/src/Entity/Ip.php:276
 msgid "A boolean indicating whether the IP is published."
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:282
+#: modules/isp/cbos/ip/src/Entity/Ip.php:285
 msgid "Created"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:283
+#: modules/isp/cbos/ip/src/Entity/Ip.php:286
 msgid "The time that the entity was created."
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:286 modules/isp/cbos/ip/config/install/views.view.ip.yml:0
+#: modules/isp/cbos/ip/src/Entity/Ip.php:289 modules/isp/cbos/ip/config/install/views.view.ip.yml:0
 msgid "Changed"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:287
+#: modules/isp/cbos/ip/src/Entity/Ip.php:290
 msgid "The time that the entity was last edited."
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:290
+#: modules/isp/cbos/ip/src/Entity/Ip.php:293
 msgid "Revision translation affected"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:291
+#: modules/isp/cbos/ip/src/Entity/Ip.php:294
 msgid "Indicates if the last edit of a translation belongs to current revision."
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:298 modules/isp/cbos/ip/config/install/views.view.ip.yml:0
+#: modules/isp/cbos/ip/src/Entity/Ip.php:301 modules/isp/cbos/ip/config/install/views.view.ip.yml:0
 msgid "Client"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:299
+#: modules/isp/cbos/ip/src/Entity/Ip.php:302
 msgid "The user ID of Client."
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:316
+#: modules/isp/cbos/ip/src/Entity/Ip.php:319
 msgid "Client user name."
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:323 modules/isp/cbos/ip/config/install/views.view.ip.yml:0
+#: modules/isp/cbos/ip/src/Entity/Ip.php:326 modules/isp/cbos/ip/config/install/views.view.ip.yml:0
 msgid "Pinyin shortcode"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:327 modules/isp/cbos/ip/config/install/views.view.ip.yml:0
+#: modules/isp/cbos/ip/src/Entity/Ip.php:330 modules/isp/cbos/ip/config/install/views.view.ip.yml:0
 msgid "Property"
 msgstr ""
 
-#: modules/isp/cbos/ip/src/Entity/Ip.php:328
+#: modules/isp/cbos/ip/src/Entity/Ip.php:331
 msgid "Property right"
 msgstr ""
 
