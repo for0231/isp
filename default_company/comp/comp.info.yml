@@ -10,6 +10,7 @@ dependencies:
   - commerce_order
   - commerce_product
   - commerce_recurring
+  - isp_core
   - ludwig
   - migrate_source_xls
   - server

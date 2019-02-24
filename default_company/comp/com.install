@@ -1,0 +1,22 @@
+<?php
+
+use Drupal\user\Entity\User;
+
+/**
+ * Implements hook_install().
+ */
+function comp_install() {
+  // TODO debug roles validate.
+  // Remove roles.
+  $user = User::load(1);
+  $user->removeRole('implementor');
+  $user->removeRole('system_administrator');
+
+  // Add roles.
+  $user->addRole('employee');
+  $user->addRole('isp_manager');
+  $user->addRole('busi_employee');
+  $user->addRole('tech_employee');
+
+  $user->save();
+}

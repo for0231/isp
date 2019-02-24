@@ -4,7 +4,7 @@ dependencies:
   enforced:
     module:
       - isp_core
-id: role-menu-tech-employee
+id: role-menu-technique-employee
 label: 'Temp role menu'
-description: 'Menu for Temp role.'
+description: 'Menu for Technique employee role.'
 locked: true

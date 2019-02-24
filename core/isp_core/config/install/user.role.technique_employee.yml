@@ -3,16 +3,16 @@ status: true
 dependencies:
   enforced:
     module:
-      - comp
+      - isp_core
   module:
     - role_menu
-id: employee
-label: Employee
+id: technique_employee
+label: 'Technique Employee'
 weight: 3
 is_admin: false
 third_party_settings:
   role_menu:
-    menu: role-menu-employee
+    menu: role-menu-technique-employee
   role_frontpage:
-    frontpage: '/employee'
+    frontpage: '/technique_employee'
 permissions: {  }

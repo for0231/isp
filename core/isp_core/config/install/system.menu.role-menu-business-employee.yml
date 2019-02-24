@@ -4,7 +4,7 @@ dependencies:
   enforced:
     module:
       - isp_core
-id: role-menu-busi-employee
+id: role-menu-business-employee
 label: 'Bemp role menu'
-description: 'Menu for Bemp role.'
+description: 'Menu for Business employee role.'
 locked: true

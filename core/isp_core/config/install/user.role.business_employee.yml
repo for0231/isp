@@ -6,13 +6,13 @@ dependencies:
       - isp_core
   module:
     - role_menu
-id: busi_employee
+id: business_employee
 label: 'Busi Employee'
 weight: 3
 is_admin: false
 third_party_settings:
   role_menu:
-    menu: role-menu-busi-employee
+    menu: role-menu-business-employee
   role_frontpage:
-    frontpage: '/busi_employee'
+    frontpage: '/business_employee'
 permissions: {  }
