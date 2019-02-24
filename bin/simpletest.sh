@@ -1,32 +1,30 @@
 #!/bin/bash
 
 ignores=( \
-  'eabax_seven' \
+  # cbos
+  'account' \
 )
 
-PROJECTS=(
-  "modules/eabax" \
-  "modules/isp" \
-)
+sudo rm sites/simpletest/browser_output -rf
 OUTPUT="simpletest-`date +%Y%m%d`.txt"
-#NUMS=`find ${PROJECT} -name "*.info.yml" |wc -l`
-#echo ${NUMS}
-rm -f ${OUTPUT}
-for PROJECT in ${PROJECTS[@]}; do
-  for file in `find ${PROJECT} -name "*.info.yml"`; do
-    FOUND=0
-    for module in ${ignores[@]}; do
-      if [[ $(basename $(dirname ${file})) == ${module} ]]; then
-        FOUND=1
-        break;
-      fi
-    done
-    if [[ ${FOUND} == 1 ]]; then
-      echo 'ignore' - $(basename $(dirname ${file}))
-    else
-      sudo -u $USER php \
-        ./core/scripts/run-tests.sh --url http://localhost --verbose \
-      $(basename $(dirname ${file}))# >> $OUTPUT
+rm ${OUTPUT}
+
+PROJECT="modules/isp"
+for file in `find ${PROJECT} -name "*.info.yml"`; do
+  module=$(basename $(dirname ${file}))
+  FOUND=0
+  for ignore in ${ignores[@]}; do
+    if [[ ${module} == ${ignore} ]]; then
+      FOUND=1
+      break;
     fi
   done
+  if [[ ${FOUND} == 1 ]]; then
+    echo "Ignore $file"
+  else
+    echo "Testing $file"
+    sudo -u $USER php \
+      ./core/scripts/run-tests.sh --url http://localhost --verbose \
+      $module >> $OUTPUT
+  fi
 done
