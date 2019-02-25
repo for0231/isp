@@ -19,4 +19,8 @@ function comp_install() {
   $user->addRole('tech_employee');
 
   $user->save();
+
+  user_role_grant_permissions('administrator', [
+    'view commerce_order',
+  ]);
 }
