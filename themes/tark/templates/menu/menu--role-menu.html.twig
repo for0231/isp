@@ -1,0 +1,75 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a menu.
+ *
+ * Available variables:
+ * - menu_name: The machine name of the menu.
+ * - items: A nested list of menu items. Each menu item contains:
+ *   - attributes: HTML attributes for the menu item.
+ *   - below: The menu item child items.
+ *   - title: The menu link title.
+ *   - url: The menu link url, instance of \Drupal\Core\Url
+ *   - localized_options: Menu link localized options.
+ *
+ * @ingroup themeable
+ */
+#}
+{% import _self as menus %}
+
+{%
+set nav_classes = [
+  'sa-left-menu',
+  'metismenu',
+  'collapse'
+]
+%}
+
+{#
+  We call a macro which calls itself to render the full tree.
+  @see http://twig.sensiolabs.org/doc/tags/macro.html
+#}
+  {{ menus.menu_links(items, attributes.addClass(nav_classes), 0) }}
+
+{% macro menu_links(items, attributes, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    <ul {{ attributes }} aria-expanded="false">
+    {% for item in items %}
+      {%
+        set item_classes = [
+          item.in_active_trail ? 'active',
+        ]
+      %}
+      <li{{ item.attributes.addClass(item_classes) }}>
+        <a href="{{ item.url }}" class="has-arrow" aria-expanded="false">
+        {% if item.icon %}
+          <span class="{{ item.icon }}"></span><span class="menu-item-parent">{{ item.title }}</span>
+        {% endif %}
+        <span class="menu-item-item-{{ menu_level }}">{{ item.title }}</span>
+        {% if item.below %}
+          <b class="collapse-sign">
+            <em class="fa fa-plus-square-o"></em>
+            <em class="fa fa-minus-square-o"></em>
+          </b>
+        {% endif %}
+        </a>
+
+        {% if item.below %}
+          {% if menu_level == '0' %}
+            {{ menus.menu_links(item.below, attributes.removeClass('sa-left-menu').removeClass('metismenu').removeClass('sa-sub-nav').removeClass('sa-nav-third-level').removeClass('sa-nav-forth-level').removeClass('sa-nav-fifth-level').removeClass('sa-nav-sixth-level').addClass('sa-sub-nav'), menu_level + 1) }}
+          {% elseif menu_level == '1' %}
+            {{ menus.menu_links(item.below, attributes.removeClass('sa-left-menu').removeClass('metismenu').removeClass('sa-sub-nav').removeClass('sa-nav-third-level').removeClass('sa-nav-forth-level').removeClass('sa-nav-fifth-level').removeClass('sa-nav-sixth-level').addClass('sa-nav-third-level'), menu_level + 1) }}
+          {% elseif menu_level == '2' %}
+            {{ menus.menu_links(item.below, attributes.removeClass('sa-left-menu').removeClass('metismenu').removeClass('sa-sub-nav').removeClass('sa-nav-third-level').removeClass('sa-nav-forth-level').removeClass('sa-nav-fifth-level').removeClass('sa-nav-sixth-level').addClass('sa-nav-forth-level'), menu_level + 1) }}
+          {% elseif menu_level == '3' %}
+            {{ menus.menu_links(item.below, attributes.removeClass('sa-left-menu').removeClass('metismenu').removeClass('sa-sub-nav').removeClass('sa-nav-third-level').removeClass('sa-nav-forth-level').removeClass('sa-nav-fifth-level').removeClass('sa-nav-sixth-level').addClass('sa-nav-fifth-level'), menu_level + 1) }}
+          {% elseif menu_level == '4' %}
+            {{ menus.menu_links(item.below, attributes.removeClass('sa-left-menu').removeClass('metismenu').removeClass('sa-sub-nav').removeClass('sa-nav-third-level').removeClass('sa-nav-forth-level').removeClass('sa-nav-fifth-level').removeClass('sa-nav-sixth-level').addClass('sa-nav-sixth-level'), menu_level + 1) }}
+          {% endif %}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+{% endmacro %}

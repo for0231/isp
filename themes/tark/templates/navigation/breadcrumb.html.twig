@@ -1,0 +1,39 @@
+{#
+/**
+ * @file
+ * Theme override for a breadcrumb trail.
+ *
+ * Available variables:
+ * - breadcrumb: Breadcrumb trail items.
+ */
+#}
+{%
+set ol_classes = [
+  'align-items-center',
+  'sa-page-ribbon',
+  'breadcrumb',
+]
+%}
+{% if breadcrumb %}
+  <nav {{ attributes.addClass(ol_classes) }} role="navigation" aria-labelledby="system-breadcrumb">
+    <h2 id="system-breadcrumb" class="visually-hidden">{{ 'Breadcrumb'|t }}</h2>
+    <ol {{ attributes.addClass(ol_classes) }}>
+      <li>
+        <span id="refresh"
+              class="btn sa-ribbon-btn sa-theme-btn"
+              data-action="resetWidgets">
+          <i class="fa fa-refresh"></i>
+        </span>
+      </li>
+    {% for item in breadcrumb %}
+      <li class="breadcrumb-item">
+        {% if item.url %}
+          <a href="{{ item.url }}">{{ item.text }}</a>
+        {% else %}
+          {{ item.text }}
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ol>
+  </nav>
+{% endif %}

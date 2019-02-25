@@ -2,6 +2,7 @@
 
 /**
  * @file
+<<<<<<< HEAD
  * Functions to support theming in the smart theme.
  */
 
@@ -155,3 +156,20 @@ function smart_theme_suggestions_details_alter(array &$suggestions, array $varia
 function smart_preprocess_menu_local_task(array &$variables) {
   //$variables['element']['#link']['url']->setOption('attributes', ['class'=>'rounded']);
 }
+
+/**
+ *
+ */
+function smart_preprocess_menu__admin(&$variables) {
+  $id = \Drupal::currentUser()->id();
+  $entity = entity_load('user', $id);
+  $user = $entity->get('name')->value;
+  $variables['user'] = $user;
+}
+
+/**
+ * Function smart_preprocess_menu_local_tasks(&$variables) {
+ * kint($variables);
+ * // 使用twig覆写
+ * }.
+ */

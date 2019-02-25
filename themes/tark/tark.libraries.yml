@@ -1,0 +1,44 @@
+global:
+  css:
+    theme:
+      https://fonts.cat.net/css?family=Open+Sans:400italic,700italic,300,400,700: { type: external }
+      assets/css/app.css: {}
+  js:
+    assets/js/custom/notifications/SmartNotification.js: {}
+    assets/js/base.js: {}
+    assets/js/global.js: {}
+  dependencies:
+    - tark/jarvis.widget
+    - tark/metis.menu
+    - tark/bootstrap
+    - core/drupal
+
+bootstrap:
+  css:
+    theme:
+      node_modules/bootstrap/dist/css/bootstrap.css: {}
+      node_modules/font-awesome/css/font-awesome.css: {}
+  js:
+    node_modules/bootstrap/dist/js/bootstrap.bundle.js: {}
+    node_modules/pace-js/pace.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.ui
+    - core/jquery.ui.dialog
+    - core/jquery.ui.sortable
+
+metis.menu:
+  css:
+    theme:
+      assets/js/custom/metismenu/metisMenu.css: {}
+  js:
+    assets/js/custom/metismenu/metisMenu.js: {}
+  dependencies:
+    - core/jquery
+
+jarvis.widget:
+  js:
+    assets/js/custom/smartwidgets/jarvis.widget.js: {}
+  dependencies:
+    - core/jquery
+

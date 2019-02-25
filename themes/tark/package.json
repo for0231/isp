@@ -1,0 +1,11 @@
+{
+  "name": "Tark",
+  "version": "1.0",
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.3.0",
+    "font-awesome": "^4.7.0",
+    "metismenu": "^3.0.3",
+    "pace-js": "^1.0.2"
+  }
+}

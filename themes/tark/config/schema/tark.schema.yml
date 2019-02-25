@@ -1,0 +1,5 @@
+# Schema for the configuration files of the Tark theme.
+
+tark.settings:
+  type: theme_settings
+  label: 'Tark settings'

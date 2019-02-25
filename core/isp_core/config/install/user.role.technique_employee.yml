@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - isp_core
+  module:
+    - role_menu
+id: technique_employee
+label: 'Technique Employee'
+weight: 3
+is_admin: false
+third_party_settings:
+  role_menu:
+    menu: role-menu-technique-employee
+  role_frontpage:
+    frontpage: '/technique_employee'
+permissions: {  }

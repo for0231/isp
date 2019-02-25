@@ -1,0 +1,31 @@
+# $Id$
+#
+# LANGUAGE translation of Drupal (general)
+# Copyright YEAR NAME <EMAIL@ADDRESS>
+# Generated from file: modules/isp/core/isp_core/isp_core.info.yml: n/a
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2019-02-24 13:00+0800\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: modules/isp/core/isp_core/isp_core.info.yml:0
+msgid "Isp core"
+msgstr ""
+
+#: modules/isp/core/isp_core/isp_core.info.yml:0
+msgid "The core configuration for isp."
+msgstr ""
+
+#: modules/isp/core/isp_core/isp_core.info.yml:0
+msgid "isp"
+msgstr ""
+

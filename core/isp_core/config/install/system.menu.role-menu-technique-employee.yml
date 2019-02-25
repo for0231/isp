@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - isp_core
+id: role-menu-technique-employee
+label: 'Temp role menu'
+description: 'Menu for Technique employee role.'
+locked: true

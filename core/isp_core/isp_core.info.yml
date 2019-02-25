@@ -1,0 +1,5 @@
+name: 'Isp core'
+type: module
+description: 'The core configuration for isp.'
+core: 8.x
+package: 'isp'

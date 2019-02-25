@@ -1,0 +1,29 @@
+{#
+/**
+ * @file
+ * Theme override for a 'form' element.
+ *
+ * Available variables
+ * - attributes: A list of HTML attributes for the wrapper element.
+ * - children: The child elements of the form.
+ *
+ * @see template_preprocess_form()
+ */
+#}
+<div class="jarviswidget" id="wid-id-10" data-widget-colorbutton="false" data-widget-editbutton="false">
+  <header>
+    <div class="widget-header">
+      <span class="widget-icon"> <i class="fa fa-columns"></i> </span>
+      <h2>{{ 'Details'|t }}</h2>
+    </div>
+  </header>
+  <div role="content">
+    <div class="jarviswidget-editbox">
+    </div>
+    <div class="widget-body">
+      <form{{ attributes }}>
+        {{ children }}
+      </form>
+    </div>
+  </div>
+</div>

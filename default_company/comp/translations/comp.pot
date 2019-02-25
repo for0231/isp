@@ -3,17 +3,27 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
+<<<<<<< HEAD
 #  modules/isp/company/comp/comp.info.yml: n/a
 #  modules/isp/company/comp/comp.links.menu.yml: n/a
 #  modules/isp/company/comp/comp.routing.yml: n/a
 #  modules/isp/company/comp/config/install/user.role.employee.yml: n/a
 #  modules/isp/company/comp/config/install/user.role.manager.yml: n/a
+=======
+#  modules/isp/default_company/comp/comp.info.yml: n/a
+#  modules/isp/default_company/comp/comp.links.menu.yml: n/a
+#  modules/isp/default_company/comp/comp.routing.yml: n/a
+>>>>>>> 5e9a36811e1ba606706d6b7fdfa7bc7117466b8a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
+<<<<<<< HEAD
 "POT-Creation-Date: 2018-12-25 08:15+0000\n"
+=======
+"POT-Creation-Date: 2019-02-24 13:19+0800\n"
+>>>>>>> 5e9a36811e1ba606706d6b7fdfa7bc7117466b8a
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -22,6 +32,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
+<<<<<<< HEAD
 #: modules/isp/company/comp/comp.info.yml:0
 msgid "Common comp"
 msgstr ""
@@ -47,6 +58,49 @@ msgid "Employee"
 msgstr ""
 
 #: modules/isp/company/comp/comp.routing.yml:0 modules/isp/company/comp/config/install/user.role.manager.yml:0
+=======
+#: modules/isp/default_company/comp/comp.info.yml:0
+msgid "Common comp"
+msgstr ""
+
+#: modules/isp/default_company/comp/comp.info.yml:0
+msgid "The common module to construct isp web for companies."
+msgstr ""
+
+#: modules/isp/default_company/comp/comp.info.yml:0
+msgid "isp"
+msgstr ""
+
+#: modules/isp/default_company/comp/comp.links.menu.yml:0
+msgid "Store management"
+msgstr ""
+
+#: modules/isp/default_company/comp/comp.links.menu.yml:0
+msgid "Order Management"
+msgstr ""
+
+#: modules/isp/default_company/comp/comp.links.menu.yml:0
+msgid "Store configuration"
+msgstr ""
+
+#: modules/isp/default_company/comp/comp.links.menu.yml:0
+msgid "Order types"
+msgstr ""
+
+#: modules/isp/default_company/comp/comp.links.menu.yml:0
+msgid "Order item type"
+msgstr ""
+
+#: modules/isp/default_company/comp/comp.links.menu.yml:0;0
+msgid "Users management"
+msgstr ""
+
+#: modules/isp/default_company/comp/comp.routing.yml:0
+msgid "Employee"
+msgstr ""
+
+#: modules/isp/default_company/comp/comp.routing.yml:0
+>>>>>>> 5e9a36811e1ba606706d6b7fdfa7bc7117466b8a
 msgid "Manager"
 msgstr ""
 

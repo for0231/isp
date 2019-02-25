@@ -1,0 +1,32 @@
+name: Tark
+type: theme
+description: 'The smart admin theme for tark.'
+package: Isp
+core: 8.x
+libraries:
+  - tark/global
+base theme: seven
+regions:
+  header_first: 'Header First'
+  header_second: 'Header Second'
+  pre_content: 'Pre-content'
+  breadcrumb: Breadcrumb
+  highlighted: Highlighted
+  help: Help
+  content: Content
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+  sidebar_first: 'First sidebar'
+libraries-override:
+  classy/base:
+    css:
+      component:
+        css/components/breadcrumb.css: false
+        css/components/form.css: false
+  seven/global-styling:
+    css:
+#      base:
+#        css/base/elements.css: false
+      component:
+        css/components/form.css: false
+
