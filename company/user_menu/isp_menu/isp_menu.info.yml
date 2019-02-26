@@ -1,0 +1,5 @@
+name: 'ISP Manager Menu'
+type: module
+description: 'The isp management menu'
+core: 8.x
+package: 'isp'

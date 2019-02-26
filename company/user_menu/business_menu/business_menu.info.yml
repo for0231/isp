@@ -1,0 +1,5 @@
+name: 'Business Menu'
+type: module
+description: 'The Business management user menu.'
+core: 8.x
+package: 'isp'

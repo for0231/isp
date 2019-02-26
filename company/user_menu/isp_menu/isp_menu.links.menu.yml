@@ -1,0 +1,47 @@
+
+isp_menu.manager.ip:
+  title: IP management
+  route_name: commerce.admin_commerce
+  menu_name: role-menu-isp-manager
+  weight: 10
+
+# IP menu items definition
+isp_menu.ip.collection:
+  title: 'IP list'
+  route_name: entity.ip.collection
+  description: 'List IP'
+  parent: isp_menu.manager.ip
+  weight: 100
+
+
+# IP type menu items definition
+isp_menu.ip_type.collection:
+  title: 'IP type'
+  route_name: entity.ip_type.collection
+  description: 'List IP type (bundles)'
+  parent: isp_menu.manager.ip
+  weight: 99
+
+isp_menu.manager.server:
+  title: Server management
+  route_name: commerce.admin_commerce
+  menu_name: role-menu-isp-manager
+  weight: 10
+
+# Server menu items definition
+isp_menu.server.collection:
+  title: 'Server list'
+  route_name: entity.server.collection
+  description: 'List Server'
+  parent: isp_menu.manager.server
+  weight: 100
+
+
+# Server type menu items definition
+isp_menu.server_type.collection:
+  title: 'Server type'
+  route_name: entity.server_type.collection
+  description: 'List Server type (bundles)'
+  parent: isp_menu.manager.server
+  weight: 99
+

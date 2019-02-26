@@ -1,0 +1,5 @@
+name: 'Authenticated Menu'
+type: module
+description: 'The menu for authenticated menu.'
+core: 8.x
+package: 'isp'
