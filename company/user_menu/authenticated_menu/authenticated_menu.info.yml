@@ -1,5 +1,7 @@
 name: 'Authenticated Menu'
 type: module
 description: 'The menu for authenticated menu.'
+interface translation project: authenticated_menu
+interface translation server pattern: modules/isp/company/user_menu/%project/translations/%project.%language.po
 core: 8.x
 package: 'isp'

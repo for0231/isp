@@ -1,5 +1,7 @@
 name: 'Isp core'
 type: module
 description: 'The core configuration for isp.'
+interface translation project: isp_core
+interface translation server pattern: modules/isp/core/isp_core/translations/%project.%language.po
 core: 8.x
 package: 'isp'

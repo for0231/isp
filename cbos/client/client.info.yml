@@ -1,5 +1,7 @@
 name: 'Client'
 type: module
 description: 'The clients for all message.'
+interface translation project: client
+interface translation server pattern: modules/isp/cbos/%project/translations/%project.%language.po
 core: 8.x
 package: 'isp'

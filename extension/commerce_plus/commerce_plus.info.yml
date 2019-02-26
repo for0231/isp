@@ -1,5 +1,7 @@
 name: 'Commerce Plus'
 type: module
 description: 'The extension for commerce modules.'
+interface translation project: commerce_plus
+interface translation server pattern: modules/isp/extention/%project/translations/%project.%language.po
 core: 8.x
 package: 'isp'

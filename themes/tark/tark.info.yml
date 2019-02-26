@@ -1,6 +1,8 @@
 name: Tark
 type: theme
 description: 'The smart admin theme for tark.'
+interface translation project: tark
+interface translation server pattern: modules/isp/themes/%project/translations/%project.%language.po
 package: Isp
 core: 8.x
 libraries:

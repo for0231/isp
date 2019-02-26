@@ -29,3 +29,14 @@ msgstr ""
 msgid "isp"
 msgstr ""
 
+msgid "Business Employee"
+msgstr  "业务人员"
+
+msgid "Technique Employee"
+msgstr "技术人员"
+
+msgid "Employee"
+msgstr "员工"
+
+msgid "Isp Manager"
+msgstr "ISP管理员"

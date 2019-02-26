@@ -1,5 +1,7 @@
 name: 'Business Menu'
 type: module
 description: 'The Business management user menu.'
+interface translation project: business_menu
+interface translation server pattern: modules/isp/company/user_menu/%project/translations/%project.%language.po
 core: 8.x
 package: 'isp'
