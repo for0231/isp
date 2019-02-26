@@ -44,23 +44,23 @@ msgstr ""
 
 #: modules/isp/themes/tark/config/schema/tark.schema.yml:0
 msgid "Tark settings"
-msgstr ""
+msgstr "Tark设置"
 
 #: modules/isp/themes/tark/templates/block/block--system-branding-block.html.twig:18;19;24
 msgid "Home"
-msgstr ""
+msgstr "主页"
 
 #: modules/isp/themes/tark/templates/menu/menu-local-tasks.html.twig:17
 msgid "Primary tabs"
-msgstr ""
+msgstr "一级Tab"
 
 #: modules/isp/themes/tark/templates/menu/menu-local-tasks.html.twig:27
 msgid "Secondary tabs"
-msgstr ""
+msgstr "二级Tab"
 
 #: modules/isp/themes/tark/templates/navigation/breadcrumb.html.twig:19
 msgid "Breadcrumb"
-msgstr ""
+msgstr "面包屑"
 
 #: modules/isp/themes/tark/templates/system/html.html.twig:42
 msgid "Skip to main content"
@@ -68,9 +68,9 @@ msgstr ""
 
 #: modules/isp/themes/tark/config/optional/block.block.avatarblock.yml:0
 msgid "Avatar block"
-msgstr ""
+msgstr "头像区块"
 
 #: modules/isp/themes/tark/config/optional/block.block.rolemenublock.yml:0
 msgid "Role menu block"
-msgstr ""
+msgstr "角色菜单区块"
 

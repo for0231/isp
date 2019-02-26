@@ -2,7 +2,7 @@
 #
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
-# Generated from file: modules/isp/core/isp_core/isp_core.info.yml: n/a
+# Generated from file: modules/isp/extension/commerce_plus/commerce_plus.info.yml: n/a
 #
 #, fuzzy
 msgid ""
@@ -17,15 +17,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/isp/core/isp_core/isp_core.info.yml:0
-msgid "Isp core"
+#: modules/isp/extension/commerce_plus/commerce_plus.info.yml:0
+msgid "Commerce Plus"
 msgstr ""
 
-#: modules/isp/core/isp_core/isp_core.info.yml:0
-msgid "The core configuration for isp."
-msgstr ""
-
-#: modules/isp/core/isp_core/isp_core.info.yml:0
-msgid "isp"
-msgstr ""
+#: modules/isp/extension/commerce_plus/commerce_plus.info.yml:0
+msgid "The extension for commerce modules."
+msgstr "Commerce模块的扩展."
 

@@ -3,8 +3,8 @@
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
 # Generated from files:
-#  modules/isp/company/comp/comp.info.yml: n/a
-#  modules/isp/company/comp/comp.routing.yml: n/a
+#  modules/isp/cbos/client/client.module: n/a
+#  modules/isp/cbos/client/client.info.yml: n/a
 #
 #, fuzzy
 msgid ""
@@ -19,23 +19,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/isp/company/comp/comp.info.yml:0
-msgid "Common comp"
-msgstr ""
+#: modules/isp/cbos/client/client.module:18
+msgid "About"
+msgstr "关于"
 
-#: modules/isp/company/comp/comp.info.yml:0
-msgid "The common module to construct isp web for companies."
-msgstr ""
+#: modules/isp/cbos/client/client.module:19 modules/isp/cbos/client/client.info.yml:0
+msgid "The clients for all message."
+msgstr "客户的所有信息。"
 
-#: modules/isp/company/comp/comp.info.yml:0
+#: modules/isp/cbos/client/client.info.yml:0
+msgid "Client"
+msgstr "客户"
+
+#: modules/isp/cbos/client/client.info.yml:0
 msgid "isp"
-msgstr ""
-
-#: modules/isp/company/comp/comp.routing.yml:0
-msgid "Employee"
-msgstr ""
-
-#: modules/isp/company/comp/comp.routing.yml:0
-msgid "Manager"
 msgstr ""
 

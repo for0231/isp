@@ -21,7 +21,7 @@ msgstr ""
 
 #: modules/isp/company/comp/comp.info.yml:0
 msgid "Common comp"
-msgstr ""
+msgstr "通用公司组件"
 
 #: modules/isp/company/comp/comp.info.yml:0
 msgid "The common module to construct isp web for companies."
@@ -30,12 +30,3 @@ msgstr ""
 #: modules/isp/company/comp/comp.info.yml:0
 msgid "isp"
 msgstr ""
-
-#: modules/isp/company/comp/comp.routing.yml:0
-msgid "Employee"
-msgstr ""
-
-#: modules/isp/company/comp/comp.routing.yml:0
-msgid "Manager"
-msgstr ""
-

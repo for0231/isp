@@ -6,6 +6,7 @@
 #  modules/isp/cbos/ip/ip.module: n/a
 #  modules/isp/cbos/ip/ip.info.yml: n/a
 #  modules/isp/cbos/ip/src/Entity/Ip.php: n/a
+#  modules/isp/cbos/ip/config/install/views.view.ip.yml: n/a
 #  modules/isp/cbos/ip/ip.links.action.yml: n/a
 #  modules/isp/cbos/ip/ip.links.menu.yml: n/a
 #  modules/isp/cbos/ip/src/IpTypeListBuilder.php: n/a
@@ -30,7 +31,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2018-12-23 01:21+0000\n"
+"POT-Creation-Date: 2019-02-26 11:12+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -116,19 +117,20 @@ msgstr ""
 
 #: modules/isp/cbos/ip/ip.permissions.yml:0
 msgid "Delete all revisions"
-msgstr ""
+msgstr "删除所有版本"
 
 #: modules/isp/cbos/ip/ip.permissions.yml:0
 msgid "Role requires permission to <em>view IP revisions</em> and <em>delete rights</em> for ip in question or <em>administer ip</em>."
 msgstr ""
 
+#: modules/isp/cbos/ip/ip.permissions.yml:0
+msgid "View own ip"
+msgstr "我的IP"
+
 #: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
 msgid "IP type config"
 msgstr "IP类型配置"
 
-#: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
-msgid "ID"
-msgstr ""
 
 #: modules/isp/cbos/ip/config/schema/ip_type.schema.yml:0
 msgid "IP state settings"

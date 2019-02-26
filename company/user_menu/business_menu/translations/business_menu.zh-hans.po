@@ -2,13 +2,13 @@
 #
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
-# Generated from file: modules/isp/core/isp_core/isp_core.info.yml: n/a
+# Generated from file: modules/isp/company/user_menu/business_menu/business_menu.info.yml: n/a
 #
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
-"POT-Creation-Date: 2019-02-26 11:11+0800\n"
+"POT-Creation-Date: 2019-02-26 11:12+0800\n"
 "PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
 "Last-Translator: NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
@@ -17,15 +17,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/isp/core/isp_core/isp_core.info.yml:0
-msgid "Isp core"
-msgstr ""
+#: modules/isp/company/user_menu/business_menu/business_menu.info.yml:0
+msgid "Business Menu"
+msgstr "业务人员菜单"
 
-#: modules/isp/core/isp_core/isp_core.info.yml:0
-msgid "The core configuration for isp."
-msgstr ""
-
-#: modules/isp/core/isp_core/isp_core.info.yml:0
-msgid "isp"
-msgstr ""
-
+#: modules/isp/company/user_menu/business_menu/business_menu.info.yml:0
+msgid "The Business management user menu."
+msgstr "业务人员菜单."

@@ -2,9 +2,7 @@
 #
 # LANGUAGE translation of Drupal (general)
 # Copyright YEAR NAME <EMAIL@ADDRESS>
-# Generated from files:
-#  modules/isp/company/comp/comp.info.yml: n/a
-#  modules/isp/company/comp/comp.routing.yml: n/a
+# Generated from file: modules/isp/company/user_menu/technique_menu/technique_menu.info.yml: n/a
 #
 #, fuzzy
 msgid ""
@@ -19,23 +17,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 
-#: modules/isp/company/comp/comp.info.yml:0
-msgid "Common comp"
+#: modules/isp/company/user_menu/technique_menu/technique_menu.info.yml:0
+msgid "Technique Menu"
 msgstr ""
 
-#: modules/isp/company/comp/comp.info.yml:0
-msgid "The common module to construct isp web for companies."
+#: modules/isp/company/user_menu/technique_menu/technique_menu.info.yml:0
+msgid "The technique management menu."
 msgstr ""
 
-#: modules/isp/company/comp/comp.info.yml:0
+#: modules/isp/company/user_menu/technique_menu/technique_menu.info.yml:0
 msgid "isp"
-msgstr ""
-
-#: modules/isp/company/comp/comp.routing.yml:0
-msgid "Employee"
-msgstr ""
-
-#: modules/isp/company/comp/comp.routing.yml:0
-msgid "Manager"
 msgstr ""
 
