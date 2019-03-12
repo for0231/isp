@@ -8,10 +8,10 @@ global:
     assets/js/base.js: {}
     assets/js/global.js: {}
   dependencies:
-    - tark/jarvis.widget
     - tark/metis.menu
     - tark/bootstrap
     - core/drupal
+    - tark/jarvis.widget
 
 bootstrap:
   css:
