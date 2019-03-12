@@ -137,22 +137,12 @@
   </header>
   <!-- END .sa-page-header -->
   <div class="sa-page-body">
-
-
     <!-- BEGIN .sa-aside-left -->
-
+    {% if page.sidebar_first %}
     <div class="sa-aside-left">
-
-      <a href="javascript:void(0)" class="sa-sidebar-shortcut-toggle">
-        <img src="assets/img/avatars/sunny.png" alt="" class="online">
-        <span>John.Doe <span class="fa fa-angle-down"></span></span>
-      </a>
       {{ page.sidebar_first }}
-
     </div>
-
-
-
+    {% endif %}
     <!-- BEGIN .sa-content-wrapper -->
     <div class="sa-content-wrapper">
 

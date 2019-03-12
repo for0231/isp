@@ -1,0 +1,43 @@
+config_rewrite: 'replace'
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.sidebar
+    - field.field.user.user.user_picture
+    - image.style.avatar_25x25_
+  module:
+    - image
+    - user
+id: user.user.sidebar
+targetEntityType: user
+bundle: user
+mode: sidebar
+content:
+  name:
+    type: string
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_picture:
+    type: image
+    weight: 1
+    region: content
+    settings:
+      image_style: avatar_25x25_
+      image_link: ''
+    third_party_settings: {  }
+    label: hidden
+hidden:
+  dropdown_menu: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  logout: true
+  member_for: true
+  password_link: true
+  person: true

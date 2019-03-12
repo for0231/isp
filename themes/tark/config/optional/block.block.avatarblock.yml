@@ -16,5 +16,5 @@ settings:
   label: 'Avatar block'
   provider: user_plus
   label_display: '0'
-  view_mode: compact
+  view_mode: sidebar
 visibility: {  }
