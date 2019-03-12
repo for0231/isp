@@ -5,8 +5,8 @@
  */
 function comp_preprocess_menu__role_menu(&$variables) {
   $icons = [
-    'comp.manager.commerce' => 'fa fa-cubes',
-    'comp.manager.users' => 'fa fa-tasks',
+    'comp.manager.commerce' => 'fa fa-lg fa-cubes',
+    'comp.manager.users' => 'fa fa-lg fa-tasks',
   ];
   _eabax_core_set_menu_items_icon($variables['items'], $icons);
 }

@@ -6,8 +6,8 @@
  */
 function isp_menu_preprocess_menu__role_menu(&$variables) {
   $icons = [
-    'isp_menu.manager.ip' => 'fa fa-cube',
-    'isp_menu.manager.server' => 'fa fa-tasks',
+    'isp_menu.manager.ip' => 'fa fa-lg fa-cube',
+    'isp_menu.manager.server' => 'fa fa-lg fa-tasks',
   ];
 
   _eabax_core_set_menu_items_icon($variables['items'], $icons);

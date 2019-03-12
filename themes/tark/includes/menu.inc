@@ -28,7 +28,7 @@ function tark_preprocess_menu_local_action(array &$variables) {
   unset($link['localized_options']['attributes']['class']);
   $link['localized_options']['attributes']['class'] = [
     'btn',
-    'bg-blue-dark',
+    'bg-magenta',
     'text-white',
   ];
   $link['localized_options']['set_active_class'] = TRUE;
