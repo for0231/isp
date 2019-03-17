@@ -12633,7 +12633,7 @@ body:not(.sa-menu-on-top) .sa-aside-left .sa-left-menu .sa-sub-nav > li:last-chi
 
 /* line 660, Users/nie/projects/drupal/modules/isp/themes/tark/assets/scss/partials/_sidebar.scss */
 .sa-sidebar-shortcut-toggle img {
-  width: 28px;
+  width: 25px;
   height: 25px;
   margin-right: 5px;
 }
@@ -14437,7 +14437,7 @@ img.online {
 
 /* line 806, Users/nie/projects/drupal/modules/isp/themes/tark/assets/scss/themes/default.scss */
 .sa-sidebar-shortcut-toggle img {
-  border-radius: 50% 0;
+  border-radius: 50%;
   outline: 0;
 }
 
