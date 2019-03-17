@@ -1,0 +1,14 @@
+{
+  "name": "drupal/user_messages",
+  "type": "drupal-module",
+  "description": "The message icon for user message.",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/user_messages",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/user_messages",
+    "source": "http://cgit.drupalcode.org/user_messages"
+  },
+  "require": { }
+}
