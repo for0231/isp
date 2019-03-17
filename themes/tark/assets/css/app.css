@@ -14665,6 +14665,11 @@ label {
   margin-bottom: 10px;
 }
 
+/* line 89, Users/nie/projects/drupal/modules/isp/themes/tark/assets/scss/override/_page.scss */
+.sa-content {
+  background-color: #fff;
+}
+
 /*# sourceMappingURL=app.bundle.css.map */
 
 /*# sourceMappingURL=app.css.map */

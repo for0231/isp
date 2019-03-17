@@ -20,6 +20,10 @@ regions:
   page_bottom: 'Page bottom'
   sidebar_first: 'First sidebar'
 libraries-override:
+  stable/base:
+    css:
+      component:
+        css/components/sticky-header.module.css: assets/css/system/components/sticky-header.module.css
   classy/base:
     css:
       component:

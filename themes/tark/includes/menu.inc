@@ -16,7 +16,6 @@ function tark_preprocess_menu_local_task(array &$variables) {
   }
 }
 
-
 /**
  * Implements hook_preprocess_hook().
  */
@@ -28,8 +27,8 @@ function tark_preprocess_menu_local_action(array &$variables) {
   unset($link['localized_options']['attributes']['class']);
   $link['localized_options']['attributes']['class'] = [
     'btn',
-    'bg-magenta',
-    'text-white',
+    'btn-sm',
+    'btn-primary',
   ];
   $link['localized_options']['set_active_class'] = TRUE;
 
@@ -53,3 +52,4 @@ function tark_preprocess_menu__role_menu(array &$variables) {
   ];
   _eabax_core_set_menu_items_icon($variables['items'], $icons);
 }
+
