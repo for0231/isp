@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.sidebar
+    - field.field.user.user.commerce_remote_id
     - field.field.user.user.user_picture
     - image.style.avatar_25x25_
   module:
@@ -16,7 +17,7 @@ mode: sidebar
 content:
   name:
     type: string
-    weight: 2
+    weight: 3
     region: content
     label: hidden
     settings:
@@ -24,7 +25,7 @@ content:
     third_party_settings: {  }
   user_picture:
     type: image
-    weight: 1
+    weight: 21
     region: content
     settings:
       image_style: avatar_25x25_
@@ -32,6 +33,7 @@ content:
     third_party_settings: {  }
     label: hidden
 hidden:
+  commerce_remote_id: true
   dropdown_menu: true
   entity_print_view_epub: true
   entity_print_view_pdf: true
@@ -41,3 +43,5 @@ hidden:
   member_for: true
   password_link: true
   person: true
+  profile_customer: true
+
