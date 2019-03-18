@@ -9,7 +9,7 @@ use Drupal\Core\Block\BlockBase;
  *
  * @Block(
  *  id = "user_message_icons_block",
- *  admin_label = @Translation("User message icons block"),
+ *  admin_label = @Translation("Message icon"),
  * )
  */
 class UserMessageIconsBlock extends BlockBase {
@@ -19,7 +19,7 @@ class UserMessageIconsBlock extends BlockBase {
    */
   public function build() {
     $build = [];
-    $build['user_message_icons_block']['#markup'] = 'Implement UserMessageIconsBlock.';
+    $build['user_message_icons_block']['#markup'] = '.';
 
     return $build;
   }

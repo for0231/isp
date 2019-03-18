@@ -14670,6 +14670,16 @@ label {
   background-color: #fff;
 }
 
+/* line 93, Users/nie/projects/drupal/modules/isp/themes/tark/assets/scss/override/_page.scss */
+.region-header-first {
+  display: inline-flex;
+}
+
+/* line 96, Users/nie/projects/drupal/modules/isp/themes/tark/assets/scss/override/_page.scss */
+.block-user-message-icons-block {
+  left: 62px;
+}
+
 /*# sourceMappingURL=app.bundle.css.map */
 
 /*# sourceMappingURL=app.css.map */

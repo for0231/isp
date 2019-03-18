@@ -1,0 +1,35 @@
+{%
+  set classes = [
+  'dropdown',
+  'ml-auto',
+  'block',
+  'block-' ~ configuration.provider|clean_class,
+  'block-' ~ plugin_id|clean_class,
+]
+%}
+
+<div{{ attributes.addClass(classes) }}>
+  <button class="btn btn-default sa-btn-icon sa-activity-dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="fa fa-user"></span><span class="badge bg-red">21</span>
+  </button>
+  <div class="dropdown-menu ml-auto ajax-dropdown" aria-labelledby="dropdownMenuButton">
+    <form class="btn-group btn-group-justified" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-default" onclick="loadNotifications(this)" data-url="ajax/mail.html">Msgs (21)</button>
+      <button type="button" class="btn btn-default" onclick="loadNotifications(this)" data-url="ajax/notifications.html">Notify (3)</button>
+      <button type="button" class="btn btn-default" onclick="loadNotifications(this)" data-url="ajax/tasks.html">Tasks (4)</button>
+    </form>
+    <div class="sa-ajax-notification-container">
+      <div class="alert sa-ajax-notification-alert">
+        <h4>Click a button to show messages here</h4>
+        This blank page message helps protect your privacy, or you can show the first message here automatically.
+      </div>
+      <span class="fa fa-lock fa-4x fa-border"></span>
+    </div>
+
+    <form role="group" class="flex-row d-flex align-items-center sa-ajax-notification-footer">
+      <span>Last updated on: 12/12/2013 9:43AM</span>
+      <button class="btn btn-xs btn-default ml-auto" type="button" onclick="toggleReloadButton(this, event)"><span class="fa fa-refresh"></span></button>
+    </form>
+
+  </div>
+</div>
