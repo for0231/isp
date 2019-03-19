@@ -79,7 +79,7 @@ label {
   color: #ffffff;
 }
 .dropdown > .dropdown-menu, .dropdown-toggle + .dropdown-menu {
-  top: 0 !important;
+  top: 0px !important;
 }
 
 .alert {
@@ -95,4 +95,7 @@ label {
 }
 .block-user-message-icons-block {
   left: 62px;
+}
+#refresh:hover, #refresh:visited {
+  color: white;
 }

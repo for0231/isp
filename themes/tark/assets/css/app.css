@@ -4278,11 +4278,6 @@ body.nooverflow {
   opacity: 0;
 }
 
-/* line 561, Users/nie/projects/drupal/modules/isp/themes/tark/assets/scss/custom/jarvis.widget.scss */
-.widget-toolbar .dropdown-menu.color-select {
-  right: -1px;
-}
-
 /*
  * ICONS
  */
@@ -14657,7 +14652,7 @@ label {
 /* line 81, Users/nie/projects/drupal/modules/isp/themes/tark/assets/scss/override/_page.scss */
 .dropdown > .dropdown-menu,
 .dropdown-toggle + .dropdown-menu {
-  top: 0 !important;
+  top: 0px !important;
 }
 
 /* line 85, Users/nie/projects/drupal/modules/isp/themes/tark/assets/scss/override/_page.scss */
@@ -14678,6 +14673,11 @@ label {
 /* line 96, Users/nie/projects/drupal/modules/isp/themes/tark/assets/scss/override/_page.scss */
 .block-user-message-icons-block {
   left: 62px;
+}
+
+/* line 99, Users/nie/projects/drupal/modules/isp/themes/tark/assets/scss/override/_page.scss */
+#refresh:hover, #refresh:visited {
+  color: white;
 }
 
 /*# sourceMappingURL=app.bundle.css.map */
