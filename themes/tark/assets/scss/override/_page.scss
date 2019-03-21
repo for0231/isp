@@ -99,3 +99,12 @@ label {
 #refresh:hover, #refresh:visited {
   color: white;
 }
+
+.form-actions {
+  display: block;
+  padding: 13px 14px 15px;
+  border-top: unset;
+  background: unset;
+  margin: 0;
+  text-align: left;
+}

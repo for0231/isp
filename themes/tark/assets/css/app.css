@@ -14680,6 +14680,16 @@ label {
   color: white;
 }
 
+/* line 103, Users/nie/projects/drupal/modules/isp/themes/tark/assets/scss/override/_page.scss */
+.form-actions {
+  display: block;
+  padding: 13px 14px 15px;
+  border-top: unset;
+  background: unset;
+  margin: 0;
+  text-align: left;
+}
+
 /*# sourceMappingURL=app.bundle.css.map */
 
 /*# sourceMappingURL=app.css.map */

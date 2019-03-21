@@ -12,6 +12,27 @@ use Drupal\Core\Form\FormStateInterface;
  */
 function tark_preprocess_form(array &$variables) {
   //$variables['attributes']['novalidate'] = 'novalidate';
+  $form = 'ad';
+}
+
+/**
+ * Implements hook_preprocess_hook().
+ */
+function tark_preprocess_form_element(array &$variables) {
+}
+
+/**
+ * Implements hook_preprocess_hook().
+ */
+function tark_preprocess_input__submit(array &$variables) {
+  $variables['attributes']['class'] = array_map(function($v) {
+    if ($v == 'button') {
+      return 'btn';
+    }
+    else {
+      return $v;
+    }
+  }, $variables['attributes']['class']);
 }
 
 /**
@@ -90,3 +111,4 @@ function tark_form_alter(&$form, FormStateInterface $form_state, $form_id) {
     $form['header']['bulk_form']['#attributes']['class'] = 'form--inline clearfix';
   }
 }
+
