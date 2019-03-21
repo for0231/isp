@@ -35,5 +35,5 @@ vendor/bin/drush cset -y system.theme admin tark
 #vendor/bin/drush language-add zh-hans
 
 # isp modules
-vendor/bin/drush en -y comp
+vendor/bin/drush en -y isp_menu
 

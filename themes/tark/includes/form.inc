@@ -56,6 +56,14 @@ function tark_preprocess_links__dropbutton__operations(array &$variables) {
  */
 function tark_form_alter(&$form, FormStateInterface $form_state, $form_id) {
 
+  if (isset($form['actions']['submit'])) {
+    $form['actions']['submit']['#attributes']['class'] = [
+      'btn',
+      'btn-primary',
+      'btn-sm',
+    ];
+  }
+
   if (isset($form['actions']['delete'])) {
     $form['actions']['delete']['#attributes']['class'] = [
       'btn',
@@ -67,7 +75,7 @@ function tark_form_alter(&$form, FormStateInterface $form_state, $form_id) {
     $form['actions']['cancel']['#attributes']['class'] = [
       'btn',
       'btn-warning',
-      'btn-sm'
+      'btn-sm',
     ];
   }
   if (isset($form['actions']['edit-add-block'])) {

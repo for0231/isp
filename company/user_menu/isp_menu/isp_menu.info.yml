@@ -5,3 +5,5 @@ interface translation project: isp_menu
 interface translation server pattern: modules/isp/company/user_menu/%project/translations/%project.%language.po
 core: 8.x
 package: 'isp'
+dependencies:
+  - comp
