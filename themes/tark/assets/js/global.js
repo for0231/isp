@@ -10,11 +10,6 @@
     attach: function (context, settings) {
       $('#block-rolemenublock').metisMenu();
 
-      $('<table class="sticky-header"/>').onLoad(function () {
-        $(this).css({
-          top: '48px',
-        });
-      });
     }
   };
 }) (jQuery, Drupal, drupalSettings);
